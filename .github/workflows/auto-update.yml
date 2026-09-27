@@ -1,0 +1,47 @@
+name: Automatisk Uppdatering och Arkivering
+
+on:
+  schedule:
+    # Körs var 4:e timme
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Möjliggör manuell körning via GitHub-gränssnittet
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-and-archive:
+    runs-style: ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Konfigurera Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Samla in källdata och rotera arkiv
+        run: |
+          python3 scripts/fetch_sources.py
+
+      - name: Validera datakvalitet och källkrav
+        run: |
+          python3 scripts/validate_data.py
+
+      - name: Commit och pusha ändringar om data uppdaterats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Inga nya ändringar att spara."
+          else
+            git commit -m "Auto-update: Ny källdata och arkivrotation [skip ci]"
+            git push
+          fi

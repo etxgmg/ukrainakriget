@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukrainakriget – Oberoende Underrättelse & Situationsdashboard</title>
+  <meta name="description" content="En öppen, strukturerad och automatisk analysportal för händelseutvecklingen i Ukrainakriget.">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%2250%22 fill=%22%230057b7%22/><rect y=%2250%22 width=%22100%22 height=%2250%22 fill=%22%23ffd700%22/></svg>">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-wrapper">
+        <div class="flag-badge" aria-hidden="true">
+          <div class="flag-stripe-blue"></div>
+          <div class="flag-stripe-yellow"></div>
+        </div>
+        <div>
+          <h1 class="site-title" data-i18n="siteTitle">Ukrainakriget</h1>
+          <div class="site-subtitle" data-i18n="siteSubtitle">Oberoende Underrättelse & Situationsdashboard</div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="live-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="liveStatus">AKTUELL LÄGESBILD</span>
+        </div>
+        <button id="lang-toggle-btn" class="lang-btn" aria-label="Byt språk / Switch Language">
+          <span class="flag-icon">🇬🇧</span> English
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <button class="nav-tab-btn active" data-tab="dashboard" data-i18n="navDashboard">Översikt & Lägesbild</button>
+      <button class="nav-tab-btn" data-tab="timeline" data-i18n="navTimeline">Multidimensionellt Filter</button>
+      <button class="nav-tab-btn" data-tab="archive" data-i18n="navArchive">Arkiv (>24h)</button>
+      <button class="nav-tab-btn" data-tab="sources" data-i18n="navSources">Källkatalog</button>
+      <button class="nav-tab-btn" data-tab="methodology" data-i18n="navMethodology">Metod & USP</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- KPI Summary Section -->
+    <section class="kpi-grid">
+      <div class="kpi-card kpi-success">
+        <div class="kpi-header">
+          <span class="kpi-title" data-i18n="kpiInterception">Luftförsvarseffektivitet</span>
+          <span class="kpi-icon">🛡️</span>
+        </div>
+        <div class="kpi-value" id="kpi-interception-val">88%</div>
+        <div class="kpi-subtext" data-i18n="kpiInterceptionDesc">Nedskjutna Shahed & robotar senaste dygnet</div>
+      </div>
+
+      <div class="kpi-card kpi-danger">
+        <div class="kpi-header">
+          <span class="kpi-title" data-i18n="kpiFrontline">Frontstrider (24h)</span>
+          <span class="kpi-icon">💥</span>
+        </div>
+        <div class="kpi-value" id="kpi-frontline-val">164</div>
+        <div class="kpi-subtext" data-i18n="kpiFrontlineDesc">Intensivast strider kring Pokrovsk & Kurachove</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title" data-i18n="kpiCorridor">Sjökorsväg Svarta Havet</span>
+          <span class="kpi-icon">🚢</span>
+        </div>
+        <div class="kpi-value" id="kpi-corridor-val">6,2 milj. ton</div>
+        <div class="kpi-subtext" data-i18n="kpiCorridorDesc">Månatlig export genom ukrainsk sjökorridor</div>
+      </div>
+
+      <div class="kpi-card kpi-warn">
+        <div class="kpi-header">
+          <span class="kpi-title" data-i18n="kpiCivilianShare">Civila anfallsmål</span>
+          <span class="kpi-icon">🏥</span>
+        </div>
+        <div class="kpi-value" id="kpi-civilian-val">41%</div>
+        <div class="kpi-subtext" data-i18n="kpiCivilianShareDesc">Andel av ryska luftangrepp mot civila mål</div>
+      </div>
+    </section>
+
+    <!-- TAB 1: DASHBOARD (Översikt) -->
+    <div id="tab-dashboard" class="tab-content-section">
+      
+      <!-- Interactive Tactical Map -->
+      <section class="map-section">
+        <div class="map-header">
+          <h2 data-i18n="mapTitle">Taktisk Geografisk Översiktskarta</h2>
+          <p data-i18n="mapSubtitle">Klicka på en sektor för att filtrera händelser i området</p>
+        </div>
+        <div id="tactical-map-container"></div>
+      </section>
+
+      <!-- Active Events Feed Section Header -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <div>
+          <h2 style="font-size: 1.3rem; font-weight: 700; color: #fff;">Aktuella Händelser (Senaste dygnet)</h2>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Händelser som visats roteras automatiskt till arkivet efter 24 timmar så att dashboarden alltid visar dagens situation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Active Events Stream -->
+      <div id="active-events-container" class="events-stream"></div>
+    </div>
+
+    <!-- TAB 2: TIMELINE & MULTI-PERSPECTIVE FILTER MATRIX (Webbplatsens USP) -->
+    <div id="tab-timeline" class="tab-content-section hidden">
+      
+      <!-- Multi-perspective Filter Box -->
+      <section class="filter-card">
+        <div class="filter-header">
+          <div class="filter-title-group">
+            <h2 data-i18n="filterTitle">Flerdimensionell Klassificering (Webbplatsens USP)</h2>
+            <p data-i18n="filterSubtitle">Kombinera perspektiv för att analysera läget ur specifika dimensioner</p>
+          </div>
+          <div class="filter-controls-bar">
+            <input type="text" id="search-input" class="search-input" placeholder="Sök händelser, städer, vapen..." data-i18n-placeholder="filterSearchPlaceholder">
+            <button id="reset-filters-btn" class="btn-reset" data-i18n="filterReset">Återställ filter</button>
+          </div>
+        </div>
+
+        <div class="filter-dimensions-grid">
+          <!-- 1. Tidshorisont -->
+          <div class="filter-item">
+            <label for="filter-time" data-i18n="dimTime">Tidshorisonter</label>
+            <select id="filter-time" class="filter-select">
+              <option value="alla" data-i18n="optAll">Alla</option>
+              <option value="dagligen" data-i18n="timeDaily">Dagligen (Senaste dygnet)</option>
+              <option value="veckovis" data-i18n="timeWeekly">Veckovis</option>
+              <option value="manadsvis" data-i18n="timeMonthly">Månatligen</option>
+              <option value="ar" data-i18n="timeYearly">Årsvis</option>
+            </select>
+          </div>
+
+          <!-- 2. Geografi -->
+          <div class="filter-item">
+            <label for="filter-geo" data-i18n="dimGeo">Geografiska områden</label>
+            <select id="filter-geo" class="filter-select">
+              <option value="alla" data-i18n="optAll">Alla</option>
+              <option value="fria_ukraina" data-i18n="geoFreeUA">Fria Ukraina</option>
+              <option value="ockuperade_ukraina" data-i18n="geoOccupiedUA">Ockuperade Ukraina (inkl. Krym)</option>
+              <option value="ryssland" data-i18n="geoRussia">Ryssland</option>
+              <option value="ukrainas_granser" data-i18n="geoBorders">Ukrainas gränser / Svarta havet</option>
+              <option value="eu_ees" data-i18n="geoEUEEA">EU & EES</option>
+              <option value="resten_av_varlden" data-i18n="geoWorld">Resten av världen</option>
+            </select>
+          </div>
+
+          <!-- 3. Parter / Intressenter -->
+          <div class="filter-item">
+            <label for="filter-actor" data-i18n="dimActors">Parter & Intressenter</label>
+            <select id="filter-actor" class="filter-select">
+              <option value="alla" data-i18n="optAll">Alla</option>
+              <option value="ukraina" data-i18n="actorUA">Ukraina</option>
+              <option value="ryssland" data-i18n="actorRU">Ryssland</option>
+              <option value="eu" data-i18n="actorEU">EU</option>
+              <option value="uk" data-i18n="actorUK">Storbritannien</option>
+              <option value="usa" data-i18n="actorUS">USA</option>
+              <option value="kina" data-i18n="actorCN">Kina</option>
+              <option value="ovriga_varlden" data-i18n="actorWorld">Övriga världen</option>
+            </select>
+          </div>
+
+          <!-- 4. Syfte -->
+          <div class="filter-item">
+            <label for="filter-purpose" data-i18n="dimPurpose">Syfte & Målnivå</label>
+            <select id="filter-purpose" class="filter-select">
+              <option value="alla" data-i18n="optAll">Alla</option>
+              <option value="akta_syfte" data-i18n="purposeReal">Äkta syfte</option>
+              <option value="vision" data-i18n="purposeVision">Vision</option>
+              <option value="strategiskt_mal" data-i18n="purposeStrategic">Strategiskt mål</option>
+              <option value="taktiskt_mal" data-i18n="purposeTactical">Taktiskt mål</option>
+              <option value="operationellt_mal" data-i18n="purposeOperational">Operationellt mål</option>
+              <option value="prestationsmal" data-i18n="purposeOutput">Prestationsmål</option>
+              <option value="resultatmal" data-i18n="purposeOutcome">Resultatmål</option>
+              <option value="effektmal" data-i18n="purposeEffect">Effektmål</option>
+            </select>
+          </div>
+
+          <!-- 5. Egenskaper hos anfallsmål -->
+          <div class="filter-item">
+            <label for="filter-target" data-i18n="dimTarget">Anfallsmålets egenskap</label>
+            <select id="filter-target" class="filter-select">
+              <option value="alla" data-i18n="optAll">Alla</option>
+              <option value="helt_civila" data-i18n="targetCivilian">Helt civila (sjukhus, skolor)</option>
+              <option value="civil_infrastruktur" data-i18n="targetInfra">Civil infrastruktur & transport</option>
+              <option value="militara_resurser" data-i18n="targetMilitary">Militära resurser</option>
+              <option value="energiproduktion" data-i18n="targetEnergy">Energiproduktion & distribution</option>
+              <option value="krigsmaterielproduktion" data-i18n="targetAmmo">Krigsmaterielproduktion & lager</option>
+              <option value="diplomatiskt_politiskt" data-i18n="targetDiplomatic">Diplomatiskt / politiskt</option>
+            </select>
+          </div>
+
+          <!-- 6. Vetskap & Sannolikhet -->
+          <div class="filter-item">
+            <label for="filter-confidence" data-i18n="dimConfidence">Vetskap & Sannolikhet</label>
+            <select id="filter-confidence" class="filter-select">
+              <option value="0" data-i18n="optAll">Alla nivåer</option>
+              <option value="100" data-i18n="confConfirmed">100% Bekräftad (Geoverifierad)</option>
+              <option value="85" data-i18n="confHigh">≥85% Hög sannolikhet</option>
+              <option value="60" data-i18n="confMedium">≥60% Måttlig / Obekräftad</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-stats-bar">
+          <span id="filtered-count">Visar händelser...</span>
+          <span style="font-size: 0.78rem; color: var(--text-faint);">Kombinerad flerdimensionell vy</span>
+        </div>
+      </section>
+
+      <!-- Events Stream (All events matching filter) -->
+      <div id="timeline-events-container" class="events-stream"></div>
+    </div>
+
+    <!-- TAB 3: ARCHIVE (Arkiv >24h) -->
+    <div id="tab-archive" class="tab-content-section hidden">
+      <div style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.3rem; font-weight: 700; color: #fff;" data-i18n="archiveTitle">Historiskt Arkiv</h2>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);" data-i18n="archiveSubtitle">
+            Dagliga händelser flyttas hit efter 24 timmars visning för att hålla dashboarden aktuell.
+          </p>
+        </div>
+        <div>
+          <input type="text" id="archive-search-input" class="search-input" placeholder="Sök i arkivet..." data-i18n-placeholder="archiveSearch">
+        </div>
+      </div>
+
+      <div id="archive-events-container" class="events-stream"></div>
+    </div>
+
+    <!-- TAB 4: SOURCES CATALOG (Källkatalog) -->
+    <div id="tab-sources" class="tab-content-section hidden">
+      <div style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 1.3rem; font-weight: 700; color: #fff;" data-i18n="sourcesTitle">Källkatalog & Verifieringskedja</h2>
+        <p style="font-size: 0.85rem; color: var(--text-secondary);" data-i18n="sourcesSubtitle">
+          Alla publicerade uppgifter härrör från dokumenterade primärkällor eller oberoende granskare.
+        </p>
+      </div>
+
+      <div id="sources-container" class="sources-directory"></div>
+    </div>
+
+    <!-- TAB 5: METHODOLOGY (Metod & Analysmodell) -->
+    <div id="tab-methodology" class="tab-content-section hidden">
+      <article class="methodology-box">
+        <h2 data-i18n="methodTitle">Metodologi & Unik Värdestruktur (USP)</h2>
+        <p data-i18n="methodSubtitle">
+          Varför Ukrainakriget.github.io skiljer sig från traditionella nyhetsmedier:
+        </p>
+        <p>
+          De flesta nyhetskanaler och sociala medier presenterar ett fragmenterat flöde av obekräftade händelser utan struktur eller kontext. <strong>Ukrainakriget</strong> bygger på en strikt flerdimensionell taxonomi där varje informationsobjekt klassificeras utifrån sex sammanlänkade perspektiv:
+        </p>
+
+        <div class="methodology-grid">
+          <div class="method-item">
+            <h3>⏱️ 1. Tidshorisonter</h3>
+            <p>Från taktiska händelser under det senaste dygnet till veckovisa trender, månatliga offensiver och årliga kumulativa strategiska skiften.</p>
+          </div>
+
+          <div class="method-item">
+            <h3>🌍 2. Geografiska områden</h3>
+            <p>Strikt uppdelning mellan det fria Ukraina, ockuperade områden (inklusive Krym), ryskt territorium, gränszoner, EU/EES och global diplomati.</p>
+          </div>
+
+          <div class="method-item">
+            <h3>🏛️ 3. Parter & Intressenter</h3>
+            <p>Kartläggning av agerande, uttalanden och intressen hos Ukraina, Ryssland, EU, Storbritannien, USA, Kina och övriga världen.</p>
+          </div>
+
+          <div class="method-item">
+            <h3>🎯 4. Syfte & Målnivå</h3>
+            <p>Skiljer på verkligt äkta syfte, vision, strategiska mål, taktiska mål, operationella mål samt prestations-, resultat- och effektmål.</p>
+          </div>
+
+          <div class="method-item">
+            <h3>🏢 5. Egenskaper hos anfallsmål</h3>
+            <p>Tydlig differentiering mellan helt civila mål (sjukhus, skolor), civil infrastruktur (energi, transport), militära resurser och vapenfabriker.</p>
+          </div>
+
+          <div class="method-item">
+            <h3>🔍 6. Nivå av vetskap & Sannolikhet</h3>
+            <p>Alla händelser förses med en sannolikhetsgrad (från 100% geoverifierad till påståenden under 50%) med motivering och direkt källänk.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; padding: 1.25rem; background: rgba(2, 132, 199, 0.1); border-left: 4px solid var(--ua-blue); border-radius: 4px;">
+          <h4 style="color: #fff; margin-bottom: 0.5rem;">🤖 Helautomatiserad Pipeline</h4>
+          <p style="color: #cbd5e1; font-size: 0.88rem; margin-bottom: 0;">
+            Webbplatsen uppdateras automatiskt via schemalagda bakgrundsprocesser (GitHub Actions) som hämtar och analyserar öppna flöden (RSS, officiella telegramkanaler och underrättelseöversikter). Händelser äldre än 24 timmar flyttas automatiskt till arkivet, vilket garanterar att dashboarden alltid visar dagens situation.
+          </p>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p data-i18n="footerText">Ukrainakriget – Helautomatiskt, öppet dashboard för systematisk situationsanalys.</p>
+        <p style="font-size: 0.78rem; color: var(--text-faint); margin-top: 0.25rem;" data-i18n="footerDisclaimer">
+          Informationen samlas in automatiskt och klassificeras med öppna källor i enlighet med internationella OSINT-standarder.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/etxgmg/ukrainakriget" target="_blank" rel="noopener noreferrer" data-i18n="footerRepo">GitHub Repository (etxgmg/ukrainakriget)</a>
+        <span>•</span>
+        <a href="data/output/events.json" target="_blank">Öppen API / JSON-feed</a>
+        <span>•</span>
+        <a href="data/sources.json" target="_blank">Källkatalog JSON</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/js/i18n.js"></script>
+  <script src="src/js/data.js"></script>
+  <script src="src/js/map.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
+</html>

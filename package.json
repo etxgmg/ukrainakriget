@@ -1,0 +1,25 @@
+{
+  "name": "ukrainakriget",
+  "version": "1.0.0",
+  "description": "Ukrainakriget – Helautomatisk öppen situationsdashboard och oberoende underrättelseanalys",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "serve": "python3 -m http.server 8080",
+    "test": "python3 scripts/validate_data.py",
+    "validate": "python3 scripts/validate_data.py",
+    "update-data": "python3 scripts/fetch_sources.py",
+    "archive": "python3 scripts/archive_manager.py"
+  },
+  "keywords": [
+    "ukraine",
+    "ukrainakriget",
+    "osint",
+    "dashboard",
+    "intelligence",
+    "github-pages"
+  ],
+  "author": "etxgmg",
+  "license": "MIT",
+  "homepage": "https://ukrainakriget.github.io"
+}

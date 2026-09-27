@@ -1,0 +1,337 @@
+{
+  "total_archived_events": 8,
+  "last_archived_rotation": "2026-09-27T14:23:36.644254+00:00",
+  "events": [
+    {
+      "id": "evt-2026-09-26-01",
+      "date": "2026-09-26",
+      "timestamp": "2026-09-26T18:20:00+02:00",
+      "title_sv": "Ukrainska långdistansdrönare slog ut stor ammunitionsdepå i Toropets (Tver oblast)",
+      "title_en": "Ukrainian Deep Strike Demolishes Major 107th GRAU Munitions Arsenal in Toropets",
+      "summary_sv": "Ukrainas säkerhetstjänst (SBU) och GUR genomförde ett samordnat angrepp med över 100 ukrainsktillverkade attackdrönare mot den 107:e GRAU-huvudarsenalen i Toropets. Sekundärexplosionerna registrerades som seismiska skakningar med magnitud 2,8 och orsakade en massiv detonation av robotar av typen Iskander, Totjka-U och nordkoreanska KN-23.",
+      "summary_en": "Coordinated strikes by the SBU and Ukrainian GUR using over 100 domestic long-range drones struck Russia's 107th GRAU arsenal in Toropets. Secondary detonations registered as a magnitude 2.8 earthquake, obliterating significant stockpiles of Iskander ballistic missiles, Tochka-U systems, and North Korean KN-23 munitions.",
+      "location_name": "Toropets (Tver oblast, Ryssland)",
+      "tidshorisont": "veckovis",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "effektmal",
+        "beskrivning_sv": "Effektmål: Radikalt minska tillgången på ballistiska robotar och artillerigranater vid de aktiva frontavsnitten under flera veckors tid.",
+        "beskrivning_en": "Effect goal: Drastically degrade operational availability of ballistic missiles and heavy artillery rounds along eastern fronts for several weeks."
+      },
+      "egenskaper_anfallsmal": "krigsmaterielproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "100% Verifierad: Maxar-satellitbilder, seismiska mätningar från NORSAR och geolokaliserade videor på explosionerna.",
+        "motivering_en": "100% Confirmed: High-resolution Maxar satellite imagery, NORSAR seismic tracking, and geolocated video footage."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Maxar Technologies & ISW",
+      "kallurl": "https://understandingwar.org",
+      "kallkategori": "Satellit & Underrättelse",
+      "arkiverad": true,
+      "image_url": "toropets_explosion",
+      "tags": [
+        "Arsenal",
+        "GRAU",
+        "Toropets",
+        "SBU",
+        "GUR"
+      ]
+    },
+    {
+      "id": "evt-2026-09-25-01",
+      "date": "2026-09-25",
+      "timestamp": "2026-09-25T15:40:00+02:00",
+      "title_sv": "Ryskt missilangrepp mot civil stormarknad och bageri i Kostiantynivka – 14 döda",
+      "title_en": "Russian Missile Strike on Civilian Supermarket and Bakery in Kostiantynivka – 14 Dead",
+      "summary_sv": "En rysk Kh-38-missil träffade en fullsatt stormarknad ('Ekomarket') mitt på dagen i Kostiantynivka, Donetsk oblast. Byggnaden totalförstördes och 14 civila dödades, varav två barn, medan 44 skadades. Det fanns inga militära mål i kvarteret.",
+      "summary_en": "A Russian air-to-surface Kh-38 missile struck a bustling Ekomarket supermarket and adjoining bakery in central Kostiantynivka, Donetsk Oblast. Fourteen civilians including two children were killed and 44 injured. The target was strictly commercial and civilian.",
+      "location_name": "Kostiantynivka (Donetsk)",
+      "tidshorisont": "veckovis",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ryssland",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Skrämma bort befolkningen från frontnära städer och skapa kaos i civil logistik och matförsörjning.",
+        "beskrivning_en": "Underlying purpose: Demoralize and depopulate frontline support communities, dismantling local food supply chains."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "100% Verifierad: Räddningsarbetet dokumenterat av FN:s människorättskontor (OHCHR) och internationell press på plats.",
+        "motivering_en": "100% Confirmed: Rescue operations documented by UN OHCHR monitors and international photojournalists."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "FN OHCHR & Kyiv Independent",
+      "kallurl": "https://kyivindependent.com",
+      "kallkategori": "FN-organ & Oberoende media",
+      "arkiverad": true,
+      "image_url": "kostiantynivka_attack",
+      "tags": [
+        "Krigsbrott",
+        "Civila offer",
+        "Donetsk",
+        "FN",
+        "OHCHR"
+      ]
+    },
+    {
+      "id": "evt-2026-09-24-01",
+      "date": "2026-09-24",
+      "timestamp": "2026-09-24T11:10:00+02:00",
+      "title_sv": "USA tillkännager nytt säkerhetspaket på 7,9 miljarder dollar inklusive JSOW-glidbomber",
+      "title_en": "United States Announces $7.9 Billion Military Assistance Package Featuring JSOW Precision Munitions",
+      "summary_sv": "USA:s president tillkännagav ett omfattande biståndspaket för att stärka Ukrainas långdistansförmåga och luftvärn, inklusive ytterligare Patriot-batterier och precisionsstyrda glidbomber av typen JSOW (Joint Standoff Weapon) kompatibla med Ukrainas F-16-flotta.",
+      "summary_en": "The United States announced a comprehensive $7.9B military aid authorization including Presidential Drawdown Authority drawdowns, additional Patriot air defense batteries, and AGM-154 JSOW glide bombs integrated onto Ukrainian F-16 airframes.",
+      "location_name": "Washington D.C.",
+      "tidshorisont": "veckovis",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Säkerställa Ukrainas luftförsvarskapacitet och stärka stridsflygets förmåga till fjärrstrid mot ryska ledningscentraler.",
+        "beskrivning_en": "Strategic goal: Solidify Ukrainian airspace protection and provide stand-off strike capabilities against hardened command positions."
+      },
+      "egenskaper_anfallsmal": "diplomatiskt_politiskt",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftad: Vita husets officiella faktablad och Pentagon-briefing.",
+        "motivering_en": "Confirmed: Official White House briefing transcript and Department of Defense release."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "US Department of Defense (Pentagon)",
+      "kallurl": "https://www.defense.gov",
+      "kallkategori": "Officiell allierad part",
+      "arkiverad": true,
+      "image_url": "us_aid_package",
+      "tags": [
+        "Militärt stöd",
+        "USA",
+        "Patriot",
+        "F-16",
+        "JSOW"
+      ]
+    },
+    {
+      "id": "evt-2026-09-20-01",
+      "date": "2026-09-20",
+      "timestamp": "2026-09-20T17:00:00+02:00",
+      "title_sv": "Ukrainskt robotanfall mot ryska S-400 Triumf-luftvärnsställningar på ockuperade Krym",
+      "title_en": "Ukrainian ATACMS Strike Destroys Russian S-400 Triumf Air Defense Complex in Occupied Crimea",
+      "summary_sv": "Geolokaliserade satellitbilder bekräftar att ett ukrainskt anfall med ATACMS-robotar med substridsdelar slog ut en 92N6E-radar och minst två avfyrningsramper tillhörande ett modernt S-400-batteri nära Sevastopol. Anfallet öppnar korridorer för ukrainska långdistansdrönare.",
+      "summary_en": "Geolocated satellite imagery verifies that a coordinated Ukrainian ATACMS strike carrying cluster warheads knocked out a 92N6E target acquisition radar and at least two TEL launcher vehicles of a frontline S-400 complex near Sevastopol.",
+      "location_name": "Sevastopol (Ockuperade Krym)",
+      "tidshorisont": "manadsvis",
+      "geografiskt_omrade": "ockuperade_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "operationellt_mal",
+        "beskrivning_sv": "Operationellt mål: Slå hål i den ryska luftförsvarsbubblan över Krym för att möjliggöra djupangrepp mot logistik och flottbaser.",
+        "beskrivning_en": "Operational goal: Degrade Russian integrated air defense coverage over the Crimean peninsula, clearing flight avenues for drone salvos."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "100% Verifierad: Planet Labs satellitbilder analyserade av Radio Free Europe och GeoConfirmed.",
+        "motivering_en": "100% Verified: Planet Labs multispectral satellite before/after imagery verified by GeoConfirmed analysts."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "GeoConfirmed & Radio Free Europe",
+      "kallurl": "https://geoconfirmed.org",
+      "kallkategori": "OSINT & Satellitverifiering",
+      "arkiverad": true,
+      "image_url": "s400_strike_crimea",
+      "tags": [
+        "Krym",
+        "ATACMS",
+        "S-400",
+        "Luftvärn",
+        "Sevastopol"
+      ]
+    },
+    {
+      "id": "evt-2026-09-15-01",
+      "date": "2026-09-15",
+      "timestamp": "2026-09-15T14:30:00+02:00",
+      "title_sv": "Kinas export av verktygsmaskiner och nitrocellulosa till Ryssland granskas i ny EU-rapport",
+      "title_en": "EU Intelligence Dossier Documents Surging Chinese CNC Machine and Nitrocellulose Shipments to Russian Arms Plants",
+      "summary_sv": "Ett nytt underlag från EU:s utrikestjänst visar att över 70% av Rysslands import av avancerade CNC-precisionsverktygsmaskiner och råvara för kruttillverkning (nitrocellulosa) härrör från kinesiska leverantörer. EU förbereder sanktioner mot 18 inblandade bolag.",
+      "summary_en": "An EU External Action Service intelligence assessment reveals that over 70% of Russian imports of advanced CNC high-precision tooling equipment and nitrocellulose gunpowder feedstock originate from Chinese corporate suppliers.",
+      "location_name": "Peking & Bryssel",
+      "tidshorisont": "manadsvis",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "kina",
+        "ryssland",
+        "eu"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Kinesisk strävan att stödja rysk vapenproduktion utan att formellt korsa västerländska röda linjer om färdiga dödliga vapensystem.",
+        "beskrivning_en": "Strategic goal: Beijing providing dual-use industrial backing to sustain Russian war industry without triggering full secondary sanctions."
+      },
+      "egenskaper_anfallsmal": "krigsmaterielproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 85,
+        "niva": "hog",
+        "motivering_sv": "Hög sannolikhet: Tullregisterdata (ImportGenius), officiella uttalanden från EU-kommissionen och ISW-analys.",
+        "motivering_en": "High confidence: Customs trade ledger tracking (ImportGenius), verified EU diplomatic statements, and ISW supply chain studies."
+      },
+      "effekt_maluppfyllnad": "pagaende",
+      "kalla": "EUvsDisinfo & Financial Times",
+      "kallurl": "https://euvsdisinfo.eu",
+      "kallkategori": "Internationell granskning",
+      "arkiverad": true,
+      "image_url": "china_russia_trade",
+      "tags": [
+        "Kina",
+        "Sanktioner",
+        "Vapenproduktion",
+        "Handel",
+        "EU"
+      ]
+    },
+    {
+      "id": "evt-2026-09-08-01",
+      "date": "2026-09-08",
+      "timestamp": "2026-09-08T08:15:00+02:00",
+      "title_sv": "Ukrainska operationer i Kursk oblast tvingar Ryssland att omplacera 40 000 soldater från Donbass",
+      "title_en": "Ukrainian Kursk Operation Forces Moscow to Divert 40,000 Troops from Eastern Theaters",
+      "summary_sv": "General Oleksandr Syrskyj och ISW rapporterar att den ukrainska buffertzonen i Kursk oblast framgångsrikt har dragit ryska elitreserver (marininfanteri och VDV) bort från offensiverna mot Toretsk och Kupiansk. Strider pågår i flera skogspartier längs floden Sejm.",
+      "summary_en": "Commander-in-Chief Oleksandr Syrskyi and ISW assess that the Ukrainian operational buffer zone in Kursk Oblast has diverted approximately 40,000 Russian troops, including naval infantry and VDV paratroopers, away from Toretsk and Kupiansk axes.",
+      "location_name": "Kursk Oblast (Ryssland)",
+      "tidshorisont": "manadsvis",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "operationellt_mal",
+        "beskrivning_sv": "Operationellt mål: Tvinga rysk militärledning att föra kriget på eget territorium och avlasta hårt pressade ukrainska försvarslinjer i östra Ukraina.",
+        "beskrivning_en": "Operational goal: Impose dilemmas on Russian command by forcing combat onto Russian soil, thereby diluting mechanized thrusts in the Donbas."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Verifierad: Geoverifierade ryska och ukrainska stridsvideor, satellitkartläggning och ISW:s kontinuerliga rapportering.",
+        "motivering_en": "Verified: Cross-referenced geolocated combat video, satellite ground truth, and comprehensive ISW campaign tracking."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "ISW & DeepStateMap",
+      "kallurl": "https://understandingwar.org",
+      "kallkategori": "Militär analys",
+      "arkiverad": true,
+      "image_url": "kursk_operation",
+      "tags": [
+        "Kursk",
+        "Syrskyj",
+        "Manöverkrig",
+        "Buffertzon",
+        "ISW"
+      ]
+    },
+    {
+      "id": "evt-2026-08-24-01",
+      "date": "2026-08-24",
+      "timestamp": "2026-08-24T10:00:00+02:00",
+      "title_sv": "Ukrainas självständighetsdag: Premiär för inhemska jetdrönaren 'Palianytsia'",
+      "title_en": "Ukraine's Independence Day: Public Debut of Indigenous Rocket-Drone 'Palianytsia'",
+      "summary_sv": "Under självständighetsdagen presenterade president Zelenskyj den nya ukrainskutvecklade jetdrivna kryssningsdrönaren 'Palianytsia', som redan tagits i operativt bruk mot militära flygfält djupt inne i Ryssland med en räckvidd på över 700 km och en kostnad under 50 000 dollar.",
+      "summary_en": "On Ukraine's Independence Day, President Zelenskyy officially unveiled 'Palianytsia', a domestically engineered turbojet-powered rocket-drone capable of striking Russian airfields over 700 km deep at a fraction of ballistic missile production costs.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "ar",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "vision",
+        "beskrivning_sv": "Vision: Full strategisk självständighet för Ukrainas djupangreppskapacitet, oberoende av västerländska restriktioner för vapenanvändning.",
+        "beskrivning_en": "Vision: Complete strategic self-reliance in deep-strike capabilities, overcoming allied red lines regarding Western-supplied weapons inside Russia."
+      },
+      "egenskaper_anfallsmal": "krigsmaterielproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Verifierad: Officiell presentation med video och bekräftade träffar på ryska flygfält.",
+        "motivering_en": "Verified: Official defense ministry disclosure, technical demonstration video, and confirmed airfield target strikes."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrainas Försvarsministerium (MoD)",
+      "kallurl": "https://www.mod.gov.ua",
+      "kallkategori": "Officiell myndighet",
+      "arkiverad": true,
+      "image_url": "palianytsia_drone",
+      "tags": [
+        "Palianytsia",
+        "Egen produktion",
+        "Drönare",
+        "Självständighet",
+        "Forskning"
+      ]
+    },
+    {
+      "id": "evt-2026-06-15-01",
+      "date": "2026-06-15",
+      "timestamp": "2026-06-15T12:00:00+02:00",
+      "title_sv": "Globala fredstoppmötet i Bürgenstock samlade 101 länder och organisationer kring Ukrainas fredsformel",
+      "title_en": "Global Peace Summit in Bürgenstock Convenes 101 Nations Around Ukraine's Peace Formula",
+      "summary_sv": "Toppmötet i Schweiz antog en gemensam deklaration med fokus på kärnsäkerhet vid Zaporizjzja kärnkraftverk, fri sjöfart i Svarta havet och ovillkorlig återbördan av alla deporterade ukrainska barn och krigsfångar.",
+      "summary_en": "The high-level peace summit in Switzerland concluded with a joint communique enshrining three core tenets: nuclear safety at the Zaporizhzhia nuclear plant, unhindered Black Sea commercial navigation, and the unconditional repatriation of abducted Ukrainian children.",
+      "location_name": "Bürgenstock (Schweiz)",
+      "tidshorisont": "ar",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "eu",
+        "usa",
+        "uk",
+        "ovriga_varlden"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Bygga en bred global koalition inklusive globala syd för att isolera rysk aggression diplomatiskt och juridiskt.",
+        "beskrivning_en": "Strategic goal: Consolidate a broad global diplomatic consensus including the Global South to isolate Russian war aims under UN Charter law."
+      },
+      "egenskaper_anfallsmal": "diplomatiskt_politiskt",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftad: Officiell undertecknad deklaration från Schweiziska edsförbundet och deltagande stater.",
+        "motivering_en": "Confirmed: Published official summit communique and signature registry by Swiss Federal Council."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Schweiz Utrikesdepartement & Presidentens Kansli",
+      "kallurl": "https://www.eda.admin.ch",
+      "kallkategori": "Diplomatiskt toppmöte",
+      "arkiverad": true,
+      "image_url": "peace_summit_buergenstock",
+      "tags": [
+        "Fredstoppmöte",
+        "Diplomati",
+        "Schweiz",
+        "Kärnsäkerhet",
+        "Zelenskyj"
+      ]
+    }
+  ]
+}

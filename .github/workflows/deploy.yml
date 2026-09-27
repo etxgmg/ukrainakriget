@@ -1,0 +1,42 @@
+name: Deploy till GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validera datastruktur
+        run: |
+          python3 scripts/validate_data.py
+
+      - name: Konfigurera GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Ladda upp artefakter för Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Laddar upp rotkatalogen (där index.html, src/ och data/ finns)
+          path: '.'
+
+      - name: Publicera till GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

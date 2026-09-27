@@ -1,0 +1,224 @@
+{
+  "categories": [
+    {
+      "id": "official_ua",
+      "name_sv": "Officiella Ukrainska Myndigheter",
+      "name_en": "Official Ukrainian Authorities",
+      "description_sv": "Direkta meddelanden och operativa rapporter från Ukrainas ledning och militär.",
+      "description_en": "Direct statements and operational briefings from Ukrainian leadership and military."
+    },
+    {
+      "id": "intelligence",
+      "name_sv": "Militära Underrättelsetjänster & Analysinstitut",
+      "name_en": "Military Intelligence & Think Tanks",
+      "description_sv": "Professionella underrättelseanalyser och dagliga lägesbedömningar.",
+      "description_en": "Professional intelligence analyses and daily situational assessments."
+    },
+    {
+      "id": "osint",
+      "name_sv": "OSINT & Geolokalisering",
+      "name_en": "OSINT & Geolocation",
+      "description_sv": "Öppna källor, satellitbilder och verifierad stridskartering.",
+      "description_en": "Open-source intelligence, satellite imagery, and verified combat mapping."
+    },
+    {
+      "id": "independent_media",
+      "name_sv": "Oberoende Nyhetsmedier & Journalistik",
+      "name_en": "Independent Media & Journalism",
+      "description_sv": "Granskande internationella och ukrainska nyhetsredaktioner på plats.",
+      "description_en": "Investigative international and Ukrainian newsrooms on the ground."
+    },
+    {
+      "id": "telegram_direct",
+      "name_sv": "Telegram & Direktrapportering",
+      "name_en": "Telegram & Direct Reporting",
+      "description_sv": "Direktrapportering i realtid från regionala guvernörer och civila larm.",
+      "description_en": "Real-time direct reporting from regional governors and civilian emergency services."
+    },
+    {
+      "id": "factcheck",
+      "name_sv": "Faktagranskning & Desinformationsbevakning",
+      "name_en": "Fact-Checking & Counter-Disinformation",
+      "description_sv": "Verifiering av sanningshalt och avslöjande av propaganda.",
+      "description_en": "Truth verification and debunking of disinformation campaigns."
+    }
+  ],
+  "sources": [
+    {
+      "id": "general-staff-ua",
+      "name": "Ukrainas Generalstab (General Staff of AFU)",
+      "category": "official_ua",
+      "tier": "Primärkälla",
+      "url": "https://www.facebook.com/GeneralStaff.ua",
+      "rss": "https://www.kmu.gov.ua/en/news/rss",
+      "credibility": "Hög (Operativ militär part)",
+      "description_sv": "Dagliga morgon- och kvällsuppdateringar om frontlinjen, ryska förluster och luftangrepp.",
+      "description_en": "Daily morning and evening operational briefings on frontline fighting, Russian losses, and air strikes."
+    },
+    {
+      "id": "president-ua",
+      "name": "Ukrainas Presidentkansli (President of Ukraine)",
+      "category": "official_ua",
+      "tier": "Primärkälla",
+      "url": "https://www.president.gov.ua/en",
+      "rss": "https://www.president.gov.ua/en/news/rss",
+      "credibility": "Officiell statschef",
+      "description_sv": "President Zelenskyjs dagliga tal, diplomatiska initiativ, säkerhetsavtal och lagstiftning.",
+      "description_en": "President Zelenskyy's daily addresses, diplomatic initiatives, bilateral security agreements, and decrees."
+    },
+    {
+      "id": "air-force-ua",
+      "name": "Ukrainas Flygvapen (Air Force Command UA)",
+      "category": "official_ua",
+      "tier": "Primärkälla",
+      "url": "https://t.me/kpszsu",
+      "credibility": "Hög (Luftförsvar)",
+      "description_sv": "Officiella rapporter om nedskjutna drönare (Shahed/Geran) och kryssningsrobotar vid luftangrepp.",
+      "description_en": "Official interception statistics and tracking of incoming missile/drone waves across Ukrainian airspace."
+    },
+    {
+      "id": "dsns-ua",
+      "name": "Ukrainas Räddningstjänst (DSNS)",
+      "category": "official_ua",
+      "tier": "Primärkälla",
+      "url": "https://dsns.gov.ua/",
+      "credibility": "Hög (Civil räddning)",
+      "description_sv": "Fakta och fotobevis från räddningsinsatser vid anfall mot civil infrastruktur, bostäder och sjukhus.",
+      "description_en": "Photographic evidence and casualty records from rescue operations at civilian strike sites."
+    },
+    {
+      "id": "uk-mod",
+      "name": "Storbritanniens Försvarsunderrättelsetjänst (UK MoD)",
+      "category": "intelligence",
+      "tier": "Sekundärkälla / Analys",
+      "url": "https://twitter.com/DefenceHQ",
+      "credibility": "Mycket hög (Allierad statlig underrättelse)",
+      "description_sv": "Dagliga oberoende underrättelseöversikter ('Defence Intelligence update') med fokus på rysk logistik och taktik.",
+      "description_en": "Daily public intelligence updates focusing on battlefield trends, Russian attritional tactics, and logistics."
+    },
+    {
+      "id": "isw",
+      "name": "Institute for the Study of War (ISW)",
+      "category": "intelligence",
+      "tier": "Sekundärkälla / Analys",
+      "url": "https://understandingwar.org",
+      "rss": "https://www.understandingwar.org/feeds/campaign-assessments",
+      "credibility": "Mycket hög (Forskningsinstitut)",
+      "description_sv": "Världsledande dagliga lägesrapporter med noggrann geolokalisering av varje frontsektor.",
+      "description_en": "World-leading daily operational assessments with geolocated mapping of tactical frontline shifts."
+    },
+    {
+      "id": "deepstate",
+      "name": "DeepStateMap",
+      "category": "osint",
+      "tier": "Primärkälla / OSINT",
+      "url": "https://deepstatemap.live",
+      "credibility": "Mycket hög (Strikt verifiering)",
+      "description_sv": "Realtidskarta över frontlinjen, ryska framryckningar och befriade områden, baserad på geoverifierade videor.",
+      "description_en": "Authoritative open-source frontline map documenting territorial control and tactical developments with video verification."
+    },
+    {
+      "id": "liveuamap",
+      "name": "Liveuamap",
+      "category": "osint",
+      "tier": "OSINT Aggregator",
+      "url": "https://liveuamap.com",
+      "credibility": "Hög (Realtidslarm)",
+      "description_sv": "Interaktiv kartvy med realtidsnotiser om artilleribeskjutning, luftlarm och flyganfall.",
+      "description_en": "Live interactive conflict map tracking military events, airstrikes, and civil emergency alerts."
+    },
+    {
+      "id": "geoconfirmed",
+      "name": "GeoConfirmed",
+      "category": "osint",
+      "tier": "Primärkälla / Geoverifiering",
+      "url": "https://geoconfirmed.org",
+      "credibility": "Mycket hög (100% geolokaliserad)",
+      "description_sv": "Frivilligt analytikernätverk som fastställer exakta GPS-koordinater för stridsvideor och förstörelse.",
+      "description_en": "Crowdsourced geolocation team pinpointing exact geographic coordinates of combat footage and strikes."
+    },
+    {
+      "id": "oryx",
+      "name": "Oryx / WarSpotting",
+      "category": "osint",
+      "tier": "OSINT Kvantifiering",
+      "url": "https://www.oryxspioenkop.com",
+      "credibility": "Mycket hög (Endast fotobekräftat)",
+      "description_sv": "Katalogiserar enbart fotografiskt eller videobekräftade materielförluster (stridsvagnar, flyg, luftvärn).",
+      "description_en": "Strictly photo- and video-verified database of heavy military equipment losses for both belligerents."
+    },
+    {
+      "id": "kyiv-independent",
+      "name": "The Kyiv Independent",
+      "category": "independent_media",
+      "tier": "Oberoende nyhetsmedium",
+      "url": "https://kyivindependent.com",
+      "rss": "https://kyivindependent.com/feed",
+      "credibility": "Hög (Oberoende granskning)",
+      "description_sv": "Ukrainas främsta oberoende engelskspråkiga redaktion med djupgående gräv och nyhetsrapportering.",
+      "description_en": "Award-winning independent Ukrainian media outlet delivering 24/7 on-the-ground war coverage."
+    },
+    {
+      "id": "suspilne",
+      "name": "Suspilne News (Ukrainas Public Service)",
+      "category": "independent_media",
+      "tier": "Public Service",
+      "url": "https://suspilne.media",
+      "rss": "https://suspilne.media/rss/",
+      "credibility": "Hög (Public service-standard)",
+      "description_sv": "Ukrainas public service-nätverk med reportrar i samtliga oblaster och vid fronten.",
+      "description_en": "Ukraine's national public broadcaster with correspondents stationed across all frontlines and regions."
+    },
+    {
+      "id": "ukrinform",
+      "name": "Ukrinform",
+      "category": "independent_media",
+      "tier": "Statlig nyhetsbyrå",
+      "url": "https://www.ukrinform.net",
+      "rss": "https://www.ukrinform.net/block-lastnews",
+      "credibility": "Hög (Officiell nyhetsförmedling)",
+      "description_sv": "Ukrainas nationella nyhetsbyrå med kontinuerlig nyhetsrapportering dygnet runt.",
+      "description_en": "Ukraine's national news agency providing real-time wire reporting on political and military events."
+    },
+    {
+      "id": "reuters-war",
+      "name": "Reuters World News (Ukraine)",
+      "category": "independent_media",
+      "tier": "Internationell nyhetsbyrå",
+      "url": "https://www.reuters.com/world/europe/",
+      "credibility": "Mycket hög (Global standard)",
+      "description_sv": "Global nyhetsbyrå med strikta källkrav och oberoende verifiering.",
+      "description_en": "Global news wire providing verified, impartial reporting on military, energy and diplomatic developments."
+    },
+    {
+      "id": "svt-ukraina",
+      "name": "SVT Nyheter – Ukrainakriget",
+      "category": "independent_media",
+      "tier": "Svensk Public Service",
+      "url": "https://www.svt.se/nyheter/om/ukraina",
+      "credibility": "Mycket hög (Svensk public service)",
+      "description_sv": "Svensk bevakning med fokus på konsekvenser för Sverige, Norden och säkerhetsläget i Östersjön.",
+      "description_en": "Swedish public broadcaster providing Nordic-focused analysis and verified war reports."
+    },
+    {
+      "id": "stopfake",
+      "name": "StopFake.org",
+      "category": "factcheck",
+      "tier": "Faktagranskare",
+      "url": "https://www.stopfake.org/en/home/",
+      "credibility": "Hög (Certifierad faktagranskning)",
+      "description_sv": "Dedikerad organisation som analyserar och motbevisar rysk propaganda och fabricerade nyheter.",
+      "description_en": "Specialized fact-checking initiative exposing disinformation narratives and propaganda fabrications."
+    },
+    {
+      "id": "euvsdisinfo",
+      "name": "EUvsDisinfo",
+      "category": "factcheck",
+      "tier": "EU-initiativ",
+      "url": "https://euvsdisinfo.eu",
+      "credibility": "Mycket hög (Europeiska utrikestjänsten)",
+      "description_sv": "EU:s East StratCom Task Force som spårar kremlvänliga påverkanskampanjer och desinformation i Europa.",
+      "description_en": "European External Action Service project tracking Kremlin information warfare and narrative manipulation."
+    }
+  ]
+}

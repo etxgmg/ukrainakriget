@@ -1,0 +1,429 @@
+/**
+ * app.js
+ * Huvudkontroller för Ukrainakriget Dashboard.
+ * Sköter navigering, filtertillstånd, rendering av händelsekort, arkiv och källkatalog.
+ */
+
+window.App = {
+  activeTab: "dashboard",
+  filters: {
+    search: "",
+    tidshorisont: "alla",
+    geografiskt_omrade: "alla",
+    part: "alla",
+    syfte: "alla",
+    anfallsmal: "alla",
+    minSannolikhet: 0
+  },
+
+  async init() {
+    console.log("Initierar Ukrainakriget Dashboard...");
+    
+    // 1. Initialisera språksystem
+    applyTranslations();
+
+    // 2. Ladda data (fetch eller fallback)
+    await AppData.init();
+
+    // 3. Initiera taktisk karta
+    TacticalMap.init("tactical-map-container");
+
+    // 4. Koppla händelselyssnare
+    this.setupEventListeners();
+
+    // 5. Rendera dashboard
+    this.renderKPIs();
+    this.renderActiveFeed();
+    this.renderSourcesList();
+
+    console.log("Ukrainakriget Dashboard färdigladdad.");
+  },
+
+  setupEventListeners() {
+    // Språkväxlare
+    const langBtn = document.getElementById("lang-toggle-btn");
+    if (langBtn) {
+      langBtn.addEventListener("click", () => toggleLang());
+    }
+
+    // Språkhändelse
+    window.addEventListener("languageChanged", () => {
+      this.renderKPIs();
+      this.renderActiveFeed();
+      this.renderArchiveFeed();
+      this.renderSourcesList();
+      TacticalMap.render();
+    });
+
+    // Navigeringstabb-knappar
+    document.querySelectorAll(".nav-tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const tab = btn.getAttribute("data-tab");
+        this.switchTab(tab);
+      });
+    });
+
+    // Sökfält
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) {
+      searchInput.addEventListener("input", (e) => {
+        this.filters.search = e.target.value;
+        this.applyFilters();
+      });
+    }
+
+    // Filter-väljare (Dropdowns & Selects)
+    const filterSelectors = [
+      { id: "filter-time", key: "tidshorisont" },
+      { id: "filter-geo", key: "geografiskt_omrade" },
+      { id: "filter-actor", key: "part" },
+      { id: "filter-purpose", key: "syfte" },
+      { id: "filter-target", key: "anfallsmal" },
+      { id: "filter-confidence", key: "minSannolikhet", parse: v => parseInt(v, 10) || 0 }
+    ];
+
+    filterSelectors.forEach(({ id, key, parse }) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener("change", (e) => {
+          this.filters[key] = parse ? parse(e.target.value) : e.target.value;
+          this.applyFilters();
+        });
+      }
+    });
+
+    // Återställningsknapp
+    const resetBtn = document.getElementById("reset-filters-btn");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        this.resetFilters();
+      });
+    }
+
+    // Arkiv-sökfält
+    const archiveSearchInput = document.getElementById("archive-search-input");
+    if (archiveSearchInput) {
+      archiveSearchInput.addEventListener("input", (e) => {
+        this.renderArchiveFeed(e.target.value);
+      });
+    }
+  },
+
+  switchTab(tab) {
+    this.activeTab = tab;
+    document.querySelectorAll(".nav-tab-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.getAttribute("data-tab") === tab);
+    });
+
+    document.querySelectorAll(".tab-content-section").forEach(sec => {
+      sec.classList.toggle("hidden", sec.id !== `tab-${tab}`);
+    });
+
+    if (tab === "archive") {
+      this.renderArchiveFeed();
+    } else if (tab === "sources") {
+      this.renderSourcesList();
+    } else if (tab === "dashboard" || tab === "timeline") {
+      this.applyFilters();
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  },
+
+  resetFilters() {
+    this.filters = {
+      search: "",
+      tidshorisont: "alla",
+      geografiskt_omrade: "alla",
+      part: "alla",
+      syfte: "alla",
+      anfallsmal: "alla",
+      minSannolikhet: 0
+    };
+
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) searchInput.value = "";
+
+    const selects = ["filter-time", "filter-geo", "filter-actor", "filter-purpose", "filter-target", "filter-confidence"];
+    selects.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.value = "alla";
+    });
+    const confEl = document.getElementById("filter-confidence");
+    if (confEl) confEl.value = "0";
+
+    this.applyFilters();
+  },
+
+  applyMapFilter(geoFilter, sectorName) {
+    this.filters.geografiskt_omrade = geoFilter;
+    const geoSelect = document.getElementById("filter-geo");
+    if (geoSelect) geoSelect.value = geoFilter;
+
+    // Switch to feed view
+    this.switchTab("timeline");
+    this.applyFilters();
+  },
+
+  applyFilters() {
+    const listToFilter = this.activeTab === "archive" 
+      ? AppData.getArchivedEvents() 
+      : (this.activeTab === "timeline" ? AppData.getAllEvents() : AppData.getActiveEvents());
+
+    const filtered = AppData.filter(listToFilter, this.filters);
+
+    if (this.activeTab === "archive") {
+      this.renderEventCards("archive-events-container", filtered, true);
+    } else if (this.activeTab === "timeline") {
+      this.renderEventCards("timeline-events-container", filtered, false);
+    } else {
+      this.renderEventCards("active-events-container", filtered, false);
+    }
+
+    // Uppdatera räknare
+    const countEl = document.getElementById("filtered-count");
+    if (countEl) {
+      countEl.textContent = `${filtered.length} ${t("filterOf")} ${listToFilter.length} ${t("filterEvents")}`;
+    }
+  },
+
+  renderKPIs() {
+    const stats = AppData.statistics.daily_metrics || {};
+    const lang = getLang();
+
+    const elInterception = document.getElementById("kpi-interception-val");
+    if (elInterception) elInterception.textContent = `${stats.shahed_interception_rate_percent || 88}%`;
+
+    const elFrontline = document.getElementById("kpi-frontline-val");
+    if (elFrontline) elFrontline.textContent = `${stats.frontline_skirmishes_24h || 164}`;
+
+    const elCorridor = document.getElementById("kpi-corridor-val");
+    if (elCorridor) elCorridor.textContent = lang === "sv" ? "6,2 milj. ton" : "6.2M tons";
+
+    const elCivilian = document.getElementById("kpi-civilian-val");
+    if (elCivilian) elCivilian.textContent = "41%";
+  },
+
+  renderActiveFeed() {
+    const active = AppData.getActiveEvents();
+    this.renderEventCards("active-events-container", active, false);
+    
+    // Also timeline if open
+    const all = AppData.getAllEvents();
+    this.renderEventCards("timeline-events-container", all, false);
+
+    const countEl = document.getElementById("filtered-count");
+    if (countEl) {
+      countEl.textContent = `${active.length} ${t("filterOf")} ${active.length} ${t("filterEvents")}`;
+    }
+  },
+
+  renderArchiveFeed(searchFilter = "") {
+    let archived = AppData.getArchivedEvents();
+    if (searchFilter) {
+      archived = AppData.filter(archived, { ...this.filters, search: searchFilter });
+    }
+    this.renderEventCards("archive-events-container", archived, true);
+  },
+
+  renderEventCards(containerId, eventsList, isArchive = false) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    if (!eventsList || eventsList.length === 0) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">🔍</div>
+          <p>${isArchive ? t("archiveEmpty") : (getLang() === "sv" ? "Inga händelser matchar dina valda filter." : "No events match the selected filters.")}</p>
+          <button class="btn btn-secondary btn-sm" onclick="App.resetFilters()">${t("filterReset")}</button>
+        </div>
+      `;
+      return;
+    }
+
+    const lang = getLang();
+    const isEn = lang === "en";
+
+    const cardsHtml = eventsList.map(evt => {
+      const title = isEn ? (evt.title_en || evt.title_sv) : evt.title_sv;
+      const summary = isEn ? (evt.summary_en || evt.summary_sv) : evt.summary_sv;
+      const confidence = evt.niva_vetskap_sannolikhet || { procent: 100, niva: "bekraftad" };
+      const confidencePct = confidence.procent || 100;
+      const confidenceReason = isEn ? (confidence.motivering_en || confidence.motivering_sv) : confidence.motivering_sv;
+
+      // Target classification label
+      const targetBadge = this.formatTargetBadge(evt.egenskaper_anfallsmal, isEn);
+
+      // Geographic label
+      const geoLabel = this.formatGeoLabel(evt.geografiskt_omrade, isEn);
+
+      // Purpose
+      const purposeDesc = evt.syfte 
+        ? (isEn ? (evt.syfte.beskrivning_en || evt.syfte.beskrivning_sv) : evt.syfte.beskrivning_sv)
+        : "";
+
+      // Actors badges
+      const actorBadges = (evt.parter_intressenter || []).map(p => this.formatActorBadge(p, isEn)).join(" ");
+
+      // Confidence badge color
+      let confBadgeClass = "conf-verified";
+      let confText = `${confidencePct}% ${isEn ? "Confirmed" : "Bekräftad"}`;
+      if (confidencePct < 60) {
+        confBadgeClass = "conf-claim";
+        confText = `${confidencePct}% ${isEn ? "Unverified Claim" : "Påstående"}`;
+      } else if (confidencePct < 85) {
+        confBadgeClass = "conf-medium";
+        confText = `${confidencePct}% ${isEn ? "Moderate" : "Medel sannolikhet"}`;
+      } else if (confidencePct < 100) {
+        confBadgeClass = "conf-high";
+        confText = `${confidencePct}% ${isEn ? "High Confidence" : "Hög sannolikhet"}`;
+      }
+
+      // Time tag
+      const timeStr = evt.timestamp ? new Date(evt.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "";
+      const dateStr = evt.date || "";
+
+      return `
+        <article class="event-card ${evt.egenskaper_anfallsmal || ''}" id="${evt.id}">
+          <div class="event-card-header">
+            <div class="event-meta-top">
+              <span class="badge badge-date">📅 ${dateStr} ${timeStr ? '• ' + timeStr : ''}</span>
+              <span class="badge badge-geo">📍 ${geoLabel}</span>
+              ${evt.location_name ? `<span class="badge badge-subloc">${evt.location_name}</span>` : ''}
+              <div class="actors-wrapper">${actorBadges}</div>
+            </div>
+            <div class="verification-meter ${confBadgeClass}" title="${confidenceReason}">
+              <span class="meter-dot"></span>
+              <span class="meter-text">${confText}</span>
+            </div>
+          </div>
+
+          <h3 class="event-title">${title}</h3>
+          
+          <p class="event-summary">${summary}</p>
+
+          <!-- Flerdimensionell analysram (USP) -->
+          <div class="dimension-breakdown-box">
+            <div class="dimension-row">
+              <span class="dim-label">🎯 ${t("purposeLabel")}</span>
+              <span class="dim-val">${purposeDesc}</span>
+            </div>
+            <div class="dimension-row">
+              <span class="dim-label">🏢 ${t("targetTypeLabel")}</span>
+              <span class="dim-val">${targetBadge}</span>
+            </div>
+            <div class="dimension-row">
+              <span class="dim-label">🔍 ${t("verificationLabel")}</span>
+              <span class="dim-val faint">${confidenceReason}</span>
+            </div>
+          </div>
+
+          <!-- Källhänvisning (Obligatoriskt krav i Ukrainakriget.md) -->
+          <footer class="event-card-footer">
+            <div class="source-info">
+              <span class="source-prefix">${t("sourceLabel")}</span>
+              <strong class="source-name">${evt.kalla}</strong>
+              ${evt.kallkategori ? `<span class="source-cat">(${evt.kallkategori})</span>` : ''}
+            </div>
+            <a href="${evt.kallurl}" target="_blank" rel="noopener noreferrer" class="source-link-btn" title="${t("directSourceLink")}">
+              ${t("directSourceLink")} <span class="external-arrow">↗</span>
+            </a>
+          </footer>
+        </article>
+      `;
+    }).join("");
+
+    container.innerHTML = cardsHtml;
+  },
+
+  formatTargetBadge(type, isEn) {
+    const map = {
+      helt_civila: { sv: "Helt civila mål", en: "Purely Civilian", icon: "🏥", cls: "target-civ" },
+      civil_infrastruktur: { sv: "Civil infrastruktur", en: "Civil Infrastructure", icon: "⛽", cls: "target-infra" },
+      militara_resurser: { sv: "Militära resurser", en: "Military Assets", icon: "🛡️", cls: "target-mil" },
+      energiproduktion: { sv: "Energiproduktion", en: "Energy Grid", icon: "⚡", cls: "target-energy" },
+      krigsmaterielproduktion: { sv: "Krigsmateriel & Arsenal", en: "Arms & Munitions", icon: "🏭", cls: "target-ammo" },
+      diplomatiskt_politiskt: { sv: "Diplomatiskt / Politiskt", en: "Diplomatic / Political", icon: "🤝", cls: "target-diplo" }
+    };
+    const t = map[type] || { sv: type, en: type, icon: "📌", cls: "target-gen" };
+    return `<span class="badge ${t.cls}">${t.icon} ${isEn ? t.en : t.sv}</span>`;
+  },
+
+  formatGeoLabel(geo, isEn) {
+    const map = {
+      fria_ukraina: { sv: "Fria Ukraina", en: "Free Ukraine" },
+      ockuperade_ukraina: { sv: "Ockuperade Ukraina (inkl. Krym)", en: "Occupied Ukraine" },
+      ryssland: { sv: "Ryssland", en: "Russia" },
+      ukrainas_granser: { sv: "Ukrainas gränser / Svarta havet", en: "Borders / Black Sea" },
+      eu_ees: { sv: "EU & EES", en: "EU & EEA" },
+      resten_av_varlden: { sv: "Resten av världen", en: "Rest of World" }
+    };
+    const g = map[geo];
+    return g ? (isEn ? g.en : g.sv) : geo;
+  },
+
+  formatActorBadge(actor, isEn) {
+    const map = {
+      ukraina: { label: "🇺🇦 UA", title: isEn ? "Ukraine" : "Ukraina" },
+      ryssland: { label: "🇷🇺 RU", title: isEn ? "Russia" : "Ryssland" },
+      eu: { label: "🇪🇺 EU", title: "EU" },
+      uk: { label: "🇬🇧 UK", title: isEn ? "United Kingdom" : "Storbritannien" },
+      usa: { label: "🇺🇸 US", title: isEn ? "United States" : "USA" },
+      kina: { label: "🇨🇳 CN", title: isEn ? "China" : "Kina" },
+      ovriga_varlden: { label: "🌐 Global", title: isEn ? "Rest of World" : "Övriga världen" }
+    };
+    const a = map[actor] || { label: actor, title: actor };
+    return `<span class="badge badge-actor" title="${a.title}">${a.label}</span>`;
+  },
+
+  renderSourcesList() {
+    const container = document.getElementById("sources-container");
+    if (!container) return;
+
+    const sources = AppData.sources || [];
+    const categories = AppData.sourceCategories || [];
+    const isEn = getLang() === "en";
+
+    let html = "";
+    categories.forEach(cat => {
+      const catSources = sources.filter(s => s.category === cat.id);
+      if (catSources.length === 0) return;
+
+      const catName = isEn ? (cat.name_en || cat.name_sv) : cat.name_sv;
+      const catDesc = isEn ? (cat.description_en || cat.description_sv) : cat.description_sv;
+
+      html += `
+        <div class="source-category-section">
+          <div class="source-cat-header">
+            <h3 class="source-cat-title">${catName}</h3>
+            ${catDesc ? `<p class="source-cat-desc">${catDesc}</p>` : ''}
+          </div>
+          <div class="source-cards-grid">
+            ${catSources.map(s => `
+              <div class="source-card">
+                <div class="source-card-top">
+                  <h4 class="source-card-name">${s.name}</h4>
+                  <span class="source-card-tier">${s.tier || 'Källa'}</span>
+                </div>
+                <p class="source-card-desc">${isEn ? (s.description_en || s.description_sv) : s.description_sv}</p>
+                <div class="source-card-footer">
+                  <span class="source-credibility">🛡️ ${s.credibility || 'Verifierad'}</span>
+                  <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="source-ext-link">
+                    ${isEn ? 'Visit source' : 'Besök källa'} ↗
+                  </a>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+};
+
+// Start application when DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
+  window.App.init();
+});

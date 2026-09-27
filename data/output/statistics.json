@@ -1,0 +1,53 @@
+{
+  "updated_at": "2026-09-27T16:00:00+02:00",
+  "daily_metrics": {
+    "shahed_interception_rate_percent": 87.8,
+    "cruise_missile_interception_rate_percent": 82.5,
+    "frontline_skirmishes_24h": 164,
+    "hotspots": [
+      { "name_sv": "Pokrovsk", "name_en": "Pokrovsk", "attacks_24h": 36, "intensity": "Högst" },
+      { "name_sv": "Kurachove", "name_en": "Kurakhove", "attacks_24h": 28, "intensity": "Hög" },
+      { "name_sv": "Kupiansk", "name_en": "Kupyansk", "attacks_24h": 19, "intensity": "Medel" },
+      { "name_sv": "Kursk-sektorn", "name_en": "Kursk Sector", "attacks_24h": 24, "intensity": "Hög" },
+      { "name_sv": "Toretsk", "name_en": "Toretsk", "attacks_24h": 15, "intensity": "Medel" }
+    ]
+  },
+  "target_distribution_percent": {
+    "helt_civila": 41,
+    "civil_infrastruktur": 24,
+    "energiproduktion": 18,
+    "krigsmaterielproduktion": 9,
+    "militara_resurser": 8
+  },
+  "geography_distribution_percent": {
+    "fria_ukraina": 48,
+    "ockuperade_ukraina": 22,
+    "ryssland": 18,
+    "ukrainas_granser": 6,
+    "eu_ees": 4,
+    "resten_av_varlden": 2
+  },
+  "verified_equipment_losses_oryx": {
+    "russia": {
+      "tanks_total": 3410,
+      "armored_fighting_vehicles": 6520,
+      "artillery_systems": 3680,
+      "aircraft": 128,
+      "helicopters": 145,
+      "naval_vessels_sunken_or_damaged": 28
+    },
+    "ukraine": {
+      "tanks_total": 920,
+      "armored_fighting_vehicles": 1940,
+      "artillery_systems": 1150,
+      "aircraft": 86,
+      "helicopters": 44,
+      "naval_vessels_sunken_or_damaged": 12
+    }
+  },
+  "humanitarian": {
+    "internally_displaced_persons": "3.7 miljoner",
+    "refugees_across_europe": "6.2 miljoner",
+    "civilians_in_need_of_winterization": "1.8 miljoner"
+  }
+}

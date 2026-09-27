@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UkrainakrigetEvent",
+  "description": "Klassificeringsschema för informationsobjekt och händelser i Ukrainakriget enligt Ukrainakriget.md",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "timestamp",
+    "title_sv",
+    "title_en",
+    "summary_sv",
+    "summary_en",
+    "tidshorisont",
+    "geografiskt_omrade",
+    "parter_intressenter",
+    "syfte",
+    "egenskaper_anfallsmal",
+    "niva_vetskap_sannolikhet",
+    "effekt_maluppfyllnad",
+    "kalla",
+    "kallurl",
+    "kallkategori",
+    "arkiverad"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unikt ID för händelsen, t.ex. 'evt-2026-09-27-01'"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum i ISO 8601-format (YYYY-MM-DD)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Exakt tidpunkt i ISO 8601-format"
+    },
+    "title_sv": {
+      "type": "string",
+      "description": "Rubrik på svenska"
+    },
+    "title_en": {
+      "type": "string",
+      "description": "Rubrik på engelska"
+    },
+    "summary_sv": {
+      "type": "string",
+      "description": "Sammanfattning och konsekvensanalys på svenska"
+    },
+    "summary_en": {
+      "type": "string",
+      "description": "Summary and impact analysis in English"
+    },
+    "location_name": {
+      "type": "string",
+      "description": "Platsnamn, t.ex. 'Charkiv', 'Pokrovsk', 'Kursk'"
+    },
+    "tidshorisont": {
+      "type": "string",
+      "enum": ["dagligen", "veckovis", "manadsvis", "ar"],
+      "description": "Tidshorisont: dagligen, veckovis, månatligen, år"
+    },
+    "geografiskt_omrade": {
+      "type": "string",
+      "enum": [
+        "fria_ukraina",
+        "ockuperade_ukraina",
+        "ryssland",
+        "ukrainas_granser",
+        "eu_ees",
+        "resten_av_varlden"
+      ],
+      "description": "Geografiskt område enligt klassificeringen"
+    },
+    "parter_intressenter": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["ukraina", "ryssland", "eu", "uk", "usa", "kina", "ovriga_varlden"]
+      },
+      "description": "Inblandade parter eller intressenter"
+    },
+    "syfte": {
+      "type": "object",
+      "required": ["kategori", "beskrivning_sv", "beskrivning_en"],
+      "properties": {
+        "kategori": {
+          "type": "string",
+          "enum": [
+            "akta_syfte",
+            "vision",
+            "strategiskt_mal",
+            "taktiskt_mal",
+            "operationellt_mal",
+            "prestationsmal",
+            "resultatmal",
+            "effektmal"
+          ]
+        },
+        "beskrivning_sv": { "type": "string" },
+        "beskrivning_en": { "type": "string" }
+      }
+    },
+    "egenskaper_anfallsmal": {
+      "type": "string",
+      "enum": [
+        "helt_civila",
+        "civil_infrastruktur",
+        "militara_resurser",
+        "energiproduktion",
+        "krigsmaterielproduktion",
+        "diplomatiskt_politiskt"
+      ],
+      "description": "Målets karaktär och skyddsstatus"
+    },
+    "niva_vetskap_sannolikhet": {
+      "type": "object",
+      "required": ["procent", "niva", "motivering_sv", "motivering_en"],
+      "properties": {
+        "procent": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "niva": {
+          "type": "string",
+          "enum": ["bekraftad", "hog", "medel", "lag_pastande"]
+        },
+        "motivering_sv": { "type": "string" },
+        "motivering_en": { "type": "string" }
+      }
+    },
+    "effekt_maluppfyllnad": {
+      "type": "string",
+      "enum": ["fullbordad", "delvis", "avvardad", "pagaende", "okand"],
+      "description": "Faktisk effekt eller måluppfyllnad för operationen"
+    },
+    "kalla": {
+      "type": "string",
+      "description": "Källans namn, t.ex. 'Ukrainas Generalstab'"
+    },
+    "kallurl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Direktlänk till ursprungskällan"
+    },
+    "kallkategori": {
+      "type": "string",
+      "description": "Kategori på källa (officiell, underrättelse, OSINT, media)"
+    },
+    "arkiverad": {
+      "type": "boolean",
+      "description": "True om händelsen är äldre än 24h och flyttats till arkivet"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Valfri URL eller ikon/kartreferens"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
