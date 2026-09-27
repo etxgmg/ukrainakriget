@@ -13,7 +13,6 @@ permissions:
 
 jobs:
   update-and-archive:
-    runs-style: ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
