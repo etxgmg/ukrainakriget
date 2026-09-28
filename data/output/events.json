@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-27T22:52:19.176753+00:00",
+  "last_updated": "2026-09-28T04:19:03.956722+00:00",
   "generated_at": "2026-09-27T16:00:00+02:00",
-  "total_active_events": 6,
+  "total_active_events": 5,
   "events": [
     {
       "id": "evt-2026-09-27-01",
@@ -207,48 +207,6 @@
         "Frysta tillgångar",
         "EU",
         "Storbritannien",
-        "Ekonomi"
-      ]
-    },
-    {
-      "id": "evt-2026-09-27-06",
-      "date": "2026-09-27",
-      "timestamp": "2026-09-27T06:15:00+02:00",
-      "title_sv": "Svarta havets exportkorridor slog nytt månadsskeppningsrekord – 6,2 miljoner ton spannmål och gods",
-      "title_en": "Black Sea Maritime Corridor Reaches Record 6.2 Million Metric Tons Shipped Despite Russian Blockade Threats",
-      "summary_sv": "Ukrainas infrastrukturdepartement meddelar att den autonoma ukrainska sjökorridoren genom västra Svarta havet under senaste 30-dagarsperioden transporterat 6,2 miljoner ton jordbruksprodukter och metaller. Ryska flottan hålls effektivt borta från västra Svarta havet tack vare ukrainska sjödrönare (Magura V5) och sjömålsrobotar (Neptune).",
-      "summary_en": "Ukraine's Ministry for Restoration reports that the unilateral maritime corridor through the western Black Sea achieved a monthly throughput of 6.2 million tons of agricultural and industrial goods. The Russian Black Sea Fleet remains effectively quarantined from western waters due to Ukrainian naval drone operations (Magura V5) and shore-based Neptune anti-ship systems.",
-      "location_name": "Odessa & Svarta havet",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "ukrainas_granser",
-      "parter_intressenter": [
-        "ukraina",
-        "ovriga_varlden",
-        "ryssland"
-      ],
-      "syfte": {
-        "kategori": "resultatmal",
-        "beskrivning_sv": "Resultatmål: Upprätthålla Ukrainas kommersiella livsnerv och exportintäkter oberoende av ryska avtal.",
-        "beskrivning_en": "Outcome goal: Preserve Ukraine's commercial maritime artery and export revenue streams independent of Russian veto or extortion."
-      },
-      "egenskaper_anfallsmal": "civil_infrastruktur",
-      "niva_vetskap_sannolikhet": {
-        "procent": 100,
-        "niva": "bekraftad",
-        "motivering_sv": "Bekräftad genom AIS-fartygsspårning, hamnloggar i Odesa samt internationella sjöförsäkringsdata.",
-        "motivering_en": "Confirmed by commercial AIS vessel telemetry, Odesa port manifests, and Lloyd's maritime underwriting registries."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "Infrastrukturministeriet & Lloyd's List",
-      "kallurl": "https://mtu.gov.ua",
-      "kallkategori": "Officiell myndighet & Sjöfartsdata",
-      "arkiverad": false,
-      "image_url": "black_sea_shipping",
-      "tags": [
-        "Svarta havet",
-        "Spannmål",
-        "Odesa",
-        "Sjödrönare",
         "Ekonomi"
       ]
     }
