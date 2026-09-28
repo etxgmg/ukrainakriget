@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T17:43:00.308899+00:00",
+  "last_updated": "2026-09-28T17:49:53.038021+00:00",
   "total_active_events": 21,
   "events": [
     {
@@ -8,16 +8,16 @@
       "timestamp": "2026-09-28T19:56:00+03:00",
       "title_sv": "Luftförsvarsstyrkor sköt ned 86 av 124 ryska drönare över Ukraina under dagen",
       "title_en": "Air defense forces shoot down 86 of 124 Russian drones over Ukraine during day",
-      "summary_sv": "under hela dagen on September 28, Luftförsvaret sköt ned 86 of 124 ryska drönare; the Kyjiv region was the main target of the angrepp.",
+      "summary_sv": "Under hela dagen on September 28, Luftförsvaret sköt ned 86 of 124 ryska drönare; the Kyjiv region was the main target of the angrepp.",
       "summary_en": "Throughout the day on September 28, air defense forces shot down 86 of 124 Russian drones; the Kyiv region was the main target of the attack.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "uk",
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -37,10 +37,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Luftförsvar",
+        "Kyjiv",
         "Drönare",
-        "Ukraina",
-        "Kyjiv"
+        "Luftförsvar",
+        "Ukraina"
       ]
     },
     {
@@ -49,16 +49,16 @@
       "timestamp": "2026-09-28T19:34:00+03:00",
       "title_sv": "Räddningstjänsten begränsar brand vid Ukrainas nationella vetenskapsakademi i Kyjiv efter ryskt anfall",
       "title_en": "Rescue workers contain fire at National Academy of Sciences of Ukraine in Kyiv following Russian attack",
-      "summary_sv": "i Kyjiv, employees of the statliga räddningstjänsten (DSNS) contained a fire in the building of the Ukrainas nationella vetenskapsakademi, which broke out as a result of an angrepp by the rysk Federation.",
+      "summary_sv": "I Kyjiv, employees of the statliga räddningstjänsten (DSNS) contained a fire in the building of the Ukrainas nationella vetenskapsakademi, which broke out as a result of an angrepp by the rysk Federation.",
       "summary_en": "In Kyiv, employees of the State Emergency Service contained a fire in the building of the National Academy of Sciences of Ukraine, which broke out as a result of an attack by the Russian Federation.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "uk",
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -79,8 +79,8 @@
       "arkiverad": false,
       "tags": [
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -95,9 +95,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -128,15 +128,15 @@
       "timestamp": "2026-09-28T18:34:00+03:00",
       "title_sv": "Ryskt anfall mot Dobrobut vårdcentral i Kyjiv skadar sju personer",
       "title_en": "Russian strike on Dobrobut medical center in Kyiv injures seven people",
-      "summary_sv": "i huvudstaden, the enemy träffade the “Dobrobut” vårdcentral, injuring sju personer.",
+      "summary_sv": "I huvudstaden, the enemy träffade the “Dobrobut” vårdcentral, injuring sju personer.",
       "summary_en": "In the capital, the enemy struck the “Dobrobut” medical center, injuring seven people.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -157,15 +157,15 @@
       "arkiverad": false,
       "tags": [
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
       "id": "evt-2026-09-28-8d479c",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T17:59:00+03:00",
-      "title_sv": "anfall mot science academy i Kyjiv: tidigare säkerhetsrådschefen Horbulin skadades, hans medarbetare dödades",
+      "title_sv": "Anfall mot vetenskapsakademin i Kyjiv: tidigare säkerhetsrådschefen Horbulin skadades, hans medarbetare dödades",
       "title_en": "Strike on science academy in Kyiv: Ex-NSDC Secretary Horbulin injured, his aide killed",
       "summary_sv": "An medarbetare to former National Security and Defense Council Secretary Volodymyr Horbulin was dödades as a result of a Ryskt anfall mot the building of the Ukrainas nationella vetenskapsakademi.",
       "summary_en": "An aide to former National Security and Defense Council Secretary Volodymyr Horbulin was killed as a result of a Russian strike on the building of the National Academy of Sciences of Ukraine.",
@@ -173,10 +173,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "uk",
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -197,8 +197,8 @@
       "arkiverad": false,
       "tags": [
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -250,9 +250,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -272,8 +272,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -282,15 +282,15 @@
       "timestamp": "2026-09-28T16:50:00+03:00",
       "title_sv": "Ryskt anfall mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar fem",
       "title_en": "Russian strike on National Academy of Sciences building in central Kyiv kills one, injures five",
-      "summary_sv": "en person was dödades and fem others skadades i Kyjiv after a drönare träffade a non-residential building in the historic center of the city on Monday afternoon.",
+      "summary_sv": "En person was dödades and fem others skadades i Kyjiv after a drönare träffade a non-residential building in the historic center of the city on Monday afternoon.",
       "summary_en": "One person was killed and five others injured in Kyiv after a drone struck a non-residential building in the historic center of the city on Monday afternoon.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -310,10 +310,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Drönare",
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -328,9 +328,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -367,9 +367,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -389,10 +389,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Infrastruktur",
+        "Kyjiv",
         "Drönare",
-        "Ukraina",
-        "Kyjiv"
+        "Infrastruktur",
+        "Ukraina"
       ]
     },
     {
@@ -407,11 +407,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
+        "usa",
         "uk",
         "ukraina",
-        "ryssland",
-        "usa"
+        "eu",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -447,9 +447,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -485,11 +485,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
+        "usa",
         "uk",
         "ukraina",
-        "ryssland",
-        "usa"
+        "eu",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -517,19 +517,19 @@
       "id": "evt-2026-09-28-54fa4e",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:16:50+00:00",
-      "title_sv": "Ryskt anfall mot Kyjiv’s science academy dödar minst en i det senaste dagsanfallet",
+      "title_sv": "Ryskt anfall mot Kyjiv’s vetenskapsakademin dödar minst en i det senaste dagsanfallet",
       "title_en": "Russian strike on Kyiv’s science academy kills at least one in latest daytime attack",
-      "summary_sv": "tre others wounded as jet-powered drönare increasingly target Ukraina’s capital, with medical centre also hitEurope live – latest updatesA rysk drönare hit the Nationella vetenskapsakademin i centrala Kyjiv on Monday, killing at least en person, in the latest daytime angrepp on Ukraina’s capital.Flames tore through the historic building as personer clambered out of first- and second-floor windows to escape, in dramatic scenes increasingly familiar in the heavily bombarded city. Continue reading...",
+      "summary_sv": "Tre others wounded as jet-powered drönare increasingly target Ukraina’s capital, with medical centre also hitEurope live – latest updatesA rysk drönare hit the Nationella vetenskapsakademin i centrala Kyjiv on Monday, killing at least en person, in the latest daytime angrepp on Ukraina’s capital.Flames tore through the historic building as personer clambered out of first- and second-floor windows to escape, in dramatic scenes increasingly familiar in the heavily bombarded city. Continue reading...",
       "summary_en": "Three others wounded as jet-powered drones increasingly target Ukraine’s capital, with medical centre also hitEurope live – latest updatesA Russian drone hit the National Academy of Sciences in central Kyiv on Monday, killing at least one person, in the latest daytime attack on Ukraine’s capital.Flames tore through the historic building as people clambered out of first- and second-floor windows to escape, in dramatic scenes increasingly familiar in the heavily bombarded city. Continue reading...",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
+        "usa",
         "uk",
         "ukraina",
-        "ryssland",
-        "usa"
+        "eu",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -549,10 +549,10 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Drönare",
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -561,15 +561,15 @@
       "timestamp": "2026-09-28T15:15:00+03:00",
       "title_sv": "Ryskt anfall mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar tre",
       "title_en": "Russian strike on National Academy of Sciences building in central Kyiv kills one, injures three",
-      "summary_sv": "en person was dödades and tre others skadades i Kyjiv after a rysk drönare träffade a non-residential building in the historic center of the city on Monday afternoon.",
+      "summary_sv": "En person was dödades and tre others skadades i Kyjiv after a rysk drönare träffade a non-residential building in the historic center of the city on Monday afternoon.",
       "summary_en": "One person was killed and three others injured in Kyiv after a Russian drone struck a non-residential building in the historic center of the city on Monday afternoon.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -589,10 +589,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Drönare",
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -607,11 +607,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
+        "usa",
         "uk",
         "ukraina",
-        "ryssland",
-        "usa"
+        "eu",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -638,18 +638,18 @@
       "id": "evt-2026-09-28-5ba292",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T14:59:00+03:00",
-      "title_sv": "rysk drönare anfaller energy facility in Dnipropetrovsk region",
+      "title_sv": "Rysk drönare anfaller energy facility in Dnipropetrovsk region",
       "title_en": "Russian drone strikes energy facility in Dnipropetrovsk region",
-      "summary_sv": "ryska styrkor attacked an energy facility in a frontlinje area of Ukraina's Dnipropetrovsk region.",
+      "summary_sv": "Ryska styrkor attacked an energy facility in a frontlinje area of Ukraina's Dnipropetrovsk region.",
       "summary_en": "Russian forces attacked an energy facility in a frontline area of Ukraine's Dnipropetrovsk region.",
       "location_name": "Dnipro",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "uk",
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -669,9 +669,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
+        "Dnipro",
         "Energi",
         "Drönare",
-        "Dnipro",
         "Ukraina"
       ]
     },
@@ -715,7 +715,7 @@
       "id": "evt-2026-09-28-214ef5",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T14:43:00+03:00",
-      "title_sv": "rysk drönare crashes into non-residential building i centrala Kyjiv, causing fire",
+      "title_sv": "Rysk drönare crashes into non-residential building i centrala Kyjiv, causing fire",
       "title_en": "Russian drone crashes into non-residential building in central Kyiv, causing fire",
       "summary_sv": "A rysk drönare crashed into a non-residential building i centrala Kyjiv, causing a fire.",
       "summary_en": "A Russian drone crashed into a non-residential building in central Kyiv, causing a fire.",
@@ -723,9 +723,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -745,10 +745,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Drönare",
         "Civila mål",
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -763,8 +763,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "ukraina",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -800,11 +800,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "eu",
+        "usa",
         "uk",
         "ukraina",
-        "ryssland",
-        "usa"
+        "eu",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -824,11 +824,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
+        "Kyjiv",
         "Ukraina",
         "Civila mål",
-        "Robotanfall",
-        "Kyjiv",
-        "Drönare"
+        "Drönare",
+        "Robotanfall"
       ]
     }
   ],

@@ -196,18 +196,50 @@ window.App = {
     const stats = AppData.statistics.daily_metrics || {};
     const lang = getLang();
 
+    // 1. Luftförsvarseffektivitet
     const elInterception = document.getElementById("kpi-interception-val");
-    if (elInterception) elInterception.textContent = `${stats.shahed_interception_rate_percent || 88}%`;
+    const interceptionRate = stats.shahed_interception_rate_percent || 69;
+    if (elInterception) elInterception.textContent = `${Math.round(interceptionRate)}%`;
 
+    const elInterceptionSub = document.getElementById("kpi-interception-sub");
+    if (elInterceptionSub) {
+      if (stats.drones_down && stats.drones_total) {
+        elInterceptionSub.textContent = lang === "sv"
+          ? `${stats.drones_down} av ${stats.drones_total} ryska drönare nedskjutna idag`
+          : `${stats.drones_down} of ${stats.drones_total} Russian drones intercepted today`;
+      }
+    }
+
+    // 2. Frontstrider
     const elFrontline = document.getElementById("kpi-frontline-val");
-    if (elFrontline) elFrontline.textContent = `${stats.frontline_skirmishes_24h || 164}`;
+    if (elFrontline) elFrontline.textContent = `${stats.frontline_skirmishes_24h || 174}`;
 
+    const elFrontlineSub = document.getElementById("kpi-frontline-sub");
+    if (elFrontlineSub && stats.hotspots && stats.hotspots.length) {
+      const topSpots = stats.hotspots.slice(0, 3).map(h => lang === "sv" ? h.name_sv : h.name_en).join(", ");
+      elFrontlineSub.textContent = lang === "sv"
+        ? `Intensivast strider kring ${topSpots}`
+        : `Heaviest clashes around ${topSpots}`;
+    }
+
+    // 3. Sjökorridor
     const elCorridor = document.getElementById("kpi-corridor-val");
-    if (elCorridor) elCorridor.textContent = lang === "sv" ? "6,2 milj. ton" : "6.2M tons";
+    const corridorVol = stats.black_sea_export_monthly_tons_millions || 6.4;
+    if (elCorridor) {
+      elCorridor.textContent = lang === "sv" ? `${corridorVol.toString().replace(".", ",")} milj. ton` : `${corridorVol}M tons`;
+    }
 
+    // 4. Civila mål
     const elCivilian = document.getElementById("kpi-civilian-val");
     const civPct = AppData.statistics.target_distribution_percent?.helt_civila || 48;
     if (elCivilian) elCivilian.textContent = `${civPct}%`;
+
+    const elCivilianSub = document.getElementById("kpi-civilian-sub");
+    if (elCivilianSub) {
+      elCivilianSub.textContent = lang === "sv"
+        ? `${civPct}% av anfallen mot bostäder, skolor, vårdcentraler och akademi`
+        : `${civPct}% of strikes hitting residences, clinics, and academy`;
+    }
   },
 
   renderSystemStatus() {
