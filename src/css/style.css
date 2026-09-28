@@ -248,11 +248,9 @@ body {
 }
 
 .kpi-title {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .kpi-icon {
@@ -348,12 +346,10 @@ body {
 
 .filter-item label {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
   margin-bottom: 0.35rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
 }
 
 .filter-select {
