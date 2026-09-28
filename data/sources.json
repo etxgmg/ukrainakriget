@@ -175,10 +175,21 @@
       "category": "independent_media",
       "tier": "Statlig nyhetsbyrå",
       "url": "https://www.ukrinform.net",
-      "rss": "https://www.ukrinform.net/block-lastnews",
+      "rss": "https://www.ukrinform.net/rss/block-lastnews",
       "credibility": "Hög (Officiell nyhetsförmedling)",
       "description_sv": "Ukrainas nationella nyhetsbyrå med kontinuerlig nyhetsrapportering dygnet runt.",
       "description_en": "Ukraine's national news agency providing real-time wire reporting on political and military events."
+    },
+    {
+      "id": "guardian-ukraine",
+      "name": "The Guardian (Ukraine)",
+      "category": "independent_media",
+      "tier": "Internationellt nyhetsmedium",
+      "url": "https://www.theguardian.com/world/ukraine",
+      "rss": "https://www.theguardian.com/world/ukraine/rss",
+      "credibility": "Mycket hög (Granskande kvalitetsjournalistik)",
+      "description_sv": "Storbritanniens ledande dagstidning med direktsänd rapportering och analyser från kriget.",
+      "description_en": "Leading international newsroom providing live coverage, investigations, and verified reporting on Ukraine."
     },
     {
       "id": "reuters-war",
@@ -196,6 +207,7 @@
       "category": "independent_media",
       "tier": "Svensk Public Service",
       "url": "https://www.svt.se/nyheter/om/ukraina",
+      "rss": "https://www.svt.se/nyheter/rss.xml",
       "credibility": "Mycket hög (Svensk public service)",
       "description_sv": "Svensk bevakning med fokus på konsekvenser för Sverige, Norden och säkerhetsläget i Östersjön.",
       "description_en": "Swedish public broadcaster providing Nordic-focused analysis and verified war reports."

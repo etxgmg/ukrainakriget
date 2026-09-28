@@ -206,7 +206,8 @@ window.App = {
     if (elCorridor) elCorridor.textContent = lang === "sv" ? "6,2 milj. ton" : "6.2M tons";
 
     const elCivilian = document.getElementById("kpi-civilian-val");
-    if (elCivilian) elCivilian.textContent = "41%";
+    const civPct = AppData.statistics.target_distribution_percent?.helt_civila || 48;
+    if (elCivilian) elCivilian.textContent = `${civPct}%`;
   },
 
   renderSystemStatus() {

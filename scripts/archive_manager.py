@@ -61,6 +61,17 @@ def run_archive_rotation(retention_hours=24):
             evt["arkiverad"] = False
             active_kept.append(evt)
 
+    # Säkerhetsgaranti: Töm aldrig aktiva händelser helt (behåll minst de 3 senaste om tillgängliga)
+    min_keep = 3
+    if len(active_kept) < min_keep and current_events:
+        sorted_by_time = sorted(current_events, key=lambda x: x.get("timestamp", ""), reverse=True)
+        for cand in sorted_by_time[:min_keep]:
+            if cand not in active_kept:
+                cand["arkiverad"] = False
+                active_kept.append(cand)
+                if cand["id"] in archived_events:
+                    del archived_events[cand["id"]]
+
     # Sort archive descending by timestamp
     sorted_archive = sorted(
         archived_events.values(),

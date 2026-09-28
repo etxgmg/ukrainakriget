@@ -1,6 +1,6 @@
 {
-  "total_archived_events": 14,
-  "last_archived_rotation": "2026-09-28T16:33:30.241803+00:00",
+  "total_archived_events": 15,
+  "last_archived_rotation": "2026-09-28T17:43:00.308899+00:00",
   "events": [
     {
       "id": "evt-2026-09-27-01",
@@ -82,6 +82,46 @@
         "Rostov",
         "GUR",
         "Bränsledepå"
+      ]
+    },
+    {
+      "id": "evt-2026-09-27-3f655c",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T11:00:04+00:00",
+      "title_sv": "‘Hell on earth’: last residents eat weeds to survive in rysk-occupied Oleshky",
+      "title_en": "‘Hell on earth’: last residents eat weeds to survive in Russian-occupied Oleshky",
+      "summary_sv": "ukrainsk forces airdrop supplies to city where bodies are left to be eaten by dogs because of deadly risk from dronesThe phone message sent out of rysk-occupied Oleshky was grimly matter-of-fact: food had finally run out for the 2,000 or so civilians, including 50 children, remaining in the city and its surrounding villages.“We’re in Oleshky [and] we can’t get out. We’re going hungry … Right now, I’ve got absolutely nothing to eat,” read the message from a woman in the besieged city who was waiting to be evacuated by the occupying forces. Continue reading...",
+      "summary_en": "Ukrainian forces airdrop supplies to city where bodies are left to be eaten by dogs because of deadly risk from dronesThe phone message sent out of Russian-occupied Oleshky was grimly matter-of-fact: food had finally run out for the 2,000 or so civilians, including 50 children, remaining in the city and its surrounding villages.“We’re in Oleshky [and] we can’t get out. We’re going hungry … Right now, I’ve got absolutely nothing to eat,” read the message from a woman in the besieged city who was waiting to be evacuated by the occupying forces. Continue reading...",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "uk",
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/2026/sep/27/hell-on-earth-last-residents-eat-weeds-to-survive-in-russian-occupied-oleshky",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {

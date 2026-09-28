@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T16:33:30.241803+00:00",
+  "updated_at": "2026-09-28T17:43:00.312445+00:00",
   "daily_metrics": {
     "shahed_interception_rate_percent": 87.8,
     "cruise_missile_interception_rate_percent": 82.5,
@@ -38,11 +38,11 @@
     ]
   },
   "target_distribution_percent": {
-    "helt_civila": 41,
-    "civil_infrastruktur": 24,
-    "energiproduktion": 18,
-    "krigsmaterielproduktion": 9,
-    "militara_resurser": 8
+    "helt_civila": 48,
+    "civil_infrastruktur": 14,
+    "energiproduktion": 5,
+    "militara_resurser": 29,
+    "diplomatiskt_politiskt": 5
   },
   "geography_distribution_percent": {
     "fria_ukraina": 48,
