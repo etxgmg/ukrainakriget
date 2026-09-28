@@ -33,8 +33,12 @@ window.App = {
 
     // 5. Rendera dashboard
     this.renderKPIs();
+    this.renderSystemStatus();
     this.renderActiveFeed();
     this.renderSourcesList();
+
+    // 6. Automatisk uppdatering av klockor och relativ tid
+    setInterval(() => this.renderSystemStatus(), 60000);
 
     console.log("Ukrainakriget Dashboard färdigladdad.");
   },
@@ -49,6 +53,7 @@ window.App = {
     // Språkhändelse
     window.addEventListener("languageChanged", () => {
       this.renderKPIs();
+      this.renderSystemStatus();
       this.renderActiveFeed();
       this.renderArchiveFeed();
       this.renderSourcesList();
@@ -202,6 +207,86 @@ window.App = {
 
     const elCivilian = document.getElementById("kpi-civilian-val");
     if (elCivilian) elCivilian.textContent = "41%";
+  },
+
+  renderSystemStatus() {
+    const lang = getLang();
+    const lastUpdatedStr = AppData.lastUpdated;
+    let lastDate = lastUpdatedStr ? new Date(lastUpdatedStr) : null;
+    if (!lastDate || isNaN(lastDate.getTime())) {
+      const allEvents = AppData.getAllEvents();
+      if (allEvents.length && allEvents[0].timestamp) {
+        lastDate = new Date(allEvents[0].timestamp);
+      } else {
+        lastDate = new Date();
+      }
+    }
+
+    const now = new Date();
+    const timeOpts = { hour: "2-digit", minute: "2-digit" };
+
+    // 1. Formatera senaste uppdatering
+    const isLastToday = lastDate.toDateString() === now.toDateString();
+    const lastTime = lastDate.toLocaleTimeString(lang === "sv" ? "sv-SE" : "en-GB", timeOpts);
+    
+    let formattedLast = "";
+    if (isLastToday) {
+      formattedLast = lang === "sv" ? `Idag ${lastTime}` : `Today ${lastTime}`;
+    } else {
+      const lastDatePart = lastDate.toLocaleDateString(lang === "sv" ? "sv-SE" : "en-GB", {
+        day: "numeric",
+        month: "short"
+      }).replace(".", "");
+      formattedLast = lang === "sv" ? `${lastDatePart} ${lastTime}` : `${lastDatePart} at ${lastTime}`;
+    }
+
+    // 2. Beräkna nästa schemalagda uppdatering (4-timmars cykel)
+    const intervalMs = (AppData.updateFrequencyHours || 4) * 60 * 60 * 1000;
+    let nextDate = new Date(lastDate.getTime() + intervalMs);
+    while (nextDate.getTime() <= now.getTime()) {
+      nextDate = new Date(nextDate.getTime() + intervalMs);
+    }
+
+    const isNextToday = nextDate.toDateString() === now.toDateString();
+    const nextTime = nextDate.toLocaleTimeString(lang === "sv" ? "sv-SE" : "en-GB", timeOpts);
+    const diffMs = nextDate.getTime() - now.getTime();
+    const diffMin = Math.round(diffMs / (60 * 1000));
+    const diffHrs = Math.max(1, Math.round(diffMs / (60 * 60 * 1000)));
+
+    let relativeStr = "";
+    if (diffMin <= 5) {
+      relativeStr = lang === "sv" ? "strax" : "soon";
+    } else if (diffMin < 60) {
+      relativeStr = lang === "sv" ? `om ${diffMin} min` : `in ${diffMin} min`;
+    } else {
+      relativeStr = lang === "sv" ? `om ca ${diffHrs} tim` : `in ~${diffHrs}h`;
+    }
+
+    let formattedNext = "";
+    if (isNextToday) {
+      formattedNext = lang === "sv" ? `ca ${nextTime} (${relativeStr})` : `approx. ${nextTime} (${relativeStr})`;
+    } else {
+      const nextDatePart = nextDate.toLocaleDateString(lang === "sv" ? "sv-SE" : "en-GB", {
+        day: "numeric",
+        month: "short"
+      }).replace(".", "");
+      formattedNext = lang === "sv" ? `${nextDatePart} ca ${nextTime} (${relativeStr})` : `${nextDatePart} approx. ${nextTime} (${relativeStr})`;
+    }
+
+    // 3. Uppdatera DOM-element i headern
+    const elLast = document.getElementById("status-last-updated");
+    if (elLast) elLast.textContent = formattedLast;
+
+    const elNext = document.getElementById("status-next-update");
+    if (elNext) elNext.textContent = formattedNext;
+
+    // 4. Uppdatera indikator i flödeshuvudet
+    const elFeedIndicator = document.getElementById("active-feed-time-indicator");
+    if (elFeedIndicator) {
+      elFeedIndicator.textContent = lang === "sv"
+        ? `Uppdateras var 4:e timme • Nästa ca ${nextTime}`
+        : `Updated every 4 hours • Next approx. ${nextTime}`;
+    }
   },
 
   renderActiveFeed() {

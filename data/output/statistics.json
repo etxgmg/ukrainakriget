@@ -1,15 +1,40 @@
 {
-  "updated_at": "2026-09-27T16:00:00+02:00",
+  "updated_at": "2026-09-28T08:34:18.929823+00:00",
   "daily_metrics": {
     "shahed_interception_rate_percent": 87.8,
     "cruise_missile_interception_rate_percent": 82.5,
     "frontline_skirmishes_24h": 164,
     "hotspots": [
-      { "name_sv": "Pokrovsk", "name_en": "Pokrovsk", "attacks_24h": 36, "intensity": "Högst" },
-      { "name_sv": "Kurachove", "name_en": "Kurakhove", "attacks_24h": 28, "intensity": "Hög" },
-      { "name_sv": "Kupiansk", "name_en": "Kupyansk", "attacks_24h": 19, "intensity": "Medel" },
-      { "name_sv": "Kursk-sektorn", "name_en": "Kursk Sector", "attacks_24h": 24, "intensity": "Hög" },
-      { "name_sv": "Toretsk", "name_en": "Toretsk", "attacks_24h": 15, "intensity": "Medel" }
+      {
+        "name_sv": "Pokrovsk",
+        "name_en": "Pokrovsk",
+        "attacks_24h": 36,
+        "intensity": "Högst"
+      },
+      {
+        "name_sv": "Kurachove",
+        "name_en": "Kurakhove",
+        "attacks_24h": 28,
+        "intensity": "Hög"
+      },
+      {
+        "name_sv": "Kupiansk",
+        "name_en": "Kupyansk",
+        "attacks_24h": 19,
+        "intensity": "Medel"
+      },
+      {
+        "name_sv": "Kursk-sektorn",
+        "name_en": "Kursk Sector",
+        "attacks_24h": 24,
+        "intensity": "Hög"
+      },
+      {
+        "name_sv": "Toretsk",
+        "name_en": "Toretsk",
+        "attacks_24h": 15,
+        "intensity": "Medel"
+      }
     ]
   },
   "target_distribution_percent": {

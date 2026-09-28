@@ -10,6 +10,8 @@ const AppData = {
   sources: [],
   sourceCategories: [],
   statistics: {},
+  lastUpdated: null,
+  updateFrequencyHours: 4,
   isLoaded: false,
 
   async init() {
@@ -24,6 +26,9 @@ const AppData = {
 
       if (resEvents && resEvents.events) {
         this.events = resEvents.events;
+        if (resEvents.last_updated) {
+          this.lastUpdated = resEvents.last_updated;
+        }
       }
       if (resArchive && resArchive.events) {
         this.archive = resArchive.events;
@@ -34,6 +39,9 @@ const AppData = {
       }
       if (resStats) {
         this.statistics = resStats;
+        if (!this.lastUpdated && resStats.updated_at) {
+          this.lastUpdated = resStats.updated_at;
+        }
       }
     } catch (e) {
       console.warn("Kunde inte ladda live JSON via fetch (troligtvis file:// CORS). Använder inbyggd fallback-data.", e);
@@ -116,6 +124,9 @@ const AppData = {
   },
 
   loadFallbackData() {
+    if (!this.lastUpdated) {
+      this.lastUpdated = "2026-09-28T04:19:03.956722+00:00";
+    }
     this.events = [
       {
         "id": "evt-2026-09-27-01",

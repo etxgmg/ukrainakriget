@@ -1,7 +1,91 @@
 {
-  "total_archived_events": 9,
-  "last_archived_rotation": "2026-09-28T04:19:03.956722+00:00",
+  "total_archived_events": 11,
+  "last_archived_rotation": "2026-09-28T08:34:18.929823+00:00",
   "events": [
+    {
+      "id": "evt-2026-09-27-04",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T09:00:00+02:00",
+      "title_sv": "Rysk glidbombsattack mot bostadskvarter och vårdcentral i Charkiv – 16 civila skadade",
+      "title_en": "Russian glide bomb strike hits residential apartment block and health clinic in Kharkiv – 16 civilians injured",
+      "summary_sv": "Ryska flygvapnet fällde tre UMPK-glidbomber (FAB-500) från belgorodskt luftrum mot de norra stadsdelarna i Charkiv. En bomb träffade direkt invid ett 9-vånings bostadshus och skadade en närliggande vårdcentral. Bland de 16 skadade finns tre barn. Inga militära mål fanns inom 2 kilometers radie.",
+      "summary_en": "Russian aircraft released three UMPK guided glide bombs (FAB-500) from Belgorod airspace into northern residential quarters of Kharkiv. One bomb impacted immediately adjacent to a 9-story apartment complex and municipal clinic. Sixteen civilians, including three children, sustained injuries. No military facilities exist within 2 km.",
+      "location_name": "Charkiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ryssland",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorbombning och psykologisk krigföring i syfte att göra Ukrainas näst största stad obeboelig och framkalla flyktingvågor.",
+        "beskrivning_en": "Underlying purpose: Terror bombing and psychological attrition aimed at depopulating Ukraine's second largest city and spurring migration."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Verifierad: Borgmästare Ihor Terechov, Charkivs åklagarmyndighet och internationella journalister (Reuters) på plats med fotodokumentation.",
+        "motivering_en": "Verified: Mayor Ihor Terekhov, Kharkiv regional prosecutor, and international photojournalists on site."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Charkivs Åklagarmyndighet & Suspilne",
+      "kallurl": "https://suspilne.media",
+      "kallkategori": "Officiell civil part & Public Service",
+      "arkiverad": true,
+      "image_url": "kharkiv_civilian_strike",
+      "tags": [
+        "Civila mål",
+        "Glidbomb",
+        "Krigsbrott",
+        "Charkiv",
+        "FAB-500"
+      ]
+    },
+    {
+      "id": "evt-2026-09-27-05",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T07:45:00+02:00",
+      "title_sv": "EU och Storbritannien godkänner nytt stödpaket på 3,5 miljarder euro finansierat av frysta ryska tillgångar",
+      "title_en": "EU and UK approve €3.5 billion tranche backed by frozen Russian sovereign assets",
+      "summary_sv": "EU-kommissionen och brittiska finansdepartementet formaliserade det första låneutbetalningssteget från G7:s initiativ kopplat till räntor på ryska centralbankens frysta tillgångar. Medlen öronmärks direkt till inköp av ukrainsktillverkad artilleriammunition och reparationsmateriel för kraftnätet.",
+      "summary_en": "The European Commission and HM Treasury finalized terms for a €3.5 billion financing tranche derived from the windfall profits of immobilized Russian Central Bank assets under the G7 framework. Funds are earmarked for direct procurement of Ukrainian-manufactured artillery shells and power grid repair hardware.",
+      "location_name": "Bryssel & London",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "uk",
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Etablera en långsiktigt hållbar finansieringsmekanism för Ukrainas försvarsindustri som belastar ryska staten ekonomiskt.",
+        "beskrivning_en": "Strategic goal: Institutionalize sustainable self-replenishing defense financing for Ukraine's domestic weapons production financed directly by Russian state assets."
+      },
+      "egenskaper_anfallsmal": "diplomatiskt_politiskt",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftad: Officiellt pressmeddelande från Europeiska kommissionen och brittiska regeringen.",
+        "motivering_en": "Confirmed: Official joint communique from the European Commission and UK Government."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "EU-kommissionen & UK Gov",
+      "kallurl": "https://ec.europa.eu",
+      "kallkategori": "Officiell allierad institution",
+      "arkiverad": true,
+      "image_url": "eu_financial_aid",
+      "tags": [
+        "Bistånd",
+        "Frysta tillgångar",
+        "EU",
+        "Storbritannien",
+        "Ekonomi"
+      ]
+    },
     {
       "id": "evt-2026-09-27-06",
       "date": "2026-09-27",
