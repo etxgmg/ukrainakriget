@@ -302,7 +302,7 @@ window.App = {
           
           <p class="event-summary">${summary}</p>
 
-          <!-- Flerdimensionell analysram (USP) -->
+          <!-- Flerdimensionell analysram -->
           <div class="dimension-breakdown-box">
             <div class="dimension-row">
               <span class="dim-label">🎯 ${t("purposeLabel")}</span>
@@ -338,12 +338,12 @@ window.App = {
 
   formatTargetBadge(type, isEn) {
     const map = {
-      helt_civila: { sv: "Helt civila mål", en: "Purely Civilian", icon: "🏥", cls: "target-civ" },
-      civil_infrastruktur: { sv: "Civil infrastruktur", en: "Civil Infrastructure", icon: "⛽", cls: "target-infra" },
-      militara_resurser: { sv: "Militära resurser", en: "Military Assets", icon: "🛡️", cls: "target-mil" },
-      energiproduktion: { sv: "Energiproduktion", en: "Energy Grid", icon: "⚡", cls: "target-energy" },
-      krigsmaterielproduktion: { sv: "Krigsmateriel & Arsenal", en: "Arms & Munitions", icon: "🏭", cls: "target-ammo" },
-      diplomatiskt_politiskt: { sv: "Diplomatiskt / Politiskt", en: "Diplomatic / Political", icon: "🤝", cls: "target-diplo" }
+      helt_civila: { sv: "Helt civila mål", en: "Purely civilian", icon: "🏥", cls: "target-civ" },
+      civil_infrastruktur: { sv: "Civil infrastruktur och transport", en: "Civil infrastructure and transport", icon: "⛽", cls: "target-infra" },
+      militara_resurser: { sv: "Militära resurser", en: "Military assets", icon: "🛡️", cls: "target-mil" },
+      energiproduktion: { sv: "Energiproduktion och distribution", en: "Energy generation and distribution", icon: "⚡", cls: "target-energy" },
+      krigsmaterielproduktion: { sv: "Krigsmateriel och arsenal", en: "Arms and munitions", icon: "🏭", cls: "target-ammo" },
+      diplomatiskt_politiskt: { sv: "Diplomatiskt / politiskt initiativ", en: "Diplomatic / political initiative", icon: "🤝", cls: "target-diplo" }
     };
     const t = map[type] || { sv: type, en: type, icon: "📌", cls: "target-gen" };
     return `<span class="badge ${t.cls}">${t.icon} ${isEn ? t.en : t.sv}</span>`;
@@ -352,11 +352,11 @@ window.App = {
   formatGeoLabel(geo, isEn) {
     const map = {
       fria_ukraina: { sv: "Fria Ukraina", en: "Free Ukraine" },
-      ockuperade_ukraina: { sv: "Ockuperade Ukraina (inkl. Krym)", en: "Occupied Ukraine" },
-      ryssland: { sv: "Ryssland", en: "Russia" },
-      ukrainas_granser: { sv: "Ukrainas gränser / Svarta havet", en: "Borders / Black Sea" },
-      eu_ees: { sv: "EU & EES", en: "EU & EEA" },
-      resten_av_varlden: { sv: "Resten av världen", en: "Rest of World" }
+      ockuperade_ukraina: { sv: "Ockuperade Ukraina (inkl. Krym)", en: "Occupied Ukraine (incl. Crimea)" },
+      ryssland: { sv: "Ryssland", en: "Russian territory" },
+      ukrainas_granser: { sv: "Ukrainas gränser / Svarta havet", en: "Ukraine's borders / Black Sea" },
+      eu_ees: { sv: "EU och EES", en: "EU and EEA" },
+      resten_av_varlden: { sv: "Resten av världen", en: "Rest of the world" }
     };
     const g = map[geo];
     return g ? (isEn ? g.en : g.sv) : geo;

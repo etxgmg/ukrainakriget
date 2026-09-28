@@ -1,6 +1,6 @@
 /**
  * i18n.js
- * Tvåspråkigt språkstöd (Svenska och Engelska) för Ukrainakriget.
+ * Tvåspråkigt språkstöd (svenska och engelska) för Ukrainakriget.
  * Växlar dynamiskt mellan språken och sparar valet i localStorage.
  */
 
@@ -8,33 +8,33 @@ const translations = {
   sv: {
     // Header & Meta
     siteTitle: "Ukrainakriget",
-    siteSubtitle: "Oberoende Underrättelse & Situationsdashboard",
+    siteSubtitle: "Oberoende underrättelse- och situationsdashboard",
     siteDescription: "En öppen, strukturerad och automatisk analysportal för händelseutvecklingen i Ukrainakriget.",
-    liveStatus: "AKTUELL LÄGESBILD",
+    liveStatus: "Aktuell lägesbild",
     lastUpdated: "Senast uppdaterad:",
     hoursAgo: "timmar sedan",
     today: "Idag",
     langButton: "English",
     
     // Navigation
-    navDashboard: "Översikt & Lägesbild",
-    navTimeline: "Multidimensionellt Filter",
-    navArchive: "Arkiv (>24h)",
+    navDashboard: "Översikt och lägesbild",
+    navTimeline: "Flerdimensionellt filter",
+    navArchive: "Arkiv (>24 tim)",
     navSources: "Källkatalog",
-    navMethodology: "Metod & USP",
+    navMethodology: "Metod och struktur",
 
-    // KPI / Summary
+    // KPI / Sammanfattning
     kpiInterception: "Luftförsvarseffektivitet",
-    kpiInterceptionDesc: "Nedskjutna Shahed & kryssningsrobotar senaste dygnet",
-    kpiFrontline: "Frontstrider (24h)",
-    kpiFrontlineDesc: "Intensivast strider kring Pokrovsk & Kurachove",
-    kpiCorridor: "Sjökorsväg Svarta Havet",
+    kpiInterceptionDesc: "Nedskjutna Shahed och kryssningsrobotar senaste dygnet",
+    kpiFrontline: "Frontstrider (24 tim)",
+    kpiFrontlineDesc: "Intensivast strider kring Pokrovsk och Kurachove",
+    kpiCorridor: "Sjökorsväg Svarta havet",
     kpiCorridorDesc: "Månatlig export genom ukrainsk sjökorridor",
     kpiCivilianShare: "Civila anfallsmål",
-    kpiCivilianShareDesc: "Andel av ryska luft- & robotangrepp mot civila mål",
+    kpiCivilianShareDesc: "Andel av ryska luft- och robotangrepp mot civila mål",
 
-    // Filters & Dimensions
-    filterTitle: "Flerdimensionell Klassificering (Webbplatsens USP)",
+    // Filter och dimensioner
+    filterTitle: "Flerdimensionell klassificering",
     filterSubtitle: "Kombinera perspektiv för att analysera läget ur specifika dimensioner",
     filterSearchPlaceholder: "Sök händelser, städer, vapentyper, aktörer...",
     filterReset: "Återställ alla filter",
@@ -42,17 +42,17 @@ const translations = {
     filterOf: "av",
     filterEvents: "händelser",
 
-    // Dimensions Names
+    // Dimensionsnamn
     dimTime: "Tidshorisonter",
     dimGeo: "Geografiska områden",
-    dimActors: "Parter & Intressenter",
-    dimPurpose: "Syfte & Målnivå",
+    dimActors: "Parter och intressenter",
+    dimPurpose: "Syfte och målnivå",
     dimTarget: "Anfallsmålets egenskap",
-    dimConfidence: "Vetskap & Sannolikhet",
+    dimConfidence: "Vetskap och sannolikhet",
 
-    // Dimension Options
+    // Dimensionsalternativ
     optAll: "Alla",
-    timeDaily: "Dagligen (Senaste dygnet)",
+    timeDaily: "Dagligen (senaste dygnet)",
     timeWeekly: "Veckovis",
     timeMonthly: "Månatligen",
     timeYearly: "Årsvis",
@@ -61,7 +61,7 @@ const translations = {
     geoOccupiedUA: "Ockuperade Ukraina (inkl. Krym)",
     geoRussia: "Ryssland",
     geoBorders: "Ukrainas gränser / Svarta havet",
-    geoEUEEA: "EU & EES",
+    geoEUEEA: "EU och EES",
     geoWorld: "Resten av världen",
 
     actorUA: "Ukraina",
@@ -82,18 +82,18 @@ const translations = {
     purposeEffect: "Effektmål",
 
     targetCivilian: "Helt civila mål (sjukhus, skolor)",
-    targetInfra: "Civil infrastruktur & transport",
+    targetInfra: "Civil infrastruktur och transport",
     targetMilitary: "Militära resurser (trupp, pansar)",
-    targetEnergy: "Energiproduktion & distribution",
-    targetAmmo: "Krigsmaterielproduktion & lager",
+    targetEnergy: "Energiproduktion och distribution",
+    targetAmmo: "Krigsmaterielproduktion och lager",
     targetDiplomatic: "Diplomatiskt / politiskt initiativ",
 
-    confConfirmed: "100% Bekräftad (Geoverifierad)",
-    confHigh: "≥85% Hög sannolikhet",
-    confMedium: "≥60% Måttlig / Obekräftad",
-    confClaim: "<50% Påstående / Propaganda",
+    confConfirmed: "100% bekräftad (geoverifierad)",
+    confHigh: "≥85% hög sannolikhet",
+    confMedium: "≥60% måttlig / obekräftad",
+    confClaim: "<50% påstående / propaganda",
 
-    // Card Details
+    // Kortdetaljer
     sourceLabel: "Källa:",
     directSourceLink: "Gå till ursprungskälla",
     credibilityLabel: "Trovärdighet:",
@@ -103,97 +103,97 @@ const translations = {
     impactLabel: "Måluppfyllnad:",
     impactCompleted: "Fullbordad",
     impactPartial: "Delvis uppnådd",
-    impactRepelled: "Avvärjd / Nedskjuten",
+    impactRepelled: "Avvärjd / nedskjuten",
     impactOngoing: "Pågående",
     impactUnknown: "Okänd",
 
-    // Map section
-    mapTitle: "Taktisk Geografisk Översiktskarta",
+    // Kartsektion
+    mapTitle: "Taktisk geografisk översiktskarta",
     mapSubtitle: "Klicka på en sektor för att filtrera händelser i området",
 
-    // Archive section
-    archiveTitle: "Historiskt Arkiv",
+    // Arkivsektion
+    archiveTitle: "Historiskt arkiv",
     archiveSubtitle: "Dagliga händelser flyttas hit efter 24 timmars visning för att hålla dashboarden aktuell.",
     archiveSearch: "Sök i arkivet...",
     archiveEmpty: "Inga arkiverade händelser matchar dina valda filter.",
 
-    // Sources section
-    sourcesTitle: "Källkatalog & Verifieringskedja",
+    // Källsektion
+    sourcesTitle: "Källkatalog och verifieringskedja",
     sourcesSubtitle: "Alla publicerade uppgifter härrör från dokumenterade primärkällor eller oberoende granskare.",
     sourcesTierPrimary: "Primärkällor",
     sourcesTierIntel: "Underrättelsetjänster",
-    sourcesTierOSINT: "OSINT & Satellit",
-    sourcesTierMedia: "Oberoende Nyhetsmedier",
+    sourcesTierOSINT: "OSINT och satellit",
+    sourcesTierMedia: "Oberoende nyhetsmedier",
     sourcesTierFact: "Faktagranskning",
 
-    // Methodology
-    methodTitle: "Metodologi & Unik Värdestruktur (USP)",
-    methodSubtitle: "Varför Ukrainakriget.github.io skiljer sig från traditionella nyhetsmedier",
+    // Metodologi
+    methodTitle: "Metodologi och informationsstruktur",
+    methodSubtitle: "Hur informationen struktureras, klassificeras och verifieras",
 
     // Footer
     footerText: "Ukrainakriget – Helautomatiskt, öppet dashboard för systematisk situationsanalys.",
-    footerRepo: "Källkod på GitHub (etxgmg/ukrainakriget)",
+    footerRepo: "Källkod på GitHub (ukrainakriget/ukrainakriget.github.io)",
     footerDisclaimer: "Informationen samlas in automatiskt och klassificeras med öppna källor i enlighet med internationella OSINT-standarder."
   },
 
   en: {
     // Header & Meta
     siteTitle: "The War in Ukraine",
-    siteSubtitle: "Independent Intelligence & Situational Dashboard",
+    siteSubtitle: "Independent intelligence and situational dashboard",
     siteDescription: "An open, structured, automated situational awareness portal tracking developments in the Russo-Ukrainian War.",
-    liveStatus: "LIVE BRIEFING",
+    liveStatus: "Live briefing",
     lastUpdated: "Last updated:",
     hoursAgo: "hours ago",
     today: "Today",
     langButton: "Svenska",
     
     // Navigation
-    navDashboard: "Overview & Status",
-    navTimeline: "Multi-Perspective Matrix",
+    navDashboard: "Overview and status",
+    navTimeline: "Multi-perspective matrix",
     navArchive: "Archive (>24h)",
-    navSources: "Sources Directory",
-    navMethodology: "Methodology & USP",
+    navSources: "Sources directory",
+    navMethodology: "Methodology and structure",
 
     // KPI / Summary
-    kpiInterception: "Air Defense Interception Rate",
-    kpiInterceptionDesc: "Shaheds & cruise missiles intercepted in the last 24h",
-    kpiFrontline: "Frontline Clashes (24h)",
-    kpiFrontlineDesc: "Heaviest fighting around Pokrovsk & Kurakhove",
-    kpiCorridor: "Black Sea Corridor",
+    kpiInterception: "Air defense interception rate",
+    kpiInterceptionDesc: "Shaheds and cruise missiles intercepted in the last 24h",
+    kpiFrontline: "Frontline clashes (24h)",
+    kpiFrontlineDesc: "Heaviest fighting around Pokrovsk and Kurakhove",
+    kpiCorridor: "Black Sea corridor",
     kpiCorridorDesc: "Monthly cargo volume exported via Ukrainian maritime corridor",
-    kpiCivilianShare: "Civilian Target Ratio",
+    kpiCivilianShare: "Civilian target ratio",
     kpiCivilianShareDesc: "Share of Russian missile/drone strikes targeting civilian infrastructure",
 
     // Filters & Dimensions
-    filterTitle: "Multi-Dimensional Classification (Core USP)",
+    filterTitle: "Multi-dimensional classification",
     filterSubtitle: "Combine multiple viewpoints to analyze the conflict from structured perspectives",
     filterSearchPlaceholder: "Search events, cities, weapon types, stakeholders...",
-    filterReset: "Reset All Filters",
+    filterReset: "Reset all filters",
     filterShowing: "Showing",
     filterOf: "of",
     filterEvents: "events",
 
     // Dimensions Names
-    dimTime: "Time Horizons",
-    dimGeo: "Geographic Sectors",
-    dimActors: "Parties & Stakeholders",
-    dimPurpose: "Strategic Purpose & Intent",
-    dimTarget: "Target Characteristics",
-    dimConfidence: "Confidence & Probability",
+    dimTime: "Time horizons",
+    dimGeo: "Geographic sectors",
+    dimActors: "Parties and stakeholders",
+    dimPurpose: "Strategic purpose and intent",
+    dimTarget: "Target characteristics",
+    dimConfidence: "Confidence and probability",
 
     // Dimension Options
     optAll: "All",
-    timeDaily: "Daily (Last 24 Hours)",
+    timeDaily: "Daily (last 24 hours)",
     timeWeekly: "Weekly",
     timeMonthly: "Monthly",
     timeYearly: "Yearly",
 
     geoFreeUA: "Free Ukraine",
     geoOccupiedUA: "Occupied Ukraine (incl. Crimea)",
-    geoRussia: "Russian Territory",
-    geoBorders: "Ukraine's Borders / Black Sea",
-    geoEUEEA: "EU & EEA",
-    geoWorld: "Rest of the World",
+    geoRussia: "Russian territory",
+    geoBorders: "Ukraine's borders / Black Sea",
+    geoEUEEA: "EU and EEA",
+    geoWorld: "Rest of the world",
 
     actorUA: "Ukraine",
     actorRU: "Russia",
@@ -201,69 +201,69 @@ const translations = {
     actorUK: "United Kingdom",
     actorUS: "United States",
     actorCN: "China",
-    actorWorld: "Rest of World",
+    actorWorld: "Rest of world",
 
-    purposeReal: "Underlying Purpose",
+    purposeReal: "Underlying purpose",
     purposeVision: "Vision",
-    purposeStrategic: "Strategic Goal",
-    purposeTactical: "Tactical Goal",
-    purposeOperational: "Operational Goal",
-    purposeOutput: "Output Goal",
-    purposeOutcome: "Outcome Goal",
-    purposeEffect: "Effect Goal",
+    purposeStrategic: "Strategic goal",
+    purposeTactical: "Tactical goal",
+    purposeOperational: "Operational goal",
+    purposeOutput: "Output goal",
+    purposeOutcome: "Outcome goal",
+    purposeEffect: "Effect goal",
 
-    targetCivilian: "Purely Civilian (Hospitals, schools, homes)",
-    targetInfra: "Civilian Infrastructure & Transport",
-    targetMilitary: "Military Assets (Troops, armor, command)",
-    targetEnergy: "Energy Generation & Distribution",
-    targetAmmo: "Arms Manufacturing & Munitions Arsenals",
-    targetDiplomatic: "Diplomatic / Political Initiative",
+    targetCivilian: "Purely civilian (hospitals, schools, homes)",
+    targetInfra: "Civilian infrastructure and transport",
+    targetMilitary: "Military assets (troops, armor, command)",
+    targetEnergy: "Energy generation and distribution",
+    targetAmmo: "Arms manufacturing and munitions arsenals",
+    targetDiplomatic: "Diplomatic / political initiative",
 
-    confConfirmed: "100% Confirmed (Geolocated)",
-    confHigh: "≥85% High Probability",
-    confMedium: "≥60% Moderate / Unconfirmed",
-    confClaim: "<50% Unsubstantiated Claim / Disinfo",
+    confConfirmed: "100% confirmed (geolocated)",
+    confHigh: "≥85% high probability",
+    confMedium: "≥60% moderate / unconfirmed",
+    confClaim: "<50% unsubstantiated claim / disinfo",
 
     // Card Details
     sourceLabel: "Source:",
     directSourceLink: "Open primary source",
     credibilityLabel: "Reliability:",
-    verificationLabel: "Verification Score:",
-    targetTypeLabel: "Target Classification:",
-    purposeLabel: "Intent / Purpose:",
-    impactLabel: "Target Fulfillment:",
+    verificationLabel: "Verification score:",
+    targetTypeLabel: "Target classification:",
+    purposeLabel: "Intent / purpose:",
+    impactLabel: "Target fulfillment:",
     impactCompleted: "Achieved",
-    impactPartial: "Partially Achieved",
-    impactRepelled: "Repelled / Intercepted",
-    impactOngoing: "In Progress",
+    impactPartial: "Partially achieved",
+    impactRepelled: "Repelled / intercepted",
+    impactOngoing: "In progress",
     impactUnknown: "Unknown",
 
     // Map section
-    mapTitle: "Tactical Operational Map",
+    mapTitle: "Tactical operational map",
     mapSubtitle: "Click on any sector to filter events occurring in that region",
 
     // Archive section
-    archiveTitle: "Historical Archive",
+    archiveTitle: "Historical archive",
     archiveSubtitle: "Daily events automatically rotate into the archive after 24 hours to keep the live dashboard current.",
     archiveSearch: "Search historical archive...",
     archiveEmpty: "No archived events match your selected criteria.",
 
     // Sources section
-    sourcesTitle: "Sources Catalog & Lineage",
+    sourcesTitle: "Sources catalog and lineage",
     sourcesSubtitle: "All published data points trace directly back to verified primary sources or independent investigators.",
-    sourcesTierPrimary: "Primary Sources",
-    sourcesTierIntel: "Allied Intelligence",
-    sourcesTierOSINT: "OSINT & Geolocation",
-    sourcesTierMedia: "Independent Media",
-    sourcesTierFact: "Fact-Checkers",
+    sourcesTierPrimary: "Primary sources",
+    sourcesTierIntel: "Allied intelligence",
+    sourcesTierOSINT: "OSINT and geolocation",
+    sourcesTierMedia: "Independent media",
+    sourcesTierFact: "Fact-checkers",
 
     // Methodology
-    methodTitle: "Methodology & Unique Value Proposition (USP)",
+    methodTitle: "Methodology and information structure",
     methodSubtitle: "Why Ukrainakriget provides structural clarity absent in legacy news feeds",
 
     // Footer
     footerText: "Ukrainakriget – Fully automated open dashboard for structured conflict intelligence.",
-    footerRepo: "Source Code on GitHub (etxgmg/ukrainakriget)",
+    footerRepo: "Source code on GitHub (ukrainakriget/ukrainakriget.github.io)",
     footerDisclaimer: "Information is curated and automatically classified using verified open-source intelligence standards."
   }
 };

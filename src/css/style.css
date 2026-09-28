@@ -272,7 +272,7 @@ body {
   color: var(--text-faint);
 }
 
-/* Filter Box / Multi-perspective Matrix (The Core USP) */
+/* Flerdimensionellt filter / Multi-perspective matrix */
 .filter-card {
   background: var(--bg-panel);
   border: 1px solid var(--border-subtle);

@@ -18,3 +18,10 @@ env/
 # Scratch & Temporary
 scratch/
 *.tmp
+
+# Keys & Secrets
+keysafe*
+id_*
+*.key
+*.pem
+*.pub

@@ -2,43 +2,43 @@
   "categories": [
     {
       "id": "official_ua",
-      "name_sv": "Officiella Ukrainska Myndigheter",
-      "name_en": "Official Ukrainian Authorities",
+      "name_sv": "Officiella ukrainska myndigheter",
+      "name_en": "Official Ukrainian authorities",
       "description_sv": "Direkta meddelanden och operativa rapporter från Ukrainas ledning och militär.",
       "description_en": "Direct statements and operational briefings from Ukrainian leadership and military."
     },
     {
       "id": "intelligence",
-      "name_sv": "Militära Underrättelsetjänster & Analysinstitut",
-      "name_en": "Military Intelligence & Think Tanks",
+      "name_sv": "Militära underrättelsetjänster och analysinstitut",
+      "name_en": "Military intelligence and think tanks",
       "description_sv": "Professionella underrättelseanalyser och dagliga lägesbedömningar.",
       "description_en": "Professional intelligence analyses and daily situational assessments."
     },
     {
       "id": "osint",
-      "name_sv": "OSINT & Geolokalisering",
-      "name_en": "OSINT & Geolocation",
+      "name_sv": "OSINT och geolokalisering",
+      "name_en": "OSINT and geolocation",
       "description_sv": "Öppna källor, satellitbilder och verifierad stridskartering.",
       "description_en": "Open-source intelligence, satellite imagery, and verified combat mapping."
     },
     {
       "id": "independent_media",
-      "name_sv": "Oberoende Nyhetsmedier & Journalistik",
-      "name_en": "Independent Media & Journalism",
+      "name_sv": "Oberoende nyhetsmedier och journalistik",
+      "name_en": "Independent media and journalism",
       "description_sv": "Granskande internationella och ukrainska nyhetsredaktioner på plats.",
       "description_en": "Investigative international and Ukrainian newsrooms on the ground."
     },
     {
       "id": "telegram_direct",
-      "name_sv": "Telegram & Direktrapportering",
-      "name_en": "Telegram & Direct Reporting",
+      "name_sv": "Telegram och direktrapportering",
+      "name_en": "Telegram and direct reporting",
       "description_sv": "Direktrapportering i realtid från regionala guvernörer och civila larm.",
       "description_en": "Real-time direct reporting from regional governors and civilian emergency services."
     },
     {
       "id": "factcheck",
-      "name_sv": "Faktagranskning & Desinformationsbevakning",
-      "name_en": "Fact-Checking & Counter-Disinformation",
+      "name_sv": "Faktagranskning och desinformationsbevakning",
+      "name_en": "Fact-checking and counter-disinformation",
       "description_sv": "Verifiering av sanningshalt och avslöjande av propaganda.",
       "description_en": "Truth verification and debunking of disinformation campaigns."
     }

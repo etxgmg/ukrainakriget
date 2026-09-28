@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Vision & Syfte
+## 🎯 Vision och syfte
 
 Traditionell nyhetsrapportering och sociala medier präglas ofta av fragmenterade, ostrukturerade och obestyrkta uppgifter. **Ukrainakriget** är konstruerat som ett stabilt, överskådligt dashboard där besökaren direkt förstår det rådande läget, status och vad som hänt.
 
@@ -21,9 +21,9 @@ Traditionell nyhetsrapportering och sociala medier präglas ofta av fragmenterad
 
 ---
 
-## 🧩 Webbplatsens USP: Flerdimensionell Struktur
+## 🧩 Flerdimensionell struktur
 
-Kärnvärdet och webbplatsens unika fördel är klassificeringen av informationsobjekt i sex sammanlänkade dimensioner:
+Kärnvärdet och webbplatsens analysmodell är klassificeringen av informationsobjekt i sex sammanlänkade dimensioner:
 
 1. **⏱️ Tidshorisonter**:
    - `dagligen` (Senaste dygnet – aktiv dashboard)
@@ -39,10 +39,10 @@ Kärnvärdet och webbplatsens unika fördel är klassificeringen av informations
    - `eu_ees` (Logistikhubbar, utbildningscentra, diplomatiska toppmöten i Europa)
    - `resten_av_varlden` (USA, FN, global säkerhetsarkitektur)
 
-3. **🏛️ Parter & Intressenter**:
+3. **🏛️ Parter och intressenter**:
    - `ukraina`, `ryssland`, `eu`, `uk`, `usa`, `kina`, `ovriga_varlden`
 
-4. **🎯 Syfte & Målnivå**:
+4. **🎯 Syfte och målnivå**:
    - `akta_syfte` (Verklig bakomliggande avsikt, t.ex. civil terror/påtryckning)
    - `vision` (Långsiktig vision och suveränitetsmål)
    - `strategiskt_mal` (Övergripande krigsmål och allianssamverkan)
@@ -59,11 +59,11 @@ Kärnvärdet och webbplatsens unika fördel är klassificeringen av informations
    - `diplomatiskt_politiskt` (Internationella fördrag, sanktionspaket, bistånd)
 
 6. **🔍 Nivå av vetskap med estimerad sannolikhet**:
-   - **100% Bekräftad**: Geolokaliserad med satellit/video och officiellt bekräftad av flera oberoende källor.
-   - **≥85% Hög sannolikhet**: Samstämmiga militära underrättelser (t.ex. ISW, UK MoD).
-   - **≥60% Måttlig / Obekräftad**: Ensidig officiell rapport under oberoende utvärdering.
-   - **<50% Påstående / Propaganda**: Obestyrkta uttalanden eller informationspåverkan.
-   - Kompletteras med **Effekt / Måluppfyllnad** (`fullbordad`, `delvis`, `avvardad`, `pagaende`).
+   - **100% bekräftad**: Geolokaliserad med satellit/video och officiellt bekräftad av flera oberoende källor.
+   - **≥85% hög sannolikhet**: Samstämmiga militära underrättelser (t.ex. ISW, UK MoD).
+   - **≥60% måttlig / obekräftad**: Ensidig officiell rapport under oberoende utvärdering.
+   - **<50% påstående / propaganda**: Obestyrkta uttalanden eller informationspåverkan.
+   - Kompletteras med **Effekt / måluppfyllnad** (`fullbordad`, `delvis`, `avvardad`, `pagaende`).
 
 ---
 
@@ -138,26 +138,18 @@ python3 scripts/fetch_sources.py
 
 ---
 
-## ☁️ Publicering till GitHub & GitHub Pages
+## ☁️ Publicering till GitHub och GitHub Pages
 
-Enligt specifikationen ska projektet ligga på:
-- **GitHub-konto**: `etxgmg`
-- **Repo**: `ukrainakriget`
+Projektet är konfigurerat för:
+- **GitHub-organisation**: `ukrainakriget`
+- **Repo**: `ukrainakriget.github.io`
 - **Webbadress**: `https://ukrainakriget.github.io`
 
-### Steg för att koppla repot:
+### Driftsättning:
 
-1. Skapa ett privat (eller offentligt) repository på GitHub under `etxgmg/ukrainakriget`.
-2. Koppla ditt lokala git-repo och pusha:
-   ```bash
-   git remote add origin git@github.com:etxgmg/ukrainakriget.git
-   git push -u origin main
-   ```
-3. Aktivera **GitHub Pages** i repots inställningar på GitHub:
-   - Gå till **Settings** -> **Pages**.
-   - Under **Build and deployment** / **Source**: Välj **GitHub Actions**.
-4. När du pushar kommer workflowet `.github/workflows/deploy.yml` automatiskt bygga och driftsätta sajten på `ukrainakriget.github.io`.
-5. Workflowet `.github/workflows/auto-update.yml` körs därefter automatiskt var 4:e timme via cron, samlar in ny data, uppdaterar händelser, roterar arkivet och publicerar utan manuellt ingripande.
+1. Repot finns på GitHub under `ukrainakriget/ukrainakriget.github.io`.
+2. Vid push till `main` bygger och driftsätter workflowet `.github/workflows/deploy.yml` automatiskt webbplatsen på `ukrainakriget.github.io`.
+3. Workflowet `.github/workflows/auto-update.yml` körs därefter automatiskt var 4:e timme via cron, samlar in ny data, uppdaterar händelser, roterar arkivet och publicerar utan manuellt ingripande.
 
 ---
 

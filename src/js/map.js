@@ -59,7 +59,7 @@ const TacticalMap = {
           <!-- Svarta Havet (Black Sea) -->
           <path d="M 280 430 Q 450 400 680 460 L 680 515 L 260 515 Z" fill="#082f49" fill-opacity="0.6" stroke="#0284c7" stroke-width="1.5" />
           <text x="440" y="475" class="map-label-sea">SVARTA HAVET / BLACK SEA</text>
-          <text x="320" y="455" class="map-sublabel-sea">🚢 ${isEn ? "Maritime Export Corridor" : "Ukrainsk Sjökorridor"}</text>
+          <text x="320" y="455" class="map-sublabel-sea">🚢 ${isEn ? "Maritime export corridor" : "Ukrainsk sjökorridor"}</text>
 
           <!-- Ukraina Huvudkontur (Fria & Frigjorda territorier) -->
           <path id="free-ukraine-path" class="map-region-path" 
@@ -98,14 +98,14 @@ const TacticalMap = {
             <circle r="12" fill="#38bdf8" fill-opacity="0.3" />
             <circle r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
             <text x="10" y="4" class="hotspot-title">Charkiv</text>
-            <text x="10" y="16" class="hotspot-desc">${isEn ? "Civilian Glide Bomb Alert" : "Civilt glidbombslarm"}</text>
+            <text x="10" y="16" class="hotspot-desc">${isEn ? "Civilian glide bomb alert" : "Civilt glidbombslarm"}</text>
           </g>
 
           <!-- 3. Kyjiv (Huvudstad) -->
           <g class="map-hotspot" data-filter-geo="fria_ukraina" data-name="Kyjiv" transform="translate(370, 195)">
             <polygon points="0,-7 6,5 -6,5" fill="#eab308" stroke="#ffffff" stroke-width="1.5" />
             <text x="12" y="2" class="hotspot-title-bold">Kyjiv</text>
-            <text x="12" y="14" class="hotspot-desc">${isEn ? "Air Defense Command" : "Luftförsvarscentrum"}</text>
+            <text x="12" y="14" class="hotspot-desc">${isEn ? "Air defense command" : "Luftförsvarscentrum"}</text>
           </g>
 
           <!-- 4. Kursk & Gränssektor (Ryssland) -->
@@ -113,7 +113,7 @@ const TacticalMap = {
             <circle r="12" fill="#f97316" fill-opacity="0.3" class="pulsing-radar" />
             <circle r="6" fill="#f97316" stroke="#ffffff" stroke-width="1.5" />
             <text x="12" y="4" class="hotspot-title">Kursk (RU)</text>
-            <text x="12" y="16" class="hotspot-desc">${isEn ? "Active Buffer Zone" : "Aktiv buffertzon"}</text>
+            <text x="12" y="16" class="hotspot-desc">${isEn ? "Active buffer zone" : "Aktiv buffertzon"}</text>
           </g>
 
           <!-- 5. Odesa & Svarta havets korridor -->
@@ -121,7 +121,7 @@ const TacticalMap = {
             <circle r="10" fill="#06b6d4" fill-opacity="0.3" />
             <circle r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5" />
             <text x="10" y="4" class="hotspot-title">Odesa</text>
-            <text x="10" y="16" class="hotspot-desc">${isEn ? "Grain Corridor 6.2M t" : "Sjöexport 6,2M ton"}</text>
+            <text x="10" y="16" class="hotspot-desc">${isEn ? "Grain corridor 6.2M t" : "Sjöexport 6,2M ton"}</text>
           </g>
 
           <!-- 6. Rostov & Bränsledepå (Ryssland) -->
@@ -129,7 +129,7 @@ const TacticalMap = {
             <circle r="10" fill="#dc2626" fill-opacity="0.3" />
             <circle r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
             <text x="10" y="4" class="hotspot-title">Rostov (RU)</text>
-            <text x="10" y="16" class="hotspot-desc">${isEn ? "Fuel Depot Strike" : "Drönarträff oljedepå"}</text>
+            <text x="10" y="16" class="hotspot-desc">${isEn ? "Fuel depot strike" : "Drönarträff oljedepå"}</text>
           </g>
 
           <!-- 7. Sevastopol (Krym) -->
@@ -137,20 +137,20 @@ const TacticalMap = {
             <circle r="8" fill="#e11d48" fill-opacity="0.3" />
             <circle r="4" fill="#e11d48" stroke="#ffffff" stroke-width="1.5" />
             <text x="10" y="3" class="hotspot-title">Sevastopol</text>
-            <text x="10" y="14" class="hotspot-desc">${isEn ? "S-400 Neutralized" : "S-400 utslaget"}</text>
+            <text x="10" y="14" class="hotspot-desc">${isEn ? "S-400 neutralized" : "S-400 utslaget"}</text>
           </g>
 
           <!-- Kartförklaring (Legend) -->
           <g transform="translate(25, 430)">
             <rect width="210" height="75" fill="rgba(15, 23, 42, 0.85)" rx="6" stroke="rgba(255,255,255,0.1)" />
             <line x1="12" y1="18" x2="35" y2="18" stroke="#ef4444" stroke-width="3" />
-            <text x="45" y="21" class="legend-text">${isEn ? "Active Frontline" : "Aktiv frontlinje"}</text>
+            <text x="45" y="21" class="legend-text">${isEn ? "Active frontline" : "Aktiv frontlinje"}</text>
 
             <rect x="12" y="32" width="20" height="12" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" />
             <text x="45" y="42" class="legend-text">${isEn ? "Free Ukraine" : "Fria Ukraina"}</text>
 
             <rect x="12" y="52" width="20" height="12" fill="#b91c1c" fill-opacity="0.4" stroke="#ef4444" stroke-dasharray="2 2" />
-            <text x="45" y="62" class="legend-text">${isEn ? "Occupied Territory" : "Ockuperat område"}</text>
+            <text x="45" y="62" class="legend-text">${isEn ? "Occupied territory" : "Ockuperat område"}</text>
           </g>
         </svg>
       </div>
