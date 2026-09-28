@@ -1,7 +1,130 @@
 {
-  "total_archived_events": 11,
-  "last_archived_rotation": "2026-09-28T08:34:18.929823+00:00",
+  "total_archived_events": 14,
+  "last_archived_rotation": "2026-09-28T16:33:30.241803+00:00",
   "events": [
+    {
+      "id": "evt-2026-09-27-01",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T14:15:00+02:00",
+      "title_sv": "Massivt ryskt kombinerat drönarangrepp mot energiknutpunkter i Poltava och Dnipropetrovsk avvärjt till 88%",
+      "title_en": "Massive Russian combined drone strike on energy hubs in Poltava and Dnipropetrovsk intercepted at 88%",
+      "summary_sv": "Ukrainas flygvapen rapporterar att 72 av 82 iransktillverkade Shahed-136/Geran-drönare sköts ned under natten och morgonen. Huvudmålet var regionala ställverk och transformatorstationer inför vintersäsongen. Skador på ett lokalt ställverk i Poltava orsakade tillfälliga strömavbrott för ca 14 000 hushåll, men inga dödsoffer har rapporterats.",
+      "summary_en": "The Ukrainian Air Force reports that 72 out of 82 Iranian-designed Shahed-136/Geran drones were brought down overnight and this morning. Primary targets were regional transmission stations and substations ahead of the winter season. Local substation damage in Poltava caused rolling blackouts for ~14,000 households, with zero casualties confirmed.",
+      "location_name": "Poltava & Dnipropetrovsk",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Slå ut civil energiförsörjning och undergräva den ukrainska civilbefolkningens uthållighet inför vintern.",
+        "beskrivning_en": "Strategic goal: Cripple civilian energy infrastructure and degrade domestic morale and industrial resilience ahead of winter."
+      },
+      "egenskaper_anfallsmal": "energiproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftat av Ukrainas flygvapen, regionala räddningstjänsten DSNS med fotobevis samt oberoende strömavbrottsdata.",
+        "motivering_en": "Confirmed by Ukrainian Air Force operational report, regional emergency services (DSNS) with photo verification, and grid telemetry."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrainas Flygvapen & DSNS",
+      "kallurl": "https://t.me/kpszsu",
+      "kallkategori": "Officiell militär part",
+      "arkiverad": true,
+      "image_url": "energy_infrastructure",
+      "tags": [
+        "Luftangrepp",
+        "Shahed",
+        "Energi",
+        "Luftförsvar",
+        "Poltava"
+      ]
+    },
+    {
+      "id": "evt-2026-09-27-02",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T12:30:00+02:00",
+      "title_sv": "Ukrainska precisionsdrönare träffade oljedepå och bränslelager vid järnvägsknutpunkt i Rostov oblast",
+      "title_en": "Ukrainian precision drones strike oil depot and fuel stockpile at rail junction in Rostov Oblast",
+      "summary_sv": "Satellitbilder från NASA FIRMS och geolokaliserade videor visar kraftiga bränder vid en oljedepå i Rostov oblast, som försörjer ryska sydliga armégruppen med drivmedel längs järnvägssträckan mot Donetskområdet. Ukrainas försvarsunderrättelsetjänst (GUR) bekräftar operationen.",
+      "summary_en": "NASA FIRMS thermal anomalies and geolocated video show extensive fires at a petroleum terminal in Rostov Oblast serving the Russian Southern Group of Forces supplying the Donetsk sector. Ukrainian Defence Intelligence (GUR) confirmed the targeted long-range strike.",
+      "location_name": "Rostov Oblast (Ryssland)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "operationellt_mal",
+        "beskrivning_sv": "Operationellt mål: Strypa bränslelogistiken för ryska mekaniserade enheter och tvinga ryska armén att sprida ut sina bränsledepåer längre från fronten.",
+        "beskrivning_en": "Operational goal: Sever fuel supply lines for mechanized units and force Russian logistics to disperse storage depots further behind the frontlines."
+      },
+      "egenskaper_anfallsmal": "krigsmaterielproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftat genom geolokaliserad video från ryska lokala kanaler, NASA FIRMS värmeanomalier samt officiellt GUR-uttalande.",
+        "motivering_en": "Confirmed via geolocated civilian videos in Rostov, NASA FIRMS heat signatures, and official Ukrainian GUR operational statement."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "GUR & GeoConfirmed",
+      "kallurl": "https://geoconfirmed.org",
+      "kallkategori": "OSINT & Underrättelse",
+      "arkiverad": true,
+      "image_url": "fuel_depot_strike",
+      "tags": [
+        "Drönarangrepp",
+        "Logistik",
+        "Rostov",
+        "GUR",
+        "Bränsledepå"
+      ]
+    },
+    {
+      "id": "evt-2026-09-27-03",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T10:45:00+02:00",
+      "title_sv": "Intensiva ryska infanteristormningar avvärjda vid Pokrovsk – Ukrainska 47:e brigaden stabiliserar flanken",
+      "title_en": "Intense Russian infantry assaults repelled near Pokrovsk – Ukrainian 47th brigade stabilizes flank",
+      "summary_sv": "Enligt DeepState och Generalstabens morgonrapport genomförde ryska styrkor över 34 separata stormningsförsök under det senaste dygnet sydost om Pokrovsk. Ukrainska FPV-drönare och artillerield slog ut 12 bepansrade stridsfordon och tvingade anfallande förband att retirera från en framskjuten skogsdunge.",
+      "summary_en": "According to DeepState and the Ukrainian General Staff morning report, Russian forces launched over 34 separate assault attempts in the past 24 hours southeast of Pokrovsk. Ukrainian FPV drone operators and coordinated artillery knocked out 12 armored combat vehicles, repelling the advance.",
+      "location_name": "Pokrovsk-sektorn (Donetsk)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Rysk strävan att nå logistikvägen T0504 och skära av försörjningslinjerna till Pokrovsk.",
+        "beskrivning_en": "Tactical goal: Russian effort to sever highway T0504 and interdict logistics hubs supporting the Pokrovsk pocket."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 85,
+        "niva": "hog",
+        "motivering_sv": "Hög sannolikhet: Geoverifierade drönarfilmer från 47:e mekaniserade brigaden och samstämmiga rapporter i DeepStateMap.",
+        "motivering_en": "High confidence: Geolocated combat footage from the 47th Mechanized Brigade corroborated by DeepStateMap updates."
+      },
+      "effekt_maluppfyllnad": "avvardad",
+      "kalla": "Ukrainas Generalstab & DeepStateMap",
+      "kallurl": "https://deepstatemap.live",
+      "kallkategori": "OSINT & Officiell rapport",
+      "arkiverad": true,
+      "image_url": "pokrovsk_front",
+      "tags": [
+        "Pokrovsk",
+        "Markstrid",
+        "FPV-drönare",
+        "Donetsk",
+        "DeepState"
+      ]
+    },
     {
       "id": "evt-2026-09-27-04",
       "date": "2026-09-27",
