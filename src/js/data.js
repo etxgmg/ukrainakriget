@@ -10,6 +10,7 @@ const AppData = {
   sources: [],
   sourceCategories: [],
   statistics: {},
+  analyses: [],
   lastUpdated: null,
   updateFrequencyHours: 4,
   isLoaded: false,
@@ -17,11 +18,12 @@ const AppData = {
   async init() {
     try {
       // Försök ladda via fetch från data-katalogen
-      const [resEvents, resArchive, resSources, resStats] = await Promise.all([
+      const [resEvents, resArchive, resSources, resStats, resAnalyses] = await Promise.all([
         fetch("data/output/events.json").then(r => r.ok ? r.json() : null).catch(() => null),
         fetch("data/output/archive.json").then(r => r.ok ? r.json() : null).catch(() => null),
         fetch("data/sources.json").then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch("data/output/statistics.json").then(r => r.ok ? r.json() : null).catch(() => null)
+        fetch("data/output/statistics.json").then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch("data/output/analyses.json").then(r => r.ok ? r.json() : null).catch(() => null)
       ]);
 
       if (resEvents && resEvents.events) {
@@ -42,6 +44,9 @@ const AppData = {
         if (!this.lastUpdated && resStats.updated_at) {
           this.lastUpdated = resStats.updated_at;
         }
+      }
+      if (resAnalyses && resAnalyses.analyses) {
+        this.analyses = resAnalyses.analyses || [];
       }
     } catch (e) {
       console.warn("Kunde inte ladda live JSON via fetch (troligtvis file:// CORS). Använder inbyggd fallback-data.", e);
@@ -66,6 +71,31 @@ const AppData = {
 
   getArchivedEvents() {
     return this.archive;
+  },
+
+  getAnalyses() {
+    return this.analyses;
+  },
+
+  filterAnalyses(filters = {}) {
+    let list = this.analyses || [];
+    if (filters.authorType && filters.authorType !== "alla") {
+      list = list.filter(a => a.author_type === filters.authorType);
+    }
+    if (filters.topic && filters.topic !== "alla") {
+      list = list.filter(a => a.topics && a.topics.includes(filters.topic));
+    }
+    if (filters.search) {
+      const q = filters.search.toLowerCase().trim();
+      list = list.filter(a => 
+        (a.title_sv || "").toLowerCase().includes(q) ||
+        (a.title_en || "").toLowerCase().includes(q) ||
+        (a.summary_sv || "").toLowerCase().includes(q) ||
+        (a.summary_en || "").toLowerCase().includes(q) ||
+        (a.author_name || "").toLowerCase().includes(q)
+      );
+    }
+    return list;
   },
 
   filter(eventsList, filters) {
@@ -509,5 +539,143 @@ const AppData = {
         "frontline_skirmishes_24h": 164
       }
     };
+
+    this.analyses = [
+      {
+        "id": "ana-cornucopia-fallback",
+        "author_id": "wilderang",
+        "author_name": "Lars Wilderäng",
+        "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+        "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+        "author_type": "svensk_expert",
+        "platform": "Cornucopia.se",
+        "date": "2026-09-28",
+        "title_sv": "Ukraina: Vapenfabriker bombade i ryska Tula och Voronezj, attackdrönarbaser i Kaluga och två bränsledepåer i Krasnodar Kraj",
+        "title_en": "Ukraine: Weapons factories bombed in Russian Tula and Voronezh, attack drone bases in Kaluga and two fuel depots in Krasnodar Krai",
+        "summary_sv": "Ryssland fortsätter sina terrorbombningar mot civila mål och Nationella Vetenskapsakademin i Kyjiv. Ukraina slog samtidigt till djupt in i Rysslands krigsindustri med drönaranfall mot vapenfabrikerna i Tula och Voronezj, samt bränsledepåer i Krasnodar Kraj.",
+        "summary_en": "Russia continues its terror bombings targeting civilian structures and the National Academy of Sciences in Kyiv. Ukraine simultaneously struck deep into Russian war industry facilities in Tula, Voronezh, and fuel depots in Krasnodar Krai.",
+        "key_takeaways_sv": [
+          "Ukraina genomförde samordnade drönaranfall mot vapenfabriker i Tula och Voronezj.",
+          "Två bränsledepåer i Krasnodar Kraj sattes i brand och tvingade fram lokal evakuering.",
+          "Ryska anfall fortsätter att rikta in sig på civil och akademisk infrastruktur i Kyjiv."
+        ],
+        "key_takeaways_en": [
+          "Ukraine executed coordinated drone strikes on weapons manufacturing plants in Tula and Voronezh.",
+          "Two fuel depots in Krasnodar Krai were set ablaze, forcing localized evacuations.",
+          "Russian strikes continue to hit civilian and academic infrastructure in Kyiv."
+        ],
+        "topics": ["luftkrig", "djupanfall", "frontlinje", "vapenindustri"],
+        "url": "https://cornucopia.se",
+        "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+      },
+      {
+        "id": "ana-johanno1-fallback",
+        "author_id": "johanno1",
+        "author_name": "Johan No.1",
+        "author_title_sv": "Strategisk och militär analytiker (Substack)",
+        "author_title_en": "Strategic and military analyst (Substack)",
+        "author_type": "svensk_expert",
+        "platform": "Substack",
+        "date": "2026-09-24",
+        "title_sv": "Vägen till eskalering, 24 September 2026",
+        "title_en": "The Road to Escalation, 24th September 2026",
+        "summary_sv": "Ukrainska 3:e stormbrigaden experimenterar framgångsrikt med markbunden elektronisk krigföring (EW) för att slå ut ryska FPV-drönare och släpper autonoma markrobotar bakom ryssarnas linjer i kombination med SOF på djupet.",
+        "summary_en": "The Ukrainian 3rd Assault Brigade is experimenting successfully with ground-based electronic warfare (EW) to counter Russian FPV drones, deploying autonomous ground robots behind lines combined with deep SOF operations.",
+        "key_takeaways_sv": [
+          "3rd Assault Corps experimenterar med integrerad EW för att uppnå lokalt drönarövertag.",
+          "Autonoma markrobotar sätts in bakom fiendens linjer före mekaniserade anfall.",
+          "Ukrainska taktiska anpassningar överträffar i nuläget ryska motåtgärder."
+        ],
+        "key_takeaways_en": [
+          "3rd Assault Corps experiments with integrated EW to secure local drone dominance.",
+          "Autonomous ground robots deployed behind enemy lines ahead of mechanized thrusts.",
+          "Ukrainian tactical adaptations currently outpace Russian counter-adjustments."
+        ],
+        "topics": ["strategi", "eskalering", "droner", "doktrin"],
+        "url": "https://johanno1.substack.com",
+        "verified_credibility": "Hög (djupgående taktisk och doktrinär analys)"
+      },
+      {
+        "id": "ana-mickryan-fallback",
+        "author_id": "mickryan",
+        "author_name": "Mick Ryan",
+        "author_title_sv": "Generalmajor (f.d.), militärstrateg och författare",
+        "author_title_en": "Major General (Retd), military strategist and author",
+        "author_type": "internationell_expert",
+        "platform": "Futura Doctrina / Substack",
+        "date": "2026-09-27",
+        "title_sv": "Robotic air assaults när Vivaldi rullar framåt",
+        "title_en": "Robotic Air Assaults as Vivaldi Rolls Forward",
+        "summary_sv": "Autonoma och semi-autonoma drönarangrepp i luften omdefinierar modern luftburen manöver. Ukraina integrerar svärmdrönare med mekaniserade markstyrkor på ett sätt som västerländska försvarsmakter nu studerar intensivt.",
+        "summary_en": "Autonomous and semi-autonomous airborne drone strikes are redefining aerial maneuver warfare. Ukraine integrates swarm UAVs with mechanized ground formations, providing lessons closely studied by Western militaries.",
+        "key_takeaways_sv": [
+          "Drönarsvärmar fungerar nu som luftburet understöd för att öppna genombrott i befästa linjer.",
+          "Rysslands strategiska motstånd bygger på långsam politisk utmattning snarare än militär dynamik.",
+          "Teknisk anpassningshastighet är den avgörande framgångsfaktorn på det moderna slagfältet."
+        ],
+        "key_takeaways_en": [
+          "Drone swarms now act as aerial breakthrough assets for fortified defensive lines.",
+          "Russian strategic endurance relies on political attrition rather than military dynamism.",
+          "Cycle speed of technological adaptation remains the decisive operational factor."
+        ],
+        "topics": ["robotik", "autonoma_system", "doktrin", "militärstrategi"],
+        "url": "https://mickryan.substack.com",
+        "verified_credibility": "Mycket hög (tidigare general och militärdoktrinforskare)"
+      },
+      {
+        "id": "ana-obrien-fallback",
+        "author_id": "obrien",
+        "author_name": "Phillips P. O'Brien",
+        "author_title_sv": "Professor i strategiska studier vid University of St Andrews",
+        "author_title_en": "Professor of Strategic Studies at University of St Andrews",
+        "author_type": "internationell_expert",
+        "platform": "Substack",
+        "date": "2026-09-27",
+        "title_sv": "En armé av robotar och luftkriget på djupet",
+        "title_en": "An Army Of Robots and the Deep Air Campaign",
+        "summary_sv": "Krigets utgång avgörs inte enbart vid skyttegravarna i Donbas utan av den industriella förmågan att slå ut fiendens raffinaderier, logistikcentraler och ammunitionslager 500 till 1 200 km bakom frontlinjen.",
+        "summary_en": "The war's outcome is decided not solely in Donbas trenches, but by the industrial capacity to neutralize adversary refineries, logistical nodes, and ammunition depots 500 to 1,200 km behind the frontlines.",
+        "key_takeaways_sv": [
+          "Ukrainas systematiska anfall mot ryska oljeraffinaderier har tvingat Moskva till bränsleexportstopp.",
+          "GRAU-arsenalernas förstörelse sänker Rysslands eldhastighet längs hela fronten.",
+          "Luftkriget på djupet är Ukrainas primära hävstång för att tvinga fram rysk utmattning."
+        ],
+        "key_takeaways_en": [
+          "Systematic strikes on Russian oil refineries forced Moscow into domestic fuel export restrictions.",
+          "Destruction of GRAU arsenals diminishes Russian artillery fire rates across the entire front.",
+          "The deep air war is Ukraine's primary lever to impose strategic attrition on Russia."
+        ],
+        "topics": ["luftkrig", "utmattningskrig", "logistik", "strategi"],
+        "url": "https://phillipspobrien.substack.com",
+        "verified_credibility": "Mycket hög (ledande akademisk expert på luftmakt och logistik)"
+      },
+      {
+        "id": "ana-tatarigami-fallback",
+        "author_id": "tatarigami",
+        "author_name": "Tatarigami_UA (Frontelligence Insight)",
+        "author_title_sv": "Ukrainsk reservofficer, grundare av Frontelligence Insight",
+        "author_title_en": "Ukrainian reserve officer, founder of Frontelligence Insight",
+        "author_type": "osint_analytiker",
+        "platform": "Frontelligence Insight",
+        "date": "2026-09-25",
+        "title_sv": "Satellitgranskning av ryska GRAU-arsenaler efter ukrainska djupanfall",
+        "title_en": "Satellite Investigation of Russian GRAU Arsenals Following Deep Strikes",
+        "summary_sv": "Analys av kommersiella högupplösta satellitbilder över Toropets (107:e GRAU) och Karatsjev (67:e GRAU) bekräftar totalförstörelse av dussintals missilbunkrar och bevisar att ryska jordvallar inte skyddar mot vertikala drönaranfall.",
+        "summary_en": "Commercial high-resolution satellite analysis of Toropets (107th GRAU) and Karachev (67th GRAU) confirms total destruction of dozens of missile revetments, proving Russian earthen berms fail against vertical UAV attacks.",
+        "key_takeaways_sv": [
+          "Över 60 bunkrar och öppna ammunitionsupplag i Toropets brändes ned till grunden.",
+          "Sekundära detonationer slog ut brandbilar och järnvägsspår för vidare transport.",
+          "Rysslands ammunitionslogistik måste nu flyttas 500+ km bakåt, vilket skapar akuta transportflaskhalsar."
+        ],
+        "key_takeaways_en": [
+          "Over 60 hardened bunkers and open storage pads in Toropets burned to the ground.",
+          "Secondary blasts destroyed specialized firefighting vehicles and connecting rail lines.",
+          "Russian ammunition supply chains must now relocate 500+ km deeper, creating acute transport bottlenecks."
+        ],
+        "topics": ["satellitanalys", "ammunition", "logistik", "depaer"],
+        "url": "https://frontelligence.substack.com",
+        "verified_credibility": "Högsta OSINT-klass (satellitbildsverifiering av GRAU-arsenaler och logistik)"
+      }
+    ];
   }
 };

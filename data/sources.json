@@ -231,6 +231,61 @@
       "credibility": "Mycket hög (Europeiska utrikestjänsten)",
       "description_sv": "EU:s East StratCom Task Force som spårar kremlvänliga påverkanskampanjer och desinformation i Europa.",
       "description_en": "European External Action Service project tracking Kremlin information warfare and narrative manipulation."
+    },
+    {
+      "id": "wilderang-cornucopia",
+      "name": "Lars Wilderäng (Cornucopia.se)",
+      "category": "independent_media",
+      "tier": "Militäranalytiker & författare",
+      "url": "https://cornucopia.se",
+      "rss": "https://cornucopia.se/feed/",
+      "credibility": "Hög (Öppna källor, geolokalisering och daglig operativ bevakning)",
+      "description_sv": "Dagliga taktiska och strategiska lägesuppdateringar med detaljerad bevakning av ryska djupanfallsmål, vapenfabriker och frontutveckling.",
+      "description_en": "Daily operational and tactical briefs tracking Russian deep strikes, arms industry targets, and frontline attrition."
+    },
+    {
+      "id": "johanno1-substack",
+      "name": "Johan No.1",
+      "category": "intelligence",
+      "tier": "Oberoende militärstrateg",
+      "url": "https://johanno1.substack.com",
+      "rss": "https://johanno1.substack.com/feed",
+      "credibility": "Hög (Taktisk doktrin och mekaniserad stridsanalys)",
+      "description_sv": "Djupgående essäer om stridsdoktrin, teknologiska skiften (drönare, EW, robotik) och den operativa dynamiken i kriget.",
+      "description_en": "In-depth analytical essays focusing on military doctrine, electronic warfare, robotics, and operational dynamics."
+    },
+    {
+      "id": "mick-ryan-strategika",
+      "name": "Generalmajor Mick Ryan (Futura Doctrina)",
+      "category": "intelligence",
+      "tier": "Militärstrateg & f.d. general",
+      "url": "https://mickryan.substack.com",
+      "rss": "https://mickryan.substack.com/feed",
+      "credibility": "Mycket hög (Militärdoktrinforskare och generalmajor f.d.)",
+      "description_sv": "Strategisk analys av markstridskonst, robotiserad krigföring och den globala maktbalansen runt Ukrainakonflikten.",
+      "description_en": "Strategic analysis of land warfare, autonomous systems, robotics, and high-level campaign planning."
+    },
+    {
+      "id": "phillips-obrien-substack",
+      "name": "Prof. Phillips P. O'Brien",
+      "category": "intelligence",
+      "tier": "Professor i strategiska studier",
+      "url": "https://phillipspobrien.substack.com",
+      "rss": "https://phillipspobrien.substack.com/feed",
+      "credibility": "Mycket hög (University of St Andrews)",
+      "description_sv": "Ledande akademisk analys av luftkriget på djupet, industriell utmattning, produktionslogistik och långsiktiga krigsslutsscenarier.",
+      "description_en": "Leading strategic analysis of the deep air campaign, industrial attrition, logistics, and war termination dynamics."
+    },
+    {
+      "id": "tatarigami-frontelligence",
+      "name": "Tatarigami_UA (Frontelligence Insight)",
+      "category": "osint",
+      "tier": "Satellit- och OSINT-analytiker",
+      "url": "https://frontelligence.substack.com",
+      "rss": "https://tatarigami.substack.com/feed",
+      "credibility": "Mycket hög (Ukrainsk reservofficer & satellitgranskare)",
+      "description_sv": "Specialiserade analyser baserade på kommersiella satellitbilder av ryska ammunitionsdepåer (GRAU), flygbaser och logistikflöden.",
+      "description_en": "Commercial satellite imagery investigations analyzing Russian GRAU ammunition arsenals, airbases, and logistical hubs."
     }
   ]
 }

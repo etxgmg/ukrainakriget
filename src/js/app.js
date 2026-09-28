@@ -15,6 +15,10 @@ window.App = {
     anfallsmal: "alla",
     minSannolikhet: 0
   },
+  analysesFilters: {
+    authorType: "alla",
+    search: ""
+  },
 
   async init() {
     console.log("Initierar Ukrainakriget Dashboard...");
@@ -25,7 +29,7 @@ window.App = {
     // 2. Ladda data (fetch eller fallback)
     await AppData.init();
 
-    // 3. Initiera taktisk karta
+    // 3. Initiera taktisk och strategisk karta
     TacticalMap.init("tactical-map-container");
 
     // 4. Koppla händelselyssnare
@@ -35,6 +39,7 @@ window.App = {
     this.renderKPIs();
     this.renderSystemStatus();
     this.renderActiveFeed();
+    this.renderFeaturedAnalyses();
     this.renderSourcesList();
 
     // 6. Automatisk uppdatering av klockor och relativ tid
@@ -56,6 +61,8 @@ window.App = {
       this.renderSystemStatus();
       this.renderActiveFeed();
       this.renderArchiveFeed();
+      this.renderFeaturedAnalyses();
+      this.renderAnalyses();
       this.renderSourcesList();
       TacticalMap.render();
     });
@@ -68,7 +75,7 @@ window.App = {
       });
     });
 
-    // Sökfält
+    // Sökfält för händelser
     const searchInput = document.getElementById("search-input");
     if (searchInput) {
       searchInput.addEventListener("input", (e) => {
@@ -112,6 +119,25 @@ window.App = {
         this.renderArchiveFeed(e.target.value);
       });
     }
+
+    // Analyssökfält
+    const analysesSearchInput = document.getElementById("analyses-search-input");
+    if (analysesSearchInput) {
+      analysesSearchInput.addEventListener("input", (e) => {
+        this.analysesFilters.search = e.target.value;
+        this.renderAnalyses();
+      });
+    }
+
+    // Analys-författarfilter (Pills)
+    document.querySelectorAll(".analyses-author-pills .pill-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".analyses-author-pills .pill-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        this.analysesFilters.authorType = btn.getAttribute("data-author-filter") || "alla";
+        this.renderAnalyses();
+      });
+    });
   },
 
   switchTab(tab) {
@@ -126,10 +152,15 @@ window.App = {
 
     if (tab === "archive") {
       this.renderArchiveFeed();
+    } else if (tab === "analyses") {
+      this.renderAnalyses();
     } else if (tab === "sources") {
       this.renderSourcesList();
     } else if (tab === "dashboard" || tab === "timeline") {
       this.applyFilters();
+      if (tab === "dashboard") {
+        this.renderFeaturedAnalyses();
+      }
     }
 
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -497,6 +528,152 @@ window.App = {
     };
     const a = map[actor] || { label: actor, title: actor };
     return `<span class="badge badge-actor" title="${a.title}">${a.label}</span>`;
+  },
+
+  renderFeaturedAnalyses() {
+    const container = document.getElementById("dashboard-featured-analyses");
+    if (!container) return;
+
+    const allAnalyses = AppData.getAnalyses() || [];
+    const featured = allAnalyses.slice(0, 3);
+    const lang = getLang();
+    const isEn = lang === "en";
+
+    if (!featured.length) {
+      container.innerHTML = "";
+      return;
+    }
+
+    container.innerHTML = featured.map(a => {
+      const title = isEn ? (a.title_en || a.title_sv) : a.title_sv;
+      const summary = isEn ? (a.summary_en || a.summary_sv) : a.summary_sv;
+      const authorTitle = isEn ? (a.author_title_en || a.author_title_sv) : a.author_title_sv;
+      const takeaways = (isEn ? (a.key_takeaways_en || a.key_takeaways_sv) : a.key_takeaways_sv) || [];
+
+      return `
+        <article class="featured-analysis-card">
+          <div class="analysis-card-top">
+            <div class="author-meta-box">
+              <span class="author-badge-icon">${a.author_type === 'svensk_expert' ? '🇸🇪' : (a.author_type === 'osint_analytiker' ? '🛰️' : '🌐')}</span>
+              <div>
+                <strong class="author-name-text">${a.author_name}</strong>
+                <span class="author-title-text">${authorTitle}</span>
+              </div>
+            </div>
+            <span class="analysis-date-badge">📅 ${a.date}</span>
+          </div>
+
+          <h3 class="analysis-card-title">${title}</h3>
+          <p class="analysis-card-summary">${summary}</p>
+
+          ${takeaways.length ? `
+            <div class="analysis-takeaways-box">
+              <strong class="takeaways-header">💡 ${isEn ? 'Key takeaways:' : 'Kärnslutsatser:'}</strong>
+              <ul class="takeaways-list">
+                ${takeaways.slice(0, 2).map(t => `<li>${t}</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
+
+          <div class="analysis-card-footer">
+            <span class="analysis-platform-tag">🔗 ${a.platform}</span>
+            <a href="${a.url}" target="_blank" rel="noopener noreferrer" class="source-link-btn btn-sm">
+              ${isEn ? 'Read full analysis' : 'Läs fullständig analys'} ↗
+            </a>
+          </div>
+        </article>
+      `;
+    }).join("");
+  },
+
+  renderAnalyses() {
+    const container = document.getElementById("analyses-container");
+    if (!container) return;
+
+    const filtered = AppData.filterAnalyses(this.analysesFilters) || [];
+    const lang = getLang();
+    const isEn = lang === "en";
+
+    if (!filtered.length) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">🔍</div>
+          <p>${isEn ? 'No analyses match the selected filters.' : 'Inga analyser matchar dina valda filter.'}</p>
+          <button class="btn btn-secondary btn-sm" onclick="App.resetAnalysesFilters()">${isEn ? 'Reset filters' : 'Återställ filter'}</button>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = filtered.map(a => {
+      const title = isEn ? (a.title_en || a.title_sv) : a.title_sv;
+      const summary = isEn ? (a.summary_en || a.summary_sv) : a.summary_sv;
+      const authorTitle = isEn ? (a.author_title_en || a.author_title_sv) : a.author_title_sv;
+      const takeaways = (isEn ? (a.key_takeaways_en || a.key_takeaways_sv) : a.key_takeaways_sv) || [];
+      const topics = a.topics || [];
+
+      let typeBadge = isEn ? "International strategist" : "Internationell strateg";
+      if (a.author_type === "svensk_expert") typeBadge = isEn ? "Swedish defense analyst" : "Svensk försvarsexpert";
+      else if (a.author_type === "osint_analytiker") typeBadge = isEn ? "Satellite OSINT" : "Satellit & OSINT";
+
+      return `
+        <article class="analysis-full-card">
+          <header class="analysis-card-header">
+            <div class="author-block">
+              <div class="author-avatar">${a.author_name.charAt(0)}</div>
+              <div>
+                <div class="author-title-row">
+                  <h3 class="analysis-author-name">${a.author_name}</h3>
+                  <span class="badge badge-author-type">${typeBadge}</span>
+                </div>
+                <div class="analysis-author-bio">${authorTitle}</div>
+              </div>
+            </div>
+            <div class="analysis-header-right">
+              <span class="analysis-date">📅 ${a.date}</span>
+              <span class="badge badge-credibility" title="${a.verified_credibility || ''}">🛡️ ${isEn ? 'Verified analyst' : 'Verifierad analytiker'}</span>
+            </div>
+          </header>
+
+          <h4 class="analysis-headline">${title}</h4>
+          
+          <div class="analysis-body-text">
+            <p>${summary}</p>
+          </div>
+
+          ${takeaways.length ? `
+            <div class="analysis-takeaways-container">
+              <div class="takeaways-lead">⚡ ${isEn ? 'Strategic impact and takeaways:' : 'Strategisk effekt och slutsatser:'}</div>
+              <ul class="takeaways-bullet-points">
+                ${takeaways.map(t => `<li>${t}</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
+
+          <footer class="analysis-card-bottom">
+            <div class="analysis-topics-row">
+              ${topics.map(t => `<span class="topic-tag">#${t}</span>`).join(' ')}
+            </div>
+            <div class="analysis-action-row">
+              <span class="analysis-origin-label">${isEn ? 'Published on' : 'Publicerad på'} <strong>${a.platform}</strong></span>
+              <a href="${a.url}" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+                ${isEn ? 'Read complete analysis' : 'Läs fullständig analys'} <span class="external-arrow">↗</span>
+              </a>
+            </div>
+          </footer>
+        </article>
+      `;
+    }).join("");
+  },
+
+  resetAnalysesFilters() {
+    this.analysesFilters = { authorType: "alla", search: "" };
+    const searchInput = document.getElementById("analyses-search-input");
+    if (searchInput) searchInput.value = "";
+    document.querySelectorAll(".analyses-author-pills .pill-btn").forEach(b => {
+      b.classList.toggle("active", b.getAttribute("data-author-filter") === "alla");
+    });
+    this.renderAnalyses();
   },
 
   renderSourcesList() {

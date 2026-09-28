@@ -53,6 +53,7 @@
     <div class="nav-inner">
       <button class="nav-tab-btn active" data-tab="dashboard" data-i18n="navDashboard">Översikt och lägesbild</button>
       <button class="nav-tab-btn" data-tab="timeline" data-i18n="navTimeline">Flerdimensionellt filter</button>
+      <button class="nav-tab-btn" data-tab="analyses" data-i18n="navAnalyses">Analyser och expertbedömningar</button>
       <button class="nav-tab-btn" data-tab="archive" data-i18n="navArchive">Arkiv (>24 tim)</button>
       <button class="nav-tab-btn" data-tab="sources" data-i18n="navSources">Källkatalog</button>
       <button class="nav-tab-btn" data-tab="methodology" data-i18n="navMethodology">Metod och struktur</button>
@@ -104,13 +105,29 @@
     <!-- TAB 1: DASHBOARD (Översikt) -->
     <div id="tab-dashboard" class="tab-content-section">
       
-      <!-- Interactive Tactical Map -->
+      <!-- Interactive Tactical and Strategic Map -->
       <section class="map-section">
         <div class="map-header">
-          <h2 data-i18n="mapTitle">Taktisk geografisk översiktskarta</h2>
-          <p data-i18n="mapSubtitle">Klicka på en sektor för att filtrera händelser i området</p>
+          <h2 data-i18n="mapTitle">Taktisk och strategisk situationskarta</h2>
+          <p data-i18n="mapSubtitle">Växla mellan taktisk frontkarta (24 timmar) och strategisk luftkrigskarta (30 dagar)</p>
         </div>
         <div id="tactical-map-container"></div>
+      </section>
+
+      <!-- Featured Professional Analyst Insights Preview -->
+      <section class="featured-analyses-section">
+        <div class="featured-analyses-header">
+          <div>
+            <h2 class="featured-section-title" data-i18n="analysesFeaturedHeading">Utvalda expertanalyser</h2>
+            <p class="featured-section-desc" data-i18n="analysesFeaturedDesc">
+              Senaste strategiska bedömningarna från professionella analytiker.
+            </p>
+          </div>
+          <button class="btn btn-secondary btn-sm" onclick="App.switchTab('analyses')" data-i18n="analysesViewAll">
+            Visa alla expertanalyser →
+          </button>
+        </div>
+        <div id="dashboard-featured-analyses" class="featured-analyses-grid"></div>
       </section>
 
       <!-- Active Events Feed Section Header -->
@@ -239,6 +256,34 @@
 
       <!-- Events Stream (All events matching filter) -->
       <div id="timeline-events-container" class="events-stream"></div>
+    </div>
+
+    <!-- TAB: ANALYSES (Professionella analyser och expertbedömningar) -->
+    <div id="tab-analyses" class="tab-content-section hidden">
+      <div class="analyses-header-bar">
+        <div>
+          <h2 style="font-size: 1.35rem; font-weight: 700; color: #fff;" data-i18n="analysesTitle">Professionella analyser och bedömningar</h2>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);" data-i18n="analysesSubtitle">
+            Utvalda och kurerade strategiska analyser från svenska och internationella militärexperter.
+          </p>
+        </div>
+        <div class="analyses-controls-bar">
+          <input type="text" id="analyses-search-input" class="search-input" placeholder="Sök bland analyser, författare, ämnen..." data-i18n-placeholder="analysesSearch">
+        </div>
+      </div>
+
+      <!-- Filter pills för författarkategori -->
+      <div class="analyses-filter-container">
+        <div class="analyses-author-pills" id="analyses-author-pills">
+          <button class="pill-btn active" data-author-filter="alla" data-i18n="analysesAll">Alla analytiker</button>
+          <button class="pill-btn" data-author-filter="svensk_expert" data-i18n="analysesSwedish">Svenska experter</button>
+          <button class="pill-btn" data-author-filter="internationell_expert" data-i18n="analysesInternational">Internationella strateger</button>
+          <button class="pill-btn" data-author-filter="osint_analytiker" data-i18n="analysesOSINT">OSINT och satellitgranskare</button>
+        </div>
+      </div>
+
+      <!-- Analyskort Grid -->
+      <div id="analyses-container" class="analyses-stream"></div>
     </div>
 
     <!-- TAB 3: ARCHIVE (Arkiv >24h) -->

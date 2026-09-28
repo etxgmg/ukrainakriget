@@ -1,7 +1,234 @@
 {
-  "last_updated": "2026-09-28T18:06:28.686139+00:00",
-  "total_active_events": 14,
+  "last_updated": "2026-09-28T19:06:29.094629+00:00",
+  "total_active_events": 20,
   "events": [
+    {
+      "id": "evt-2026-09-28-283eb6",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:57:00+03:00",
+      "title_sv": "Skräp från fiendens UAV föll på innergården till bostadshus i Kyjivs Desnianskyi-distrikt",
+      "title_en": "Debris from enemy UAV fell in courtyard of residential building in Kyiv's Desnianskyi district",
+      "summary_sv": "Skräp registrerades falla på innergården till ett bostadshus i Kyjivs Desnianskyi-distrikt.",
+      "summary_en": "Debris was recorded falling in the courtyard of a residential building in Kyiv's Desnianskyi district.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168964-debris-from-enemy-uav-fell-in-courtyard-of-residential-building-in-kyivs-desnianskyi-district.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-f1bef8",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:38:00+03:00",
+      "title_sv": "Attacker mot Kyjiv: En person dödad, antalet skadade stiger till 24, inklusive tre barn",
+      "title_en": "Attacks on Kyiv: One person killed, number of injured rises to 24, including three children",
+      "summary_sv": "Antalet personer som skadades i Kyjiv till följd av attackerna den 28 september har ökat till 24.",
+      "summary_en": "The number of people injured in Kyiv as a result of the attacks on September 28 has increased to 24.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168961-attacks-on-kyiv-one-person-killed-number-of-injured-rises-to-24-including-three-children.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Ukraina",
+        "Kyjiv"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-81684e",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:21:00+03:00",
+      "title_sv": "Skadetalet efter ryska attacker Zaporizjzja stiger till 33",
+      "title_en": "Injury toll after Russian strikes Zaporizhzhia rises to 33",
+      "summary_sv": "Antalet personer som skadats i Zaporizjzja till följd av ryska attacker har stigit till 33.",
+      "summary_en": "The number of people injured in Zaporizhzhia as a result of Russian attacks has risen to 33.",
+      "location_name": "Zaporizjzja",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168960-injury-toll-after-russian-strikes-zaporizhzhia-rises-to-33.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Zaporizjzja",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-677e57",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T20:59:00+03:00",
+      "title_sv": "Ryska attacker i Dnipropetrovsk-regionen dödar sex personer och skadar 28 på en dag",
+      "title_en": "Russian attacks in Dnipropetrovsk region kill six people and injure 28 in one day",
+      "summary_sv": "Ryska trupper attackerade Dnipro och sex distrikt i Dnipropetrovsk-regionen nästan 30 gånger under dagen; sex personer dödades och ytterligare 28 skadades.",
+      "summary_en": "Russian troops attacked Dnipro and six districts of the Dnipropetrovsk region nearly 30 times throughout the day; six people were killed and another 28 were wounded.",
+      "location_name": "Dnipro",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168946-russian-attacks-in-dnipropetrovsk-region-kill-six-people-and-injure-28-in-one-day.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Ukraina",
+        "Dnipro"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-9c9973",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T20:43:00+03:00",
+      "title_sv": "Rysk attack utlöser bränder på en gård och en femvåningsbyggnad i Kyjiv-regionens Bucha-distrikt och skadade en person",
+      "title_en": "Russian attack sparks fires at farm and five-story building in Kyiv region's Bucha district, injuring one person",
+      "summary_sv": "I Bucha-distriktet i Kyjiv-regionen bröt bränder ut på marken för en övergiven gård och i ett femvånings bostadshus som ett resultat av en rysk attack; en man skadades.",
+      "summary_en": "In the Bucha District of the Kyiv Region, fires broke out on the grounds of an abandoned farm and in a five-story apartment building as a result of a Russian attack; one man was injured.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168948-russian-attack-sparks-fires-at-farm-and-fivestory-building-in-kyiv-regions-bucha-district-injuring-one-person.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-4e68c4",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T20:32:00+03:00",
+      "title_sv": "Rysk drönare attackerar några hundra meter från den ukrainsk-polska gränsen",
+      "title_en": "Russian drone strikes few hundred meters from Ukrainian-Polish border",
+      "summary_sv": "En rysk attackdrönare träffade några hundra meter från den ukrainsk-polska gränsen.",
+      "summary_en": "A Russian attack drone struck a few hundred meters from the Ukrainian-Polish border.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ukrainas_granser",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168945-russian-drone-strikes-few-hundred-meters-from-ukrainianpolish-border.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Drönare",
+        "Ukraina"
+      ]
+    },
     {
       "id": "evt-2026-09-28-6e610e",
       "date": "2026-09-28",
@@ -37,14 +264,14 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Luftförsvar",
         "Drönare",
-        "Kyjiv",
-        "Ukraina"
+        "Luftförsvar",
+        "Ukraina",
+        "Kyjiv"
       ]
     },
     {
-      "id": "evt-2026-09-28-8d479c",
+      "id": "evt-2026-09-28-104fe1",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T19:34:00+03:00",
       "title_sv": "Ryskt drönaranfall mot Nationella vetenskapsakademins byggnad i Kyjiv: Horbulin skadad och en medarbetare dödad",
@@ -69,18 +296,17 @@
       "niva_vetskap_sannolikhet": {
         "procent": 100,
         "niva": "bekraftad",
-        "motivering_sv": "Bekräftad av 7 samstämmiga rapporter från The Guardian (Ukraine), Ukrinform samt räddningstjänsten DSNS.",
-        "motivering_en": "Confirmed by 7 corroborating reports from The Guardian (Ukraine), Ukrinform and official emergency services."
+        "motivering_sv": "Bekräftad av 5 samstämmiga rapporter från Lars Wilderäng (Cornucopia.se), The Guardian (Ukraine), Ukrinform samt räddningstjänsten DSNS.",
+        "motivering_en": "Confirmed by 5 corroborating reports from Lars Wilderäng (Cornucopia.se), The Guardian (Ukraine), Ukrinform and official emergency services."
       },
       "effekt_maluppfyllnad": "avvardad",
-      "kalla": "The Guardian (Ukraine), Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168895-strike-on-science-academy-in-kyiv-exnsdc-secretary-horbulin-injured-his-aide-killed.html",
+      "kalla": "Lars Wilderäng (Cornucopia.se), The Guardian (Ukraine), Ukrinform",
+      "kallurl": "https://cornucopia.se/2026/09/ukraina-tre-mordade-i-kyjiv-och-atta-skadade-nationella-vetenskapsakademin-bombad-vapenfabriker-bombade-i-ryska-tula-och-voronezj-attackdronarbaser-i-kaluga-och-orjol-tva-bransledepaer-i-krasnod/",
       "kallkategori": "Flera verifierade källor",
       "arkiverad": false,
       "tags": [
         "Civila mål",
         "Drönare",
-        "Infrastruktur",
         "Kyjiv",
         "Ukraina"
       ],
@@ -101,27 +327,17 @@
           "url": "https://www.ukrinform.net/rubric-ato/4168860-russian-strike-on-national-academy-of-sciences-building-in-central-kyiv-kills-one-injures-five.html"
         },
         {
-          "kalla": "Ukrinform",
-          "titel": "Rysk UAV attackerar sju våningar hög administrativ byggnad i Kyjivs Shevchenkivskyi-distrikt",
-          "url": "https://www.ukrinform.net/rubric-ato/4168842-russian-uav-strikes-sevenstory-administrative-building-in-kyivs-shevchenkivskyi-district.html"
-        },
-        {
           "kalla": "The Guardian (Ukraine)",
           "titel": "Ryska attacken mot Kyjivs vetenskapsakademi dödade minst en i den senaste attacken dagtid",
           "url": "https://www.theguardian.com/world/2026/sep/28/russia-strike-on-kyiv-science-academy-drone-ukraine"
         },
         {
-          "kalla": "Ukrinform",
-          "titel": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar tre",
-          "url": "https://www.ukrinform.net/rubric-ato/4168811-russian-strike-on-national-academy-of-sciences-building-in-central-kyiv-kills-one-injures-three.html"
-        },
-        {
-          "kalla": "Ukrinform",
-          "titel": "Rysk drönare kraschar in i icke-bostadshus i centrala Kyjiv och orsakar brand",
-          "url": "https://www.ukrinform.net/rubric-ato/4168791-russian-drone-crashes-into-nonresidential-building-in-central-kyiv-causing-fire.html"
+          "kalla": "Lars Wilderäng (Cornucopia.se)",
+          "titel": "Ukraina: Tre mördade i Kyjiv och åtta skadade, Nationella Vetenskapsakademin bombad – vapenfabriker bombade i ryska Tula och Voronezj, attackdrönarbaser i Kaluga och Orjol, två bränsledepåer i Krasnodar Kraj",
+          "url": "https://cornucopia.se/2026/09/ukraina-tre-mordade-i-kyjiv-och-atta-skadade-nationella-vetenskapsakademin-bombad-vapenfabriker-bombade-i-ryska-tula-och-voronezj-attackdronarbaser-i-kaluga-och-orjol-tva-bransledepaer-i-krasnod/"
         }
       ],
-      "cluster_count": 7
+      "cluster_count": 5
     },
     {
       "id": "evt-2026-09-28-1a0715",
@@ -157,9 +373,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
         "Charkiv",
-        "Ukraina"
+        "Ukraina",
+        "Civila mål"
       ]
     },
     {
@@ -196,9 +412,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
+        "Ukraina",
         "Kyjiv",
-        "Ukraina"
+        "Civila mål"
       ]
     },
     {
@@ -272,8 +488,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Kyjiv",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv"
       ]
     },
     {
@@ -310,9 +526,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Odesa",
+        "Ukraina",
         "Civila mål",
-        "Ukraina"
+        "Odesa"
       ]
     },
     {
@@ -327,10 +543,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
-        "ukraina",
-        "usa",
         "uk",
+        "eu",
+        "usa",
+        "ukraina",
         "ryssland"
       ],
       "syfte": {
@@ -445,10 +661,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
-        "ukraina",
-        "usa",
         "uk",
+        "eu",
+        "usa",
+        "ukraina",
         "ryssland"
       ],
       "syfte": {
@@ -561,10 +777,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "eu",
-        "ukraina",
-        "usa",
         "uk",
+        "eu",
+        "usa",
+        "ukraina",
         "ryssland"
       ],
       "syfte": {
@@ -585,11 +801,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Kyjiv",
         "Robotanfall",
+        "Kyjiv",
         "Civila mål",
-        "Drönare"
+        "Drönare",
+        "Ukraina"
       ]
     }
   ],

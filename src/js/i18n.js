@@ -27,6 +27,7 @@ const translations = {
     navDashboard: "Översikt och lägesbild",
     navTimeline: "Flerdimensionellt filter",
     navArchive: "Arkiv (>24 tim)",
+    navAnalyses: "Analyser och expertbedömningar",
     navSources: "Källkatalog",
     navMethodology: "Metod och struktur",
 
@@ -115,8 +116,25 @@ const translations = {
     impactUnknown: "Okänd",
 
     // Kartsektion
-    mapTitle: "Taktisk geografisk översiktskarta",
-    mapSubtitle: "Klicka på en sektor för att filtrera händelser i området",
+    mapTitle: "Taktisk och strategisk situationskarta",
+    mapSubtitle: "Växla mellan taktisk frontkarta (24 timmar) och strategisk luftkrigskarta (30 dagar)",
+    mapModeTactical: "Taktisk frontkarta (24 tim)",
+    mapModeStrategic: "Strategisk luftkrigskarta (30 dagar)",
+
+    // Analys- och expertsektion
+    analysesTitle: "Professionella analyser och bedömningar",
+    analysesSubtitle: "Utvalda och kurerade strategiska analyser från svenska och internationella militärexperter",
+    analysesSearch: "Sök bland analyser och författare...",
+    analysesAll: "Alla analytiker",
+    analysesSwedish: "Svenska experter",
+    analysesInternational: "Internationella strateger",
+    analysesOSINT: "OSINT och satellitgranskare",
+    analysesFeaturedHeading: "Utvalda expertanalyser",
+    analysesFeaturedDesc: "Senaste strategiska bedömningarna från professionella analytiker",
+    analysesViewAll: "Visa alla expertanalyser →",
+    keyTakeawaysLabel: "Kärnslutsatser och strategisk effekt:",
+    readOriginalAnalysis: "Läs fullständig analys",
+    analysesEmpty: "Inga analyser matchar dina valda filter.",
 
     // Arkivsektion
     archiveTitle: "Historiskt arkiv",
@@ -165,6 +183,7 @@ const translations = {
     navDashboard: "Overview and status",
     navTimeline: "Multi-perspective matrix",
     navArchive: "Archive (>24h)",
+    navAnalyses: "Analyst insights",
     navSources: "Sources directory",
     navMethodology: "Methodology and structure",
 
@@ -253,8 +272,25 @@ const translations = {
     impactUnknown: "Unknown",
 
     // Map section
-    mapTitle: "Tactical operational map",
-    mapSubtitle: "Click on any sector to filter events occurring in that region",
+    mapTitle: "Tactical and strategic operational map",
+    mapSubtitle: "Toggle between tactical frontline (24h) and strategic deep air war (30 days)",
+    mapModeTactical: "Tactical frontline map (24h)",
+    mapModeStrategic: "Strategic air war map (30 days)",
+
+    // Analyses section
+    analysesTitle: "Professional analyses and assessments",
+    analysesSubtitle: "Curated strategic assessments from Swedish and international military experts",
+    analysesSearch: "Search analyses and authors...",
+    analysesAll: "All analysts",
+    analysesSwedish: "Swedish experts",
+    analysesInternational: "International strategists",
+    analysesOSINT: "OSINT and satellite analysts",
+    analysesFeaturedHeading: "Featured analyst insights",
+    analysesFeaturedDesc: "Latest strategic evaluations from leading military analysts",
+    analysesViewAll: "View all analyst insights →",
+    keyTakeawaysLabel: "Key takeaways and strategic impact:",
+    readOriginalAnalysis: "Read complete analysis",
+    analysesEmpty: "No analyses match your selected filters.",
 
     // Archive section
     archiveTitle: "Historical archive",

@@ -32,9 +32,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Samla in källdata och rotera arkiv
+      - name: Samla in källdata, expertanalyser och rotera arkiv
         run: |
           python3 scripts/fetch_sources.py
+          python3 scripts/fetch_analyses.py
 
       - name: Validera datakvalitet och källkrav
         run: |

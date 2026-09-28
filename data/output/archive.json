@@ -1,6 +1,6 @@
 {
-  "total_archived_events": 15,
-  "last_archived_rotation": "2026-09-28T18:06:28.686139+00:00",
+  "total_archived_events": 18,
+  "last_archived_rotation": "2026-09-28T19:06:29.094629+00:00",
   "events": [
     {
       "id": "evt-2026-09-27-01",
@@ -85,6 +85,44 @@
       ]
     },
     {
+      "id": "evt-2026-09-27-a4b08f",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T11:36:00+00:00",
+      "title_sv": "Andra försöket på: Weekend Update #204: An Army Of Robots",
+      "title_en": "Second Try At: Weekend Update #204: An Army Of Robots",
+      "summary_sv": "Rysslands mest effektiva kampanj; Trumps rehabiliteringskampanj fortsätter",
+      "summary_en": "Russia&#8217;s Most Effective Campaign; The Trump Rehabilitation Campaign Continues",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Prof. Phillips P. O'Brien",
+      "kallurl": "https://phillipspobrien.substack.com/p/second-try-at-weekend-update-204",
+      "kallkategori": "Professor i strategiska studier",
+      "arkiverad": true,
+      "tags": [
+        "Robotanfall",
+        "Ukraina"
+      ]
+    },
+    {
       "id": "evt-2026-09-27-3f655c",
       "date": "2026-09-27",
       "timestamp": "2026-09-27T11:00:04+00:00",
@@ -119,9 +157,9 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Civila mål",
         "Drönare",
-        "Ukraina"
+        "Ukraina",
+        "Civila mål"
       ]
     },
     {
@@ -163,6 +201,46 @@
         "FPV-drönare",
         "Donetsk",
         "DeepState"
+      ]
+    },
+    {
+      "id": "evt-2026-09-27-28c89f",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T09:37:04+00:00",
+      "title_sv": "Ukraina: Två mördade i ryska bombningar – ukrainsk APS kan skjuta ner 80% av FPV-drönare – mordbrand mot Starlinkmarkstation i Polen",
+      "title_en": "Ukraina: Två mördade i ryska bombningar – ukrainsk APS kan skjuta ner 80% av FPV-drönare – mordbrand mot Starlinkmarkstation i Polen",
+      "summary_sv": "Minst två civila mördades i natt i ryska terrorbombningar mot Odesa och Kyjiv. Ett nytt ukrainskt aktivt skyddssystem (APS) med försvarande motåtgärder uppges kunna skjuta ner till 80% av alla anfallande FPV-drönare. En Starlinkmarkstation i Polen ska vara utsatt för mordbrand och det hela misstänks vara ett risk angrepp.",
+      "summary_en": "Minst två civila mördades i natt i ryska terrorbombningar mot Odesa och Kyjiv. Ett nytt ukrainskt aktivt skyddssystem (APS) med försvarande motåtgärder uppges kunna skjuta ner upp till 80% av alla anfallande FPV-drönare. En Starlinkmarkstation i Polen ska utsatts för mordbrand och det hela misstänks vara ett ryskt angrepp.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "ukraina",
+        "eu",
+        "ryssland",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Lars Wilderäng (Cornucopia.se)",
+      "kallurl": "https://cornucopia.se/2026/09/ukraina-tva-mordade-i-ryska-bombningar-ukrainsk-aps-kan-skjuta-ner-80-av-fpv-dronare-mordbrand-mot-starlinkmarkstation-i-polen/",
+      "kallkategori": "Militäranalytiker & författare",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Ukraina",
+        "Kyjiv"
       ]
     },
     {
@@ -247,6 +325,44 @@
         "EU",
         "Storbritannien",
         "Ekonomi"
+      ]
+    },
+    {
+      "id": "evt-2026-09-27-f71a4c",
+      "date": "2026-09-27",
+      "timestamp": "2026-09-27T07:08:51+00:00",
+      "title_sv": "Helguppdatering #204: En armé av robotar",
+      "title_en": "Weekend Update #204: An Army Of Robots",
+      "summary_sv": "Rysslands mest effektiva kampanj; Trumps rehabiliteringskampanj fortsätter",
+      "summary_en": "Russia&#8217;s Most Effective Campaign; The Trump Rehabilitation Campaign Continues",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Prof. Phillips P. O'Brien",
+      "kallurl": "https://phillipspobrien.substack.com/p/weekend-update-204-an-army-of-robots",
+      "kallkategori": "Professor i strategiska studier",
+      "arkiverad": true,
+      "tags": [
+        "Robotanfall",
+        "Ukraina"
       ]
     },
     {

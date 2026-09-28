@@ -114,6 +114,21 @@ def main():
     else:
         print("✓ Statistikfil validerad.")
 
+    # Validate analyses.json
+    analyses_file = BASE_DIR / "data" / "output" / "analyses.json"
+    if not analyses_file.exists():
+        all_errors.append(f"Analysfil saknas: {analyses_file}")
+    else:
+        with open(analyses_file, "r", encoding="utf-8") as f:
+            ana_data = json.load(f)
+            analyses_list = ana_data.get("analyses", [])
+            print(f"✓ Expertanalyser: {len(analyses_list)} analyser registrerade.")
+            for a in analyses_list:
+                if not a.get("title_sv") or not a.get("title_en"):
+                    all_errors.append(f"Saknar tvåspråkig titel för analys [{a.get('id')}]")
+                if not a.get("url"):
+                    all_errors.append(f"Saknar källänk för analys [{a.get('id')}]")
+
     if all_errors:
         print(f"\nFEL FUNNA ({len(all_errors)} st):")
         for err in all_errors:

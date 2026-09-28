@@ -873,5 +873,12 @@ def main():
     except Exception as e:
         print(f"Fel vid slutuppdatering av statistik: {e}")
 
+    # 7. Uppdatera professionella expertanalyser (Wilderäng, Johan No.1, Mick Ryan, Phillips P. O'Brien, Tatarigami)
+    try:
+        from fetch_analyses import run_analyses_collection
+        run_analyses_collection()
+    except Exception as e:
+        print(f"Fel vid uppdatering av expertanalyser: {e}")
+
 if __name__ == "__main__":
     main()
