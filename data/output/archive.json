@@ -1,6 +1,6 @@
 {
   "total_archived_events": 15,
-  "last_archived_rotation": "2026-09-28T17:58:31.621009+00:00",
+  "last_archived_rotation": "2026-09-28T18:06:28.686139+00:00",
   "events": [
     {
       "id": "evt-2026-09-27-01",
@@ -91,15 +91,15 @@
       "title_sv": "\"Helvete på jorden\": de sista invånarna äter ogräs för att överleva i den ryskockuperade Oleshky",
       "title_en": "‘Hell on earth’: last residents eat weeds to survive in Russian-occupied Oleshky",
       "summary_sv": "Ukrainska styrkor släpper förnödenheter till staden där kroppar lämnas för att ätas upp av hundar på grund av dödlig risk från drönare.",
-      "summary_en": "Ukrainian forces airdrop supplies to city where bodies are left to be eaten by dogs because of deadly risk from drones The phone message sent out of Russian-occupied Oleshky was grimly matter-of-fact: food had finally run out for the 2,000 or so civilians, including 50...",
+      "summary_en": "Ukrainian forces airdrop supplies to city where bodies are left to be eaten by dogs because of deadly risk from drones The phone message sent out of Russian-occupied Oleshky was grimly matter-of-fact: food had finally run out for the 2,000 or so civilians, including 50 children, remaining in the city and its surrounding villages.“We’re in...",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "uk",
         "usa",
-        "ukraina"
+        "uk"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -119,9 +119,9 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
+        "Civila mål",
         "Drönare",
-        "Ukraina",
-        "Civila mål"
+        "Ukraina"
       ]
     },
     {

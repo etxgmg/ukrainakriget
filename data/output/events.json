@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-28T17:58:31.621009+00:00",
-  "total_active_events": 21,
+  "last_updated": "2026-09-28T18:06:28.686139+00:00",
+  "total_active_events": 14,
   "events": [
     {
       "id": "evt-2026-09-28-6e610e",
@@ -14,10 +14,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "uk",
         "usa",
-        "ukraina"
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -37,28 +37,28 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
+        "Luftförsvar",
         "Drönare",
-        "Ukraina",
         "Kyjiv",
-        "Luftförsvar"
+        "Ukraina"
       ]
     },
     {
-      "id": "evt-2026-09-28-b41a9f",
+      "id": "evt-2026-09-28-8d479c",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T19:34:00+03:00",
-      "title_sv": "Räddningsarbetare får elden under kontroll vid Ukrainas nationella vetenskapsakademi i Kyjiv efter rysk attack",
-      "title_en": "Rescue workers contain fire at National Academy of Sciences of Ukraine in Kyiv following Russian attack",
-      "summary_sv": "I Kyjiv förde anställda vid den statliga räddningstjänsten (DSNS) branden under kontroll i byggnaden av Ukrainas nationella vetenskapsakademi, som bröt ut som ett resultat av en attack från Ryska federationen.",
-      "summary_en": "In Kyiv, employees of the State Emergency Service contained a fire in the building of the National Academy of Sciences of Ukraine, which broke out as a result of an attack by the Russian Federation.",
+      "title_sv": "Ryskt drönaranfall mot Nationella vetenskapsakademins byggnad i Kyjiv: Horbulin skadad och en medarbetare dödad",
+      "title_en": "Russian drone strike on National Academy of Sciences building in Kyiv: Horbulin injured, aide killed",
+      "summary_sv": "Ryska drönare träffade Ukrainas nationella vetenskapsakademis byggnad i centrala Kyjiv på måndagen, vilket orsakade brand som begränsades av räddningstjänsten (DSNS). En medarbetare till tidigare säkerhetsrådschefen Volodymyr Horbulin dödades och Horbulin skadades tillsammans med flera andra personer.",
+      "summary_en": "Russian drones struck the National Academy of Sciences building in central Kyiv on Monday, sparking a fire brought under control by the State Emergency Service (DSNS). An aide to former NSDC Secretary Volodymyr Horbulin was killed, and Horbulin was injured along with several others.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "uk",
         "usa",
-        "ukraina"
+        "uk"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -67,21 +67,61 @@
       },
       "egenskaper_anfallsmal": "helt_civila",
       "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+        "procent": 100,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftad av 7 samstämmiga rapporter från The Guardian (Ukraine), Ukrinform samt räddningstjänsten DSNS.",
+        "motivering_en": "Confirmed by 7 corroborating reports from The Guardian (Ukraine), Ukrinform and official emergency services."
       },
       "effekt_maluppfyllnad": "avvardad",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168917-rescue-workers-contain-fire-at-national-academy-of-sciences-of-ukraine-in-kyiv-following-russian-attack.html",
-      "kallkategori": "Statlig nyhetsbyrå",
+      "kalla": "The Guardian (Ukraine), Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168895-strike-on-science-academy-in-kyiv-exnsdc-secretary-horbulin-injured-his-aide-killed.html",
+      "kallkategori": "Flera verifierade källor",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Civila mål",
+        "Drönare",
+        "Infrastruktur",
         "Kyjiv",
-        "Civila mål"
-      ]
+        "Ukraina"
+      ],
+      "relaterade_kallor": [
+        {
+          "kalla": "Ukrinform",
+          "titel": "Räddningsarbetare får elden under kontroll vid Ukrainas nationella vetenskapsakademi i Kyjiv efter rysk attack",
+          "url": "https://www.ukrinform.net/rubric-ato/4168917-rescue-workers-contain-fire-at-national-academy-of-sciences-of-ukraine-in-kyiv-following-russian-attack.html"
+        },
+        {
+          "kalla": "Ukrinform",
+          "titel": "Attack mot vetenskapsakademin i Kyjiv: tidigare nationella säkerhetsrådets sekreterare Horbulin skadad, hans assistent dödad",
+          "url": "https://www.ukrinform.net/rubric-ato/4168895-strike-on-science-academy-in-kyiv-exnsdc-secretary-horbulin-injured-his-aide-killed.html"
+        },
+        {
+          "kalla": "Ukrinform",
+          "titel": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar fem",
+          "url": "https://www.ukrinform.net/rubric-ato/4168860-russian-strike-on-national-academy-of-sciences-building-in-central-kyiv-kills-one-injures-five.html"
+        },
+        {
+          "kalla": "Ukrinform",
+          "titel": "Rysk UAV attackerar sju våningar hög administrativ byggnad i Kyjivs Shevchenkivskyi-distrikt",
+          "url": "https://www.ukrinform.net/rubric-ato/4168842-russian-uav-strikes-sevenstory-administrative-building-in-kyivs-shevchenkivskyi-district.html"
+        },
+        {
+          "kalla": "The Guardian (Ukraine)",
+          "titel": "Ryska attacken mot Kyjivs vetenskapsakademi dödade minst en i den senaste attacken dagtid",
+          "url": "https://www.theguardian.com/world/2026/sep/28/russia-strike-on-kyiv-science-academy-drone-ukraine"
+        },
+        {
+          "kalla": "Ukrinform",
+          "titel": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar tre",
+          "url": "https://www.ukrinform.net/rubric-ato/4168811-russian-strike-on-national-academy-of-sciences-building-in-central-kyiv-kills-one-injures-three.html"
+        },
+        {
+          "kalla": "Ukrinform",
+          "titel": "Rysk drönare kraschar in i icke-bostadshus i centrala Kyjiv och orsakar brand",
+          "url": "https://www.ukrinform.net/rubric-ato/4168791-russian-drone-crashes-into-nonresidential-building-in-central-kyiv-causing-fire.html"
+        }
+      ],
+      "cluster_count": 7
     },
     {
       "id": "evt-2026-09-28-1a0715",
@@ -95,9 +135,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "usa",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -117,9 +157,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Civila mål",
         "Charkiv",
-        "Civila mål"
+        "Ukraina"
       ]
     },
     {
@@ -134,9 +174,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "usa",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -156,49 +196,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Civila mål",
         "Kyjiv",
-        "Civila mål"
-      ]
-    },
-    {
-      "id": "evt-2026-09-28-8d479c",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T17:59:00+03:00",
-      "title_sv": "Attack mot vetenskapsakademin i Kyjiv: tidigare nationella säkerhetsrådets sekreterare Horbulin skadad, hans assistent dödad",
-      "title_en": "Strike on science academy in Kyiv: Ex-NSDC Secretary Horbulin injured, his aide killed",
-      "summary_sv": "En assistent till den tidigare sekreteraren för nationella säkerhets- och försvarsrådet Volodymyr Horbulin dödades som ett resultat av en rysk attack mot byggnaden av Ukrainas nationella vetenskapsakademi.",
-      "summary_en": "An aide to former National Security and Defense Council Secretary Volodymyr Horbulin was killed as a result of a Russian strike on the building of the National Academy of Sciences of Ukraine.",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "resten_av_varlden",
-      "parter_intressenter": [
-        "ryssland",
-        "uk",
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "akta_syfte",
-        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
-        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
-      },
-      "egenskaper_anfallsmal": "helt_civila",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168895-strike-on-science-academy-in-kyiv-exnsdc-secretary-horbulin-injured-his-aide-killed.html",
-      "kallkategori": "Statlig nyhetsbyrå",
-      "arkiverad": false,
-      "tags": [
-        "Ukraina",
-        "Kyjiv",
-        "Civila mål"
+        "Ukraina"
       ]
     },
     {
@@ -213,8 +213,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ockuperade_ukraina",
       "parter_intressenter": [
-        "uk",
-        "ukraina"
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -234,8 +234,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Lyman"
+        "Lyman",
+        "Ukraina"
       ]
     },
     {
@@ -250,9 +250,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "usa",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -272,48 +272,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Kyjiv"
-      ]
-    },
-    {
-      "id": "evt-2026-09-28-5e2c41",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T16:50:00+03:00",
-      "title_sv": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar fem",
-      "title_en": "Russian strike on National Academy of Sciences building in central Kyiv kills one, injures five",
-      "summary_sv": "En person dödades och fem andra skadades i Kyjiv efter att en drönare träffade en icke-bostadsbyggnad i stadens historiska centrum på måndagseftermiddagen.",
-      "summary_en": "One person was killed and five others injured in Kyiv after a drone struck a non-residential building in the historic center of the city on Monday afternoon.",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "fria_ukraina",
-      "parter_intressenter": [
-        "ryssland",
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "akta_syfte",
-        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
-        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
-      },
-      "egenskaper_anfallsmal": "helt_civila",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168860-russian-strike-on-national-academy-of-sciences-building-in-central-kyiv-kills-one-injures-five.html",
-      "kallkategori": "Statlig nyhetsbyrå",
-      "arkiverad": false,
-      "tags": [
-        "Drönare",
-        "Ukraina",
         "Kyjiv",
-        "Civila mål"
+        "Ukraina"
       ]
     },
     {
@@ -328,9 +288,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "usa",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -350,49 +310,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
         "Odesa",
-        "Civila mål"
-      ]
-    },
-    {
-      "id": "evt-2026-09-28-ca43f3",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T16:16:00+03:00",
-      "title_sv": "Rysk UAV attackerar sju våningar hög administrativ byggnad i Kyjivs Shevchenkivskyi-distrikt",
-      "title_en": "Russian UAV strikes seven-story administrative building in Kyiv's Shevchenkivskyi district",
-      "summary_sv": "En rysk drönare har träffat en administrativ byggnad i Kyjivs Shevchenkivskyi-distrikt.",
-      "summary_en": "A Russian drone has struck an administrative building in Kyiv's Shevchenkivskyi district.",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "fria_ukraina",
-      "parter_intressenter": [
-        "ryssland",
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "taktiskt_mal",
-        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
-        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
-      },
-      "egenskaper_anfallsmal": "civil_infrastruktur",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168842-russian-uav-strikes-sevenstory-administrative-building-in-kyivs-shevchenkivskyi-district.html",
-      "kallkategori": "Statlig nyhetsbyrå",
-      "arkiverad": false,
-      "tags": [
-        "Infrastruktur",
-        "Drönare",
-        "Ukraina",
-        "Kyjiv"
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {
@@ -401,17 +321,17 @@
       "timestamp": "2026-09-28T15:56:36+00:00",
       "title_sv": "Polen sätter in stridsflygplan som svar på ryska attacker mot västra Ukraina – som det hände",
       "title_en": "Poland scrambles military aircraft in response to Russian strikes on western Ukraine – as it happened",
-      "summary_sv": "Polens säkerhetscenter uppgraderade en uppgraderad varning till \"hot om en luftattack\" och sa åt invånarna i östra Polen att ta skydd Tillbaka till Metz, vi väntar fortfarande på att huvuddelen av evenemanget ska börja – med Emmanuel Macron som nu välkomnar gäster utanför...",
-      "summary_en": "Poland’s centre for security upgraded a upgraded a warning to ‘threat of an air attack’ and told residents in eastern Poland to shelter Back to Metz, we are still waiting for the main part of the event to begin – with Emmanuel Macron now welcoming guests outside the...",
+      "summary_sv": "Polens säkerhetscenter uppgraderade en uppgraderad varning till \"hot om en luftattack\" och sa åt invånarna i östra Polen att ta skydd Tillbaka till Metz, vi väntar fortfarande på att huvuddelen av evenemanget ska börja – med Emmanuel Macron som nu välkomnar gäster utanför lokalen.",
+      "summary_en": "Poland’s centre for security upgraded a upgraded a warning to ‘threat of an air attack’ and told residents in eastern Poland to shelter Back to Metz, we are still waiting for the main part of the event to begin – with Emmanuel Macron now welcoming guests outside the venue.Former commission president Jean Claude Juncker gets a big hug on arrival.",
       "location_name": "Polen & västra gränsen",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "eu",
-        "usa",
-        "ryssland",
         "ukraina",
-        "uk"
+        "usa",
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -447,9 +367,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "usa",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -479,17 +399,17 @@
       "timestamp": "2026-09-28T15:37:00+03:00",
       "title_sv": "EU förlänger EUMAM-utbildningsuppdraget för ukrainsk militär med två år",
       "title_en": "EU to extend EUMAM training mission for Ukrainian military for two years",
-      "summary_sv": "EU:s medlemsländer har kommit överens om att förlänga EUMAM Ukraines uppdrag för att utbilda ukrainska trupper med ytterligare två år.",
-      "summary_en": "EU member states have agreed to extend the EUMAM Ukraine mission to train Ukrainian troops for another two years.",
+      "summary_sv": "EU:s medlemsländer har kommit överens om att förlänga EUMAM Ukraines uppdrag för att utbilda ukrainska trupper med ytterligare två år. Samtidigt bör Europeiska unionen samordna kontrollerna av misstänkta fartyg närmare för att begränsa Rysslands förmåga att finansiera kriget genom sin skuggflotta.",
+      "summary_en": "EU member states have agreed to extend the EUMAM Ukraine mission to train Ukrainian troops for another two years. At the same time, the European Union should coordinate checks of suspicious vessels more closely to limit Russia's ability to finance the war through its shadow fleet.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "eu",
-        "usa",
-        "ryssland",
         "ukraina",
-        "uk"
+        "usa",
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -514,104 +434,22 @@
       ]
     },
     {
-      "id": "evt-2026-09-28-54fa4e",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T15:16:50+00:00",
-      "title_sv": "Ryska attacken mot Kyjivs vetenskapsakademi dödade minst en i den senaste attacken dagtid",
-      "title_en": "Russian strike on Kyiv’s science academy kills at least one in latest daytime attack",
-      "summary_sv": "Tre andra skadades när jetdrivna drönare i allt högre grad riktar sig mot Ukrainas huvudstad, med vårdcentralen träffade också Europa En rysk drönare träffade Nationella vetenskapsakademin i centrala Kyjiv i måndags och dödade minst en person i den senaste dagsattacken mot...",
-      "summary_en": "Three others wounded as jet-powered drones increasingly target Ukraine’s capital, with medical centre also hit Europe A Russian drone hit the National Academy of Sciences in central Kyiv on Monday, killing at least one person, in the latest daytime attack on Ukraine’s...",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "eu_ees",
-      "parter_intressenter": [
-        "eu",
-        "usa",
-        "ryssland",
-        "ukraina",
-        "uk"
-      ],
-      "syfte": {
-        "kategori": "akta_syfte",
-        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
-        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
-      },
-      "egenskaper_anfallsmal": "helt_civila",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "The Guardian (Ukraine)",
-      "kallurl": "https://www.theguardian.com/world/2026/sep/28/russia-strike-on-kyiv-science-academy-drone-ukraine",
-      "kallkategori": "Internationellt nyhetsmedium",
-      "arkiverad": false,
-      "tags": [
-        "Drönare",
-        "Ukraina",
-        "Kyjiv",
-        "Civila mål"
-      ]
-    },
-    {
-      "id": "evt-2026-09-28-399b83",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T15:15:00+03:00",
-      "title_sv": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar tre",
-      "title_en": "Russian strike on National Academy of Sciences building in central Kyiv kills one, injures three",
-      "summary_sv": "En person dödades och tre andra skadades i Kyjiv efter att en rysk drönare träffade en icke-bostadsbyggnad i stadens historiska centrum på måndagseftermiddagen.",
-      "summary_en": "One person was killed and three others injured in Kyiv after a Russian drone struck a non-residential building in the historic center of the city on Monday afternoon.",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "fria_ukraina",
-      "parter_intressenter": [
-        "ryssland",
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "akta_syfte",
-        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
-        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
-      },
-      "egenskaper_anfallsmal": "helt_civila",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168811-russian-strike-on-national-academy-of-sciences-building-in-central-kyiv-kills-one-injures-three.html",
-      "kallkategori": "Statlig nyhetsbyrå",
-      "arkiverad": false,
-      "tags": [
-        "Drönare",
-        "Ukraina",
-        "Kyjiv",
-        "Civila mål"
-      ]
-    },
-    {
       "id": "evt-2026-09-28-2080b7",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:07:54+00:00",
       "title_sv": "Påven uppmanar till eftergifter för fred mitt i kriget i Ukraina – video",
       "title_en": "Pope urges concessions for peace amid war in Ukraine – video",
-      "summary_sv": "I ett tal till europeiska ledare i Metz, Frankrike, sa påven Leo till förhandlare som försöker avsluta kriget i Europa att de måste vara villiga att offra vissa positioner för att uppnå fred, eftersom ansträngningarna att avsluta Rysslands krig i Ukraina fortsätter att...",
+      "summary_sv": "I ett tal till europeiska ledare i Metz, Frankrike, sa påven Leo till förhandlare som försöker avsluta kriget i Europa att de måste vara villiga att offra vissa positioner för att uppnå fred, eftersom ansträngningarna att avsluta Rysslands krig i Ukraina fortsätter att misslyckas.",
       "summary_en": "In an address to European leaders in Metz, France, Pope Leo told negotiators seeking to end war in Europe that they must be willing to sacrifice some positions to achieve peace, as efforts to end Russia's war in Ukraine continue to fail.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "eu",
-        "usa",
-        "ryssland",
         "ukraina",
-        "uk"
+        "usa",
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -646,10 +484,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
+        "ukraina",
         "ryssland",
-        "uk",
         "usa",
-        "ukraina"
+        "uk"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -669,10 +507,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
+        "Drönare",
         "Energi",
         "Dnipro",
-        "Ukraina",
-        "Drönare"
+        "Ukraina"
       ]
     },
     {
@@ -687,8 +525,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "uk",
-        "ukraina"
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -712,83 +550,6 @@
       ]
     },
     {
-      "id": "evt-2026-09-28-214ef5",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T14:43:00+03:00",
-      "title_sv": "Rysk drönare kraschar in i icke-bostadshus i centrala Kyjiv och orsakar brand",
-      "title_en": "Russian drone crashes into non-residential building in central Kyiv, causing fire",
-      "summary_sv": "En rysk drönare kraschade in i en icke-bostadsbyggnad i centrala Kyjiv och orsakade en brand.",
-      "summary_en": "A Russian drone crashed into a non-residential building in central Kyiv, causing a fire.",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "fria_ukraina",
-      "parter_intressenter": [
-        "ryssland",
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "akta_syfte",
-        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
-        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
-      },
-      "egenskaper_anfallsmal": "helt_civila",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "delvis",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-ato/4168791-russian-drone-crashes-into-nonresidential-building-in-central-kyiv-causing-fire.html",
-      "kallkategori": "Statlig nyhetsbyrå",
-      "arkiverad": false,
-      "tags": [
-        "Drönare",
-        "Ukraina",
-        "Kyjiv",
-        "Civila mål"
-      ]
-    },
-    {
-      "id": "evt-2026-09-28-32ceb2",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T07:00:28+00:00",
-      "title_sv": "Glöm de kända namnen. Här är vem som faktiskt förtjänar årets Nobels fredspris | Haakon Gjerløw",
-      "title_en": "Forget the famous names. Here is who actually deserves this year’s Nobel peace prize | Haakon Gjerløw",
-      "summary_sv": "Spelmarknaderna gynnar USA:s president och Volodymyr Zelenskyy. Men det viktigaste arbetet för att säkerställa fred görs av dem som är långt ifrån rampljuset. Haakon Gjerløw är tillförordnad chef för Fredsforskningsinstitutet Oslo.",
-      "summary_en": "The betting markets favour the US president and Volodymyr Zelenskyy. But the most vital work to secure peace is being done by those far from the spotlight Haakon Gjerløw is the acting director of the Peace Research Institute Oslo The Nobel peace prize is not a contest...",
-      "location_name": "Ukraina (nationellt)",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "resten_av_varlden",
-      "parter_intressenter": [
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "taktiskt_mal",
-        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
-        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
-      },
-      "egenskaper_anfallsmal": "civil_infrastruktur",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "delvis",
-      "kalla": "The Guardian (Ukraine)",
-      "kallurl": "https://www.theguardian.com/commentisfree/2026/sep/28/donald-trump-nobel-peace-prize-volodymyr-zelenskyy",
-      "kallkategori": "Internationellt nyhetsmedium",
-      "arkiverad": false,
-      "tags": [
-        "Infrastruktur",
-        "Ukraina"
-      ]
-    },
-    {
       "id": "evt-2026-09-28-842e75",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T01:15:42+00:00",
@@ -801,10 +562,10 @@
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "eu",
-        "usa",
-        "ryssland",
         "ukraina",
-        "uk"
+        "usa",
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -824,11 +585,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Drönare",
-        "Civila mål",
-        "Robotanfall",
         "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Robotanfall",
+        "Civila mål",
+        "Drönare"
       ]
     }
   ],

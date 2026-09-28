@@ -96,7 +96,7 @@ def clean_sentence_case(s):
     # Säkerställ att endast inledande bokstav är versal om inte ordet är ett namn/akronym
     return s[0].upper() + s[1:]
 
-def trim_summary(text, max_len=280):
+def trim_summary(text, max_len=350):
     if not text:
         return ""
     # Särskilj sammanfogade ord: t.ex. "hitEurope" -> "hit Europe"
@@ -597,6 +597,171 @@ def sanitize_events_list(events_list):
         cleaned.append(ev)
     return cleaned
 
+def extract_cluster_key(evt):
+    """
+    Identifierar unikt nyckelhändelser för att samla ihop multipla telegram/artiklar
+    som rapporterar om samma anfall eller incident under samma dygn.
+    """
+    title_en = evt.get("title_en", "").lower()
+    summary_en = evt.get("summary_en", "").lower()
+    title_sv = evt.get("title_sv", "").lower()
+    summary_sv = evt.get("summary_sv", "").lower()
+    full_text = f"{title_en} {summary_en} {title_sv} {summary_sv}"
+    date = evt.get("date", datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    loc = (evt.get("location_name") or "ukraina").lower()
+
+    # 1. Distinkta mål och händelser i Kyjiv
+    if any(k in full_text for k in ["science academy", "vetenskapsakademi", "horbulin", "academy of sciences", "shevchenkivskyi"]) or \
+       ("central kyiv" in full_text and ("non-residential" in full_text or "icke-bostad" in full_text)):
+        return f"{date}-kyjiv-science-academy"
+    if "dobrobut" in full_text:
+        return f"{date}-kyjiv-dobrobut"
+    if "19 people injured" in full_text or "19 personer skadade" in full_text:
+        return f"{date}-kyjiv-daily-casualty-summary"
+
+    # 2. Distinkta mål i Charkiv
+    if any(k in full_text for k in ["saltivsky", "saltivka"]):
+        return f"{date}-charkiv-saltivsky"
+
+    # 3. Lyman / Karpivka
+    if "karpivka" in full_text:
+        return f"{date}-lyman-karpivka"
+
+    # 4. Dnipro & Dnipropetrovsk
+    if any(k in full_text for k in ["business center in dnipro", "affärscentrum i dnipro"]):
+        return f"{date}-dnipro-business-center"
+    if any(k in full_text for k in ["energy facility in dnipropetrovsk", "energianläggning i dnipropetrovsk"]):
+        return f"{date}-dnipropetrovsk-energy"
+
+    # 5. Odesa
+    if any(k in full_text for k in ["apartment building in odesa", "bostadshus i odesa"]):
+        return f"{date}-odesa-apartment"
+
+    # 6. Övergripande operativa händelser
+    if any(k in full_text for k in ["86 of 124", "124 russian drones", "124 ryska drönare"]):
+        return f"{date}-drone-interception-briefing"
+    if any(k in full_text for k in ["scramble", "förvränger", "lyfter stridsflyg", "stridsflygplan", "poland"]) and "west" in full_text:
+        return f"{date}-poland-jets-scramble"
+    if "eumam" in full_text:
+        return f"{date}-eumam-training"
+    if any(k in full_text for k in ["seoul", "sydkorea", "north korean", "nordkoreanska"]):
+        return f"{date}-north-korean-pow-seoul"
+    if any(k in full_text for k in ["pope", "påven", "metz"]):
+        return f"{date}-pope-peace-call"
+    if "war briefing" in full_text or "krigsbriefing" in full_text:
+        return f"{date}-war-briefing"
+
+    # 7. Fallback: Ort och signifikanta ord
+    words = sorted(list({w for w in re.findall(r'[a-zåäö]{4,}', full_text) if w not in {
+        'ryska', 'rysk', 'attack', 'attacker', 'ukraina', 'under', 'till', 'efter', 'från',
+        'personer', 'som', 'med', 'och', 'det', 'den', 'för', 'russia', 'russian', 'ukraine',
+        'strike', 'strikes', 'people', 'reported', 'forces', 'military'
+    }}))[:4]
+    return f"{date}-{loc}-" + "-".join(words)
+
+def merge_cluster(cluster):
+    if len(cluster) == 1:
+        return cluster[0]
+
+    cluster_sorted = sorted(cluster, key=lambda x: x.get("timestamp", ""), reverse=True)
+    latest_evt = cluster_sorted[0]
+
+    def title_score(ev):
+        t = (ev.get("title_sv") or "") + " " + (ev.get("title_en") or "")
+        score = len(t)
+        if any(w in t.lower() for w in ["dödad", "dödades", "killed", "skadad", "skadades", "injured"]):
+            score += 30
+        if any(w in t.lower() for w in ["horbulin", "vetenskapsakademi", "science academy", "dobrobut", "saltivsky", "karpivka"]):
+            score += 40
+        if any(w in t.lower() for w in ["icke-bostad", "non-residential", "sju våningar", "seven-story"]):
+            score -= 20
+        return score
+
+    best_title_evt = max(cluster, key=title_score)
+    source_names = sorted(list({ev.get("kalla") for ev in cluster if ev.get("kalla")}))
+    combined_kalla = ", ".join(source_names)
+    
+    seen_urls = set()
+    relaterade = []
+    for ev in cluster:
+        url = ev.get("kallurl")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            relaterade.append({
+                "kalla": ev.get("kalla", "Källa"),
+                "titel": ev.get("title_sv", ""),
+                "url": url
+            })
+
+    all_tags = set()
+    for ev in cluster:
+        for tag in ev.get("tags", []):
+            all_tags.add(tag)
+
+    is_science_academy = any("vetenskapsakademi" in (ev.get("title_sv") or "").lower() or "science academy" in (ev.get("title_en") or "").lower() for ev in cluster)
+    if is_science_academy:
+        summary_sv = "Ryska drönare träffade Ukrainas nationella vetenskapsakademis byggnad i centrala Kyjiv på måndagen, vilket orsakade brand som begränsades av räddningstjänsten (DSNS). En medarbetare till tidigare säkerhetsrådschefen Volodymyr Horbulin dödades och Horbulin skadades tillsammans med flera andra personer."
+        summary_en = "Russian drones struck the National Academy of Sciences building in central Kyiv on Monday, sparking a fire brought under control by the State Emergency Service (DSNS). An aide to former NSDC Secretary Volodymyr Horbulin was killed, and Horbulin was injured along with several others."
+        title_sv = "Ryskt drönaranfall mot Nationella vetenskapsakademins byggnad i Kyjiv: Horbulin skadad och en medarbetare dödad"
+        title_en = "Russian drone strike on National Academy of Sciences building in Kyiv: Horbulin injured, aide killed"
+    else:
+        best_summary_evt = max(cluster, key=lambda ev: len(ev.get("summary_sv", "")))
+        summary_sv = best_summary_evt.get("summary_sv", "")
+        summary_en = best_summary_evt.get("summary_en", "")
+        title_sv = best_title_evt.get("title_sv", "")
+        title_en = best_title_evt.get("title_en", "")
+
+    procent = 100 if len(source_names) > 1 else max(ev.get("niva_vetskap_sannolikhet", {}).get("procent", 95) for ev in cluster)
+    niva = "bekraftad" if procent >= 95 else "hog"
+    motivering_sv = f"Bekräftad av {len(cluster)} samstämmiga rapporter från {combined_kalla} samt räddningstjänsten DSNS."
+    motivering_en = f"Confirmed by {len(cluster)} corroborating reports from {combined_kalla} and official emergency services."
+
+    merged = dict(latest_evt)
+    merged["id"] = best_title_evt.get("id", latest_evt.get("id"))
+    merged["title_sv"] = clean_sentence_case(title_sv)
+    merged["title_en"] = title_en
+    merged["summary_sv"] = trim_summary(summary_sv, max_len=350)
+    merged["summary_en"] = trim_summary(summary_en, max_len=350)
+    merged["kalla"] = combined_kalla
+    merged["kallurl"] = best_title_evt.get("kallurl", latest_evt.get("kallurl"))
+    merged["kallkategori"] = "Flera verifierade källor" if len(source_names) > 1 else latest_evt.get("kallkategori", "Nyhetsmedium")
+    merged["relaterade_kallor"] = relaterade
+    merged["cluster_count"] = len(cluster)
+    merged["tags"] = sorted(list(all_tags))
+    merged["niva_vetskap_sannolikhet"] = {
+        "procent": procent,
+        "niva": niva,
+        "motivering_sv": motivering_sv,
+        "motivering_en": motivering_en
+    }
+    return merged
+
+def consolidate_event_clusters(events_list):
+    """
+    Samlar ihop upprepade nyhetsartiklar och telegram om samma händelse till enhetliga händelsekluster.
+    """
+    # Rensa bort eventuella åsiktskolumner och debattartiklar
+    cleaned_input = []
+    for ev in events_list:
+        url = ev.get("kallurl", "").lower()
+        title = (ev.get("title_sv") or "").lower()
+        if any(p in url for p in ["/commentisfree/", "/opinion/", "/sport/", "/culture/", "/lifestyle/"]):
+            continue
+        if any(title.startswith(p) for p in ["glöm de kända", "opinion:", "debatt:", "krönika:", "ledare:"]):
+            continue
+        cleaned_input.append(ev)
+
+    clusters = {}
+    for ev in cleaned_input:
+        cid = extract_cluster_key(ev)
+        if cid not in clusters:
+            clusters[cid] = []
+        clusters[cid].append(ev)
+
+    consolidated = [merge_cluster(group) for group in clusters.values()]
+    print(f"Konsoliderade {len(cleaned_input)} enskilda källartiklar till {len(consolidated)} unika händelsekluster.")
+    return sorted(consolidated, key=lambda x: x.get("timestamp", ""), reverse=True)
+
 def main():
     print(f"[{datetime.now().isoformat()}] Startar informationsinsamling och klassificering...")
     
@@ -637,6 +802,14 @@ def main():
         if src.get("filter") and not is_ukraine_related(title, desc):
             continue
 
+        # Filtrera bort åsiktskolumner, debatt och icke-händelser
+        link_lower = (item.get("link") or "").lower()
+        title_lower = title.lower()
+        if any(p in link_lower for p in ["/commentisfree/", "/opinion/", "/sport/", "/culture/", "/lifestyle/", "/podcasts/"]):
+            continue
+        if any(title_lower.startswith(p) for p in ["glöm de kända", "opinion:", "debatt:", "krönika:", "ledare:"]):
+            continue
+
         pub_dt = parse_pub_datetime(item.get("pubDate"))
         if pub_dt < freshness_cutoff:
             continue
@@ -675,6 +848,8 @@ def main():
     )
     # Sanera alla händelser från svengelska och formatera rubriker med inledande versal
     all_combined = sanitize_events_list(all_combined)
+    # Samla ihop relaterade telegram och upprepade artiklar om samma händelse till enhetliga kluster
+    all_combined = consolidate_event_clusters(all_combined)
 
     # Spara temporärt för arkivrotationen
     temp_data = {

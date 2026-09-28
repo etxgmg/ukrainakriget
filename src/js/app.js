@@ -442,6 +442,11 @@ window.App = {
               <span class="source-prefix">${t("sourceLabel")}</span>
               <strong class="source-name">${evt.kalla}</strong>
               ${evt.kallkategori ? `<span class="source-cat">(${evt.kallkategori})</span>` : ''}
+              ${evt.cluster_count && evt.cluster_count > 1 ? `
+                <span class="badge badge-cluster" style="margin-left: 6px; font-size: 0.75rem; background: var(--color-surface-hover, #232c3d); padding: 2px 7px; border-radius: 4px; color: var(--color-primary-light, #60a5fa); border: 1px solid var(--color-border, #374151); font-weight: 500;" title="${isEn ? `${evt.cluster_count} news reports consolidated into this verified event` : `${evt.cluster_count} nyhetsrapporter samlade till denna verifierade händelse`}">
+                  🔗 ${isEn ? `${evt.cluster_count} reports merged` : `${evt.cluster_count} rapporter samlade`}
+                </span>
+              ` : ''}
             </div>
             <a href="${evt.kallurl}" target="_blank" rel="noopener noreferrer" class="source-link-btn" title="${t("directSourceLink")}">
               ${t("directSourceLink")} <span class="external-arrow">↗</span>
