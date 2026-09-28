@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-09-28T17:49:53.038021+00:00",
+  "last_updated": "2026-09-28T17:58:31.621009+00:00",
   "total_active_events": 21,
   "events": [
     {
       "id": "evt-2026-09-28-6e610e",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T19:56:00+03:00",
-      "title_sv": "Luftförsvarsstyrkor sköt ned 86 av 124 ryska drönare över Ukraina under dagen",
+      "title_sv": "Luftförsvarsstyrkor skjuter ned 86 av 124 ryska drönare över Ukraina under dagen",
       "title_en": "Air defense forces shoot down 86 of 124 Russian drones over Ukraine during day",
-      "summary_sv": "Under hela dagen on September 28, Luftförsvaret sköt ned 86 of 124 ryska drönare; the Kyjiv region was the main target of the angrepp.",
+      "summary_sv": "Hela dagen den 28 september sköt luftvärnsstyrkor ner 86 av 124 ryska drönare; Kyjiv-regionen var det främsta målet för attacken.",
       "summary_en": "Throughout the day on September 28, air defense forces shot down 86 of 124 Russian drones; the Kyiv region was the main target of the attack.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -37,19 +37,19 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Kyjiv",
         "Drönare",
-        "Luftförsvar",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv",
+        "Luftförsvar"
       ]
     },
     {
       "id": "evt-2026-09-28-b41a9f",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T19:34:00+03:00",
-      "title_sv": "Räddningstjänsten begränsar brand vid Ukrainas nationella vetenskapsakademi i Kyjiv efter ryskt anfall",
+      "title_sv": "Räddningsarbetare får elden under kontroll vid Ukrainas nationella vetenskapsakademi i Kyjiv efter rysk attack",
       "title_en": "Rescue workers contain fire at National Academy of Sciences of Ukraine in Kyiv following Russian attack",
-      "summary_sv": "I Kyjiv, employees of the statliga räddningstjänsten (DSNS) contained a fire in the building of the Ukrainas nationella vetenskapsakademi, which broke out as a result of an angrepp by the rysk Federation.",
+      "summary_sv": "I Kyjiv förde anställda vid den statliga räddningstjänsten (DSNS) branden under kontroll i byggnaden av Ukrainas nationella vetenskapsakademi, som bröt ut som ett resultat av en attack från Ryska federationen.",
       "summary_en": "In Kyiv, employees of the State Emergency Service contained a fire in the building of the National Academy of Sciences of Ukraine, which broke out as a result of an attack by the Russian Federation.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -78,18 +78,18 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
+        "Ukraina",
         "Kyjiv",
-        "Ukraina"
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-1a0715",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T18:58:00+03:00",
-      "title_sv": "Ryskt anfall mot Charkiv skadar 43 personer och skadar 46 byggnader",
+      "title_sv": "Rysk attack mot Charkiv skadar 43 personer och skadar 46 byggnader",
       "title_en": "Russian strike on Kharkiv injures 43 people and damages 46 buildings",
-      "summary_sv": "The number of offer from the Ryskt anfall mot an flerbostadshus i the Saltivsky District of Charkiv has risen to 43.",
+      "summary_sv": "Antalet offer från den ryska attacken mot ett bostadshus i Saltivsky-distriktet i Charkiv har stigit till 43.",
       "summary_en": "The number of casualties from the Russian strike on an apartment building in the Saltivsky District of Kharkiv has risen to 43.",
       "location_name": "Charkiv",
       "tidshorisont": "dagligen",
@@ -117,18 +117,18 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
+        "Ukraina",
         "Charkiv",
-        "Ukraina"
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-e68346",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T18:34:00+03:00",
-      "title_sv": "Ryskt anfall mot Dobrobut vårdcentral i Kyjiv skadar sju personer",
+      "title_sv": "Rysk attack mot Dobrobut vårdcentral i Kyjiv skadar sju personer",
       "title_en": "Russian strike on Dobrobut medical center in Kyiv injures seven people",
-      "summary_sv": "I huvudstaden, the enemy träffade the “Dobrobut” vårdcentral, injuring sju personer.",
+      "summary_sv": "I huvudstaden träffade fienden vårdcentralen \"Dobrobut\" och skadade sju personer.",
       "summary_en": "In the capital, the enemy struck the “Dobrobut” medical center, injuring seven people.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -156,18 +156,18 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
+        "Ukraina",
         "Kyjiv",
-        "Ukraina"
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-8d479c",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T17:59:00+03:00",
-      "title_sv": "Anfall mot vetenskapsakademin i Kyjiv: tidigare säkerhetsrådschefen Horbulin skadades, hans medarbetare dödades",
+      "title_sv": "Attack mot vetenskapsakademin i Kyjiv: tidigare nationella säkerhetsrådets sekreterare Horbulin skadad, hans assistent dödad",
       "title_en": "Strike on science academy in Kyiv: Ex-NSDC Secretary Horbulin injured, his aide killed",
-      "summary_sv": "An medarbetare to former National Security and Defense Council Secretary Volodymyr Horbulin was dödades as a result of a Ryskt anfall mot the building of the Ukrainas nationella vetenskapsakademi.",
+      "summary_sv": "En assistent till den tidigare sekreteraren för nationella säkerhets- och försvarsrådet Volodymyr Horbulin dödades som ett resultat av en rysk attack mot byggnaden av Ukrainas nationella vetenskapsakademi.",
       "summary_en": "An aide to former National Security and Defense Council Secretary Volodymyr Horbulin was killed as a result of a Russian strike on the building of the National Academy of Sciences of Ukraine.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -196,18 +196,18 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
+        "Ukraina",
         "Kyjiv",
-        "Ukraina"
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-1064f7",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T17:39:00+03:00",
-      "title_sv": "Ukrainska styrkor visar befrielsen av Karpivka på Lyman-avsnittet",
+      "title_sv": "Ukrainska styrkor visar befrielsen av Karpivka på Lyman-axeln",
       "title_en": "Ukrainian forces show liberation of Karpivka on Lyman axis",
-      "summary_sv": "Ukraina's State Border Guard Service showed how, together with the Third Army Corps, it liberated Karpivka in the Donetsk region on the Lyman axis.",
+      "summary_sv": "Ukrainas statliga gränsbevakningstjänst visade hur den tillsammans med tredje armékåren befriade Karpivka i Donetsk-regionen på Lyman-axeln.",
       "summary_en": "Ukraine's State Border Guard Service showed how, together with the Third Army Corps, it liberated Karpivka in the Donetsk region on the Lyman axis.",
       "location_name": "Lyman-sektorn",
       "tidshorisont": "dagligen",
@@ -234,17 +234,17 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Lyman",
-        "Ukraina"
+        "Ukraina",
+        "Lyman"
       ]
     },
     {
       "id": "evt-2026-09-28-82f9cb",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T17:12:00+03:00",
-      "title_sv": "Ryska anfall mot Kyjiv: 19 personer skadades sedan dagens början, kvinna dödad",
+      "title_sv": "Ryska attacker mot Kyjiv: 19 personer skadade sedan dagens början, kvinna dödad",
       "title_en": "Russian attacks on Kyiv: 19 people injured since start of day, woman killed",
-      "summary_sv": "Nineteen personer were skadades i Kyjiv as a result of Ryska anfall mot Monday, September 28, while en woman was dödades.",
+      "summary_sv": "Nitton personer skadades i Kyjiv till följd av ryska attacker måndagen den 28 september, medan en kvinna dödades.",
       "summary_en": "Nineteen people were injured in Kyiv as a result of Russian attacks on Monday, September 28, while one woman was killed.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -272,17 +272,17 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Kyjiv",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv"
       ]
     },
     {
       "id": "evt-2026-09-28-5e2c41",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T16:50:00+03:00",
-      "title_sv": "Ryskt anfall mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar fem",
+      "title_sv": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar fem",
       "title_en": "Russian strike on National Academy of Sciences building in central Kyiv kills one, injures five",
-      "summary_sv": "En person was dödades and fem others skadades i Kyjiv after a drönare träffade a non-residential building in the historic center of the city on Monday afternoon.",
+      "summary_sv": "En person dödades och fem andra skadades i Kyjiv efter att en drönare träffade en icke-bostadsbyggnad i stadens historiska centrum på måndagseftermiddagen.",
       "summary_en": "One person was killed and five others injured in Kyiv after a drone struck a non-residential building in the historic center of the city on Monday afternoon.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -310,19 +310,19 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
-        "Kyjiv",
         "Drönare",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-bd5e91",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T16:37:00+03:00",
-      "title_sv": "Ryska styrkor anfaller flerbostadshus i Odesa, tre skadade",
+      "title_sv": "Ryska styrkor attackerar bostadshus i Odesa, tre skadade",
       "title_en": "Russian forces strike apartment building in Odesa, three injured",
-      "summary_sv": "A residential building was skadades i Odesa as a result of a ryskt anfall.",
+      "summary_sv": "Ett bostadshus skadades i Odesa till följd av en rysk attack.",
       "summary_en": "A residential building was damaged in Odesa as a result of a Russian attack.",
       "location_name": "Odesa",
       "tidshorisont": "dagligen",
@@ -350,18 +350,18 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
+        "Ukraina",
         "Odesa",
-        "Ukraina"
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-ca43f3",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T16:16:00+03:00",
-      "title_sv": "Rysk drönare träffar sju våningar hög administrationsbyggnad i Kyjiv's Shevchenkivskyi district",
+      "title_sv": "Rysk UAV attackerar sju våningar hög administrativ byggnad i Kyjivs Shevchenkivskyi-distrikt",
       "title_en": "Russian UAV strikes seven-story administrative building in Kyiv's Shevchenkivskyi district",
-      "summary_sv": "A rysk drönare has träffade an administrationsbyggnad i Kyjiv's Shevchenkivskyi district.",
+      "summary_sv": "En rysk drönare har träffat en administrativ byggnad i Kyjivs Shevchenkivskyi-distrikt.",
       "summary_en": "A Russian drone has struck an administrative building in Kyiv's Shevchenkivskyi district.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -389,29 +389,29 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Kyjiv",
-        "Drönare",
         "Infrastruktur",
-        "Ukraina"
+        "Drönare",
+        "Ukraina",
+        "Kyjiv"
       ]
     },
     {
       "id": "evt-2026-09-28-5ea807",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:56:36+00:00",
-      "title_sv": "Polen lyfter jaktflyg som svar på Ryska anfall mot västra Ukraina – as it happened",
+      "title_sv": "Polen sätter in stridsflygplan som svar på ryska attacker mot västra Ukraina – som det hände",
       "title_en": "Poland scrambles military aircraft in response to Russian strikes on western Ukraine – as it happened",
-      "summary_sv": "Polen’s centre for security upgraded a upgraded a warning to ‘threat of an air angrepp’ and told residents in eastern Polen to shelterBack to Metz, we are still waiting for the main part of the event to begin – with Emmanuel Macron now welcoming guests outside the venue.Former commission president Jean Claude Juncker gets a big hug on arrival. Continue reading...",
-      "summary_en": "Poland’s centre for security upgraded a upgraded a warning to ‘threat of an air attack’ and told residents in eastern Poland to shelterBack to Metz, we are still waiting for the main part of the event to begin – with Emmanuel Macron now welcoming guests outside the venue.Former commission president Jean Claude Juncker gets a big hug on arrival. Continue reading...",
+      "summary_sv": "Polens säkerhetscenter uppgraderade en uppgraderad varning till \"hot om en luftattack\" och sa åt invånarna i östra Polen att ta skydd Tillbaka till Metz, vi väntar fortfarande på att huvuddelen av evenemanget ska börja – med Emmanuel Macron som nu välkomnar gäster utanför...",
+      "summary_en": "Poland’s centre for security upgraded a upgraded a warning to ‘threat of an air attack’ and told residents in eastern Poland to shelter Back to Metz, we are still waiting for the main part of the event to begin – with Emmanuel Macron now welcoming guests outside the...",
       "location_name": "Polen & västra gränsen",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "usa",
-        "uk",
-        "ukraina",
         "eu",
-        "ryssland"
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -439,9 +439,9 @@
       "id": "evt-2026-09-28-f07766",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:54:00+03:00",
-      "title_sv": "Ryskt anfall mot business center in Dnipro: Injury toll rises to 15, tre dead",
+      "title_sv": "Rysk attack mot affärscentrum i Dnipro: Skadetalet stiger till 15, tre döda",
       "title_en": "Russian strike on business center in Dnipro: Injury toll rises to 15, three dead",
-      "summary_sv": "The number of personer skadades in Dnipro after a Ryskt anfall mot a business center has risen to 15.",
+      "summary_sv": "Antalet skadade i Dnipro efter en rysk attack mot ett affärscenter har stigit till 15.",
       "summary_en": "The number of people injured in Dnipro after a Russian strike on a business center has risen to 15.",
       "location_name": "Dnipro",
       "tidshorisont": "dagligen",
@@ -477,19 +477,19 @@
       "id": "evt-2026-09-28-1c0d5c",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:37:00+03:00",
-      "title_sv": "EU to extend EUMAM training mission for ukrainsk military for två years",
+      "title_sv": "EU förlänger EUMAM-utbildningsuppdraget för ukrainsk militär med två år",
       "title_en": "EU to extend EUMAM training mission for Ukrainian military for two years",
-      "summary_sv": "EU member states have agreed to extend the EUMAM Ukraina mission to train ukrainsk troops for another två years. At the same time, the European Union should coordinate checks of suspicious vessels more closely to limit Ryssland's ability to finance the war through its shadow fleet.",
-      "summary_en": "EU member states have agreed to extend the EUMAM Ukraine mission to train Ukrainian troops for another two years. At the same time, the European Union should coordinate checks of suspicious vessels more closely to limit Russia's ability to finance the war through its shadow fleet.",
+      "summary_sv": "EU:s medlemsländer har kommit överens om att förlänga EUMAM Ukraines uppdrag för att utbilda ukrainska trupper med ytterligare två år.",
+      "summary_en": "EU member states have agreed to extend the EUMAM Ukraine mission to train Ukrainian troops for another two years.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "usa",
-        "uk",
-        "ukraina",
         "eu",
-        "ryssland"
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -517,19 +517,19 @@
       "id": "evt-2026-09-28-54fa4e",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:16:50+00:00",
-      "title_sv": "Ryskt anfall mot Kyjiv’s vetenskapsakademin dödar minst en i det senaste dagsanfallet",
+      "title_sv": "Ryska attacken mot Kyjivs vetenskapsakademi dödade minst en i den senaste attacken dagtid",
       "title_en": "Russian strike on Kyiv’s science academy kills at least one in latest daytime attack",
-      "summary_sv": "Tre others wounded as jet-powered drönare increasingly target Ukraina’s capital, with medical centre also hitEurope live – latest updatesA rysk drönare hit the Nationella vetenskapsakademin i centrala Kyjiv on Monday, killing at least en person, in the latest daytime angrepp on Ukraina’s capital.Flames tore through the historic building as personer clambered out of first- and second-floor windows to escape, in dramatic scenes increasingly familiar in the heavily bombarded city. Continue reading...",
-      "summary_en": "Three others wounded as jet-powered drones increasingly target Ukraine’s capital, with medical centre also hitEurope live – latest updatesA Russian drone hit the National Academy of Sciences in central Kyiv on Monday, killing at least one person, in the latest daytime attack on Ukraine’s capital.Flames tore through the historic building as people clambered out of first- and second-floor windows to escape, in dramatic scenes increasingly familiar in the heavily bombarded city. Continue reading...",
+      "summary_sv": "Tre andra skadades när jetdrivna drönare i allt högre grad riktar sig mot Ukrainas huvudstad, med vårdcentralen träffade också Europa En rysk drönare träffade Nationella vetenskapsakademin i centrala Kyjiv i måndags och dödade minst en person i den senaste dagsattacken mot...",
+      "summary_en": "Three others wounded as jet-powered drones increasingly target Ukraine’s capital, with medical centre also hit Europe A Russian drone hit the National Academy of Sciences in central Kyiv on Monday, killing at least one person, in the latest daytime attack on Ukraine’s...",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "usa",
-        "uk",
-        "ukraina",
         "eu",
-        "ryssland"
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -549,19 +549,19 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
-        "Kyjiv",
         "Drönare",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-399b83",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:15:00+03:00",
-      "title_sv": "Ryskt anfall mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar tre",
+      "title_sv": "Rysk attack mot Nationella vetenskapsakademins byggnad i centrala Kyjiv dödar en, skadar tre",
       "title_en": "Russian strike on National Academy of Sciences building in central Kyiv kills one, injures three",
-      "summary_sv": "En person was dödades and tre others skadades i Kyjiv after a rysk drönare träffade a non-residential building in the historic center of the city on Monday afternoon.",
+      "summary_sv": "En person dödades och tre andra skadades i Kyjiv efter att en rysk drönare träffade en icke-bostadsbyggnad i stadens historiska centrum på måndagseftermiddagen.",
       "summary_en": "One person was killed and three others injured in Kyiv after a Russian drone struck a non-residential building in the historic center of the city on Monday afternoon.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -589,29 +589,29 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
-        "Kyjiv",
         "Drönare",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-2080b7",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T15:07:54+00:00",
-      "title_sv": "Pope urges concessions for peace amid war in Ukraina – video",
+      "title_sv": "Påven uppmanar till eftergifter för fred mitt i kriget i Ukraina – video",
       "title_en": "Pope urges concessions for peace amid war in Ukraine – video",
-      "summary_sv": "In an address to European leaders in Metz, France, Pope Leo told negotiators seeking to end war in Europe that they must be willing to sacrifice some positions to achieve peace, as efforts to end Ryssland's war in Ukraina continue to fail. He urged leaders to recall the founding values of the EU, including the rule of law and the equality of all personer. Leo had begun his fyra-day visit on Friday with a warning that the United Nations and other multilateral bodies were in crisis and international dialogue risked becoming a 'charade' Continue reading...",
-      "summary_en": "In an address to European leaders in Metz, France, Pope Leo told negotiators seeking to end war in Europe that they must be willing to sacrifice some positions to achieve peace, as efforts to end Russia's war in Ukraine continue to fail. He urged leaders to recall the founding values of the EU, including the rule of law and the equality of all people. Leo had begun his four-day visit on Friday with a warning that the United Nations and other multilateral bodies were in crisis and international dialogue risked becoming a 'charade' Continue reading...",
+      "summary_sv": "I ett tal till europeiska ledare i Metz, Frankrike, sa påven Leo till förhandlare som försöker avsluta kriget i Europa att de måste vara villiga att offra vissa positioner för att uppnå fred, eftersom ansträngningarna att avsluta Rysslands krig i Ukraina fortsätter att...",
+      "summary_en": "In an address to European leaders in Metz, France, Pope Leo told negotiators seeking to end war in Europe that they must be willing to sacrifice some positions to achieve peace, as efforts to end Russia's war in Ukraine continue to fail.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "usa",
-        "uk",
-        "ukraina",
         "eu",
-        "ryssland"
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -638,9 +638,9 @@
       "id": "evt-2026-09-28-5ba292",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T14:59:00+03:00",
-      "title_sv": "Rysk drönare anfaller energy facility in Dnipropetrovsk region",
+      "title_sv": "Rysk drönare attackerar energianläggning i Dnipropetrovsk-regionen",
       "title_en": "Russian drone strikes energy facility in Dnipropetrovsk region",
-      "summary_sv": "Ryska styrkor attacked an energy facility in a frontlinje area of Ukraina's Dnipropetrovsk region.",
+      "summary_sv": "Ryska styrkor attackerade en energianläggning i ett frontlinjeområde i Ukrainas Dnipropetrovsk-region.",
       "summary_en": "Russian forces attacked an energy facility in a frontline area of Ukraine's Dnipropetrovsk region.",
       "location_name": "Dnipro",
       "tidshorisont": "dagligen",
@@ -669,19 +669,19 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Dnipro",
         "Energi",
-        "Drönare",
-        "Ukraina"
+        "Dnipro",
+        "Ukraina",
+        "Drönare"
       ]
     },
     {
       "id": "evt-2026-09-28-5cbf02",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T14:57:31+00:00",
-      "title_sv": "Seoul summons Ukraina envoy over North Korean prisoner-of-war row",
+      "title_sv": "Seoul kallar Ukrainas sändebud över nordkoreanska krigsfångar",
       "title_en": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
-      "summary_sv": "Last week Zelensky revealed Ukraina had sent två captured North Koreans to South Korea - which Seoul says was meant to be a secret.",
+      "summary_sv": "Förra veckan avslöjade Zelensky att Ukraina hade skickat två tillfångatagna nordkoreaner till Sydkorea - vilket Seoul säger var tänkt att vara en hemlighet.",
       "summary_en": "Last week Zelensky revealed Ukraine had sent two captured North Koreans to South Korea - which Seoul says was meant to be a secret.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
@@ -715,9 +715,9 @@
       "id": "evt-2026-09-28-214ef5",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T14:43:00+03:00",
-      "title_sv": "Rysk drönare crashes into non-residential building i centrala Kyjiv, causing fire",
+      "title_sv": "Rysk drönare kraschar in i icke-bostadshus i centrala Kyjiv och orsakar brand",
       "title_en": "Russian drone crashes into non-residential building in central Kyiv, causing fire",
-      "summary_sv": "A rysk drönare crashed into a non-residential building i centrala Kyjiv, causing a fire.",
+      "summary_sv": "En rysk drönare kraschade in i en icke-bostadsbyggnad i centrala Kyjiv och orsakade en brand.",
       "summary_en": "A Russian drone crashed into a non-residential building in central Kyiv, causing a fire.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -745,20 +745,20 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Civila mål",
-        "Kyjiv",
         "Drönare",
-        "Ukraina"
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
       ]
     },
     {
       "id": "evt-2026-09-28-32ceb2",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T07:00:28+00:00",
-      "title_sv": "Forget the famous names. Here is who actually deserves this year’s Nobel peace prize | Haakon Gjerløw",
+      "title_sv": "Glöm de kända namnen. Här är vem som faktiskt förtjänar årets Nobels fredspris | Haakon Gjerløw",
       "title_en": "Forget the famous names. Here is who actually deserves this year’s Nobel peace prize | Haakon Gjerløw",
-      "summary_sv": "The betting markets favour the US president and Volodymyr Zelenskyy. But the most vital work to secure peace is being done by those far from the spotlightHaakon Gjerløw is the acting director of the Peace Research Institute OsloThe Nobel peace prize is not a contest determined by fame. Yet the betting markets consistently gravitate towards the biggest names in global politics – among them this year, Donald Trump and Volodymyr Zelenskyy.That misses what the prize is for. The real work of building peace is often done far from the headlines: by courts that uphold international law, journalists who document atrocities, and humanitarian organisations that protect communities. With the 2026 prize due to be announced on 9 October, the Nobel committee has an opportunity to remind the world that peace is built through institutions and cooperation, not just diplomatic grandstanding. Continue reading...",
-      "summary_en": "The betting markets favour the US president and Volodymyr Zelenskyy. But the most vital work to secure peace is being done by those far from the spotlightHaakon Gjerløw is the acting director of the Peace Research Institute OsloThe Nobel peace prize is not a contest determined by fame. Yet the betting markets consistently gravitate towards the biggest names in global politics – among them this year, Donald Trump and Volodymyr Zelenskyy.That misses what the prize is for. The real work of building peace is often done far from the headlines: by courts that uphold international law, journalists who document atrocities, and humanitarian organisations that protect communities. With the 2026 prize due to be announced on 9 October, the Nobel committee has an opportunity to remind the world that peace is built through institutions and cooperation, not just diplomatic grandstanding. Continue reading...",
+      "summary_sv": "Spelmarknaderna gynnar USA:s president och Volodymyr Zelenskyy. Men det viktigaste arbetet för att säkerställa fred görs av dem som är långt ifrån rampljuset. Haakon Gjerløw är tillförordnad chef för Fredsforskningsinstitutet Oslo.",
+      "summary_en": "The betting markets favour the US president and Volodymyr Zelenskyy. But the most vital work to secure peace is being done by those far from the spotlight Haakon Gjerløw is the acting director of the Peace Research Institute Oslo The Nobel peace prize is not a contest...",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
@@ -792,19 +792,19 @@
       "id": "evt-2026-09-28-842e75",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T01:15:42+00:00",
-      "title_sv": "Ukraina war briefing: Zelenskyy says Moscow terrorising Ukrainians as fresh anfaller kill åtta",
+      "title_sv": "Krigsbriefing i Ukraina: Zelenskyy säger att Moskva terroriserar ukrainare när nya attacker dödar åtta",
       "title_en": "Ukraine war briefing: Zelenskyy says Moscow terrorising Ukrainians as fresh strikes kill eight",
-      "summary_sv": "Ukraina president says Ryssland shows no signs of slowing the war, calls for sanctions packages to take effect in October. What we know on day 1,678As ryska drönare träffade Kyjiv and other parts of Ukraina on Sunday, President Volodymyr Zelenskyy said Ryssland was showing no signs of de-escalating the war despite assurances to the US that it would. In a statement on X, Zelenskyy accused Ryssland of terrorising Ukrainians with its latest attacks, which he said included setting on fire a market outside Kyjiv, and striking kindergartens, schools, homes and communications facilities. “Anywhere in the world, this choice of targets would be called by en word – terrorism. Ryssland has no military objective whatsoever in doing this – it is purely an attempt to break personer and inflict as much harm as possible on our society,” Zelenskyy said. “If Ryssland were truly preparing for any real steps toward de-escalation – as it claims, particularly to American negotiators – this wave of … terror would not be happening,” he said, calling on the US to fully implement the Lindsey Graham Act, which enables sweeping sanctions on Ryssland aimed at pressing it into ending the war.Zelenskyy’s comments came ahead of the conclusion of the UN general assembly in New York on Monday. On the weekend, the foreign ministers of Ryssland and Germany met in New York on the sidelines of the ⁠assembly to discuss the war but Ryssland’s top diplomat dismissed Germany’s calls to ease off its “dangerous path of escalation” towards Europe. Zelenskyy said on X that Ukraina was relying on “effective decisions” being made by other countries and stronger pressure from its partners in the G7 and G20, “so that Ryssland sees that manipulating diplomatic signals will not allow it to keep winning more and more time for war and terror”.New sanctions packages targeting financial networks, supply chains and companies and individuals helping produce rysk weapons “must take effect as early as October” Zelenskyy said also, to provide a stronger foundation for changing the situation and “pushing Ryssland toward real diplomacy”.rysk anfaller dödades åtta personer across Ukraina on Sunday, according to authorities while Zelenskyy said Ryssland had fired about 3,900 drönare, aerial bombs and other robotar at Ukraina over the past week. ukrainsk prosecutors said a drönare angrepp hit a market in Sofiiska Borshchahivka on the western outskirts of Kyjiv, killing två and injuring about 10 personer. Others died in anfaller in different regions and Kyjiv also came under angrepp, local officials said. i huvudstaden, ⁠Mayor Vitali Klitschko said nio personer were skadades, including a child.Ryssland also hit the headquarters of Kyivstar – Ukraina’s largest mobile service provider – on Sunday, the company told local media. On Monday a ⁠guided rysk ⁠aerial ​bomb skadades 22 personer, including ⁠children, as it träffade ⁠an bostadshus ​in ‌Ukraina’s ‌second-biggest city of Charkiv, mayor Ihor Terekhov said on Telegram. Moscow has recently waged a sustained bombardment of ukrainsk ⁠datacentres and communications infrastructure.Peter Beaumont and Artem Mazhulin have reported on the dire living conditions inside Oleshky, across the Dnipro River from the southern city of Kherson. Life in the city – once home to 24,000 personer but now with only 2,000 remaining – has become “a hell on earth”, according to Ukrainians familiar with conditions there.South ⁠Korea has demanded an official ⁠explanation and apology ​from Ukraina, accusing Kyjiv of disclosing the transfer of två North Korean prisoners of war to South Korea and then falsely denying that the två sides had agreed to keep the move ⁠confidential, according to a report from Reuters. “The presidential office expresses strong regret över Ukraina’s unilateral disclosure and its subsequent false announcement that there had not been a non-disclosure agreement,” Seong Ghi-hong, senior presidential secretary for public relations, said in a statement on Sunday. According to the statement, President Zelenskyy disclosed the transfer in his address to the UN general assembly. Ukraina’s embassy in Seoul did not immediately respond to a Reuters request for comment. Continue reading...",
-      "summary_en": "Ukraine president says Russia shows no signs of slowing the war, calls for sanctions packages to take effect in October. What we know on day 1,678As Russian drones struck Kyiv and other parts of Ukraine on Sunday, President Volodymyr Zelenskyy said Russia was showing no signs of de-escalating the war despite assurances to the US that it would. In a statement on X, Zelenskyy accused Russia of terrorising Ukrainians with its latest attacks, which he said included setting on fire a market outside Kyiv, and striking kindergartens, schools, homes and communications facilities. “Anywhere in the world, this choice of targets would be called by one word – terrorism. Russia has no military objective whatsoever in doing this – it is purely an attempt to break people and inflict as much harm as possible on our society,” Zelenskyy said. “If Russia were truly preparing for any real steps toward de-escalation – as it claims, particularly to American negotiators – this wave of … terror would not be happening,” he said, calling on the US to fully implement the Lindsey Graham Act, which enables sweeping sanctions on Russia aimed at pressing it into ending the war.Zelenskyy’s comments came ahead of the conclusion of the UN general assembly in New York on Monday. On the weekend, the foreign ministers of Russia and Germany met in New York on the sidelines of the ⁠assembly to discuss the war but Russia’s top diplomat dismissed Germany’s calls to ease off its “dangerous path of escalation” towards Europe. Zelenskyy said on X that Ukraine was relying on “effective decisions” being made by other countries and stronger pressure from its partners in the G7 and G20, “so that Russia sees that manipulating diplomatic signals will not allow it to keep winning more and more time for war and terror”.New sanctions packages targeting financial networks, supply chains and companies and individuals helping produce Russian weapons “must take effect as early as October” Zelenskyy said also, to provide a stronger foundation for changing the situation and “pushing Russia toward real diplomacy”.Russian strikes killed eight people across Ukraine on Sunday, according to authorities while Zelenskyy said Russia had fired about 3,900 drones, aerial bombs and other missiles at Ukraine over the past week. Ukrainian prosecutors said a drone attack hit a market in Sofiiska Borshchahivka on the western outskirts of Kyiv, killing two and injuring about 10 people. Others died in strikes in different regions and Kyiv also came under attack, local officials said. In the capital, ⁠Mayor Vitali Klitschko said nine people were injured, including a child.Russia also hit the headquarters of Kyivstar – Ukraine’s largest mobile service provider – on Sunday, the company told local media. On Monday a ⁠guided Russian ⁠aerial ​bomb injured 22 people, including ⁠children, as it struck ⁠an apartment building ​in ‌Ukraine’s ‌second-biggest city of Kharkiv, mayor Ihor Terekhov said on Telegram. Moscow has recently waged a sustained bombardment of Ukrainian ⁠datacentres and communications infrastructure.Peter Beaumont and Artem Mazhulin have reported on the dire living conditions inside Oleshky, across the Dnipro River from the southern city of Kherson. Life in the city – once home to 24,000 people but now with only 2,000 remaining – has become “a hell on earth”, according to Ukrainians familiar with conditions there.South ⁠Korea has demanded an official ⁠explanation and apology ​from Ukraine, accusing Kyiv of disclosing the transfer of two North Korean prisoners of war to South Korea and then falsely denying that the two sides had agreed to keep the move ⁠confidential, according to a report from Reuters. “The presidential office expresses strong regret over Ukraine’s unilateral disclosure and its subsequent false announcement that there had not been a non-disclosure agreement,” Seong Ghi-hong, senior presidential secretary for public relations, said in a statement on Sunday. According to the statement, President Zelenskyy disclosed the transfer in his address to the UN general assembly. Ukraine’s embassy in Seoul did not immediately respond to a Reuters request for comment. Continue reading...",
+      "summary_sv": "Ukrainas president säger att Ryssland inte visar några tecken på att bromsa kriget, kräver att sanktionspaket ska träda i kraft i oktober.",
+      "summary_en": "Ukraine president says Russia shows no signs of slowing the war, calls for sanctions packages to take effect in October.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "usa",
-        "uk",
-        "ukraina",
         "eu",
-        "ryssland"
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -824,11 +824,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Kyjiv",
-        "Ukraina",
-        "Civila mål",
         "Drönare",
-        "Robotanfall"
+        "Civila mål",
+        "Robotanfall",
+        "Ukraina",
+        "Kyjiv"
       ]
     }
   ],

@@ -9,8 +9,10 @@ mot de 6 dimensionerna i Ukrainakriget.md.
 import json
 import re
 import sys
+import time
 import hashlib
 import urllib.request
+import urllib.parse
 import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
@@ -87,142 +89,103 @@ WAR_KEYWORDS = [
     "putin", "kreml", "kremlin", "general staff", "generalstab"
 ]
 
-EN_SV_LEXICON = [
-    # Complex expressions
-    (r"(?i)\bair defense forces shoot down (\d+) of (\d+) russian drones over ukraine during day\b",
-     r"Luftförsvarsstyrkor sköt ned \1 av \2 ryska drönare över Ukraina under dagen"),
-    (r"(?i)\bair defense forces shoot down\b", "Luftförsvarsstyrkor skjuter ned"),
-    (r"(?i)\bair defense forces shot down\b", "Luftförsvaret sköt ned"),
-    (r"(?i)\bair defense forces\b", "luftförsvarsstyrkor"),
-    (r"(?i)\bair defense\b", "luftförsvar"),
-    (r"(?i)\brescue workers contain fire at\b", "Räddningstjänsten begränsar brand vid"),
-    (r"(?i)\bnational academy of sciences of ukraine\b", "Ukrainas nationella vetenskapsakademi"),
-    (r"(?i)\bnational academy of sciences building\b", "Nationella vetenskapsakademins byggnad"),
-    (r"(?i)\bnational academy of sciences\b", "Nationella vetenskapsakademin"),
-    (r"(?i)\bfollowing russian attack\b", "efter ryskt anfall"),
-    (r"(?i)\bfollowing russian strike\b", "efter ryskt anfall"),
-    (r"(?i)\brussian strike on\b", "Ryskt anfall mot"),
-    (r"(?i)\brussian strikes on\b", "Ryska anfall mot"),
-    (r"(?i)\brussian attack on\b", "Ryskt anfall mot"),
-    (r"(?i)\brussian attacks on\b", "Ryska anfall mot"),
-    (r"(?i)\brussian attack\b", "ryskt anfall"),
-    (r"(?i)\brussian attacks\b", "ryska anfall"),
-    (r"(?i)\brussian forces strike\b", "Ryska styrkor anfaller"),
-    (r"(?i)\brussian forces\b", "ryska styrkor"),
-    (r"(?i)\brussian uav strikes\b", "Rysk drönare träffar"),
-    (r"(?i)\brussian drones\b", "ryska drönare"),
-    (r"(?i)\brussian drone\b", "rysk drönare"),
-    (r"(?i)\bukrainian forces show liberation of\b", "Ukrainska styrkor visar befrielsen av"),
-    (r"(?i)\bpoland scrambles military aircraft in response to\b", "Polen lyfter jaktflyg som svar på"),
-    (r"(?i)\bin response to\b", "som svar på"),
-    (r"(?i)\bapartment building in\b", "flerbostadshus i"),
-    (r"(?i)\bapartment building\b", "bostadshus"),
-    (r"(?i)\bseven-story administrative building\b", "sju våningar hög administrationsbyggnad"),
-    (r"(?i)\badministrative building\b", "administrationsbyggnad"),
-    (r"(?i)\bmedical center\b", "vårdcentral"),
-    (r"(?i)\bhealth clinic\b", "vårdcentral"),
-    (r"(?i)\bpower grid\b", "elnät"),
-    (r"(?i)\boil depot\b", "oljedepå"),
-    (r"(?i)\bfuel stockpile\b", "bränslelager"),
-    (r"(?i)\bglide bomb\b", "glidbomb"),
-    (r"(?i)\bglide bombs\b", "glidbomber"),
-    (r"(?i)\bfrontline clashes\b", "frontstrider"),
-    (r"(?i)\bfrontline\b", "frontlinje"),
-    (r"(?i)\bwestern ukraine\b", "västra Ukraina"),
-    (r"(?i)\beastern ukraine\b", "östra Ukraina"),
-    (r"(?i)\bsouthern ukraine\b", "södra Ukraina"),
-    (r"(?i)\bnorthern ukraine\b", "norra Ukraina"),
-    (r"(?i)\bin central kyiv\b", "i centrala Kyjiv"),
-    (r"(?i)\bin kyiv\b", "i Kyjiv"),
-    (r"(?i)\bin kharkiv\b", "i Charkiv"),
-    (r"(?i)\bin odesa\b", "i Odesa"),
-    (r"(?i)\bon lyman axis\b", "på Lyman-avsnittet"),
-    (r"(?i)\bon pokrovsk axis\b", "på Pokrovsk-avsnittet"),
-    (r"(?i)\binjures (\d+) people and damages (\d+) buildings\b", r"skadar \1 personer och skadar \2 byggnader"),
-    (r"(?i)\binjures (\d+) people\b", r"skadar \1 personer"),
-    (r"(?i)\bkills (\w+), injures (\w+)\b", r"dödar \1, skadar \2"),
-    (r"(?i)\bkills at least (\w+) in latest daytime attack\b", r"dödar minst \1 i det senaste dagsanfallet"),
-    (r"(?i)\bkills at least (\w+)\b", r"dödar minst \1"),
-    (r"(?i)\bthree injured\b", "tre skadade"),
-    (r"(?i)\bseven people\b", "sju personer"),
-    (r"(?i)\bfive people\b", "fem personer"),
-    (r"(?i)\bthree people\b", "tre personer"),
-    (r"(?i)\btwo people\b", "två personer"),
-    (r"(?i)\bone person\b", "en person"),
-    (r"(?i)\bone killed\b", "en dödad"),
-    (r"(?i)\btwo killed\b", "två dödade"),
-    (r"(?i)\bthree killed\b", "tre dödade"),
-    (r"(?i)\bwoman killed\b", "kvinna dödad"),
-    (r"(?i)\bchildren injured\b", "barn skadade"),
-    (r"(?i)\bsince start of day\b", "sedan dagens början"),
-    (r"(?i)\bover ukraine during day\b", "över Ukraina under dagen"),
-    (r"(?i)\bover ukraine\b", "över Ukraina"),
-    (r"(?i)\bduring the day\b", "under dagen"),
-    (r"(?i)\bovernight\b", "under natten"),
-    (r"(?i)\bin the capital\b", "i huvudstaden"),
-    (r"(?i)\bthroughout the day\b", "under hela dagen"),
-    (r"(?i)\bthroughout\b", "genom"),
-    (r"(?i)\bcasualties\b", "offer"),
-    (r"(?i)\bcasualty\b", "offer"),
-    (r"(?i)\bdamages\b", "skadar"),
-    (r"(?i)\bdamaged\b", "skadades"),
-    (r"(?i)\binjures\b", "skadar"),
-    (r"(?i)\binjured\b", "skadades"),
-    (r"(?i)\bkills\b", "dödar"),
-    (r"(?i)\bkilled\b", "dödades"),
-    (r"(?i)\bstrikes\b", "anfaller"),
-    (r"(?i)\bstruck\b", "träffade"),
-    (r"(?i)\bintercepted\b", "sköts ned"),
-    (r"(?i)\binterception\b", "nedskjutning"),
-    (r"(?i)\brepelled\b", "avvärjde"),
-    (r"(?i)\bscrambles\b", "lyfter"),
-    (r"(?i)\bliberation of\b", "befrielsen av"),
-    (r"(?i)\bstate emergency service\b", "statliga räddningstjänsten (DSNS)"),
-    (r"(?i)\bair force\b", "flygvapnet"),
-    (r"(?i)\bgeneral staff\b", "generalstaben"),
-    (r"(?i)\bblack sea\b", "Svarta havet"),
-    (r"(?i)\bkyiv\b", "Kyjiv"),
-    (r"(?i)\bkharkiv\b", "Charkiv"),
-    (r"(?i)\brussia\b", "Ryssland"),
-    (r"(?i)\brussian\b", "rysk"),
-    (r"(?i)\bukraine\b", "Ukraina"),
-    (r"(?i)\bukrainian\b", "ukrainsk"),
-    (r"(?i)\bpoland\b", "Polen"),
-    (r"(?i)\b drones\b", " drönare"),
-    (r"(?i)\b drone\b", " drönare"),
-    (r"(?i)\b missiles\b", " robotar"),
-    (r"(?i)\bstrike on science academy in kyiv\b", "Anfall mot vetenskapsakademin i Kyjiv"),
-    (r"(?i)\bstrike on\b", "anfall mot"),
-    (r"(?i)\bex-nsdc secretary\b", "tidigare säkerhetsrådschefen"),
-    (r"(?i)\bhis aide\b", "hans medarbetare"),
-    (r"(?i)\baide\b", "medarbetare"),
-    (r"(?i)\bpeople\b", "personer"),
-    (r"(?i)\bone\b", "en"),
-    (r"(?i)\btwo\b", "två"),
-    (r"(?i)\bthree\b", "tre"),
-    (r"(?i)\bfour\b", "fyra"),
-    (r"(?i)\bfive\b", "fem"),
-    (r"(?i)\bsix\b", "sex"),
-    (r"(?i)\bseven\b", "sju"),
-    (r"(?i)\beight\b", "åtta"),
-    (r"(?i)\bnine\b", "nio"),
-    (r"(?i)\bten\b", "tio"),
-    (r"(?i)\bscience academy\b", "vetenskapsakademin"),
-    (r"(?i)\battack\b", "angrepp"),
-    (r"(?i)\bstrike\b", "anfall")
-]
+def clean_sentence_case(s):
+    s = s.strip()
+    if not s:
+        return ""
+    # Säkerställ att endast inledande bokstav är versal om inte ordet är ett namn/akronym
+    return s[0].upper() + s[1:]
 
-def translate_en_to_sv(text):
+def trim_summary(text, max_len=280):
     if not text:
         return ""
-    res = text
-    for pattern, repl in EN_SV_LEXICON:
-        res = re.sub(pattern, repl, res)
-    # Post cleaning
-    res = res.replace("  ", " ").strip()
-    if res:
-        res = res[0].upper() + res[1:]
-    return res
+    # Särskilj sammanfogade ord: t.ex. "hitEurope" -> "hit Europe"
+    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
+    # Rensa bort redaktionell metadata, livebloggskräp och tillhörande textremsor
+    text = re.sub(r'(?i)\b\w*live\s*[-–]\s*latest updates\w*\b', ' ', text)
+    text = re.sub(r'(?i)\b(live updates|what we know on day \d+|live blog|latest updates|continue reading|fortsätt läsa|läs mer).*$', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    if len(text) <= max_len:
+        return text
+    # Avgränsa vid sista fullständiga mening före max_len
+    match = re.search(r'^(.{80,' + str(max_len) + r'}[.!?])\s', text)
+    if match:
+        return match.group(1).strip()
+    return text[:max_len].rsplit(' ', 1)[0] + '...'
+
+def translate_text(text, sl='en', tl='sv'):
+    if not text or not text.strip():
+        return ""
+    text = text.strip()
+    
+    t = text
+    if sl == 'en' and tl == 'sv':
+        # Förbehandla engelska begrepp för att förhindra falska vänner (t.ex. strike -> strejk, scramble -> förvränga)
+        t = re.sub(r'\b([Aa]ir|[Mm]issile|[Dd]rone)?\s*[Ss]trikes on\b', r'\1 attacks on', t)
+        t = re.sub(r'\b([Aa]ir|[Mm]issile|[Dd]rone)?\s*[Ss]trike on\b', r'\1 attack on', t)
+        t = re.sub(r'\bRussian strike\b', 'Russian attack', t, flags=re.I)
+        t = re.sub(r'\bRussian strikes\b', 'Russian attacks', t, flags=re.I)
+        t = re.sub(r'\bairstrike\b', 'air attack', t, flags=re.I)
+        t = re.sub(r'\bairstrikes\b', 'air attacks', t, flags=re.I)
+        t = re.sub(r'\bglide bomb strike\b', 'glide bomb attack', t, flags=re.I)
+        t = re.sub(r'\bstrike\b', 'attack', t, flags=re.I)
+        t = re.sub(r'\bstrikes\b', 'attacks', t, flags=re.I)
+        t = re.sub(r'\bstruck\b', 'hit', t, flags=re.I)
+        t = re.sub(r'\bscrambles military aircraft\b', 'deploys fighter jets', t, flags=re.I)
+        t = re.sub(r'\bscramble military aircraft\b', 'deploy fighter jets', t, flags=re.I)
+        t = re.sub(r'\bscrambles aircraft\b', 'scrambles fighter jets', t, flags=re.I)
+        t = re.sub(r'\bcontained a fire\b', 'brought the fire under control', t, flags=re.I)
+        t = re.sub(r'\bcontain fire\b', 'bring fire under control', t, flags=re.I)
+        t = re.sub(r'\bapartment building\b', 'residential building', t, flags=re.I)
+        t = re.sub(r'\bNational Academy of Sciences of Ukraine\b', 'the National Academy of Sciences of Ukraine', t, flags=re.I)
+        t = re.sub(r'\bEx-NSDC Secretary\b', 'former National Security Council secretary', t, flags=re.I)
+        t = re.sub(r'\bNSDC\b', 'National Security and Defense Council', t, flags=re.I)
+        t = re.sub(r'\baide\b', 'assistant', t, flags=re.I)
+        t = re.sub(r'\bPope\b', 'the Pope', t)
+        t = re.sub(r'\bKyiv\b', 'Kyjiv', t)
+        t = re.sub(r'\bKharkiv\b', 'Charkiv', t)
+
+    url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={sl}&tl={tl}&dt=t&q=" + urllib.parse.quote(t)
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64)'})
+    
+    result = ""
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=6) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+                result = ''.join([p[0] for p in data[0] if p and p[0]])
+                if result:
+                    break
+        except Exception:
+            time.sleep(0.3)
+
+    if not result:
+        result = text
+
+    if tl == 'sv':
+        # Efterbehandla svensk text för korrekt ukrainsk nomenklatur och standardiserade termer
+        result = re.sub(r'\bKiev\b', 'Kyjiv', result)
+        result = re.sub(r'\bKievs\b', 'Kyjivs', result)
+        result = re.sub(r'\bKharkiv\b', 'Charkiv', result)
+        result = re.sub(r'\bKharkivs\b', 'Charkivs', result)
+        result = re.sub(r'\bOdessa\b', 'Odesa', result)
+        result = re.sub(r'\bZaporizhzhia\b', 'Zaporizjzja', result, flags=re.I)
+        result = re.sub(r'\bZaporizjzjia\b', 'Zaporizjzja', result, flags=re.I)
+        result = re.sub(r'\bNational Academy of Sciences of Ukraine\b', 'Ukrainas nationella vetenskapsakademi', result)
+        result = re.sub(r'\bNational Academy of Sciences\b', 'Nationella vetenskapsakademin', result)
+        result = re.sub(r'\bNationella vetenskapsakademin byggnad\b', 'Nationella vetenskapsakademins byggnad', result, flags=re.I)
+        result = re.sub(r'\b(förvränger|scramblar) (militära flygplan|stridsflygplan|jaktflyg|flygplan)\b', 'lyfter stridsflyg', result, flags=re.I)
+        result = re.sub(r'\bstrejk(en|er|erna)? mot\b', r'attack\1 mot', result, flags=re.I)
+        result = re.sub(r'\brysk(a)? strejk(en|er|erna)?\b', r'rysk\1 attack\2', result, flags=re.I)
+        result = re.sub(r'\bhyreshus\b', 'flerbostadshus', result, flags=re.I)
+        result = re.sub(r'\bsköt ner\b', 'sköt ned', result, flags=re.I)
+        result = re.sub(r'\bskjuter ner\b', 'skjuter ned', result, flags=re.I)
+        result = re.sub(r'\bstatliga räddningstjänsten\b', 'statliga räddningstjänsten (DSNS)', result, flags=re.I)
+        result = re.sub(r'\bmedhjälpare\b', 'medarbetare', result, flags=re.I)
+        result = re.sub(r'\bPåve\b', 'Påven', result)
+        result = clean_sentence_case(result)
+
+    return result
 
 def is_ukraine_related(title, desc):
     full = f"{title} {desc}".lower()
@@ -437,15 +400,15 @@ def item_to_event(item):
     # Determine language & translations
     is_sv_source = src.get("lang") == "sv"
     if is_sv_source:
-        title_sv = title_raw
-        title_en = title_raw
-        summary_sv = desc_raw if desc_raw else title_raw
-        summary_en = desc_raw if desc_raw else title_raw
+        title_sv = clean_sentence_case(title_raw)
+        summary_sv = trim_summary(desc_raw if desc_raw else title_raw)
+        title_en = translate_text(title_sv, sl="sv", tl="en")
+        summary_en = translate_text(summary_sv, sl="sv", tl="en")
     else:
         title_en = title_raw
-        title_sv = translate_en_to_sv(title_raw)
-        summary_en = desc_raw if desc_raw else title_raw
-        summary_sv = translate_en_to_sv(desc_raw) if desc_raw else title_sv
+        summary_en = trim_summary(desc_raw if desc_raw else title_raw)
+        title_sv = translate_text(title_en, sl="en", tl="sv")
+        summary_sv = translate_text(summary_en, sl="en", tl="sv")
 
     # Generate relevant tags
     tags = ["Ukraina"]
@@ -595,6 +558,45 @@ def update_statistics(events_list):
     except Exception as e:
         print(f"Kunde inte uppdatera statistik: {e}")
 
+def sanitize_events_list(events_list):
+    """
+    Säkerställer att alla händelser har ren svenska och engelska utan svengelska eller avhuggna meningar.
+    """
+    cleaned = []
+    svengelska_pattern = re.compile(
+        r'\b(was dödades|is dödades|were skadades|were dödades|was skadades|'
+        r'as a result of|in the building of|the main target of|contained a fire|'
+        r'employees of the|broke out as a result|an medarbetare|was the main target|'
+        r'was dödad|were skadade|non-residential building|historic center|'
+        r'after a drönare|after a rysk|morning|afternoon|evening|Monday|Tuesday|'
+        r'Wednesday|Thursday|Friday|Saturday|Sunday|September|October)\b',
+        re.IGNORECASE
+    )
+    
+    for ev in events_list:
+        summary_sv = ev.get("summary_sv", "")
+        title_sv = ev.get("title_sv", "")
+        needs_retranslation = bool(
+            svengelska_pattern.search(summary_sv) or 
+            svengelska_pattern.search(title_sv) or
+            re.search(r'\b(to former|of the|in the|on the)\b', title_sv, re.IGNORECASE)
+        )
+
+        if needs_retranslation:
+            title_en = ev.get("title_en", "")
+            summary_en = trim_summary(ev.get("summary_en", ""))
+            ev["title_sv"] = translate_text(title_en, sl="en", tl="sv")
+            ev["summary_en"] = summary_en
+            ev["summary_sv"] = translate_text(summary_en, sl="en", tl="sv")
+            time.sleep(0.1)
+        else:
+            ev["title_sv"] = clean_sentence_case(ev.get("title_sv", ""))
+            ev["summary_sv"] = trim_summary(ev.get("summary_sv", ""))
+            ev["summary_en"] = trim_summary(ev.get("summary_en", ""))
+
+        cleaned.append(ev)
+    return cleaned
+
 def main():
     print(f"[{datetime.now().isoformat()}] Startar informationsinsamling och klassificering...")
     
@@ -661,10 +663,8 @@ def main():
 
     # 5. Slå samman och deduplicera
     events_by_id = {}
-    # Ladda befintliga först
     for e in existing_events:
         events_by_id[e["id"]] = e
-    # Lägg till nya (kan skriva över eller komplettera)
     for e in new_generated_events:
         events_by_id[e["id"]] = e
 
@@ -673,6 +673,8 @@ def main():
         key=lambda x: x.get("timestamp", ""),
         reverse=True
     )
+    # Sanera alla händelser från svengelska och formatera rubriker med inledande versal
+    all_combined = sanitize_events_list(all_combined)
 
     # Spara temporärt för arkivrotationen
     temp_data = {
