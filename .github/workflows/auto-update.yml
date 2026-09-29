@@ -2,8 +2,8 @@ name: Automatisk Uppdatering och Arkivering
 
 on:
   schedule:
-    # Körs var 4:e timme
-    - cron: '0 */4 * * *'
+    # Körs var 4:e timme vid minut 20 (icke-jämn minut för att undvika GitHub Actions köfördröjningar vid :00)
+    - cron: '20 */4 * * *'
   workflow_dispatch: # Möjliggör manuell körning via GitHub-gränssnittet
 
 permissions:

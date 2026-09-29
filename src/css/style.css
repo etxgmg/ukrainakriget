@@ -255,6 +255,28 @@ body {
   padding: 1.5rem;
 }
 
+/* Situational Picture Header */
+.situation-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.situation-header-bar .section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.situation-header-bar .section-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
 /* KPI Banner */
 .kpi-grid {
   display: grid;

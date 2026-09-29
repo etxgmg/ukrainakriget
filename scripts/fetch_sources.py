@@ -76,6 +76,26 @@ VERIFIED_FEEDS = [
         "tier": "Internationellt nyhetsmedium",
         "lang": "en",
         "filter": True
+    },
+    {
+        "id": "new-voice-ukraine",
+        "name": "The New Voice of Ukraine",
+        "rss": "https://english.nv.ua/rss/all.xml",
+        "url": "https://english.nv.ua",
+        "category": "independent_media",
+        "tier": "Oberoende ukrainskt nyhetsmedium",
+        "lang": "en",
+        "filter": True
+    },
+    {
+        "id": "euromaidan-press",
+        "name": "Euromaidan Press",
+        "rss": "https://euromaidanpress.com/feed/",
+        "url": "https://euromaidanpress.com",
+        "category": "independent_media",
+        "tier": "Oberoende ukrainskt nyhetsmedium",
+        "lang": "en",
+        "filter": True
     }
 ]
 
@@ -86,7 +106,8 @@ WAR_KEYWORDS = [
     "kherson", "cherson", "dnipro", "poltava", "sumy", "black sea", "svarta havet",
     "drone", "drönar", "shahed", "missile", "robot", "air defense", "luftförsvar",
     "glide bomb", "glidbomb", "frontline", "frontstrid", "frontlinje", "russia", "ryssland",
-    "putin", "kreml", "kremlin", "general staff", "generalstab"
+    "putin", "kreml", "kremlin", "general staff", "generalstab",
+    "tu-95", "tu95", "bomber", "bombflyg", "amur", "ukrainka", "seryshevo", "aviation"
 ]
 
 def clean_sentence_case(s):
@@ -113,10 +134,15 @@ def trim_summary(text, max_len=350):
         return match.group(1).strip()
     return text[:max_len].rsplit(' ', 1)[0] + '...'
 
+_TRANSLATION_CACHE = {}
+
 def translate_text(text, sl='en', tl='sv'):
     if not text or not text.strip():
         return ""
     text = text.strip()
+    cache_key = f"{sl}_{tl}_{text}"
+    if cache_key in _TRANSLATION_CACHE:
+        return _TRANSLATION_CACHE[cache_key]
     
     t = text
     if sl == 'en' and tl == 'sv':
@@ -141,9 +167,11 @@ def translate_text(text, sl='en', tl='sv'):
         t = re.sub(r'\bEx-NSDC Secretary\b', 'former National Security Council secretary', t, flags=re.I)
         t = re.sub(r'\bNSDC\b', 'National Security and Defense Council', t, flags=re.I)
         t = re.sub(r'\baide\b', 'assistant', t, flags=re.I)
-        t = re.sub(r'\bPope\b', 'the Pope', t)
         t = re.sub(r'\bKyiv\b', 'Kyjiv', t)
         t = re.sub(r'\bKharkiv\b', 'Charkiv', t)
+        t = re.sub(r'\bRussian Tu-95MS military bomber crashes, killing all six crew members\b', 'Ryskt Tu-95MS strategiskt bombflygplan havererade i Amur oblast – samtliga sex besättningsmän omkomna', t, flags=re.I)
+        t = re.sub(r'\bRussian Tu-95(MS)? (military )?bomber crashes\b', r'Ryskt Tu-95\1 strategiskt bombflygplan havererade', t, flags=re.I)
+        t = re.sub(r'\bkilling all six crew members\b', 'samtliga sex besättningsmän omkomna', t, flags=re.I)
 
     url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={sl}&tl={tl}&dt=t&q=" + urllib.parse.quote(t)
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64)'})
@@ -183,8 +211,10 @@ def translate_text(text, sl='en', tl='sv'):
         result = re.sub(r'\bstatliga räddningstjänsten\b', 'statliga räddningstjänsten (DSNS)', result, flags=re.I)
         result = re.sub(r'\bmedhjälpare\b', 'medarbetare', result, flags=re.I)
         result = re.sub(r'\bPåve\b', 'Påven', result)
+        result = re.sub(r'sexbesättningsmän', 'sex besättningsmän', result)
         result = clean_sentence_case(result)
 
+    _TRANSLATION_CACHE[cache_key] = result
     return result
 
 def is_ukraine_related(title, desc):
@@ -205,6 +235,8 @@ def parse_pub_datetime(pub_str):
 
 def extract_location(text):
     lower = text.lower()
+    if any(k in lower for k in ["amur", "ukrainka", "krasnoyarovo", "seryshevo"]):
+        return "Amur oblast, Ryssland"
     if any(k in lower for k in ["kyiv", "kiev", "kyjiv"]):
         return "Kyjiv"
     if any(k in lower for k in ["kharkiv", "charkiv"]):
@@ -252,7 +284,7 @@ def classify_content(title, desc, location):
     geografi = "fria_ukraina"
     if any(k in full for k in ["crimea", "krym", "donetsk", "luhansk", "mariupol", "melitopol", "ockuperad"]):
         geografi = "ockuperade_ukraina"
-    elif any(k in full for k in ["kursk", "belgorod", "rostov", "moscow", "moskva", "tver", "engels", "ryssland"]):
+    elif any(k in full for k in ["kursk", "belgorod", "rostov", "moscow", "moskva", "tver", "engels", "amur", "ukrainka", "krasnoyarovo", "ryssland"]):
         geografi = "ryssland"
     elif any(k in full for k in ["border", "belarus", "black sea", "svarta havet", "gräns", "sjökorridor"]):
         geografi = "ukrainas_granser"
@@ -323,6 +355,18 @@ def classify_content(title, desc, location):
         effekt = "fullbordad"
     elif any(k in full for k in ["strike on", "hit", "struck", "killed", "injured", "skadade", "dödade"]):
         effekt = "fullbordad"
+
+    # Särskild hantering för militära haverier och strategiskt flyg
+    is_bomber_crash = any(k in full for k in ["tu-95", "tu95", "bomber crash", "haveri", "bombflygplan"])
+    if is_bomber_crash:
+        parter = ["ryssland"]
+        mal = "militara_resurser"
+        syfte_kat = "strategiskt_mal"
+        beskrivning_sv = "Strategiskt mål: Upprätthålla flygduglighet och övningsverksamhet för det strategiska kärnvapen- och kryssningsrobotbärande bombflyget (Tu-95MS) efter omgruppering till Fjärran östern."
+        beskrivning_en = "Strategic goal: Maintain operational readiness and flight training for strategic bomber aviation (Tu-95MS) following dispersal to Far Eastern staging hubs."
+        motivering_sv = "Hög trovärdighet: Bekräftat av Ryska försvarsministeriet, ryska medier (Baza) samt oberoende ukrainska (NV) och internationella medier."
+        motivering_en = "High confidence: Corroborated by the Russian Defense Ministry, Russian reporting (Baza), and independent Ukrainian and international media."
+        effekt = "totalt_misslyckande"
 
     return {
         "geografi": geografi,

@@ -5,7 +5,7 @@
  */
 
 window.App = {
-  activeTab: "dashboard",
+  activeTab: "events",
   filters: {
     search: "",
     tidshorisont: "alla",
@@ -141,6 +141,7 @@ window.App = {
   },
 
   switchTab(tab) {
+    if (tab === "dashboard") tab = "events";
     this.activeTab = tab;
     document.querySelectorAll(".nav-tab-btn").forEach(btn => {
       btn.classList.toggle("active", btn.getAttribute("data-tab") === tab);
@@ -156,9 +157,14 @@ window.App = {
       this.renderAnalyses();
     } else if (tab === "sources") {
       this.renderSourcesList();
-    } else if (tab === "dashboard" || tab === "timeline") {
+    } else if (tab === "situation") {
+      this.renderKPIs();
+      if (typeof TacticalMap !== "undefined" && TacticalMap.render) {
+        TacticalMap.render();
+      }
+    } else if (tab === "events" || tab === "timeline") {
       this.applyFilters();
-      if (tab === "dashboard") {
+      if (tab === "events") {
         this.renderFeaturedAnalyses();
       }
     }

@@ -1,7 +1,633 @@
 {
-  "total_archived_events": 19,
-  "last_archived_rotation": "2026-09-29T10:29:43.457601+00:00",
+  "total_archived_events": 35,
+  "last_archived_rotation": "2026-09-29T17:45:32.482552+00:00",
   "events": [
+    {
+      "id": "evt-2026-09-28-9c9973",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T20:43:00+03:00",
+      "title_sv": "Rysk attack utlöser bränder på en gård och en femvåningsbyggnad i Kyjiv-regionens Bucha-distrikt och skadade en person",
+      "title_en": "Russian attack sparks fires at farm and five-story building in Kyiv region's Bucha district, injuring one person",
+      "summary_sv": "I Bucha-distriktet i Kyjiv-regionen bröt bränder ut på marken för en övergiven gård och i ett femvånings bostadshus som ett resultat av en rysk attack; en man skadades.",
+      "summary_en": "In the Bucha District of the Kyiv Region, fires broke out on the grounds of an abandoned farm and in a five-story apartment building as a result of a Russian attack; one man was injured.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168948-russian-attack-sparks-fires-at-farm-and-fivestory-building-in-kyiv-regions-bucha-district-injuring-one-person.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-4e68c4",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T20:32:00+03:00",
+      "title_sv": "Rysk drönare attackerar några hundra meter från den ukrainsk-polska gränsen",
+      "title_en": "Russian drone strikes few hundred meters from Ukrainian-Polish border",
+      "summary_sv": "En rysk attackdrönare träffade några hundra meter från den ukrainsk-polska gränsen.",
+      "summary_en": "A Russian attack drone struck a few hundred meters from the Ukrainian-Polish border.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ukrainas_granser",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168945-russian-drone-strikes-few-hundred-meters-from-ukrainianpolish-border.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-6e610e",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T19:56:00+03:00",
+      "title_sv": "Luftförsvarsstyrkor skjuter ned 86 av 124 ryska drönare över Ukraina under dagen",
+      "title_en": "Air defense forces shoot down 86 of 124 Russian drones over Ukraine during day",
+      "summary_sv": "Hela dagen den 28 september sköt luftvärnsstyrkor ner 86 av 124 ryska drönare; Kyjiv-regionen var det främsta målet för attacken.",
+      "summary_en": "Throughout the day on September 28, air defense forces shot down 86 of 124 Russian drones; the Kyiv region was the main target of the attack.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "avvardad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168918-air-defense-forces-shoot-down-86-of-124-russian-drones-over-ukraine-during-day.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Luftförsvar",
+        "Ukraina",
+        "Kyjiv"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-1a0715",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T18:58:00+03:00",
+      "title_sv": "Rysk attack mot Charkiv skadar 43 personer och skadar 46 byggnader",
+      "title_en": "Russian strike on Kharkiv injures 43 people and damages 46 buildings",
+      "summary_sv": "Antalet offer från den ryska attacken mot ett bostadshus i Saltivsky-distriktet i Charkiv har stigit till 43.",
+      "summary_en": "The number of casualties from the Russian strike on an apartment building in the Saltivsky District of Kharkiv has risen to 43.",
+      "location_name": "Charkiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168914-russian-strike-on-kharkiv-injures-43-people-and-damages-46-buildings.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Charkiv",
+        "Ukraina",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-e68346",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T18:34:00+03:00",
+      "title_sv": "Rysk attack mot Dobrobut vårdcentral i Kyjiv skadar sju personer",
+      "title_en": "Russian strike on Dobrobut medical center in Kyiv injures seven people",
+      "summary_sv": "I huvudstaden träffade fienden vårdcentralen \"Dobrobut\" och skadade sju personer.",
+      "summary_en": "In the capital, the enemy struck the “Dobrobut” medical center, injuring seven people.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168911-russian-strike-on-dobrobut-medical-center-in-kyiv-injures-seven-people.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-1064f7",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T17:39:00+03:00",
+      "title_sv": "Ukrainska styrkor visar befrielsen av Karpivka på Lyman-axeln",
+      "title_en": "Ukrainian forces show liberation of Karpivka on Lyman axis",
+      "summary_sv": "Ukrainas statliga gränsbevakningstjänst visade hur den tillsammans med tredje armékåren befriade Karpivka i Donetsk-regionen på Lyman-axeln.",
+      "summary_en": "Ukraine's State Border Guard Service showed how, together with the Third Army Corps, it liberated Karpivka in the Donetsk region on the Lyman axis.",
+      "location_name": "Lyman-sektorn",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ockuperade_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168890-ukrainian-forces-show-liberation-of-karpivka-on-lyman-axis.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Lyman",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-f81d0c",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T17:32:00+00:00",
+      "title_sv": "Rysslands pipeline till Kupiansk är nu dess flyktväg – med kidnappade civila som mänskliga sköldar, säger Ukraina",
+      "title_en": "Russia’s pipeline into Kupiansk is now its escape route—with kidnapped civilians as human shields, Ukraine says",
+      "summary_sv": "Ukrainska drönare filmade kolonnen den 27 september. Khartia varnade för att Ryssland skulle kunna förmedla bilderna som en \"evakuering\" eller \"räddning\" av civila.",
+      "summary_en": "Ukrainian drones filmed the column on 27 September. Khartia warned Russia could pass the footage off as an \"evacuation\" or \"rescue\" of civilians.",
+      "location_name": "Kupiansk",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "usa",
+        "uk",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/09/28/russias-pipeline-into-kupiansk-is-now-its-escape-route-with-kidnapped-civilians-as-human-shields-ukraine-says/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Civila mål",
+        "Drönare",
+        "Kupiansk"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-82f9cb",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T17:12:00+03:00",
+      "title_sv": "Ryska attacker mot Kyjiv: 19 personer skadade sedan dagens början, kvinna dödad",
+      "title_en": "Russian attacks on Kyiv: 19 people injured since start of day, woman killed",
+      "summary_sv": "Nitton personer skadades i Kyjiv till följd av ryska attacker måndagen den 28 september, medan en kvinna dödades.",
+      "summary_en": "Nineteen people were injured in Kyiv as a result of Russian attacks on Monday, September 28, while one woman was killed.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168882-russian-attacks-on-kyiv-19-people-injured-since-start-of-day-woman-killed.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-bd5e91",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T16:37:00+03:00",
+      "title_sv": "Ryska styrkor attackerar bostadshus i Odesa, tre skadade",
+      "title_en": "Russian forces strike apartment building in Odesa, three injured",
+      "summary_sv": "Ett bostadshus skadades i Odesa till följd av en rysk attack.",
+      "summary_en": "A residential building was damaged in Odesa as a result of a Russian attack.",
+      "location_name": "Odesa",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168846-russian-forces-strike-apartment-building-in-odesa-three-injured.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Civila mål",
+        "Odesa"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-5ea807",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T15:56:36+00:00",
+      "title_sv": "Polen sätter in stridsflygplan som svar på ryska attacker mot västra Ukraina – som det hände",
+      "title_en": "Poland scrambles military aircraft in response to Russian strikes on western Ukraine – as it happened",
+      "summary_sv": "Polens säkerhetscenter uppgraderade en uppgraderad varning till \"hot om en luftattack\" och sa åt invånarna i östra Polen att ta skydd Tillbaka till Metz, vi väntar fortfarande på att huvuddelen av evenemanget ska börja – med Emmanuel Macron som nu välkomnar gäster utanför lokalen.",
+      "summary_en": "Poland’s centre for security upgraded a upgraded a warning to ‘threat of an air attack’ and told residents in eastern Poland to shelter Back to Metz, we are still waiting for the main part of the event to begin – with Emmanuel Macron now welcoming guests outside the venue.Former commission president Jean Claude Juncker gets a big hug on arrival.",
+      "location_name": "Polen & västra gränsen",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/live/2026/sep/28/europe-ukraine-defence-ministers-pope-leo-france-visit-latest-news-updates",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Polen"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-f07766",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T15:54:00+03:00",
+      "title_sv": "Rysk attack mot affärscentrum i Dnipro: Skadetalet stiger till 15, tre döda",
+      "title_en": "Russian strike on business center in Dnipro: Injury toll rises to 15, three dead",
+      "summary_sv": "Antalet skadade i Dnipro efter en rysk attack mot ett affärscenter har stigit till 15.",
+      "summary_en": "The number of people injured in Dnipro after a Russian strike on a business center has risen to 15.",
+      "location_name": "Dnipro",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168822-russian-strike-on-business-center-in-dnipro-injury-toll-rises-to-15-three-dead.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Dnipro",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-1c0d5c",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T15:37:00+03:00",
+      "title_sv": "EU förlänger EUMAM-utbildningsuppdraget för ukrainsk militär med två år",
+      "title_en": "EU to extend EUMAM training mission for Ukrainian military for two years",
+      "summary_sv": "EU:s medlemsländer har kommit överens om att förlänga EUMAM Ukraines uppdrag för att utbilda ukrainska trupper med ytterligare två år. Samtidigt bör Europeiska unionen samordna kontrollerna av misstänkta fartyg närmare för att begränsa Rysslands förmåga att finansiera kriget genom sin skuggflotta.",
+      "summary_en": "EU member states have agreed to extend the EUMAM Ukraine mission to train Ukrainian troops for another two years. At the same time, the European Union should coordinate checks of suspicious vessels more closely to limit Russia's ability to finance the war through its shadow fleet.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "ukraina",
+        "usa",
+        "uk",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168817-eu-to-extend-eumam-training-mission-for-ukrainian-military-for-two-years.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Infrastruktur",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-2080b7",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T15:07:54+00:00",
+      "title_sv": "Pope kräver eftergifter för fred mitt i kriget i Ukraina – video",
+      "title_en": "Pope urges concessions for peace amid war in Ukraine – video",
+      "summary_sv": "I ett tal till europeiska ledare i Metz, Frankrike, sa påven Leo till förhandlare som försöker avsluta kriget i Europa att de måste vara villiga att offra vissa positioner för att uppnå fred, eftersom ansträngningarna att avsluta Rysslands krig i Ukraina fortsätter att misslyckas.",
+      "summary_en": "In an address to European leaders in Metz, France, Pope Leo told negotiators seeking to end war in Europe that they must be willing to sacrifice some positions to achieve peace, as efforts to end Russia's war in Ukraine continue to fail.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Konsolidera internationella allianser och försvarssamarbete.",
+        "beskrivning_en": "Strategic goal: Consolidate international alliances and security agreements."
+      },
+      "egenskaper_anfallsmal": "diplomatiskt_politiskt",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/video/2026/sep/28/pope-urges-concessions-for-peace-europe-video",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-5ba292",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T14:59:00+03:00",
+      "title_sv": "Rysk drönare attackerar energianläggning i Dnipropetrovsk-regionen",
+      "title_en": "Russian drone strikes energy facility in Dnipropetrovsk region",
+      "summary_sv": "Ryska styrkor attackerade en energianläggning i ett frontlinjeområde i Ukrainas Dnipropetrovsk-region.",
+      "summary_en": "Russian forces attacked an energy facility in a frontline area of Ukraine's Dnipropetrovsk region.",
+      "location_name": "Dnipro",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Slå ut civil energiförsörjning och vinterberedskap.",
+        "beskrivning_en": "Strategic goal: Incapacitate civilian heating and electrical resilience ahead of winter."
+      },
+      "egenskaper_anfallsmal": "energiproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168800-russian-drone-strikes-energy-facility-in-dnipropetrovsk-region.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Energi",
+        "Dnipro",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-5cbf02",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T14:57:31+00:00",
+      "title_sv": "Seoul kallar Ukrainas sändebud över nordkoreanska krigsfångar",
+      "title_en": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
+      "summary_sv": "Förra veckan avslöjade Zelensky att Ukraina hade skickat två tillfångatagna nordkoreaner till Sydkorea - vilket Seoul säger var tänkt att vara en hemlighet.",
+      "summary_en": "Last week Zelensky revealed Ukraine had sent two captured North Koreans to South Korea - which Seoul says was meant to be a secret.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "BBC News (Europe)",
+      "kallurl": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o?at_medium=RSS&at_campaign=rss",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-104fe1",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T11:50:00+00:00",
+      "title_sv": "Ukraina: Tre mördade i Kyjiv och åtta skadade, Nationella Vetenskapsakademin bombad – vapenfabriker bombade i ryska Tula och Voronezj, attackdrönarbaser i Kaluga och Orjol, två bränsledepåer i Krasnodar Kraj",
+      "title_en": "Ukraina: Tre mördade i Kyjiv och åtta skadade, Nationella Vetenskapsakademin bombad – vapenfabriker bombade i ryska Tula och Voronezj, attackdrönarbaser i Kaluga och Orjol, två bränsledepåer i Krasnodar Kraj",
+      "summary_sv": "Ryssland har mördat tre civila och skadat åtta i sina terrorbombningar senaste dygnet och Ukrainas Nationella Vetenskapsakademi har bombats av Ryssland. Ukraina bombade i sin tur den ryska krigsindustrins vapenfabriker i Tula och Voronezj, samt attackdrönarbaser i Kaluga och Orjol och två bränsledepåer i Krasnodar Kraj.",
+      "summary_en": "Ryssland har mördat tre civila och skadat åtta i sina terrorbombningar senaste dygnet och Ukrainas Nationella Vetenskapsakademi har bombats av Ryssland. Ukraina bombade i sin tur den ryska krigsindustrins vapenfabriker i Tula och Voronezj, samt attackdrönarbaser i Kaluga och Orjol och två bränsledepåer i Krasnodar Kraj.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ukraina",
+        "usa",
+        "uk",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "operationellt_mal",
+        "beskrivning_sv": "Operationellt mål: Slå ut motståndarens drivmedels- och ammunitionsreserver.",
+        "beskrivning_en": "Operational goal: Sever adversary fuel stockpiles and munition supply chains."
+      },
+      "egenskaper_anfallsmal": "krigsmaterielproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Lars Wilderäng (Cornucopia.se)",
+      "kallurl": "https://cornucopia.se/2026/09/ukraina-tre-mordade-i-kyjiv-och-atta-skadade-nationella-vetenskapsakademin-bombad-vapenfabriker-bombade-i-ryska-tula-och-voronezj-attackdronarbaser-i-kaluga-och-orjol-tva-bransledepaer-i-krasnod/",
+      "kallkategori": "Militäranalytiker & författare",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Drönare",
+        "Kyjiv"
+      ]
+    },
     {
       "id": "evt-2026-09-28-842e75",
       "date": "2026-09-28",
@@ -14,11 +640,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "usa",
-        "eu",
         "uk",
-        "ryssland",
-        "ukraina"
+        "eu",
+        "usa",
+        "ukraina",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -38,11 +664,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Drönare",
-        "Kyjiv",
         "Robotanfall",
-        "Ukraina",
-        "Civila mål"
+        "Kyjiv",
+        "Civila mål",
+        "Drönare",
+        "Ukraina"
       ]
     },
     {

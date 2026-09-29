@@ -24,12 +24,18 @@ const translations = {
     langButton: "English",
     
     // Navigation
-    navDashboard: "Översikt och lägesbild",
+    navEvents: "Aktuella händelser",
+    navSituation: "Lägesbild",
+    navDashboard: "Aktuella händelser",
     navTimeline: "Flerdimensionellt filter",
     navArchive: "Arkiv (>24 tim)",
     navAnalyses: "Analyser och expertbedömningar",
     navSources: "Källkatalog",
     navMethodology: "Metod och struktur",
+
+    // Lägesbild
+    situationTitle: "Lägesbild",
+    situationSubtitle: "Kvantitativa nyckeltal, luftförsvarseffektivitet samt taktisk och strategisk situationskarta",
 
     // KPI / Sammanfattning
     kpiInterception: "Luftförsvarseffektivitet",
@@ -180,12 +186,18 @@ const translations = {
     langButton: "Svenska",
     
     // Navigation
-    navDashboard: "Overview and status",
+    navEvents: "Current events",
+    navSituation: "Situational picture",
+    navDashboard: "Current events",
     navTimeline: "Multi-perspective matrix",
     navArchive: "Archive (>24h)",
     navAnalyses: "Analyst insights",
     navSources: "Sources directory",
     navMethodology: "Methodology and structure",
+
+    // Situational picture
+    situationTitle: "Situational picture",
+    situationSubtitle: "Operational metrics, air defense interception rate, and tactical and strategic conflict maps",
 
     // KPI / Summary
     kpiInterception: "Air defense interception rate",

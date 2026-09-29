@@ -51,7 +51,8 @@
   <!-- Navigation Bar -->
   <nav class="site-nav">
     <div class="nav-inner">
-      <button class="nav-tab-btn active" data-tab="dashboard" data-i18n="navDashboard">Översikt och lägesbild</button>
+      <button class="nav-tab-btn active" data-tab="events" data-i18n="navEvents">Aktuella händelser</button>
+      <button class="nav-tab-btn" data-tab="situation" data-i18n="navSituation">Lägesbild</button>
       <button class="nav-tab-btn" data-tab="timeline" data-i18n="navTimeline">Flerdimensionellt filter</button>
       <button class="nav-tab-btn" data-tab="analyses" data-i18n="navAnalyses">Analyser och expertbedömningar</button>
       <button class="nav-tab-btn" data-tab="archive" data-i18n="navArchive">Arkiv (>24 tim)</button>
@@ -63,68 +64,19 @@
   <!-- Main Content -->
   <main class="main-content">
 
-    <!-- KPI Summary Section -->
-    <section class="kpi-grid">
-      <div class="kpi-card kpi-success">
-        <div class="kpi-header">
-          <span class="kpi-title" data-i18n="kpiInterception">Luftförsvarseffektivitet</span>
-          <span class="kpi-icon">🛡️</span>
-        </div>
-        <div class="kpi-value" id="kpi-interception-val">69%</div>
-        <div class="kpi-subtext" id="kpi-interception-sub" data-i18n="kpiInterceptionDesc">86 av 124 ryska drönare nedskjutna idag</div>
-      </div>
-
-      <div class="kpi-card kpi-danger">
-        <div class="kpi-header">
-          <span class="kpi-title" data-i18n="kpiFrontline">Frontstrider (24 tim)</span>
-          <span class="kpi-icon">💥</span>
-        </div>
-        <div class="kpi-value" id="kpi-frontline-val">174</div>
-        <div class="kpi-subtext" id="kpi-frontline-sub" data-i18n="kpiFrontlineDesc">Intensivast strider kring Kyjiv, Charkiv och Pokrovsk</div>
-      </div>
-
-      <div class="kpi-card">
-        <div class="kpi-header">
-          <span class="kpi-title" data-i18n="kpiCorridor">Sjökorsväg Svarta havet</span>
-          <span class="kpi-icon">🚢</span>
-        </div>
-        <div class="kpi-value" id="kpi-corridor-val">6,4 milj. ton</div>
-        <div class="kpi-subtext" id="kpi-corridor-sub" data-i18n="kpiCorridorDesc">Månatlig export genom ukrainsk sjökorridor (2 480 fartyg)</div>
-      </div>
-
-      <div class="kpi-card kpi-warn">
-        <div class="kpi-header">
-          <span class="kpi-title" data-i18n="kpiCivilianShare">Civila anfallsmål</span>
-          <span class="kpi-icon">🏥</span>
-        </div>
-        <div class="kpi-value" id="kpi-civilian-val">48%</div>
-        <div class="kpi-subtext" id="kpi-civilian-sub" data-i18n="kpiCivilianShareDesc">48% av anfallen mot bostäder, skolor, vårdcentraler och akademi</div>
-      </div>
-    </section>
-
-    <!-- TAB 1: DASHBOARD (Översikt) -->
-    <div id="tab-dashboard" class="tab-content-section">
-      
-      <!-- Interactive Tactical and Strategic Map -->
-      <section class="map-section">
-        <div class="map-header">
-          <h2 data-i18n="mapTitle">Taktisk och strategisk situationskarta</h2>
-          <p data-i18n="mapSubtitle">Växla mellan taktisk frontkarta (24 timmar) och strategisk luftkrigskarta (30 dagar)</p>
-        </div>
-        <div id="tactical-map-container"></div>
-      </section>
-
+    <!-- FLIK 1: AKTUELLA HÄNDELSER (Förstasidan) -->
+    <div id="tab-events" class="tab-content-section">
       <!-- Active Events Feed Section Header -->
       <div class="feed-header-bar">
         <div>
           <h2 style="font-size: 1.3rem; font-weight: 700; color: #fff;" data-i18n="activeEventsHeading">Aktuella händelser (senaste dygnet)</h2>
           <p style="font-size: 0.85rem; color: var(--text-secondary);" data-i18n="activeEventsDesc">
-            Händelser som visats roteras automatiskt till arkivet efter 24 timmar så att dashboarden alltid visar dagens situation.
+            Händelser som visats roteras automatiskt till arkivet efter 24 timmar så att flödet alltid visar dagens situation.
           </p>
         </div>
         <div class="feed-sync-badge" title="Automatisk insamling och arkivrotation">
           <span class="pulse-dot"></span>
-          <span id="active-feed-time-indicator">Uppdateras var 4:e timme • Nästa ca 14:19</span>
+          <span id="active-feed-time-indicator">Uppdateras var 4:e timme</span>
         </div>
       </div>
 
@@ -145,6 +97,64 @@
           </button>
         </div>
         <div id="dashboard-featured-analyses" class="featured-analyses-grid"></div>
+      </section>
+    </div>
+
+    <!-- FLIK 2: LÄGESBILD -->
+    <div id="tab-situation" class="tab-content-section hidden">
+      <div class="situation-header-bar">
+        <div>
+          <h2 class="section-title" data-i18n="situationTitle">Lägesbild</h2>
+          <p class="section-desc" data-i18n="situationSubtitle">Kvantitativa nyckeltal, luftförsvarseffektivitet samt taktisk och strategisk situationskarta</p>
+        </div>
+      </div>
+
+      <!-- De fyra dashboardkorten -->
+      <section class="kpi-grid">
+        <div class="kpi-card kpi-success">
+          <div class="kpi-header">
+            <span class="kpi-title" data-i18n="kpiInterception">Luftförsvarseffektivitet</span>
+            <span class="kpi-icon">🛡️</span>
+          </div>
+          <div class="kpi-value" id="kpi-interception-val">69%</div>
+          <div class="kpi-subtext" id="kpi-interception-sub" data-i18n="kpiInterceptionDesc">86 av 124 ryska drönare nedskjutna idag</div>
+        </div>
+
+        <div class="kpi-card kpi-danger">
+          <div class="kpi-header">
+            <span class="kpi-title" data-i18n="kpiFrontline">Frontstrider (24 tim)</span>
+            <span class="kpi-icon">💥</span>
+          </div>
+          <div class="kpi-value" id="kpi-frontline-val">174</div>
+          <div class="kpi-subtext" id="kpi-frontline-sub" data-i18n="kpiFrontlineDesc">Intensivast strider kring Kyjiv, Charkiv och Pokrovsk</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-title" data-i18n="kpiCorridor">Sjökorsväg Svarta havet</span>
+            <span class="kpi-icon">🚢</span>
+          </div>
+          <div class="kpi-value" id="kpi-corridor-val">6,4 milj. ton</div>
+          <div class="kpi-subtext" id="kpi-corridor-sub" data-i18n="kpiCorridorDesc">Månatlig export genom ukrainsk sjökorridor (2 480 fartyg)</div>
+        </div>
+
+        <div class="kpi-card kpi-warn">
+          <div class="kpi-header">
+            <span class="kpi-title" data-i18n="kpiCivilianShare">Civila anfallsmål</span>
+            <span class="kpi-icon">🏥</span>
+          </div>
+          <div class="kpi-value" id="kpi-civilian-val">48%</div>
+          <div class="kpi-subtext" id="kpi-civilian-sub" data-i18n="kpiCivilianShareDesc">48% av anfallen mot bostäder, skolor, vårdcentraler och akademi</div>
+        </div>
+      </section>
+
+      <!-- Interactive Tactical and Strategic Map -->
+      <section class="map-section">
+        <div class="map-header">
+          <h2 data-i18n="mapTitle">Taktisk och strategisk situationskarta</h2>
+          <p data-i18n="mapSubtitle">Växla mellan taktisk frontkarta (24 timmar) och strategisk luftkrigskarta (30 dagar)</p>
+        </div>
+        <div id="tactical-map-container"></div>
       </section>
     </div>
 

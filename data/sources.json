@@ -181,6 +181,28 @@
       "description_en": "Ukraine's national news agency providing real-time wire reporting on political and military events."
     },
     {
+      "id": "new-voice-ukraine",
+      "name": "The New Voice of Ukraine (NV)",
+      "category": "independent_media",
+      "tier": "Oberoende nyhetsmedium",
+      "url": "https://english.nv.ua",
+      "rss": "https://english.nv.ua/rss/all.xml",
+      "credibility": "Hög (Oberoende granskning)",
+      "description_sv": "Ledande oberoende ukrainsk nyhetsredaktion med snabb bevakning av krigshändelser och rysk militär aktivitet.",
+      "description_en": "Leading independent Ukrainian media outlet delivering fast reporting on frontlines and Russian military developments."
+    },
+    {
+      "id": "euromaidan-press",
+      "name": "Euromaidan Press",
+      "category": "independent_media",
+      "tier": "Oberoende nyhetsmedium",
+      "url": "https://euromaidanpress.com",
+      "rss": "https://euromaidanpress.com/feed/",
+      "credibility": "Hög (Oberoende granskning)",
+      "description_sv": "Oberoende engelskspråkig nyhetsplattform som fokuserar på försvar, säkerhet och frontanalys.",
+      "description_en": "Independent English-language online newspaper providing in-depth analysis on defense, military affairs, and frontline operations."
+    },
+    {
       "id": "guardian-ukraine",
       "name": "The Guardian (Ukraine)",
       "category": "independent_media",
