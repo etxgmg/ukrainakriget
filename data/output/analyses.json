@@ -1,7 +1,38 @@
 {
-  "last_updated": "2026-09-29T00:16:22.370739+00:00",
+  "last_updated": "2026-09-29T10:29:48.367732+00:00",
   "total_count": 2,
   "analyses": [
+    {
+      "id": "ana-cornucopia-202609290925",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-09-29",
+      "timestamp": "2026-09-29T09:25:46+00:00",
+      "title_sv": "Ukraina: Djurräddning i Odesa bombad – rysk underrättelsetjänst utförde mordbrand mot estnisk försvarsindustri",
+      "title_en": "Ukraine: Animal rescue in Odesa bombed - Russian intelligence carried out arson against Estonian defense industry",
+      "summary_sv": "Ryssland fortsätter sin terror och har nu bombat en djurräddningsorganisation i Odesa och dödat tre hundar och tio katter.",
+      "summary_en": "Russia continues its terror and has now bombed an animal rescue organization in Odesa, killing three dogs and ten cats.",
+      "key_takeaways_sv": [
+        "Ryssland fortsätter sin terror och har nu bombat en djurräddningsorganisation i Odesa och dödat tre hundar och tio katter.",
+        "Estland pekar nu ut rysk underrättelsetjänst som ansvarig för en mordbrand mot ett estniskt försvarsindustriföretag."
+      ],
+      "key_takeaways_en": [
+        "Russia continues its terror and has now bombed an animal rescue organization in Odesa, killing three dogs and ten cats.",
+        "Estonia now points to Russian intelligence as responsible for an arson attack on an Estonian defense industry company."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/09/ukraina-djurraddning-i-odesa-bombad-rysk-underrattelsetjanst-utforde-mordbrand-mot-estnisk-forsvarsindustri/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    },
     {
       "id": "ana-cornucopia-202609281150",
       "author_id": "wilderang",
@@ -31,39 +62,6 @@
         "vapenindustri"
       ],
       "url": "https://cornucopia.se/2026/09/ukraina-tre-mordade-i-kyjiv-och-atta-skadade-nationella-vetenskapsakademin-bombad-vapenfabriker-bombade-i-ryska-tula-och-voronezj-attackdronarbaser-i-kaluga-och-orjol-tva-bransledepaer-i-krasnod/",
-      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
-    },
-    {
-      "id": "ana-cornucopia-202609270937",
-      "author_id": "wilderang",
-      "author_name": "Lars Wilderäng",
-      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
-      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
-      "author_type": "svensk_expert",
-      "platform": "Cornucopia.se",
-      "date": "2026-09-27",
-      "timestamp": "2026-09-27T09:37:04+00:00",
-      "title_sv": "Ukraina: Två mördade i ryska bombningar – ukrainsk APS kan skjuta ner 80% av FPV-drönare – mordbrand mot Starlinkmarkstation i Polen",
-      "title_en": "Ukraine: Two killed in Russian bombings - Ukrainian APS can shoot down 80% of FPV drones - arson against Starlinkmark station in Poland",
-      "summary_sv": "Minst två civila mördades i natt i ryska terrorbombningar mot Odesa och Kyjiv. Ett nytt ukrainskt aktivt skyddssystem (APS) med försvarande motåtgärder uppges kunna skjuta ner upp till 80% av alla anfallande FPV-drönare.",
-      "summary_en": "At least two civilians were murdered last night in Russian terrorist bombings against Odesa and Kyiv. A new Ukrainian active protection system (APS) with defensive countermeasures is said to be able to shoot down up to 80% of all attacking FPV drones.",
-      "key_takeaways_sv": [
-        "Minst två civila mördades i natt i ryska terrorbombningar mot Odesa och Kyjiv.",
-        "Ett nytt ukrainskt aktivt skyddssystem (APS) med försvarande motåtgärder uppges kunna skjuta ner upp till 80% av alla anfallande FPV-drönare.",
-        "En Starlinkmarkstation i Polen ska utsatts för mordbrand och det hela misstänks vara ett ryskt angrepp."
-      ],
-      "key_takeaways_en": [
-        "At least two civilians were murdered last night in Russian terrorist bombings against Odesa and Kyiv.",
-        "A new Ukrainian active protection system (APS) with defensive countermeasures is said to be able to shoot down up to 80% of all attacking FPV drones.",
-        "A Starlink ground station in Poland is said to be arson and the whole thing is suspected to be a Russian attack."
-      ],
-      "topics": [
-        "luftkrig",
-        "djupanfall",
-        "frontlinje",
-        "vapenindustri"
-      ],
-      "url": "https://cornucopia.se/2026/09/ukraina-tva-mordade-i-ryska-bombningar-ukrainsk-aps-kan-skjuta-ner-80-av-fpv-dronare-mordbrand-mot-starlinkmarkstation-i-polen/",
       "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
     }
   ]

@@ -1,7 +1,50 @@
 {
-  "total_archived_events": 18,
-  "last_archived_rotation": "2026-09-29T00:16:13.794980+00:00",
+  "total_archived_events": 19,
+  "last_archived_rotation": "2026-09-29T10:29:43.457601+00:00",
   "events": [
+    {
+      "id": "evt-2026-09-28-842e75",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T01:15:42+00:00",
+      "title_sv": "Krigsbriefing i Ukraina: Zelenskyy säger att Moskva terroriserar ukrainare när nya attacker dödar åtta",
+      "title_en": "Ukraine war briefing: Zelenskyy says Moscow terrorising Ukrainians as fresh strikes kill eight",
+      "summary_sv": "Ukrainas president säger att Ryssland inte visar några tecken på att bromsa kriget, kräver att sanktionspaket ska träda i kraft i oktober.",
+      "summary_en": "Ukraine president says Russia shows no signs of slowing the war, calls for sanctions packages to take effect in October.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "usa",
+        "eu",
+        "uk",
+        "ryssland",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/2026/sep/28/ukraine-war-briefing-zelenskyy-moscow-terrorising-kyiv-latest-strikes",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Kyjiv",
+        "Robotanfall",
+        "Ukraina",
+        "Civila mål"
+      ]
+    },
     {
       "id": "evt-2026-09-27-01",
       "date": "2026-09-27",
