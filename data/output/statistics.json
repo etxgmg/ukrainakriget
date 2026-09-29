@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T19:06:29.108887+00:00",
+  "updated_at": "2026-09-29T00:16:13.798291+00:00",
   "daily_metrics": {
     "shahed_interception_rate_percent": 69.4,
     "cruise_missile_interception_rate_percent": 82.5,
@@ -8,7 +8,7 @@
       {
         "name_sv": "Kyjiv",
         "name_en": "Kyjiv",
-        "attacks_24h": 60,
+        "attacks_24h": 72,
         "intensity": "Högst"
       },
       {
@@ -18,20 +18,20 @@
         "intensity": "Högst"
       },
       {
-        "name_sv": "Zaporizjzja",
-        "name_en": "Zaporizjzja",
-        "attacks_24h": 18,
-        "intensity": "Medel"
-      },
-      {
         "name_sv": "Charkiv",
         "name_en": "Charkiv",
+        "attacks_24h": 24,
+        "intensity": "Hög"
+      },
+      {
+        "name_sv": "Pokrovsk-sektorn",
+        "name_en": "Pokrovsk-sektorn",
         "attacks_24h": 18,
         "intensity": "Medel"
       },
       {
-        "name_sv": "Lyman-sektorn",
-        "name_en": "Lyman-sektorn",
+        "name_sv": "Zaporizjzja",
+        "name_en": "Zaporizjzja",
         "attacks_24h": 18,
         "intensity": "Medel"
       }
@@ -41,11 +41,11 @@
     "black_sea_export_monthly_tons_millions": 6.4
   },
   "target_distribution_percent": {
-    "helt_civila": 35,
-    "civil_infrastruktur": 5,
-    "energiproduktion": 5,
-    "militara_resurser": 50,
-    "diplomatiskt_politiskt": 5
+    "helt_civila": 32,
+    "civil_infrastruktur": 11,
+    "energiproduktion": 11,
+    "militara_resurser": 39,
+    "diplomatiskt_politiskt": 7
   },
   "geography_distribution_percent": {
     "fria_ukraina": 48,
