@@ -1,7 +1,194 @@
 {
-  "total_archived_events": 35,
-  "last_archived_rotation": "2026-09-29T17:45:32.482552+00:00",
+  "total_archived_events": 42,
+  "last_archived_rotation": "2026-09-29T23:47:54.931552+00:00",
   "events": [
+    {
+      "id": "evt-2026-09-28-283eb6",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:57:00+03:00",
+      "title_sv": "Skräp från fiendens UAV föll på innergården till bostadshus i Kyjivs Desnianskyi-distrikt",
+      "title_en": "Debris from enemy UAV fell in courtyard of residential building in Kyiv's Desnianskyi district",
+      "summary_sv": "Skräp registrerades falla på innergården till ett bostadshus i Kyjivs Desnianskyi-distrikt.",
+      "summary_en": "Debris was recorded falling in the courtyard of a residential building in Kyiv's Desnianskyi district.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168964-debris-from-enemy-uav-fell-in-courtyard-of-residential-building-in-kyivs-desnianskyi-district.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-f1bef8",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:38:00+03:00",
+      "title_sv": "Attacker mot Kyjiv: En person dödad, antalet skadade stiger till 24, inklusive tre barn",
+      "title_en": "Attacks on Kyiv: One person killed, number of injured rises to 24, including three children",
+      "summary_sv": "Antalet personer som skadades i Kyjiv till följd av attackerna den 28 september har ökat till 24.",
+      "summary_en": "The number of people injured in Kyiv as a result of the attacks on September 28 has increased to 24.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168961-attacks-on-kyiv-one-person-killed-number-of-injured-rises-to-24-including-three-children.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-87c4d5",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:25:37+00:00",
+      "title_sv": "Ukrainas stridsvagnar slåss från flera kilometer tillbaka. En sovjetisk modell från 1960-talet gör det nästan lika bra",
+      "title_en": "Ukraine’s tanks are fighting from kilometers back. A 1960s Soviet model does that nearly as well",
+      "summary_sv": "Ukraina fångade mer än 40 T-62M från Ryssland, mestadels under motoffensiverna 2022, och har inte registrerat någon bekräftad stridsförlust sedan dess.",
+      "summary_en": "Ukraine captured more than 40 T-62Ms from Russia, mostly during the 2022 counteroffensives, and has not registered a confirmed combat loss since.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "usa",
+        "uk",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/09/29/ukrainian-t-62ms/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-81684e",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T21:21:00+03:00",
+      "title_sv": "Skadetalet efter ryska attacker Zaporizjzja stiger till 33",
+      "title_en": "Injury toll after Russian strikes Zaporizhzhia rises to 33",
+      "summary_sv": "Antalet personer som skadats i Zaporizjzja till följd av ryska attacker har stigit till 33.",
+      "summary_en": "The number of people injured in Zaporizhzhia as a result of Russian attacks has risen to 33.",
+      "location_name": "Zaporizjzja",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168960-injury-toll-after-russian-strikes-zaporizhzhia-rises-to-33.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Zaporizjzja",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-677e57",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T20:59:00+03:00",
+      "title_sv": "Ryska attacker i Dnipropetrovsk-regionen dödar sex personer och skadar 28 på en dag",
+      "title_en": "Russian attacks in Dnipropetrovsk region kill six people and injure 28 in one day",
+      "summary_sv": "Ryska trupper attackerade Dnipro och sex distrikt i Dnipropetrovsk-regionen nästan 30 gånger under dagen; sex personer dödades och ytterligare 28 skadades.",
+      "summary_en": "Russian troops attacked Dnipro and six districts of the Dnipropetrovsk region nearly 30 times throughout the day; six people were killed and another 28 were wounded.",
+      "location_name": "Dnipro",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4168946-russian-attacks-in-dnipropetrovsk-region-kill-six-people-and-injure-28-in-one-day.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Dnipro"
+      ]
+    },
     {
       "id": "evt-2026-09-28-9c9973",
       "date": "2026-09-28",
@@ -161,6 +348,45 @@
       ]
     },
     {
+      "id": "evt-2026-09-28-b8cb76",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T18:40:00+00:00",
+      "title_sv": "Rysslands massdrönarattacker mot Ukraina har ett mål - troligen Ukrainas kapitulation till våren 2027, säger ISW",
+      "title_en": "Russia’s mass drone attacks on Ukraine have a goal—likely Ukraine’s capitulation by spring 2027, ISW says",
+      "summary_sv": "Förrän hans nya teori om seger har spelat ut, är det osannolikt att Putin kommer att mildra sina krav eller inleda allvarliga samtal om vapenvila, enligt ISW.",
+      "summary_en": "Until his new theory of victory has played out, Putin is unlikely to soften his demands or enter serious ceasefire talks, according to ISW.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "usa",
+        "uk",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/09/28/russias-mass-drone-attacks-on-ukraine-have-a-goal-likely-ukraines-capitulation-by-spring-2027-isw-says/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Drönare"
+      ]
+    },
+    {
       "id": "evt-2026-09-28-e68346",
       "date": "2026-09-28",
       "timestamp": "2026-09-28T18:34:00+03:00",
@@ -197,6 +423,43 @@
         "Ukraina",
         "Kyjiv",
         "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-09-28-557ce0",
+      "date": "2026-09-28",
+      "timestamp": "2026-09-28T17:50:06+00:00",
+      "title_sv": "Krig kostar Ukraina 155 miljarder dollar per år. Med västerländsk hjälp för sent fryser Kyjiv allt utom armén, pensioner och offentliga löner",
+      "title_en": "War is costing Ukraine $155 billion per year. With Western aid running late, Kyiv is freezing everything but army, pensions, and public wages",
+      "summary_sv": "Kyjiv frös parker, fontäner och vägreparationer för att betala sin armé och pensionärer först.",
+      "summary_en": "Kyiv froze parks, fountains, and road repairs to pay its army and pensioners first.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Konsolidera internationella allianser och försvarssamarbete.",
+        "beskrivning_en": "Strategic goal: Consolidate international alliances and security agreements."
+      },
+      "egenskaper_anfallsmal": "diplomatiskt_politiskt",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/09/28/war-is-costing-ukraine-155-billion-per-year-with-western-aid-running-late-kyiv-is-freezing-everything-but-army-pensions-and-public-wages/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv"
       ]
     },
     {
@@ -366,11 +629,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
-        "usa",
+        "uk",
         "ryssland",
         "ukraina",
-        "uk"
+        "usa",
+        "eu"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -484,11 +747,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
-        "usa",
+        "uk",
         "ryssland",
         "ukraina",
-        "uk"
+        "usa",
+        "eu"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -564,8 +827,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ukraina",
-        "uk"
+        "uk",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -600,10 +863,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "ukraina",
-        "usa",
         "uk",
-        "ryssland"
+        "usa",
+        "ryssland",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "operationellt_mal",
@@ -624,8 +887,8 @@
       "arkiverad": true,
       "tags": [
         "Ukraina",
-        "Drönare",
-        "Kyjiv"
+        "Kyjiv",
+        "Drönare"
       ]
     },
     {
