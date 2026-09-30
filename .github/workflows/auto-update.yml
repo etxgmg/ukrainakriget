@@ -2,14 +2,15 @@ name: Automatisk Uppdatering och Arkivering
 
 on:
   schedule:
-    # Körs var 4:e timme vid minut 20 (icke-jämn minut för att undvika GitHub Actions köfördröjningar vid :00)
-    - cron: '20 */4 * * *'
+    # Körs varannan timme vid minut 25 för tät och stabil uppdateringsfrekvens
+    - cron: '25 */2 * * *'
   workflow_dispatch: # Möjliggör manuell körning via GitHub-gränssnittet
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: "pages"
@@ -67,4 +68,16 @@ jobs:
       - name: Publicera till GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Automatisk återhämtning vid tillfälligt Pages-fel (t.ex. 502 Bad Gateway)
+        if: steps.deployment.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Pages-publicering returnerade ett tillfälligt serverfel (status 502/nätverksfel)."
+          echo "Väntar 15 sekunder och triggar en isolerad deploy via deploy.yml..."
+          sleep 15
+          gh workflow run deploy.yml --ref main || true
+
 

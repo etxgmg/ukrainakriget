@@ -50,7 +50,6 @@
       "category": "official_ua",
       "tier": "Primärkälla",
       "url": "https://www.facebook.com/GeneralStaff.ua",
-      "rss": "https://www.kmu.gov.ua/en/news/rss",
       "credibility": "Hög (Operativ militär part)",
       "description_sv": "Dagliga morgon- och kvällsuppdateringar om frontlinjen, ryska förluster och luftangrepp.",
       "description_en": "Daily morning and evening operational briefings on frontline fighting, Russian losses, and air strikes."
@@ -71,7 +70,6 @@
       "category": "official_ua",
       "tier": "Primärkälla",
       "url": "https://www.president.gov.ua/en",
-      "rss": "https://www.president.gov.ua/en/news/rss",
       "credibility": "Officiell statschef",
       "description_sv": "President Zelenskyjs dagliga tal, diplomatiska initiativ, säkerhetsavtal och lagstiftning.",
       "description_en": "President Zelenskyy's daily addresses, diplomatic initiatives, bilateral security agreements, and decrees."
@@ -112,7 +110,6 @@
       "category": "intelligence",
       "tier": "Sekundärkälla / Analys",
       "url": "https://understandingwar.org",
-      "rss": "https://www.understandingwar.org/feeds/campaign-assessments",
       "credibility": "Mycket hög (Forskningsinstitut)",
       "description_sv": "Världsledande dagliga lägesrapporter med noggrann geolokalisering av varje frontsektor.",
       "description_en": "World-leading daily operational assessments with geolocated mapping of tactical frontline shifts."
@@ -163,7 +160,6 @@
       "category": "independent_media",
       "tier": "Oberoende nyhetsmedium",
       "url": "https://kyivindependent.com",
-      "rss": "https://kyivindependent.com/feed",
       "credibility": "Hög (Oberoende granskning)",
       "description_sv": "Ukrainas främsta oberoende engelskspråkiga redaktion med djupgående gräv och nyhetsrapportering.",
       "description_en": "Award-winning independent Ukrainian media outlet delivering 24/7 on-the-ground war coverage."
@@ -174,7 +170,6 @@
       "category": "independent_media",
       "tier": "Public Service",
       "url": "https://suspilne.media",
-      "rss": "https://suspilne.media/rss/",
       "credibility": "Hög (Public service-standard)",
       "description_sv": "Ukrainas public service-nätverk med reportrar i samtliga oblaster och vid fronten.",
       "description_en": "Ukraine's national public broadcaster with correspondents stationed across all frontlines and regions."
