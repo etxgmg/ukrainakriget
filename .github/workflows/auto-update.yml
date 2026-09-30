@@ -2,8 +2,8 @@ name: Automatisk Uppdatering och Arkivering
 
 on:
   schedule:
-    # Körs varannan timme vid minut 25 för tät och stabil uppdateringsfrekvens
-    - cron: '25 */2 * * *'
+    # Körs varje timme vid minut 25 för maximal aktualitet och snabb felåterhämtning
+    - cron: '25 * * * *'
   workflow_dispatch: # Möjliggör manuell körning via GitHub-gränssnittet
 
 permissions:

@@ -13,7 +13,7 @@ const AppData = {
   analyses: [],
   casualties: null,
   lastUpdated: null,
-  updateFrequencyHours: 2,
+  updateFrequencyHours: 1,
   isLoaded: false,
 
   async init() {
