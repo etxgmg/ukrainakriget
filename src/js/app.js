@@ -472,8 +472,8 @@ window.App = {
       formattedLast = lang === "sv" ? `${lastDatePart} ${lastTime}` : `${lastDatePart} at ${lastTime}`;
     }
 
-    // 2. Beräkna nästa schemalagda uppdatering (4-timmars cykel)
-    const intervalMs = (AppData.updateFrequencyHours || 4) * 60 * 60 * 1000;
+    // 2. Beräkna nästa schemalagda uppdatering
+    const intervalMs = (AppData.updateFrequencyHours || 1) * 60 * 60 * 1000;
     let nextDate = new Date(lastDate.getTime() + intervalMs);
     while (nextDate.getTime() <= now.getTime()) {
       nextDate = new Date(nextDate.getTime() + intervalMs);
@@ -515,9 +515,12 @@ window.App = {
     // 4. Uppdatera indikator i flödeshuvudet
     const elFeedIndicator = document.getElementById("active-feed-time-indicator");
     if (elFeedIndicator) {
+      const freqHours = AppData.updateFrequencyHours || 1;
+      const freqTextSv = freqHours === 1 ? "Uppdateras varje timme" : `Uppdateras var ${freqHours}:e timme`;
+      const freqTextEn = freqHours === 1 ? "Updated every hour" : `Updated every ${freqHours} hours`;
       elFeedIndicator.textContent = lang === "sv"
-        ? `Uppdateras var 4:e timme • Nästa ca ${nextTime}`
-        : `Updated every 4 hours • Next approx. ${nextTime}`;
+        ? `${freqTextSv} • Nästa ca ${nextTime}`
+        : `${freqTextEn} • Next approx. ${nextTime}`;
     }
   },
 

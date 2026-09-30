@@ -102,7 +102,7 @@ ukraina/
 └── .github/
     └── workflows/
         ├── deploy.yml           # Publicerar automatiskt till GitHub Pages vid push till main
-        └── auto-update.yml      # Schemalagd körning var 4:e timme för datainsamling & arkivering
+        └── auto-update.yml      # Schemalagd körning varje timme för datainsamling & arkivering
 ```
 
 ---
@@ -149,7 +149,7 @@ Projektet är konfigurerat för:
 
 1. Repot finns på GitHub under `ukrainakriget/ukrainakriget.github.io`.
 2. Vid push till `main` bygger och driftsätter workflowet `.github/workflows/deploy.yml` automatiskt webbplatsen på `ukrainakriget.github.io`.
-3. Workflowet `.github/workflows/auto-update.yml` körs därefter automatiskt var 4:e timme via cron, samlar in ny data, uppdaterar händelser, roterar arkivet och publicerar utan manuellt ingripande.
+3. Workflowet `.github/workflows/auto-update.yml` körs därefter automatiskt varje timme via cron, samlar in ny data, uppdaterar händelser, roterar arkivet och publicerar utan manuellt ingripande.
 
 ---
 
