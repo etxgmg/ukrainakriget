@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-09-30T05:39:30.246955+00:00",
+  "last_updated": "2026-09-30T15:01:08.001897+00:00",
   "total_count": 2,
   "analyses": [
+    {
+      "id": "ana-cornucopia-202609301003",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-09-30",
+      "timestamp": "2026-09-30T10:03:54+00:00",
+      "title_sv": "Ukraina: Fem mördade inklusive barn i Kyjiv – Ryssland beställde mord på Kasparov – telemast bombad av Ryssland i Moldavien",
+      "title_en": "Ukraine: Five murdered including children in Kyiv - Russia ordered murder of Kasparov - telemast bombed by Russia in Moldova",
+      "summary_sv": "Fem har mördats inklusive ett barn i Rysslands pågående terrorbombning mot Kyjiv. Den ryska underrättelsetjänsten beställde mord på oppositonelle exilryssarna och schackmästaren Garry Kasparov och fd Dumaledamoten Ilja Ponomariov i USA.",
+      "summary_en": "Five have been killed including a child in Russia's ongoing terror bombing of Kyiv. The Russian intelligence service ordered the assassination of opposition Russians in exile and chess master Garry Kasparov and former Dumaledamoten Ilya Ponomariov in the United States.",
+      "key_takeaways_sv": [
+        "Fem har mördats inklusive ett barn i Rysslands pågående terrorbombning mot Kyjiv.",
+        "Den ryska underrättelsetjänsten beställde mord på oppositonelle exilryssarna och schackmästaren Garry Kasparov och fd Dumaledamoten Ilja Ponomariov i USA.",
+        "En rysk attackdrönare ska träffat telemast i Moldavien."
+      ],
+      "key_takeaways_en": [
+        "Five have been killed including a child in Russia's ongoing terror bombing of Kyiv.",
+        "The Russian intelligence service ordered the assassination of opposition Russians in exile and chess master Garry Kasparov and former Dumaledamoten Ilya Ponomariov in the United States.",
+        "A Russian attack drone reportedly hit a telecommunications tower in Moldova."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/09/ukraina-fem-mordade-inklusive-barn-i-kyjiv-ryssland-bestallde-mord-pa-kasparov-telemast-bombad-av-ryssland-i-moldavien/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    },
     {
       "id": "ana-cornucopia-202609290925",
       "author_id": "wilderang",
@@ -31,37 +64,6 @@
         "vapenindustri"
       ],
       "url": "https://cornucopia.se/2026/09/ukraina-djurraddning-i-odesa-bombad-rysk-underrattelsetjanst-utforde-mordbrand-mot-estnisk-forsvarsindustri/",
-      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
-    },
-    {
-      "id": "ana-cornucopia-202609281150",
-      "author_id": "wilderang",
-      "author_name": "Lars Wilderäng",
-      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
-      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
-      "author_type": "svensk_expert",
-      "platform": "Cornucopia.se",
-      "date": "2026-09-28",
-      "timestamp": "2026-09-28T11:50:00+00:00",
-      "title_sv": "Ukraina: Tre mördade i Kyjiv och åtta skadade, Nationella Vetenskapsakademin bombad – vapenfabriker bombade i ryska Tula och Voronezj, attackdrönarbaser i Kaluga och Orjol, två bränsledepåer i Krasnodar Kraj",
-      "title_en": "Ukraine: Three killed in Kyiv and eight injured, National Academy of Sciences bombed - weapons factories bombed in Russian Tula and Voronezh, attack drone bases in Kaluga and Oryol, two fuel depots in Krasnodar Krai",
-      "summary_sv": "Ryssland har mördat tre civila och skadat åtta i sina terrorbombningar senaste dygnet och Ukrainas Nationella Vetenskapsakademi har bombats av Ryssland.",
-      "summary_en": "Russia has murdered three civilians and injured eight in its terrorist bombings in the past 24 hours, and Ukraine's National Academy of Sciences has been bombed by Russia.",
-      "key_takeaways_sv": [
-        "Ryssland har mördat tre civila och skadat åtta i sina terrorbombningar senaste dygnet och Ukrainas Nationella Vetenskapsakademi har bombats av Ryssland.",
-        "Ukraina bombade i sin tur den ryska krigsindustrins vapenfabriker i Tula och Voronezj, samt attackdrönarbaser i Kaluga och Orjol och två bränsledepåer i Krasnodar Kraj."
-      ],
-      "key_takeaways_en": [
-        "Russia has murdered three civilians and injured eight in its terrorist bombings in the past 24 hours, and Ukraine's National Academy of Sciences has been bombed by Russia.",
-        "Ukraine, in turn, bombed Russian war industry weapons factories in Tula and Voronezh, as well as attack drone bases in Kaluga and Oryol and two fuel depots in Krasnodar Krai."
-      ],
-      "topics": [
-        "luftkrig",
-        "djupanfall",
-        "frontlinje",
-        "vapenindustri"
-      ],
-      "url": "https://cornucopia.se/2026/09/ukraina-tre-mordade-i-kyjiv-och-atta-skadade-nationella-vetenskapsakademin-bombad-vapenfabriker-bombade-i-ryska-tula-och-voronezj-attackdronarbaser-i-kaluga-och-orjol-tva-bransledepaer-i-krasnod/",
       "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
     }
   ]
