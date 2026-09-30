@@ -1,7 +1,62 @@
 {
-  "total_archived_events": 42,
-  "last_archived_rotation": "2026-09-29T23:47:54.931552+00:00",
+  "total_archived_events": 43,
+  "last_archived_rotation": "2026-09-30T05:39:26.586181+00:00",
   "events": [
+    {
+      "id": "evt-2026-09-29-2d4d88",
+      "date": "2026-09-29",
+      "timestamp": "2026-09-29T05:00:05+00:00",
+      "title_sv": "Krigsbriefing i Ukraina: Putin beordrar arméns expansion när Zelenskyy säger att fler nordkoreaner ska utplaceras i Ryssland",
+      "title_en": "Ukraine war briefing: Putin orders army expansion as Zelenskyy says more North Koreans to be deployed in Russia",
+      "summary_sv": "Volodymyr Zelenskyys omnämnande under ett FN-tal om att Kyjiv hade skickat två krigsfångar till Sydkorea har spiralerat in i en högst oväntad kris Sydkorea och Ukraina är låsta i en eskalerande diplomatisk tvist om vem som kom överens om omständigheterna för två krigsfångar tillfångatagna i strid för Ryssland. Ukrainas president,...",
+      "summary_en": "Volodymyr Zelenskyy’s mention during a UN speech that Kyiv had sent two prisoners of war to South Korea has spiralled into a most unexpected crisis South Korea and Ukraine are locked in an escalating diplomatic dispute over who agreed what regarding the circumstances of two prisoners of war captured fighting for Russia.Ukraine’s president,...",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "uk",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftad av 2 samstämmiga rapporter från The Guardian (Ukraine) samt räddningstjänsten DSNS.",
+        "motivering_en": "Confirmed by 2 corroborating reports from The Guardian (Ukraine) and official emergency services."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/2026/sep/29/ukraine-war-briefing-putin-orders-army-expansion-as-zelenskyy-claims-more-north-korean-troops-to-be-deployed-for-moscow",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Civila mål",
+        "Drönare",
+        "Kyjiv",
+        "Robotanfall",
+        "Ukraina"
+      ],
+      "relaterade_kallor": [
+        {
+          "kalla": "The Guardian (Ukraine)",
+          "titel": "Varför är Sydkorea så arg på Ukraina över två nordkoreanska krigsfångar?",
+          "url": "https://www.theguardian.com/world/2026/sep/29/south-korea-ukraine-north-korea-prisoners-of-war-dispute-explainer"
+        },
+        {
+          "kalla": "The Guardian (Ukraine)",
+          "titel": "Krigsbriefing i Ukraina: Putin beordrar arméns expansion när Zelenskyy säger att fler nordkoreaner ska utplaceras i Ryssland",
+          "url": "https://www.theguardian.com/world/2026/sep/29/ukraine-war-briefing-putin-orders-army-expansion-as-zelenskyy-claims-more-north-korean-troops-to-be-deployed-for-moscow"
+        }
+      ],
+      "cluster_count": 2
+    },
     {
       "id": "evt-2026-09-28-283eb6",
       "date": "2026-09-28",
