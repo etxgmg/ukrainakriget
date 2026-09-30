@@ -56,6 +56,16 @@
       "description_en": "Daily morning and evening operational briefings on frontline fighting, Russian losses, and air strikes."
     },
     {
+      "id": "minfin-casualties",
+      "name": "Minfin – Russian Casualties Index",
+      "category": "official_ua",
+      "tier": "Statistisk dataaggregator",
+      "url": "https://index.minfin.com.ua/en/russian-invading/casualties/",
+      "credibility": "Hög (Ukrainas Generalstab / RNBO)",
+      "description_sv": "Strukturerad databas över ryska förluster av personal och stridsfordon baserad på Ukrainas Generalstabs dagliga rapporter, med dygnsförändring och ekonomisk kostnadsuppskattning.",
+      "description_en": "Structured database tracking Russian personnel and military equipment losses based on daily General Staff reports, including daily net changes and economic cost estimates."
+    },
+    {
       "id": "president-ua",
       "name": "Ukrainas Presidentkansli (President of Ukraine)",
       "category": "official_ua",
