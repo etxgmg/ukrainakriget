@@ -78,5 +78,14 @@
     "internally_displaced_persons": "3.7 miljoner",
     "refugees_across_europe": "6.2 miljoner",
     "civilians_in_need_of_winterization": "1.8 miljoner"
+  },
+  "russian_casualties_minfin": {
+    "date": "2026-09-30",
+    "daily_personnel": 1470,
+    "daily_artillery": 21,
+    "daily_drones": 1393,
+    "daily_equipment_total": 1763,
+    "total_personnel": 1533970,
+    "source_url": "https://index.minfin.com.ua/en/russian-invading/casualties/"
   }
 }

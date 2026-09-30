@@ -11,6 +11,7 @@ const AppData = {
   sourceCategories: [],
   statistics: {},
   analyses: [],
+  casualties: null,
   lastUpdated: null,
   updateFrequencyHours: 4,
   isLoaded: false,
@@ -18,12 +19,13 @@ const AppData = {
   async init() {
     try {
       // Försök ladda via fetch från data-katalogen
-      const [resEvents, resArchive, resSources, resStats, resAnalyses] = await Promise.all([
+      const [resEvents, resArchive, resSources, resStats, resAnalyses, resCasualties] = await Promise.all([
         fetch("data/output/events.json").then(r => r.ok ? r.json() : null).catch(() => null),
         fetch("data/output/archive.json").then(r => r.ok ? r.json() : null).catch(() => null),
         fetch("data/sources.json").then(r => r.ok ? r.json() : null).catch(() => null),
         fetch("data/output/statistics.json").then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch("data/output/analyses.json").then(r => r.ok ? r.json() : null).catch(() => null)
+        fetch("data/output/analyses.json").then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch("data/output/casualties.json").then(r => r.ok ? r.json() : null).catch(() => null)
       ]);
 
       if (resEvents && resEvents.events) {
@@ -48,6 +50,9 @@ const AppData = {
       if (resAnalyses && resAnalyses.analyses) {
         this.analyses = resAnalyses.analyses || [];
       }
+      if (resCasualties) {
+        this.casualties = resCasualties;
+      }
     } catch (e) {
       console.warn("Kunde inte ladda live JSON via fetch (troligtvis file:// CORS). Använder inbyggd fallback-data.", e);
     }
@@ -59,6 +64,10 @@ const AppData = {
 
     this.isLoaded = true;
     return this;
+  },
+
+  getCasualties() {
+    return this.casualties;
   },
 
   getAllEvents() {
@@ -677,5 +686,44 @@ const AppData = {
         "verified_credibility": "Högsta OSINT-klass (satellitbildsverifiering av GRAU-arsenaler och logistik)"
       }
     ];
+
+    if (!this.casualties) {
+      this.casualties = {
+        "date": "2026-09-30",
+        "last_updated": "2026-09-30T11:16:33.872501+00:00",
+        "source": {
+          "name": "Minfin – Russian Casualties Index",
+          "url": "https://index.minfin.com.ua/en/russian-invading/casualties/",
+          "origin": "Ukrainas Generalstab (Armed Forces of Ukraine / RNBO)",
+          "credibility": "Officiell militär operativ uppskattning"
+        },
+        "methodology_note_sv": "Uppgifterna baseras på Ukrainas Generalstabs officiella dygnsrapporter och sammanställs av Minfin. Siffrorna återspeglar den ukrainska militärens operativa uppskattningar. Som komplement redovisas oberoende fotoverifierade minimiförluster via Oryx under Metod.",
+        "methodology_note_en": "Data sourced from official daily reports of the General Staff of the Armed Forces of Ukraine, aggregated by Minfin. These represent Ukrainian military operational estimates. For comparison, conservative photo-verified equipment losses from Oryx are documented under Methodology.",
+        "summary": {
+          "daily_personnel": 1470,
+          "daily_artillery": 21,
+          "daily_drones": 1393,
+          "daily_equipment_total": 1763,
+          "total_personnel": 1533970
+        },
+        "categories": [
+          { "key": "personnel", "name_sv": "Personal (stupade och allvarligt sårade)", "name_en": "Military personnel (killed / wounded)", "total": 1533970, "daily": 1470, "unit_sv": "man", "unit_en": "troops", "icon": "🪖", "highlight": true },
+          { "key": "artillery", "name_sv": "Artillerisystem", "name_en": "Artillery systems", "total": 50519, "daily": 21, "unit_sv": "st", "unit_en": "units", "icon": "💥", "highlight": true },
+          { "key": "uav", "name_sv": "Drönare (UAV)", "name_en": "UAVs / Drones", "total": 540095, "daily": 1393, "unit_sv": "st", "unit_en": "units", "icon": "🛸", "highlight": true },
+          { "key": "vehicles", "name_sv": "Transport- och tankfordon", "name_en": "Cars and fuel cisterns", "total": 155363, "daily": 332, "unit_sv": "st", "unit_en": "units", "icon": "🚛", "highlight": true },
+          { "key": "tanks", "name_sv": "Stridsvagnar", "name_en": "Tanks", "total": 11634, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "🛡️", "highlight": false },
+          { "key": "afv", "name_sv": "Pansarskytte- och stridsfordon", "name_en": "Armored fighting vehicles", "total": 23992, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "🚜", "highlight": false },
+          { "key": "mlrs", "name_sv": "Raketartilleri (MLRS)", "name_en": "Multiple launch rocket systems", "total": 1550, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "🚀", "highlight": false },
+          { "key": "anti_air", "name_sv": "Luftvärnssystem", "name_en": "Anti-aircraft warfare", "total": 1262, "daily": 1, "unit_sv": "st", "unit_en": "units", "icon": "📡", "highlight": false },
+          { "key": "special_equipment", "name_sv": "Special- och ingenjörsfordon", "name_en": "Special equipment", "total": 4512, "daily": 16, "unit_sv": "st", "unit_en": "units", "icon": "🛠️", "highlight": false },
+          { "key": "cruise_missiles", "name_sv": "Kryssningsrobotar (nedskjutna)", "name_en": "Cruise missiles intercepted", "total": 4125, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "🎯", "highlight": false },
+          { "key": "ground_robots", "name_sv": "Markgående robotsystem", "name_en": "Ground robotic systems", "total": 28, "daily": 1, "unit_sv": "st", "unit_en": "units", "icon": "🤖", "highlight": false },
+          { "key": "planes", "name_sv": "Flygplan", "name_en": "Planes", "total": 435, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "✈️", "highlight": false },
+          { "key": "helicopters", "name_sv": "Helikoptrar", "name_en": "Helicopters", "total": 346, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "🚁", "highlight": false },
+          { "key": "ships", "name_sv": "Krigsfartyg och båtar", "name_en": "Warships and boats", "total": 28, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "🚢", "highlight": false },
+          { "key": "submarines", "name_sv": "Ubåtar", "name_en": "Submarines", "total": 1, "daily": 0, "unit_sv": "st", "unit_en": "units", "icon": "⚓", "highlight": false }
+        ]
+      };
+    }
   }
 };

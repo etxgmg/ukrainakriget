@@ -924,5 +924,12 @@ def main():
     except Exception as e:
         print(f"Fel vid uppdatering av expertanalyser: {e}")
 
+    # 8. Uppdatera ryska förlustsiffror från Minfin / Ukrainas Generalstab
+    try:
+        from fetch_casualties import run_casualties_collection
+        run_casualties_collection()
+    except Exception as e:
+        print(f"Fel vid uppdatering av ryska förlustsiffror från Minfin: {e}")
+
 if __name__ == "__main__":
     main()

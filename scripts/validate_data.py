@@ -129,6 +129,27 @@ def main():
                 if not a.get("url"):
                     all_errors.append(f"Saknar källänk för analys [{a.get('id')}]")
 
+    # Validate casualties.json (Minfin / Generalstaben)
+    casualties_file = BASE_DIR / "data" / "output" / "casualties.json"
+    if not casualties_file.exists():
+        all_errors.append(f"Förlustfil saknas: {casualties_file}")
+    else:
+        with open(casualties_file, "r", encoding="utf-8") as f:
+            cas_data = json.load(f)
+            if not cas_data.get("date"):
+                all_errors.append("casualties.json saknar datum")
+            summary = cas_data.get("summary", {})
+            for req_key in ["daily_personnel", "daily_artillery", "daily_drones", "daily_equipment_total", "total_personnel"]:
+                if req_key not in summary:
+                    all_errors.append(f"casualties.json summary saknar nyckel '{req_key}'")
+            categories = cas_data.get("categories", [])
+            if len(categories) < 10:
+                all_errors.append(f"casualties.json har för få kategorier ({len(categories)} st, förväntat minst 10)")
+            for cat in categories:
+                if "key" not in cat or "name_sv" not in cat or "total" not in cat or "daily" not in cat:
+                    all_errors.append(f"casualties.json kategori saknar grundattribut: {cat.get('key', 'okänd')}")
+            print(f"✓ Ryska förluster (Minfin): {len(categories)} kategorier validerade för datum {cas_data.get('date')}.")
+
     if all_errors:
         print(f"\nFEL FUNNA ({len(all_errors)} st):")
         for err in all_errors:

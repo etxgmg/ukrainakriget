@@ -148,6 +148,53 @@
         </div>
       </section>
 
+      <!-- Ryska förluster enligt Ukrainas Generalstab / Minfin -->
+      <section class="casualties-section" id="casualties-section">
+        <div class="casualties-header">
+          <div class="casualties-title-group">
+            <div class="casualties-title-row">
+              <h2 data-i18n="casualtiesTitle">Ryska förluster (senaste dygnet och totalt)</h2>
+              <span class="badge-source-type" id="casualties-date-badge">2026-09-30</span>
+            </div>
+            <p class="section-desc" data-i18n="casualtiesSubtitle">Officiella operativa uppskattningar från Ukrainas Generalstab via Minfin, uppdateras dagligen</p>
+          </div>
+          <div class="casualties-sync-info">
+            <span class="pulse-dot"></span>
+            <span class="casualties-sync-text" id="casualties-sync-time">Idag</span>
+          </div>
+        </div>
+
+        <!-- Dygns-KPIer (Personal, Artilleri, Drönare, Transport, Materiel totalt) -->
+        <div class="casualties-highlights-grid" id="casualties-highlights"></div>
+
+        <!-- Detaljerad kategorinedbrytning -->
+        <div class="casualties-breakdown-wrapper">
+          <div class="casualties-breakdown-header">
+            <h3 class="breakdown-title" data-i18n="casualtiesBreakdownHeading">Samtliga materiel- och personalkategorier</h3>
+            <button type="button" class="btn-toggle-categories" id="btn-toggle-casualties" data-i18n="casualtiesShowAllCategories">
+              Visa alla 15 materielkategorier
+            </button>
+          </div>
+          <div class="casualties-breakdown-grid hidden" id="casualties-breakdown-grid"></div>
+        </div>
+
+        <!-- Metodologifotnot och källänk -->
+        <div class="casualties-footer">
+          <div class="casualties-footnote">
+            <span class="footnote-icon">ℹ️</span>
+            <div class="footnote-content">
+              <strong data-i18n="casualtiesSourceLabel">Källa & metod:</strong>
+              <span id="casualties-methodology-text" data-i18n="casualtiesSourceDescription">
+                Siffrorna baseras på Ukrainas Generalstabs officiella dygnsrapporter sammanställda av Minfin. Detta utgör ukrainska försvarsmaktens operativa uppskattningar. Som oberoende och konservativt referensmått redovisas fotoverifierade minimiförluster via Oryx under Metod.
+              </span>
+              <a href="https://index.minfin.com.ua/en/russian-invading/casualties/" target="_blank" rel="noopener noreferrer" class="casualties-source-link" data-i18n="casualtiesMinfinLink">
+                Se källdata på Minfin ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Interactive Tactical and Strategic Map -->
       <section class="map-section">
         <div class="map-header">

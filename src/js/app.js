@@ -37,6 +37,7 @@ window.App = {
 
     // 5. Rendera dashboard
     this.renderKPIs();
+    this.renderCasualties();
     this.renderSystemStatus();
     this.renderActiveFeed();
     this.renderFeaturedAnalyses();
@@ -58,6 +59,7 @@ window.App = {
     // Språkhändelse
     window.addEventListener("languageChanged", () => {
       this.renderKPIs();
+      this.renderCasualties();
       this.renderSystemStatus();
       this.renderActiveFeed();
       this.renderArchiveFeed();
@@ -138,6 +140,19 @@ window.App = {
         this.renderAnalyses();
       });
     });
+
+    // Toggle-knapp för att expandera/komprimera samtliga förlustkategorier
+    const btnToggleCasualties = document.getElementById("btn-toggle-casualties");
+    const breakdownGrid = document.getElementById("casualties-breakdown-grid");
+    if (btnToggleCasualties && breakdownGrid) {
+      btnToggleCasualties.addEventListener("click", () => {
+        const isHidden = breakdownGrid.classList.toggle("hidden");
+        const isSv = getLang() === "sv";
+        btnToggleCasualties.textContent = isHidden
+          ? (isSv ? "Visa alla 15 materielkategorier" : "Show all 15 equipment categories")
+          : (isSv ? "Dölj detaljerade kategorier" : "Collapse detailed categories");
+      });
+    }
   },
 
   switchTab(tab) {
@@ -159,6 +174,7 @@ window.App = {
       this.renderSourcesList();
     } else if (tab === "situation") {
       this.renderKPIs();
+      this.renderCasualties();
       if (typeof TacticalMap !== "undefined" && TacticalMap.render) {
         TacticalMap.render();
       }
@@ -276,6 +292,152 @@ window.App = {
       elCivilianSub.textContent = lang === "sv"
         ? `${civPct}% av anfallen mot bostäder, skolor, vårdcentraler och akademi`
         : `${civPct}% of strikes hitting residences, clinics, and academy`;
+    }
+  },
+
+  renderCasualties() {
+    const casualties = AppData.getCasualties();
+    if (!casualties) return;
+
+    const lang = getLang();
+    const isSv = lang === "sv";
+
+    // 1. Datum & synk-badge
+    const dateBadge = document.getElementById("casualties-date-badge");
+    if (dateBadge && casualties.date) {
+      dateBadge.textContent = casualties.date;
+    }
+
+    const syncEl = document.getElementById("casualties-sync-time");
+    if (syncEl) {
+      if (casualties.last_updated) {
+        try {
+          const d = new Date(casualties.last_updated);
+          const timeStr = d.toLocaleTimeString(isSv ? "sv-SE" : "en-GB", { hour: "2-digit", minute: "2-digit" });
+          syncEl.textContent = isSv ? `Synkroniserad idag ${timeStr}` : `Synchronized today at ${timeStr}`;
+        } catch (e) {
+          syncEl.textContent = isSv ? "Idag" : "Today";
+        }
+      } else {
+        syncEl.textContent = isSv ? "Idag" : "Today";
+      }
+    }
+
+    // 2. Highlights (Personal, Artilleri, Drönare, Transport, Materiel totalt)
+    const highlightsContainer = document.getElementById("casualties-highlights");
+    if (highlightsContainer) {
+      const summary = casualties.summary || {};
+      const formatNumber = num => (num || 0).toLocaleString(isSv ? "sv-SE" : "en-US");
+
+      const artCat = casualties.categories?.find(c => c.key === "artillery");
+      const uavCat = casualties.categories?.find(c => c.key === "uav");
+      const vehCat = casualties.categories?.find(c => c.key === "vehicles");
+
+      const highlightCards = [
+        {
+          key: "personnel",
+          title: isSv ? "Personal (stupade/sårade)" : "Personnel (killed/wounded)",
+          daily: summary.daily_personnel || 0,
+          total: summary.total_personnel || 0,
+          icon: "🪖",
+          unit: isSv ? "man" : "troops",
+          tone: "danger"
+        },
+        {
+          key: "artillery",
+          title: isSv ? "Artillerisystem" : "Artillery systems",
+          daily: summary.daily_artillery || (artCat?.daily || 0),
+          total: artCat?.total || 0,
+          icon: "💥",
+          unit: isSv ? "st" : "units",
+          tone: "danger"
+        },
+        {
+          key: "uav",
+          title: isSv ? "Drönare (UAV)" : "UAVs / Drones",
+          daily: summary.daily_drones || (uavCat?.daily || 0),
+          total: uavCat?.total || 0,
+          icon: "🛸",
+          unit: isSv ? "st" : "units",
+          tone: "warn"
+        },
+        {
+          key: "vehicles",
+          title: isSv ? "Transport- och tankfordon" : "Cars & fuel cisterns",
+          daily: vehCat?.daily || 0,
+          total: vehCat?.total || 0,
+          icon: "🚛",
+          unit: isSv ? "st" : "units",
+          tone: "primary"
+        },
+        {
+          key: "equipment_total",
+          title: isSv ? "Materiel totalt idag" : "Total equipment today",
+          daily: summary.daily_equipment_total || 0,
+          total: null,
+          icon: "🛡️",
+          unit: isSv ? "enheter" : "units",
+          tone: "highlight"
+        }
+      ];
+
+      highlightsContainer.innerHTML = highlightCards.map(c => `
+        <div class="casualty-kpi-card casualty-${c.tone}">
+          <div class="casualty-kpi-header">
+            <span class="casualty-kpi-title">${c.title}</span>
+            <span class="casualty-kpi-icon">${c.icon}</span>
+          </div>
+          <div class="casualty-kpi-daily">
+            <span class="casualty-delta-badge ${c.daily > 0 ? 'delta-positive' : 'delta-zero'}">+${formatNumber(c.daily)}</span>
+            <span class="casualty-daily-label">${isSv ? "senaste dygnet" : "last 24h"}</span>
+          </div>
+          ${c.total !== null ? `
+            <div class="casualty-kpi-total">
+              <span class="total-label">${isSv ? "Totalt:" : "Total:"}</span>
+              <span class="total-value">${formatNumber(c.total)} ${c.unit}</span>
+            </div>
+          ` : `
+            <div class="casualty-kpi-total">
+              <span class="total-label">${isSv ? "Omfattning:" : "Scope:"}</span>
+              <span class="total-value">${isSv ? "Alla 14 fordons- och vapenslag" : "Across all 14 equipment types"}</span>
+            </div>
+          `}
+        </div>
+      `).join("");
+    }
+
+    // 3. Detaljerad nedbrytning (15 kategorier)
+    const breakdownGrid = document.getElementById("casualties-breakdown-grid");
+    if (breakdownGrid && casualties.categories) {
+      const formatNumber = num => (num || 0).toLocaleString(isSv ? "sv-SE" : "en-US");
+
+      breakdownGrid.innerHTML = casualties.categories.map(cat => {
+        const name = isSv ? cat.name_sv : cat.name_en;
+        const unit = isSv ? cat.unit_sv : cat.unit_en;
+        const dailyStr = cat.daily > 0 ? `+${formatNumber(cat.daily)}` : "0";
+        const dailyClass = cat.daily > 0 ? "badge-delta-pos" : "badge-delta-zero";
+
+        return `
+          <div class="breakdown-category-row ${cat.highlight ? 'category-highlighted' : ''}">
+            <div class="category-meta">
+              <span class="category-icon">${cat.icon || '▫️'}</span>
+              <span class="category-name">${name}</span>
+            </div>
+            <div class="category-stats">
+              <span class="category-daily ${dailyClass}">${dailyStr}</span>
+              <span class="category-total">${formatNumber(cat.total)} <span class="category-unit">${unit}</span></span>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // 4. Metodologifotnot & länk
+    const methText = document.getElementById("casualties-methodology-text");
+    if (methText) {
+      methText.textContent = isSv
+        ? casualties.methodology_note_sv || t("casualtiesSourceDescription")
+        : casualties.methodology_note_en || t("casualtiesSourceDescription");
     }
   },
 

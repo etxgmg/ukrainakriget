@@ -1727,3 +1727,347 @@ body {
   color: #fff;
 }
 
+/* ==========================================================================
+   Casualties Section (Minfin / General Staff)
+   ========================================================================== */
+
+.casualties-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.casualties-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.casualties-title-group {
+  flex: 1;
+  min-width: 260px;
+}
+
+.casualties-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.casualties-title-row h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.casualties-sync-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  background: rgba(15, 23, 42, 0.6);
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+}
+
+/* Casualties Highlights Grid (5 cards) */
+.casualties-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.35rem;
+}
+
+.casualty-kpi-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.casualty-kpi-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.casualty-kpi-card.casualty-danger::before {
+  background: #ef4444;
+}
+
+.casualty-kpi-card.casualty-warn::before {
+  background: #f59e0b;
+}
+
+.casualty-kpi-card.casualty-primary::before {
+  background: var(--ua-blue-light);
+}
+
+.casualty-kpi-card.casualty-highlight::before {
+  background: #8b5cf6;
+}
+
+.casualty-kpi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.casualty-kpi-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.casualty-kpi-icon {
+  font-size: 1.15rem;
+}
+
+.casualty-kpi-daily {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.casualty-delta-badge {
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.casualty-delta-badge.delta-positive {
+  color: #f87171;
+}
+
+.casualty-delta-badge.delta-zero {
+  color: #94a3b8;
+}
+
+.casualty-daily-label {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  text-transform: lowercase;
+}
+
+.casualty-kpi-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.78rem;
+}
+
+.casualty-kpi-total .total-label {
+  color: var(--text-faint);
+}
+
+.casualty-kpi-total .total-value {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+/* Detailed Category Breakdown */
+.casualties-breakdown-wrapper {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.casualties-breakdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.breakdown-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.btn-toggle-categories {
+  background: #1e293b;
+  border: 1px solid var(--border-subtle);
+  color: var(--ua-blue-light);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-toggle-categories:hover {
+  background: #334155;
+  border-color: var(--ua-blue-light);
+  color: #fff;
+}
+
+.casualties-breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.casualties-breakdown-grid.hidden {
+  display: none;
+}
+
+.breakdown-category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.75rem;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.breakdown-category-row:hover {
+  background: rgba(30, 41, 59, 0.85);
+  border-color: rgba(14, 165, 233, 0.25);
+}
+
+.breakdown-category-row.category-highlighted {
+  border-left: 3px solid var(--ua-blue-light);
+}
+
+.category-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.category-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.category-name {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.category-daily {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.badge-delta-pos {
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.badge-delta-zero {
+  background: rgba(148, 163, 184, 0.1);
+  color: #94a3b8;
+}
+
+.category-total {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  min-width: 75px;
+  text-align: right;
+}
+
+.category-unit {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-faint);
+  margin-left: 2px;
+}
+
+/* Casualties Footer / Methodology */
+.casualties-footer {
+  margin-top: 0.5rem;
+}
+
+.casualties-footnote {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.1rem;
+}
+
+.casualties-footnote .footnote-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.casualties-footnote .footnote-content {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.casualties-footnote .footnote-content strong {
+  color: #fff;
+  margin-right: 0.35rem;
+}
+
+.casualties-source-link {
+  color: var(--ua-blue-light);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.45rem;
+  white-space: nowrap;
+}
+
+.casualties-source-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
