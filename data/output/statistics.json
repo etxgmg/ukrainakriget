@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T01:24:26.773675+00:00",
+  "updated_at": "2026-10-01T07:29:40.044476+00:00",
   "daily_metrics": {
     "shahed_interception_rate_percent": 69.4,
     "cruise_missile_interception_rate_percent": 82.5,
@@ -8,7 +8,13 @@
       {
         "name_sv": "Kyjiv",
         "name_en": "Kyjiv",
-        "attacks_24h": 138,
+        "attacks_24h": 156,
+        "intensity": "Högst"
+      },
+      {
+        "name_sv": "Cherson",
+        "name_en": "Cherson",
+        "attacks_24h": 36,
         "intensity": "Högst"
       },
       {
@@ -18,22 +24,16 @@
         "intensity": "Högst"
       },
       {
+        "name_sv": "Odesa",
+        "name_en": "Odesa",
+        "attacks_24h": 30,
+        "intensity": "Högst"
+      },
+      {
         "name_sv": "Lyman-sektorn",
         "name_en": "Lyman-sektorn",
         "attacks_24h": 30,
         "intensity": "Högst"
-      },
-      {
-        "name_sv": "Cherson",
-        "name_en": "Cherson",
-        "attacks_24h": 30,
-        "intensity": "Högst"
-      },
-      {
-        "name_sv": "Tjernihiv",
-        "name_en": "Tjernihiv",
-        "attacks_24h": 24,
-        "intensity": "Hög"
       }
     ],
     "drones_down": 86,
@@ -41,12 +41,12 @@
     "black_sea_export_monthly_tons_millions": 6.4
   },
   "target_distribution_percent": {
-    "helt_civila": 12,
+    "helt_civila": 11,
     "civil_infrastruktur": 21,
-    "energiproduktion": 14,
-    "krigsmaterielproduktion": 4,
-    "militara_resurser": 38,
-    "diplomatiskt_politiskt": 11
+    "energiproduktion": 13,
+    "krigsmaterielproduktion": 2,
+    "militara_resurser": 44,
+    "diplomatiskt_politiskt": 9
   },
   "geography_distribution_percent": {
     "fria_ukraina": 48,
@@ -80,12 +80,12 @@
     "civilians_in_need_of_winterization": "1.8 miljoner"
   },
   "russian_casualties_minfin": {
-    "date": "2026-09-30",
-    "daily_personnel": 1470,
-    "daily_artillery": 21,
-    "daily_drones": 1393,
-    "daily_equipment_total": 1763,
-    "total_personnel": 1533970,
+    "date": "2026-10-01",
+    "daily_personnel": 1900,
+    "daily_artillery": 36,
+    "daily_drones": 1288,
+    "daily_equipment_total": 1871,
+    "total_personnel": 1535870,
     "source_url": "https://index.minfin.com.ua/en/russian-invading/casualties/"
   }
 }
