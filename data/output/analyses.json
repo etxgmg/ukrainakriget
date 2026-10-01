@@ -1,7 +1,38 @@
 {
-  "last_updated": "2026-10-01T07:29:44.824491+00:00",
+  "last_updated": "2026-10-01T15:06:23.307284+00:00",
   "total_count": 2,
   "analyses": [
+    {
+      "id": "ana-cornucopia-202610010855",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T08:55:00+00:00",
+      "title_sv": "Ukraina: Största distanskriget sedan VK2 – Operation Vivaldi fortsätter, ryska anfall mot Dobropillija",
+      "title_en": "Ukraine: Biggest Remote War Since VK2 – Operation Vivaldi Continues, Russian Attacks on Dobropillija",
+      "summary_sv": "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
+      "summary_en": "The war in Ukraine is the largest remote war with contactless warfare since World War II, larger than the coalition air operations during the Gulf War and larger than the Iraq War and also bilateral between equals.",
+      "key_takeaways_sv": [
+        "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
+        "Den mycket framgångsrika ukrainska motoffensiven Operation Vivaldi har befriat 176 km2 och fortsätter medan Ryssland försöker anfalla mot Dobropillija innan vädret sätter stopp."
+      ],
+      "key_takeaways_en": [
+        "The war in Ukraine is the largest remote war with contactless warfare since World War II, larger than the coalition air operations during the Gulf War and larger than the Iraq War and also bilateral between equals.",
+        "The highly successful Ukrainian counter-offensive, Operation Vivaldi, has liberated 176 km2 and continues as Russia tries to attack Dobropillija before the weather puts a stop to it."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/10/ukraina-storsta-distanskriget-sedan-vk2-operation-vivaldi-fortsatter-ryska-anfall-mot-dobropillija/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    },
     {
       "id": "ana-cornucopia-202609301003",
       "author_id": "wilderang",
@@ -33,37 +64,6 @@
         "vapenindustri"
       ],
       "url": "https://cornucopia.se/2026/09/ukraina-fem-mordade-inklusive-barn-i-kyjiv-ryssland-bestallde-mord-pa-kasparov-telemast-bombad-av-ryssland-i-moldavien/",
-      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
-    },
-    {
-      "id": "ana-cornucopia-202609290925",
-      "author_id": "wilderang",
-      "author_name": "Lars Wilderäng",
-      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
-      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
-      "author_type": "svensk_expert",
-      "platform": "Cornucopia.se",
-      "date": "2026-09-29",
-      "timestamp": "2026-09-29T09:25:46+00:00",
-      "title_sv": "Ukraina: Djurräddning i Odesa bombad – rysk underrättelsetjänst utförde mordbrand mot estnisk försvarsindustri",
-      "title_en": "Ukraine: Animal rescue in Odesa bombed - Russian intelligence carried out arson against Estonian defense industry",
-      "summary_sv": "Ryssland fortsätter sin terror och har nu bombat en djurräddningsorganisation i Odesa och dödat tre hundar och tio katter.",
-      "summary_en": "Russia continues its terror and has now bombed an animal rescue organization in Odesa, killing three dogs and ten cats.",
-      "key_takeaways_sv": [
-        "Ryssland fortsätter sin terror och har nu bombat en djurräddningsorganisation i Odesa och dödat tre hundar och tio katter.",
-        "Estland pekar nu ut rysk underrättelsetjänst som ansvarig för en mordbrand mot ett estniskt försvarsindustriföretag."
-      ],
-      "key_takeaways_en": [
-        "Russia continues its terror and has now bombed an animal rescue organization in Odesa, killing three dogs and ten cats.",
-        "Estonia now points to Russian intelligence as responsible for an arson attack on an Estonian defense industry company."
-      ],
-      "topics": [
-        "luftkrig",
-        "djupanfall",
-        "frontlinje",
-        "vapenindustri"
-      ],
-      "url": "https://cornucopia.se/2026/09/ukraina-djurraddning-i-odesa-bombad-rysk-underrattelsetjanst-utforde-mordbrand-mot-estnisk-forsvarsindustri/",
       "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
     }
   ]
