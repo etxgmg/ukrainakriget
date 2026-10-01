@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T22:26:14.147622+00:00",
+  "updated_at": "2026-10-01T01:24:26.773675+00:00",
   "daily_metrics": {
     "shahed_interception_rate_percent": 69.4,
     "cruise_missile_interception_rate_percent": 82.5,
@@ -8,7 +8,7 @@
       {
         "name_sv": "Kyjiv",
         "name_en": "Kyjiv",
-        "attacks_24h": 144,
+        "attacks_24h": 138,
         "intensity": "Högst"
       },
       {
@@ -41,12 +41,12 @@
     "black_sea_export_monthly_tons_millions": 6.4
   },
   "target_distribution_percent": {
-    "helt_civila": 10,
-    "civil_infrastruktur": 19,
-    "energiproduktion": 16,
-    "krigsmaterielproduktion": 3,
-    "militara_resurser": 42,
-    "diplomatiskt_politiskt": 10
+    "helt_civila": 12,
+    "civil_infrastruktur": 21,
+    "energiproduktion": 14,
+    "krigsmaterielproduktion": 4,
+    "militara_resurser": 38,
+    "diplomatiskt_politiskt": 11
   },
   "geography_distribution_percent": {
     "fria_ukraina": 48,
