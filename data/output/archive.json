@@ -1,7 +1,84 @@
 {
-  "total_archived_events": 211,
-  "last_archived_rotation": "2026-10-01T22:01:41.764614+00:00",
+  "total_archived_events": 214,
+  "last_archived_rotation": "2026-10-01T22:41:02.964452+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-01-ac05e4",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T01:33:00+03:00",
+      "title_sv": "Rekordhållen räddningsarbetare skadades i den andra ryska bombattacken i Kyjiv",
+      "title_en": "Record-holding rescue worker injured in second Russian shelling attack in Kyiv",
+      "summary_sv": "Räddningsarbetaren Volodymyr Skovorodka, som satte ukrainskt rekord för flera år sedan genom att springa mer än 60 kilometer i full stridsutrustning, skadades i attacken mot Kyjiv.",
+      "summary_en": "Rescue worker Volodymyr Skovorodka, who set a Ukrainian record several years ago by running more than 60 kilometers in full combat gear, was injured in the attack on Kyiv.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "usa",
+        "ryssland",
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-society/4169575-recordholding-rescue-worker-injured-in-second-russian-shelling-attack-in-kyiv.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Kyjiv",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-01-ccbf59",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T01:20:00+03:00",
+      "title_sv": "Pentagon avslutar tilldelningen av 400 miljoner dollar i Ukraina-bistånd",
+      "title_en": "Pentagon finishes allocating $400 million in Ukraine aid",
+      "summary_sv": "Den sista dagen av FY 2026 bestämde Pentagon hur de 400 miljoner dollar som anslagits av kongressen skulle användas för militärt bistånd till Ukraina, rapporterade The Washington Sun den 30 september.",
+      "summary_en": "On the final day of FY 2026, the Pentagon determined how to use the $400 million appropriated by Congress for military aid to Ukraine, The Washington Sun reported on Sept. 30.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "uk",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/pentagon-allocates-400m-in-ukraine-aid-50646146.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Infrastruktur",
+        "Ukraina"
+      ]
+    },
     {
       "id": "evt-2026-10-01-a280f0",
       "date": "2026-10-01",
@@ -269,6 +346,42 @@
         "Drönare",
         "Luftförsvar",
         "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-09-30-72c453",
+      "date": "2026-09-30",
+      "timestamp": "2026-09-30T22:06:01+00:00",
+      "title_sv": "Ryssland kraschade precis av misstag sin första Tu-95 bombplan på 11 år. Dess missiler kommer att fortsätta slå Ukraina ändå",
+      "title_en": "Russia just accidentally crashed its first Tu-95 bomber in 11 years. Its missiles will keep striking Ukraine anyway",
+      "summary_sv": "Den är ur produktion och Rysslands bombplansflotta fortsätter att krympa, men en räd den 8 september behövde bara sex bombplan, och Ryssland har fortfarande ett hundratal.",
+      "summary_en": "It is out of production and Russia's bomber fleet keeps shrinking, but a raid on 8 September needed just six bombers, and Russia still has around a hundred.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Upprätthålla flygduglighet och övningsverksamhet för det strategiska kärnvapen- och kryssningsrobotbärande bombflyget (Tu-95MS) efter omgruppering till Fjärran östern.",
+        "beskrivning_en": "Strategic goal: Maintain operational readiness and flight training for strategic bomber aviation (Tu-95MS) following dispersal to Far Eastern staging hubs."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Bekräftat av Ryska försvarsministeriet, ryska medier (Baza) samt oberoende ukrainska (NV) och internationella medier.",
+        "motivering_en": "High confidence: Corroborated by the Russian Defense Ministry, Russian reporting (Baza), and independent Ukrainian and international media."
+      },
+      "effekt_maluppfyllnad": "totalt_misslyckande",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/10/01/tu-95-crashed/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Robotanfall"
       ]
     },
     {
@@ -1688,11 +1801,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Ukraina",
         "Kyjiv",
+        "Civila mål",
+        "Ukraina",
         "Drönare",
-        "Robotanfall",
-        "Civila mål"
+        "Robotanfall"
       ]
     },
     {

@@ -1,7 +1,47 @@
 {
-  "last_updated": "2026-10-01T22:01:41.764614+00:00",
-  "total_active_events": 109,
+  "last_updated": "2026-10-01T22:41:02.964452+00:00",
+  "total_active_events": 107,
   "events": [
+    {
+      "id": "evt-2026-10-02-7bd4cc",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T01:22:00+03:00",
+      "title_sv": "Turkiet, FN arrangerar nya samtal mellan Ukraina och Ryssland om vapenvila i Svarta havet — rapport",
+      "title_en": "Turkey, UN arrange new Ukraine-Russia talks on Black Sea ceasefire — report",
+      "summary_sv": "Turkiet och FN har organiserat nya förhandlingar med Ukraina och Ryssland för att diskutera en vapenvila i Svarta havet, rapporterade Bloomberg den 1 oktober.",
+      "summary_en": "Turkey and the United Nations have organized new negotiations with Ukraine and Russia to discuss a ceasefire in the Black Sea, Bloomberg reported on Oct. 1.",
+      "location_name": "Svarta havet",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ukrainas_granser",
+      "parter_intressenter": [
+        "ukraina",
+        "uk",
+        "usa",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/turkey-un-arrange-new-ukraine-russia-talks-50646393.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": false,
+      "tags": [
+        "Svarta",
+        "Infrastruktur",
+        "Ukraina"
+      ]
+    },
     {
       "id": "evt-2026-10-02-12c27e",
       "date": "2026-10-02",
@@ -36,10 +76,48 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Infrastruktur",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Infrastruktur",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-381bf7",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T00:32:00+03:00",
+      "title_sv": "Moldavien kallar rysk ambassadör på grund av ryska drönares kränkningar av luftrummet",
+      "title_en": "Moldova summons Russian ambassador over airspace violations by Russian drones",
+      "summary_sv": "Moldaviens utrikesministerium fördömde ryska drönares kränkningar av landets luftrum och tillkallade den ryske ambassadören Oleg Ozerov.",
+      "summary_en": "Moldova's Ministry of Foreign Affairs condemned violations of the country's airspace by Russian drones and summoned Russian Ambassador Oleg Ozerov.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina",
+        "usa",
+        "ryssland"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-polytics/4170004-moldova-summons-russian-ambassador-over-airspace-violations-by-russian-drones.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": false,
+      "tags": [
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -54,11 +132,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
         "eu",
-        "ryssland",
+        "usa",
         "ukraina",
-        "usa"
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -94,8 +172,8 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "uk",
-        "eu"
+        "eu",
+        "uk"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -115,10 +193,10 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Drönare",
         "Polen",
-        "Energi"
+        "Drönare",
+        "Energi",
+        "Ukraina"
       ]
     },
     {
@@ -134,8 +212,8 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "eu",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -156,10 +234,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Drönare",
         "Polen",
-        "Energi"
+        "Drönare",
+        "Energi",
+        "Ukraina"
       ]
     },
     {
@@ -196,9 +274,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Kyjiv",
         "Infrastruktur",
-        "Kyjiv"
+        "Ukraina"
       ]
     },
     {
@@ -207,7 +285,7 @@
       "timestamp": "2026-10-01T22:59:00+03:00",
       "title_sv": "Ryska styrkor attackerar DTEKs administrativa byggnad i Pavlohrad, tre skadade",
       "title_en": "Russian forces attack DTEK coal company administrative building in Pavlohrad, three injured",
-      "summary_sv": "Ryssland attackerade på kvällen DTEK-kolföretagets administrativa byggnad i Pavlohrad. Tre personer skadades.",
+      "summary_sv": "Ryssland attackerade DTEK-kolföretagets administrativa byggnad i Pavlohrad på kvällen. Tre personer skadades.",
       "summary_en": "Russia attacked the administrative building of a DTEK coal company in Pavlohrad in the evening. Three people were injured.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
@@ -235,8 +313,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Infrastruktur"
+        "Infrastruktur",
+        "Ukraina"
       ]
     },
     {
@@ -252,8 +330,8 @@
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -274,9 +352,9 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Svarta",
         "Infrastruktur",
-        "Svarta"
+        "Ukraina"
       ]
     },
     {
@@ -285,15 +363,15 @@
       "timestamp": "2026-10-01T22:37:00+03:00",
       "title_sv": "Zelensky tilldelar fem militärer till titeln Ukrainas hjälte postumt",
       "title_en": "Zelensky awards five more military personnel title of Hero of Ukraine posthumously",
-      "summary_sv": "President Volodymyr Zelensky har tilldelat ytterligare fem militärer titeln Ukrainas hjälte, tillsammans med Guldstjärnans orden, postumt.",
+      "summary_sv": "President Volodymyr Zelensky har tilldelat fem ytterligare militärer titeln Ukrainas hjälte, tillsammans med Guldstjärnans orden, postumt.",
       "summary_en": "President Volodymyr Zelensky has awarded five more military personnel the title of Hero of Ukraine, together with the Order of the Gold Star, posthumously.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
-        "uk"
+        "uk",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -350,9 +428,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Ukraina"
       ]
     },
     {
@@ -388,8 +466,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Energi"
+        "Energi",
+        "Ukraina"
       ]
     },
     {
@@ -398,15 +476,15 @@
       "timestamp": "2026-10-01T21:35:00+03:00",
       "title_sv": "Estniska FM kräver att ryska hybridattacker ska kallas krig",
       "title_en": "Estonian FM calls for Russian hybrid attacks to be called war",
-      "summary_sv": "Estlands utrikesminister Margus Tsahkna har uppmanat europeiska ledare att sluta hänvisa till Rysslands agerande som \"hybridattacker\", och hävdat att de involverar sabotagehandlingar som är en del av Rysslands systematiska aktioner mot Europa och i praktiken utgör \"någon sorts krig\".",
+      "summary_sv": "Estlands utrikesminister Margus Tsahkna har uppmanat europeiska ledare att sluta hänvisa till Rysslands agerande som \"hybridattacker\", och hävdat att de involverar sabotagehandlingar som är en del av Rysslands systematiska aktioner mot Europa och som i praktiken utgör \"någon sorts krig\".",
       "summary_en": "Estonian Foreign Minister Margus Tsahkna has called on European leaders to stop referring to Russia's actions as \"hybrid attacks,\" arguing that they involve acts of sabotage that are part of Russia's systematic actions against Europe and effectively constitute \"some kind of war.\"",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "eu",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -434,17 +512,17 @@
       "id": "evt-2026-10-01-646f4d",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T21:30:45+00:00",
-      "title_sv": "Rysk-ukrainska kriget, dag 1681: Rysk drönare träffade Kyjiv skola och skyddade mer än 100 elever och cirka 60 anställda",
+      "title_sv": "Rysk-ukrainska kriget, dag 1681: Rysk drönare träffade Kyjiv-skolan och skyddade mer än 100 elever och cirka 60 anställda",
       "title_en": "Russo-Ukrainian war, day 1681: Russian drone hit Kyiv school sheltering more than 100 students and about 60 staff",
-      "summary_sv": "Nato-chefen Mark Rutte säger att det inte finns någon risk för att Ryssland använder kärnvapen mot Baltikum, även när Moskva varnar för att en isolering av Kaliningrad kan utlösa en kärnvapenrespons.",
+      "summary_sv": "Nato-chefen Mark Rutte säger att det inte finns någon risk för att Ryssland använder kärnvapen mot Baltikum, även om Moskva varnar för att en isolering av Kaliningrad kan utlösa en kärnvapensvar.",
       "summary_en": "NATO chief Mark Rutte says there is no risk of Russia using nuclear weapons against the Baltics, even as Moscow warns that isolating Kaliningrad could trigger a nuclear response.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -465,10 +543,10 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Civila mål",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {
@@ -484,8 +562,8 @@
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
-        "uk"
+        "uk",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -505,8 +583,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Luftförsvar"
+        "Luftförsvar",
+        "Ukraina"
       ]
     },
     {
@@ -543,8 +621,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Dnipro"
+        "Dnipro",
+        "Ukraina"
       ]
     },
     {
@@ -581,10 +659,10 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Civila mål",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {
@@ -637,8 +715,8 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "usa",
-        "eu"
+        "eu",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -658,8 +736,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Polen"
+        "Polen",
+        "Ukraina"
       ]
     },
     {
@@ -696,9 +774,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
         "Infrastruktur",
-        "Dnipro"
+        "Dnipro",
+        "Ukraina"
       ]
     },
     {
@@ -734,8 +812,8 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Svarta"
+        "Svarta",
+        "Ukraina"
       ]
     },
     {
@@ -751,8 +829,8 @@
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "ukraina",
-        "usa",
-        "uk"
+        "uk",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -772,8 +850,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
         "Infrastruktur",
+        "Ukraina",
         "Robotanfall"
       ]
     },
@@ -862,11 +940,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
         "eu",
-        "ryssland",
+        "usa",
         "ukraina",
-        "usa"
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -886,9 +964,9 @@
       "kallkategori": "Statlig nyhetsbyrå",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Luftförsvar",
         "Drönare",
-        "Luftförsvar"
+        "Ukraina"
       ]
     },
     {
@@ -971,7 +1049,7 @@
       "id": "evt-2026-10-01-850860",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T19:11:00+03:00",
-      "title_sv": "Kyjivs Parkovyi-datacenter stängs av permanent efter upprepade ryska attacker",
+      "title_sv": "Kyjivs Parkovyi-datacenter stängs permanent efter upprepade ryska attacker",
       "title_en": "Kyiv’s Parkovyi data center shuts down permanently after repeated Russian strikes",
       "summary_sv": "Kyjivs Parkovyi-datacenter har helt upphört med sin verksamhet efter att ha lidit allvarlig skada i en serie ryska attacker, sade företaget den 1 oktober.",
       "summary_en": "Kyiv’s Parkovyi data center has completely ceased operations after suffering critical damage in a series of Russian strikes, the company said on Oct. 1.",
@@ -1001,8 +1079,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -1017,11 +1095,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
         "eu",
-        "ryssland",
+        "usa",
         "ukraina",
-        "usa"
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1041,8 +1119,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Infrastruktur"
+        "Infrastruktur",
+        "Ukraina"
       ]
     },
     {
@@ -1058,9 +1136,9 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "usa",
+        "eu",
         "uk",
-        "eu"
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1080,8 +1158,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Drönare"
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -1097,8 +1175,8 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "uk",
-        "eu"
+        "eu",
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1172,8 +1250,8 @@
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -1194,8 +1272,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -1211,8 +1289,8 @@
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "ukraina",
-        "usa",
-        "uk"
+        "uk",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1285,8 +1363,8 @@
       "geografiskt_omrade": "ockuperade_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -1307,8 +1385,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Drönare"
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -1393,15 +1471,15 @@
       "timestamp": "2026-10-01T16:57:00+03:00",
       "title_sv": "Zaluzhnyi varnar för att affärer med Ryssland kan bli pauser inför ett nytt krig",
       "title_en": "Zaluzhnyi warns deals with Russia could become pauses before another war",
-      "summary_sv": "Fred med Ryssland kan inte förhandlas enligt affärslogik eftersom, utan internationell lag, varje överenskommelse bara skulle innebära en paus innan ett nytt krig, skrev tidigare överbefälhavare för Ukrainas väpnade styrkor och Ukrainas ambassadör i Storbritannien Valerii Zaluzhnyi i en krönika för Channel 24.",
+      "summary_sv": "Fred med Ryssland kan inte förhandlas enligt affärslogik eftersom, utan internationell lag, varje överenskommelse bara skulle innebära en paus innan ett nytt krig, skrev tidigare överbefälhavaren för Ukrainas väpnade styrkor och Ukrainas ambassadör i Storbritannien Valerii Zaluzhnyi i en krönika för Channel 24.",
       "summary_en": "Peace with Russia cannot be negotiated according to business logic because, without international law, any agreement would amount only to a pause before another war, former commander-in-chief of the Armed Forces of Ukraine and Ukraine’s ambassador to the United Kingdom Valerii Zaluzhnyi wrote in a column for Channel 24.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -1438,8 +1516,8 @@
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -1460,10 +1538,10 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Civila mål",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {
@@ -1551,11 +1629,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
         "eu",
-        "ryssland",
+        "usa",
         "ukraina",
-        "usa"
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "operationellt_mal",
@@ -1582,7 +1660,7 @@
       "id": "evt-2026-10-01-6e5a5a",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T16:24:37+00:00",
-      "title_sv": "Ryssland förlorade 2026-rekordet 46 230 soldater i september av Ukrainas räkning, eftersom striderna kring Donetsks fästningsstäder fortsätter",
+      "title_sv": "Ryssland förlorade 2026-rekord 46 230 soldater i september av Ukrainas räkning, eftersom striderna runt Donetsks fästningsstäder fortsätter.",
       "title_en": "Russia lost 2026-record 46,230 troops in September by Ukraine’s count, as fighting around Donetsk fortress cities grinds on",
       "summary_sv": "Samtidigt eskalerade Rysslands attacker mot Ukrainas baksida i september och klättrar igen i oktober.",
       "summary_en": "At the same time, Russia's strikes on Ukraine's rear escalated in September and are climbing again in October.",
@@ -1591,8 +1669,8 @@
       "geografiskt_omrade": "ockuperade_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -1689,8 +1767,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Civila mål"
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {
@@ -1895,8 +1973,8 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "usa",
-        "uk"
+        "uk",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -2083,8 +2161,8 @@
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -2105,8 +2183,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Drönare"
+        "Drönare",
+        "Ukraina"
       ]
     },
     {
@@ -2278,7 +2356,7 @@
       "timestamp": "2026-10-01T14:20:00+03:00",
       "title_sv": "Rysk drönare attackerar Institutet för kärnkraftsforskning i Kyjiv",
       "title_en": "Russian drone attacks Institute for Nuclear Research in Kyiv",
-      "summary_sv": "Ryska styrkor träffade institutets lokaler för kärnkraftsforskning med en drönare den 30 september, forskningskärnreaktorn skadades inte.",
+      "summary_sv": "Ryska styrkor träffade Institutionen för kärnforsknings lokaler med en drönare den 30 september, forskningskärnreaktorn skadades inte.",
       "summary_en": "Russian forces struck the premises of the Institute for Nuclear Research with a drone on September 30, the research nuclear reactor was not damaged.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
@@ -2324,8 +2402,8 @@
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -2346,8 +2424,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
         "Drönare",
+        "Ukraina",
         "Robotanfall"
       ]
     },
@@ -2396,7 +2474,7 @@
       "timestamp": "2026-10-01T14:05:55+00:00",
       "title_sv": "Den ryske dissidenten Garry Kasparov säger att USA varnade honom för fara för hans liv",
       "title_en": "Russian dissident Garry Kasparov says US warned him of danger to his life",
-      "summary_sv": "\"Min familj och jag kommer inte riktigt att vara säkra så länge Putin är vid makten\", säger den tidigare schackvärldsmästaren.",
+      "summary_sv": "\"Min familj och jag kommer inte att vara säkra så länge Putin är vid makten\", säger den tidigare schackvärldsmästaren.",
       "summary_en": "\"My family and I will not truly be safe as long as Putin is in power,\" says the former chess world champion.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
@@ -2424,8 +2502,8 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Energi"
+        "Energi",
+        "Ukraina"
       ]
     },
     {
@@ -2674,11 +2752,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
-        "uk",
         "eu",
-        "ryssland",
+        "usa",
         "ukraina",
-        "usa"
+        "uk",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -2698,9 +2776,9 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Ukraina"
       ]
     },
     {
@@ -2709,15 +2787,15 @@
       "timestamp": "2026-10-01T11:20:55+00:00",
       "title_sv": "Ukraina störtar Rysslands snabbaste drönare – bara inte tillräckligt ofta, och uppskalning handlar om pengar",
       "title_en": "Ukraine is downing Russia’s fastest drones—just not often enough, and scaling up comes down to money",
-      "summary_sv": "Rysslands jetdrönare övergår de billiga interceptorer som Ukraina byggt för långsammare Shaheds, vilket tvingar Kyjiv att ställa in ny hårdvara som fungerar i strid men som ännu inte kan tillverkas i de siffror som dess himmel kräver.",
+      "summary_sv": "Rysslands jetdrönare övergår de billiga interceptorer som Ukraina byggt för långsammare Shaheds, vilket pressar Kyjiv att ställa in ny hårdvara som fungerar i strid men som ännu inte kan tillverkas i de siffror som dess himmel kräver.",
       "summary_en": "Russia's jet drones outrun the cheap interceptors Ukraine built for slower Shaheds, pushing Kyiv to field new hardware that works in combat but can't yet be made in the numbers its skies demand.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -2738,9 +2816,9 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Ukraina"
       ]
     },
     {
@@ -2777,10 +2855,10 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Civila mål",
+        "Kyjiv",
         "Drönare",
-        "Kyjiv"
+        "Civila mål",
+        "Ukraina"
       ]
     },
     {
@@ -2817,9 +2895,9 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Sumy",
         "Civila mål",
-        "Sumy"
+        "Ukraina"
       ]
     },
     {
@@ -2991,8 +3069,8 @@
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "eu",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -3020,7 +3098,7 @@
       "id": "evt-2026-10-01-15683b",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T09:40:00+03:00",
-      "title_sv": "Krigsuppdatering: 209 stridsdrabbningar på frontlinjerna under det senaste dygnet, tyngsta striderna på Pokrovsk-axeln",
+      "title_sv": "Krigsuppdatering: 209 stridsdrabbningar vid frontlinjerna under det senaste dygnet, tyngsta striderna på Pokrovsk-axeln",
       "title_en": "War update: 209 combat clashes on front lines over past day, heaviest fighting on Pokrovsk axis",
       "summary_sv": "Den 30 september engagerade ukrainska styrkor 209 stridsdrabbningar med ryska inkräktare vid frontlinjen, med de tyngsta striderna rapporterade i Pokrovsk-sektorn.",
       "summary_en": "On September 30, Ukrainian forces engaged in 209 combat clashes with Russian invaders on the front line, with the heaviest fighting reported in the Pokrovsk sector.",
@@ -3108,8 +3186,8 @@
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -3130,9 +3208,9 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
         "Drönare",
-        "Charkiv"
+        "Charkiv",
+        "Ukraina"
       ]
     },
     {
@@ -3214,7 +3292,7 @@
       "id": "evt-2026-10-01-7175e5",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T09:05:00+03:00",
-      "title_sv": "Ukrainas luftförsvar neutraliserar 87 av 107 ryska drönare som skjutits upp under natten",
+      "title_sv": "Ukrainskt luftförsvar neutraliserar 87 av 107 ryska drönare som lanserats över natten",
       "title_en": "Ukrainian air defense neutralizes 87 of 107 Russian drones launched overnight",
       "summary_sv": "Ukrainas luftförsvarsstyrkor neutraliserade 87 drönare som använts av ryska styrkor för att attackera Ukraina sedan kvällen den 30 september. Fientliga attacker registrerades på 11 platser.",
       "summary_en": "Ukraine's air defense forces neutralized 87 drones used by Russian forces to attack Ukraine since the evening of September 30. Enemy strikes were recorded at 11 locations.",
@@ -3255,7 +3333,7 @@
       "id": "evt-2026-10-01-bb99a3",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T08:57:00+03:00",
-      "title_sv": "Trump-kopplade drönarföretag planerar att bygga ukrainsk militärteknik i USA.",
+      "title_sv": "Trump-kopplad drönarfirma planerar att bygga ukrainsk militärteknik i USA.",
       "title_en": "Trump-linked drone firm plans to build Ukrainian military tech in the U.S.",
       "summary_sv": "Powerus, en amerikansk drönarutvecklare som förbereder sig för att gå samman med ett företag som stöds av Donald Trump Jr. och Eric Trump, syftar till att föra ukrainsk militärteknologi till USA för att öka den inhemska produktionen mitt i den växande efterfrågan från Pentagon, rapporterade Reuters den 30 september.",
       "summary_en": "Powerus, a U.S. drone developer preparing to merge with a company backed by Donald Trump Jr. and Eric Trump, aims to bring Ukrainian military technology to the U.S. to ramp up domestic production amid growing Pentagon demand, Reuters reported on September 30.",
@@ -3325,8 +3403,8 @@
       "kallkategori": "Militäranalytiker & författare",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Infrastruktur"
+        "Infrastruktur",
+        "Ukraina"
       ]
     },
     {
@@ -3476,8 +3554,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -3786,7 +3864,7 @@
       "id": "evt-2026-10-01-cf612b",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T04:00:26+00:00",
-      "title_sv": "Kyjiv Independent-redaktör: \"Våra läsare vill att Ryssland ska lida men vi kan inte vara propagandister\"",
+      "title_sv": "Kyjiv oberoende redaktör: \"Våra läsare vill att Ryssland ska lida men vi kan inte vara propagandister\"",
       "title_en": "Kyiv Independent editor: ‘Our readers want Russia to suffer but we can’t be propagandists’",
       "summary_sv": "Olga Rudenko säger att nyhetssajten är skyldig att rapportera om ryska militära vinster och ukrainsk korruption även om ämnena inte är så vällästa.",
       "summary_en": "Olga Rudenko says news site has duty to report on Russian military gains and Ukrainian corruption even if subjects are not so well read Readers of Ukraine’s leading English news site “really want Russia to suffer” but that should not lead the title to downplay the military and political problems facing Kyiv, its editor-in-chief has said.Speaking...",
@@ -3795,8 +3873,8 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -3817,16 +3895,16 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Kyjiv",
         "Infrastruktur",
-        "Kyjiv"
+        "Ukraina"
       ]
     },
     {
       "id": "evt-2026-10-01-3c0fe5",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T03:39:00+03:00",
-      "title_sv": "Kreml planerade att mörda Kasparov, Ponomarev - rapport",
+      "title_sv": "Kreml planerade att mörda Kasparov, Ponomarev — rapport",
       "title_en": "Kremlin planned to assassinate Kasparov, Ponomarev — report",
       "summary_sv": "Ryssland ägnade månader åt att planera morden på de ledande oppositionsfigurerna Garry Kasparov och Ilya Ponomarev, rapporterade spanska El Mundo den 30 september.",
       "summary_en": "Russia spent months planning the killings of leading opposition figures Garry Kasparov and Ilya Ponomarev, Spain’s El Mundo reported on Sept. 30.",
@@ -3976,49 +4054,10 @@
       ]
     },
     {
-      "id": "evt-2026-10-01-ac05e4",
-      "date": "2026-10-01",
-      "timestamp": "2026-10-01T01:33:00+03:00",
-      "title_sv": "Rekordhållen räddningsarbetare skadades i den andra ryska bombattacken i Kyjiv",
-      "title_en": "Record-holding rescue worker injured in second Russian shelling attack in Kyiv",
-      "summary_sv": "Räddningsarbetaren Volodymyr Skovorodka, som satte ukrainskt rekord för flera år sedan genom att springa mer än 60 kilometer i full stridsutrustning, skadades i attacken mot Kyjiv.",
-      "summary_en": "Rescue worker Volodymyr Skovorodka, who set a Ukrainian record several years ago by running more than 60 kilometers in full combat gear, was injured in the attack on Kyiv.",
-      "location_name": "Kyjiv",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "resten_av_varlden",
-      "parter_intressenter": [
-        "usa",
-        "ryssland",
-        "ukraina",
-        "uk"
-      ],
-      "syfte": {
-        "kategori": "taktiskt_mal",
-        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
-        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
-      },
-      "egenskaper_anfallsmal": "militara_resurser",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "fullbordad",
-      "kalla": "Ukrinform",
-      "kallurl": "https://www.ukrinform.net/rubric-society/4169575-recordholding-rescue-worker-injured-in-second-russian-shelling-attack-in-kyiv.html",
-      "kallkategori": "Statlig nyhetsbyrå",
-      "arkiverad": false,
-      "tags": [
-        "Kyjiv",
-        "Ukraina"
-      ]
-    },
-    {
       "id": "evt-2026-10-01-ba0369",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T01:26:03+00:00",
-      "title_sv": "Ukraina krigsinformation: Ryssland slår kraftnätet med sju dödade i den största energiattacken på månader",
+      "title_sv": "Krigsbriefing i Ukraina: Ryssland slår kraftnätet med sju dödade i den största energiattacken på månader",
       "title_en": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack in months",
       "summary_sv": "Nödströmavbrott har införts i Kyjiv för första gången sedan våren efter luftangrepp över minst 10 regioner inför vintern.",
       "summary_en": "Emergency power cuts imposed in Kyiv for first time since spring after airstrikes across at least 10 regions ahead of winter.",
@@ -4027,8 +4066,8 @@
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "ukraina",
-        "usa",
         "uk",
+        "usa",
         "ryssland"
       ],
       "syfte": {
@@ -4049,56 +4088,18 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": false,
       "tags": [
-        "Ukraina",
+        "Kyjiv",
         "Drönare",
         "Energi",
-        "Kyjiv"
-      ]
-    },
-    {
-      "id": "evt-2026-10-01-ccbf59",
-      "date": "2026-10-01",
-      "timestamp": "2026-10-01T01:20:00+03:00",
-      "title_sv": "Pentagon avslutar tilldelningen av 400 miljoner dollar i Ukraina-bistånd",
-      "title_en": "Pentagon finishes allocating $400 million in Ukraine aid",
-      "summary_sv": "Den sista dagen av räkenskapsåret 2026 bestämde Pentagon hur de 400 miljoner dollar som anslagits av kongressen skulle användas för militärt bistånd till Ukraina, rapporterade The Washington Sun den 30 september.",
-      "summary_en": "On the final day of FY 2026, the Pentagon determined how to use the $400 million appropriated by Congress for military aid to Ukraine, The Washington Sun reported on Sept. 30.",
-      "location_name": "Ukraina (nationellt)",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "resten_av_varlden",
-      "parter_intressenter": [
-        "uk",
-        "usa",
-        "ukraina"
-      ],
-      "syfte": {
-        "kategori": "taktiskt_mal",
-        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
-        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
-      },
-      "egenskaper_anfallsmal": "civil_infrastruktur",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "delvis",
-      "kalla": "The New Voice of Ukraine",
-      "kallurl": "https://english.nv.ua/nation/pentagon-allocates-400m-in-ukraine-aid-50646146.html",
-      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
-      "arkiverad": false,
-      "tags": [
-        "Infrastruktur",
         "Ukraina"
       ]
     },
     {
-      "id": "evt-2026-09-30-ff2607",
+      "id": "evt-2026-09-30-8b7119",
       "date": "2026-09-30",
       "timestamp": "2026-09-30T23:10:06+00:00",
-      "title_sv": "Putin visar inga tecken på att stoppa kriget när Ryssland fördubblar Ukraina",
-      "title_en": "Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
+      "title_sv": "Rosenberg: Putin visar inga tecken på att stoppa kriget när Ryssland fördubblar Ukraina",
+      "title_en": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
       "summary_sv": "Ett utrikespolitiskt tal av den ryske presidenten kommer att följas intensivt, men alla tecken tyder på att den fullskaliga invasionen fortsätter.",
       "summary_en": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
       "location_name": "Ukraina (nationellt)",
@@ -4118,9 +4119,9 @@
       "egenskaper_anfallsmal": "militara_resurser",
       "niva_vetskap_sannolikhet": {
         "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+        "niva": "bekraftad",
+        "motivering_sv": "Bekräftad av 2 samstämmiga rapporter från BBC News (Europe) samt räddningstjänsten DSNS.",
+        "motivering_en": "Confirmed by 2 corroborating reports from BBC News (Europe) and official emergency services."
       },
       "effekt_maluppfyllnad": "delvis",
       "kalla": "BBC News (Europe)",
@@ -4129,81 +4130,15 @@
       "arkiverad": false,
       "tags": [
         "Ukraina"
-      ]
-    },
-    {
-      "id": "evt-2026-09-30-8b7119",
-      "date": "2026-09-30",
-      "timestamp": "2026-09-30T23:10:06+00:00",
-      "title_sv": "Rosenberg: Putin visar inga tecken på att stoppa kriget när Ryssland fördubblar Ukraina",
-      "title_en": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
-      "summary_sv": "Ett utrikespolitiskt tal av den ryske presidenten kommer att bevakas intensivt, men alla tecken tyder på att den fullskaliga invasionen fortsätter.",
-      "summary_en": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
-      "location_name": "Ukraina (nationellt)",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "fria_ukraina",
-      "parter_intressenter": [
-        "ukraina",
-        "usa",
-        "uk",
-        "ryssland"
       ],
-      "syfte": {
-        "kategori": "taktiskt_mal",
-        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
-        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
-      },
-      "egenskaper_anfallsmal": "militara_resurser",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
-        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
-      },
-      "effekt_maluppfyllnad": "delvis",
-      "kalla": "BBC News (Europe)",
-      "kallurl": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss",
-      "kallkategori": "Internationellt nyhetsmedium",
-      "arkiverad": false,
-      "tags": [
-        "Ukraina"
-      ]
-    },
-    {
-      "id": "evt-2026-09-30-72c453",
-      "date": "2026-09-30",
-      "timestamp": "2026-09-30T22:06:01+00:00",
-      "title_sv": "Ryssland kraschade nyss av misstag sin första Tu-95 bombplan på 11 år. Dess missiler kommer att fortsätta slå Ukraina ändå",
-      "title_en": "Russia just accidentally crashed its first Tu-95 bomber in 11 years. Its missiles will keep striking Ukraine anyway",
-      "summary_sv": "Den är ur produktion och Rysslands bombplansflotta fortsätter att krympa, men en räd den 8 september behövde bara sex bombplan, och Ryssland har fortfarande ett hundratal.",
-      "summary_en": "It is out of production and Russia's bomber fleet keeps shrinking, but a raid on 8 September needed just six bombers, and Russia still has around a hundred.",
-      "location_name": "Ukraina (nationellt)",
-      "tidshorisont": "dagligen",
-      "geografiskt_omrade": "resten_av_varlden",
-      "parter_intressenter": [
-        "ryssland"
+      "relaterade_kallor": [
+        {
+          "kalla": "BBC News (Europe)",
+          "titel": "Putin visar inga tecken på att stoppa kriget när Ryssland fördubblar Ukraina",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"
+        }
       ],
-      "syfte": {
-        "kategori": "strategiskt_mal",
-        "beskrivning_sv": "Strategiskt mål: Upprätthålla flygduglighet och övningsverksamhet för det strategiska kärnvapen- och kryssningsrobotbärande bombflyget (Tu-95MS) efter omgruppering till Fjärran östern.",
-        "beskrivning_en": "Strategic goal: Maintain operational readiness and flight training for strategic bomber aviation (Tu-95MS) following dispersal to Far Eastern staging hubs."
-      },
-      "egenskaper_anfallsmal": "militara_resurser",
-      "niva_vetskap_sannolikhet": {
-        "procent": 95,
-        "niva": "hog",
-        "motivering_sv": "Hög trovärdighet: Bekräftat av Ryska försvarsministeriet, ryska medier (Baza) samt oberoende ukrainska (NV) och internationella medier.",
-        "motivering_en": "High confidence: Corroborated by the Russian Defense Ministry, Russian reporting (Baza), and independent Ukrainian and international media."
-      },
-      "effekt_maluppfyllnad": "totalt_misslyckande",
-      "kalla": "Euromaidan Press",
-      "kallurl": "https://euromaidanpress.com/2026/10/01/tu-95-crashed/",
-      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
-      "arkiverad": false,
-      "tags": [
-        "Ukraina",
-        "Robotanfall"
-      ]
+      "cluster_count": 2
     }
   ],
   "update_frequency_hours": 4
