@@ -472,8 +472,12 @@ window.App = {
       formattedLast = lang === "sv" ? `${lastDatePart} ${lastTime}` : `${lastDatePart} at ${lastTime}`;
     }
 
-    // 2. Beräkna nästa schemalagda uppdatering
+    // 2. Beräkna nästa schemalagda uppdatering och eventuell fördröjning
     const intervalMs = (AppData.updateFrequencyHours || 1) * 60 * 60 * 1000;
+    const diffSinceLastMs = now.getTime() - lastDate.getTime();
+    // Om det gått mer än 1h 25m sedan senaste lyckade körning flaggas driften som fördröjd
+    const isDelayed = diffSinceLastMs > (intervalMs + 25 * 60 * 1000);
+
     let nextDate = new Date(lastDate.getTime() + intervalMs);
     while (nextDate.getTime() <= now.getTime()) {
       nextDate = new Date(nextDate.getTime() + intervalMs);
@@ -495,7 +499,9 @@ window.App = {
     }
 
     let formattedNext = "";
-    if (isNextToday) {
+    if (isDelayed) {
+      formattedNext = t("delayedRun");
+    } else if (isNextToday) {
       formattedNext = lang === "sv" ? `ca ${nextTime} (${relativeStr})` : `approx. ${nextTime} (${relativeStr})`;
     } else {
       const nextDatePart = nextDate.toLocaleDateString(lang === "sv" ? "sv-SE" : "en-GB", {
@@ -510,7 +516,24 @@ window.App = {
     if (elLast) elLast.textContent = formattedLast;
 
     const elNext = document.getElementById("status-next-update");
-    if (elNext) elNext.textContent = formattedNext;
+    if (elNext) {
+      elNext.textContent = formattedNext;
+      elNext.style.color = isDelayed ? "#f59e0b" : "#fff";
+    }
+
+    const elStatusLabel = document.querySelector(".status-indicator .status-label");
+    if (elStatusLabel) {
+      elStatusLabel.textContent = isDelayed ? t("systemDelayedStatus") : t("systemLiveStatus");
+    }
+
+    // Uppdatera pulserande statusprickar
+    document.querySelectorAll(".pulse-dot").forEach(dot => {
+      if (isDelayed) {
+        dot.classList.add("delayed");
+      } else {
+        dot.classList.remove("delayed");
+      }
+    });
 
     // 4. Uppdatera indikator i flödeshuvudet
     const elFeedIndicator = document.getElementById("active-feed-time-indicator");
@@ -518,9 +541,15 @@ window.App = {
       const freqHours = AppData.updateFrequencyHours || 1;
       const freqTextSv = freqHours === 1 ? "Uppdateras varje timme" : `Uppdateras var ${freqHours}:e timme`;
       const freqTextEn = freqHours === 1 ? "Updated every hour" : `Updated every ${freqHours} hours`;
-      elFeedIndicator.textContent = lang === "sv"
-        ? `${freqTextSv} • Nästa ca ${nextTime}`
-        : `${freqTextEn} • Next approx. ${nextTime}`;
+      const freqBase = lang === "sv" ? freqTextSv : freqTextEn;
+
+      if (isDelayed) {
+        elFeedIndicator.textContent = `${freqBase} • ${t("delayedRun")}`;
+      } else {
+        elFeedIndicator.textContent = lang === "sv"
+          ? `${freqBase} • Nästa ca ${nextTime}`
+          : `${freqBase} • Next approx. ${nextTime}`;
+      }
     }
   },
 

@@ -2,9 +2,11 @@ name: Automatisk Uppdatering och Arkivering
 
 on:
   schedule:
-    # Körs varje timme vid minut 25 för maximal aktualitet och snabb felåterhämtning
-    - cron: '25 * * * *'
-  workflow_dispatch: # Möjliggör manuell körning via GitHub-gränssnittet
+    # Schemalagt två gånger i timmen vid minut 17 och 47 för att garantera tät uppdatering
+    # och undvika att körningar hoppas över av GitHub Actions överbelastade köer vid hel- och halvtimmar.
+    - cron: '17 * * * *'
+    - cron: '47 * * * *'
+  workflow_dispatch: # Möjliggör manuell körning via GitHub-gränssnittet eller API
 
 permissions:
   contents: write
@@ -52,6 +54,7 @@ jobs:
             echo "Inga nya ändringar att spara."
           else
             git commit -m "Auto-update: Ny källdata och arkivrotation [skip ci]"
+            git pull --rebase origin main || true
             git push
           fi
 
