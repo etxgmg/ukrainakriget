@@ -1,6 +1,6 @@
 {
-  "total_archived_events": 242,
-  "last_archived_rotation": "2026-10-02T08:31:04.504012+00:00",
+  "total_archived_events": 243,
+  "last_archived_rotation": "2026-10-02T09:01:31.075883+00:00",
   "events": [
     {
       "id": "evt-2026-10-01-0f8075",
@@ -354,6 +354,44 @@
         "Energi",
         "Ukraina",
         "Drönare"
+      ]
+    },
+    {
+      "id": "evt-2026-10-01-00ef46",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T08:55:00+00:00",
+      "title_sv": "Ukraina: Största distanskriget sedan VK2 – Operation Vivaldi fortsätter, ryska anfall mot Dobropillija",
+      "title_en": "Ukraina: Största distanskriget sedan VK2 – Operation Vivaldi fortsätter, ryska anfall mot Dobropillija",
+      "summary_sv": "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
+      "summary_en": "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ryssland",
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Lars Wilderäng (Cornucopia.se)",
+      "kallurl": "https://cornucopia.se/2026/10/ukraina-storsta-distanskriget-sedan-vk2-operation-vivaldi-fortsatter-ryska-anfall-mot-dobropillija/",
+      "kallkategori": "Militäranalytiker & författare",
+      "arkiverad": true,
+      "tags": [
+        "Infrastruktur",
+        "Ukraina"
       ]
     },
     {
@@ -821,10 +859,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "uk",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -844,9 +882,9 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Ukraina",
+        "Infrastruktur",
         "Kyjiv",
-        "Infrastruktur"
+        "Ukraina"
       ]
     },
     {
@@ -1053,10 +1091,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "uk",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -1076,10 +1114,10 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Energi",
-        "Drönare",
+        "Kyjiv",
         "Ukraina",
-        "Kyjiv"
+        "Drönare",
+        "Energi"
       ]
     },
     {
@@ -1324,10 +1362,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "ryssland",
-        "usa"
+        "usa",
+        "uk",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
