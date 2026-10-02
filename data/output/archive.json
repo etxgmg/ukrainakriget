@@ -1,6 +1,6 @@
 {
   "total_archived_events": 221,
-  "last_archived_rotation": "2026-10-02T01:49:42.966189+00:00",
+  "last_archived_rotation": "2026-10-02T02:13:42.144822+00:00",
   "events": [
     {
       "id": "evt-2026-10-01-0b88eb",
@@ -234,7 +234,7 @@
       "id": "evt-2026-10-01-ba0369",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T01:26:03+00:00",
-      "title_sv": "Krigsbriefing i Ukraina: Ryssland slår kraftnätet med sju dödade i den största energiattacken på månader",
+      "title_sv": "Ukraina krigsinformation: Ryssland slår kraftnätet med sju dödade i den största energiattacken på månader",
       "title_en": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack in months",
       "summary_sv": "Nödströmavbrott har införts i Kyjiv för första gången sedan våren efter luftangrepp över minst 10 regioner inför vintern.",
       "summary_en": "Emergency power cuts imposed in Kyiv for first time since spring after airstrikes across at least 10 regions ahead of winter.",
@@ -242,10 +242,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "uk",
         "ryssland",
-        "ukraina",
-        "usa"
+        "uk",
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -266,8 +266,8 @@
       "arkiverad": true,
       "tags": [
         "Energi",
-        "Ukraina",
         "Kyjiv",
+        "Ukraina",
         "Drönare"
       ]
     },
@@ -507,16 +507,16 @@
       "timestamp": "2026-09-30T23:10:06+00:00",
       "title_sv": "Rosenberg: Putin visar inga tecken på att stoppa kriget när Ryssland fördubblar Ukraina",
       "title_en": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
-      "summary_sv": "Ett utrikespolitiskt tal av den ryske presidenten kommer att följas intensivt, men alla tecken tyder på att den fullskaliga invasionen fortsätter.",
+      "summary_sv": "Ett utrikespolitiskt tal av den ryske presidenten kommer att bevakas intensivt, men alla tecken tyder på att den fullskaliga invasionen fortsätter.",
       "summary_en": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "uk",
         "ryssland",
-        "ukraina",
-        "usa"
+        "uk",
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -2048,8 +2048,8 @@
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
         "ryssland",
-        "ukraina",
-        "usa"
+        "usa",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -2069,11 +2069,11 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Robotanfall",
-        "Ukraina",
-        "Civila mål",
         "Drönare",
-        "Kyjiv"
+        "Kyjiv",
+        "Ukraina",
+        "Robotanfall",
+        "Civila mål"
       ]
     },
     {
