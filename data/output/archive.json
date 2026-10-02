@@ -1,7 +1,47 @@
 {
-  "total_archived_events": 286,
-  "last_archived_rotation": "2026-10-02T15:46:40.818215+00:00",
+  "total_archived_events": 288,
+  "last_archived_rotation": "2026-10-02T15:58:20.205666+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-01-7ca7b5",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T18:52:00+03:00",
+      "title_sv": "Ukraina uppmanar amerikanska sanktioner mot företag bakom Rysslands Rassvet-satellitnätverk",
+      "title_en": "Ukraine urges U.S. sanctions on firms behind Russia’s Rassvet satellite network",
+      "summary_sv": "Ukraina uppmanar USA att införa sanktioner mot ryska företag och individer som är involverade i utvecklingen av Rassvet-satellitnätverket, sa Denys Sienik, biträdande beskickningschef vid den ukrainska ambassaden i Washington och tillförordnad ambassadör, till reportrar, rapporterade Reuters den 30 september.",
+      "summary_en": "Ukraine is urging the United States to impose sanctions on Russian companies and individuals involved in developing the Rassvet satellite network, Denys Sienik, deputy chief of mission at the Ukrainian Embassy in Washington and acting ambassador, told reporters, Reuters reported on Sept. 30.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "usa",
+        "eu",
+        "ryssland",
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/russian-war/ukraine-urges-u-s-sanctions-on-russia-s-rassvet-satellite-network-50646346.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Infrastruktur"
+      ]
+    },
     {
       "id": "evt-2026-10-01-1f8bed",
       "date": "2026-10-01",
@@ -619,9 +659,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "usa",
         "uk",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -958,6 +998,45 @@
         }
       ],
       "cluster_count": 2
+    },
+    {
+      "id": "evt-2026-10-01-2fdcc6",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T14:31:03+00:00",
+      "title_sv": "Ryssland siktar på en trafikerad bro i centrala Kyjiv",
+      "title_en": "Russia targets busy bridge in central Kyiv",
+      "summary_sv": "Pivdennyi-bron hamnade i eld när ett tunnelbanetåg färdades över - den första attacken av detta slag mot Kyjivs broar.",
+      "summary_en": "The Pivdennyi bridge came under fire as a metro train was travelling across - the first such attack on Kyiv's bridges.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "BBC News (Europe)",
+      "kallurl": "https://www.bbc.co.uk/news/articles/cmn8e8344v5qo?at_medium=RSS&at_campaign=rss",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Kyjiv",
+        "Ukraina",
+        "Infrastruktur"
+      ]
     },
     {
       "id": "evt-2026-10-01-e5d42f",
@@ -1399,10 +1478,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
-        "ryssland",
-        "usa",
         "ukraina",
+        "ryssland",
         "uk",
+        "usa",
         "eu"
       ],
       "syfte": {
@@ -1424,8 +1503,8 @@
       "arkiverad": true,
       "tags": [
         "Kyjiv",
-        "Drönare",
-        "Ukraina"
+        "Ukraina",
+        "Drönare"
       ]
     },
     {
@@ -2521,8 +2600,8 @@
       "parter_intressenter": [
         "ryssland",
         "uk",
-        "usa",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -2542,9 +2621,9 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Infrastruktur",
         "Kyjiv",
-        "Ukraina"
+        "Ukraina",
+        "Infrastruktur"
       ]
     },
     {
