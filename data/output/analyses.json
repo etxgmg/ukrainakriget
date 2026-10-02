@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-02T09:01:34.855837+00:00",
+  "last_updated": "2026-10-02T15:46:48.780345+00:00",
   "total_count": 2,
   "analyses": [
+    {
+      "id": "ana-cornucopia-202610021003",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T10:03:27+00:00",
+      "title_sv": "Ukraina: Ryskt raffinaderi och oljedepå bombade – Kreml pekar ut Västs försvarsindustri som måltavlor – Putin har gett order att skita i krigets lagar",
+      "title_en": "Ukraine: Russian refinery and oil depot bombed - Kremlin singles out Western defense industry as targets - Putin has given orders to screw up the laws of war",
+      "summary_sv": "Ett raffinaderi och Europas största oljedepå bombades i Ryssland i natt. Kremls utrikesdepartement pekar i ett uttqlande ut försvarsindustrin i Väst, EU och Nato som legitima måltavlor för Ryssland att angripa.",
+      "summary_en": "A refinery and Europe's largest oil depot were bombed in Russia last night. In a statement, the Kremlin's Ministry of Foreign Affairs singles out the defense industry in the West, the EU and NATO as legitimate targets for Russia to attack.",
+      "key_takeaways_sv": [
+        "Ett raffinaderi och Europas största oljedepå bombades i Ryssland i natt.",
+        "Kremls utrikesdepartement pekar i ett uttqlande ut försvarsindustrin i Väst, EU och Nato som legitima måltavlor för Ryssland att angripa.",
+        "Förvisso ingen ändring i sak, då Ryssland hela tiden bryter mot krigets lagar, men Putin har nu gett uttrycklig order att bryta mot krigets lagar inklusive Genevekonventionen."
+      ],
+      "key_takeaways_en": [
+        "A refinery and Europe's largest oil depot were bombed in Russia last night.",
+        "In a statement, the Kremlin's Ministry of Foreign Affairs singles out the defense industry in the West, the EU and NATO as legitimate targets for Russia to attack.",
+        "Certainly no change in substance, as Russia constantly violates the laws of war, but Putin has now given explicit orders to violate the laws of war including the Geneva Convention."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/10/ukraina-ryskt-raffinaderi-och-oljedepa-bombade-kreml-pekar-ut-vasts-forsvarsindustri-som-maltavlor-putin-har-gett-order-att-skita-i-krigets-lagar/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    },
     {
       "id": "ana-cornucopia-202610010855",
       "author_id": "wilderang",
@@ -31,39 +64,6 @@
         "vapenindustri"
       ],
       "url": "https://cornucopia.se/2026/10/ukraina-storsta-distanskriget-sedan-vk2-operation-vivaldi-fortsatter-ryska-anfall-mot-dobropillija/",
-      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
-    },
-    {
-      "id": "ana-cornucopia-202609301003",
-      "author_id": "wilderang",
-      "author_name": "Lars Wilderäng",
-      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
-      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
-      "author_type": "svensk_expert",
-      "platform": "Cornucopia.se",
-      "date": "2026-09-30",
-      "timestamp": "2026-09-30T10:03:54+00:00",
-      "title_sv": "Ukraina: Fem mördade inklusive barn i Kyjiv – Ryssland beställde mord på Kasparov – telemast bombad av Ryssland i Moldavien",
-      "title_en": "Ukraine: Five murdered including children in Kyiv - Russia ordered murder of Kasparov - telemast bombed by Russia in Moldova",
-      "summary_sv": "Fem har mördats inklusive ett barn i Rysslands pågående terrorbombning mot Kyjiv. Den ryska underrättelsetjänsten beställde mord på oppositonelle exilryssarna och schackmästaren Garry Kasparov och fd Dumaledamoten Ilja Ponomariov i USA.",
-      "summary_en": "Five have been killed including a child in Russia's ongoing terror bombing of Kyiv. The Russian intelligence service ordered the assassination of opposition Russians in exile and chess master Garry Kasparov and former Dumaledamoten Ilya Ponomariov in the United States.",
-      "key_takeaways_sv": [
-        "Fem har mördats inklusive ett barn i Rysslands pågående terrorbombning mot Kyjiv.",
-        "Den ryska underrättelsetjänsten beställde mord på oppositonelle exilryssarna och schackmästaren Garry Kasparov och fd Dumaledamoten Ilja Ponomariov i USA.",
-        "En rysk attackdrönare ska träffat telemast i Moldavien."
-      ],
-      "key_takeaways_en": [
-        "Five have been killed including a child in Russia's ongoing terror bombing of Kyiv.",
-        "The Russian intelligence service ordered the assassination of opposition Russians in exile and chess master Garry Kasparov and former Dumaledamoten Ilya Ponomariov in the United States.",
-        "A Russian attack drone reportedly hit a telecommunications tower in Moldova."
-      ],
-      "topics": [
-        "luftkrig",
-        "djupanfall",
-        "frontlinje",
-        "vapenindustri"
-      ],
-      "url": "https://cornucopia.se/2026/09/ukraina-fem-mordade-inklusive-barn-i-kyjiv-ryssland-bestallde-mord-pa-kasparov-telemast-bombad-av-ryssland-i-moldavien/",
       "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
     }
   ]
