@@ -54,8 +54,11 @@ jobs:
             echo "Inga nya ändringar att spara."
           else
             git commit -m "Auto-update: Ny källdata och arkivrotation [skip ci]"
-            git pull --rebase origin main || true
-            git push
+            git push || {
+              echo "Push nekad på grund av samtidig körning. Synkar och försöker igen..."
+              git pull --rebase -X theirs origin main || (git rebase --abort && git reset --soft origin/main)
+              git push || echo "Data redan uppdaterad av en parallell körning."
+            }
           fi
 
       - name: Konfigurera GitHub Pages
