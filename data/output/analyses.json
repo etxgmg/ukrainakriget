@@ -1,5 +1,70 @@
 {
-  "last_updated": "2026-10-02T20:43:03.514092+00:00",
-  "total_count": 0,
-  "analyses": []
+  "last_updated": "2026-10-02T21:00:24.141869+00:00",
+  "total_count": 2,
+  "analyses": [
+    {
+      "id": "ana-cornucopia-202610021003",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T10:03:27+00:00",
+      "title_sv": "Ukraina: Ryskt raffinaderi och oljedepå bombade – Kreml pekar ut Västs försvarsindustri som måltavlor – Putin har gett order att skita i krigets lagar",
+      "title_en": "Ukraine: Russian refinery and oil depot bombed - Kremlin singles out Western defense industry as targets - Putin has given orders to screw up the laws of war",
+      "summary_sv": "Ett raffinaderi och Europas största oljedepå bombades i Ryssland i natt. Kremls utrikesdepartement pekar i ett uttqlande ut försvarsindustrin i Väst, EU och Nato som legitima måltavlor för Ryssland att angripa.",
+      "summary_en": "A refinery and Europe's largest oil depot were bombed in Russia last night. In a statement, the Kremlin's Ministry of Foreign Affairs singles out the defense industry in the West, the EU and NATO as legitimate targets for Russia to attack.",
+      "key_takeaways_sv": [
+        "Ett raffinaderi och Europas största oljedepå bombades i Ryssland i natt.",
+        "Kremls utrikesdepartement pekar i ett uttqlande ut försvarsindustrin i Väst, EU och Nato som legitima måltavlor för Ryssland att angripa.",
+        "Förvisso ingen ändring i sak, då Ryssland hela tiden bryter mot krigets lagar, men Putin har nu gett uttrycklig order att bryta mot krigets lagar inklusive Genevekonventionen."
+      ],
+      "key_takeaways_en": [
+        "A refinery and Europe's largest oil depot were bombed in Russia last night.",
+        "In a statement, the Kremlin's Ministry of Foreign Affairs singles out the defense industry in the West, the EU and NATO as legitimate targets for Russia to attack.",
+        "Certainly no change in substance, as Russia constantly violates the laws of war, but Putin has now given explicit orders to violate the laws of war including the Geneva Convention."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/10/ukraina-ryskt-raffinaderi-och-oljedepa-bombade-kreml-pekar-ut-vasts-forsvarsindustri-som-maltavlor-putin-har-gett-order-att-skita-i-krigets-lagar/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    },
+    {
+      "id": "ana-cornucopia-202610010855",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T08:55:00+00:00",
+      "title_sv": "Ukraina: Största distanskriget sedan VK2 – Operation Vivaldi fortsätter, ryska anfall mot Dobropillija",
+      "title_en": "Ukraine: Biggest Remote War Since VK2 – Operation Vivaldi Continues, Russian Attacks on Dobropillija",
+      "summary_sv": "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
+      "summary_en": "The war in Ukraine is the largest remote war with contactless warfare since World War II, larger than the coalition air operations during the Gulf War and larger than the Iraq War and also bilateral between equals.",
+      "key_takeaways_sv": [
+        "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
+        "Den mycket framgångsrika ukrainska motoffensiven Operation Vivaldi har befriat 176 km2 och fortsätter medan Ryssland försöker anfalla mot Dobropillija innan vädret sätter stopp."
+      ],
+      "key_takeaways_en": [
+        "The war in Ukraine is the largest remote war with contactless warfare since World War II, larger than the coalition air operations during the Gulf War and larger than the Iraq War and also bilateral between equals.",
+        "The highly successful Ukrainian counter-offensive, Operation Vivaldi, has liberated 176 km2 and continues as Russia tries to attack Dobropillija before the weather puts a stop to it."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/10/ukraina-storsta-distanskriget-sedan-vk2-operation-vivaldi-fortsatter-ryska-anfall-mot-dobropillija/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    }
+  ]
 }

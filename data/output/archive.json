@@ -1,7 +1,46 @@
 {
-  "total_archived_events": 317,
-  "last_archived_rotation": "2026-10-02T20:43:01.113032+00:00",
+  "total_archived_events": 318,
+  "last_archived_rotation": "2026-10-02T21:00:19.357299+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-01-ac1688",
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01T23:55:00+03:00",
+      "title_sv": "Ukraina lägger till 20 ryska oligarker på sanktionslistan efter att EU-rådet tagit bort Fridman och Usmanov - UD",
+      "title_en": "Ukraine to add 20 Russian oligarchs to sanctions list after EU Council removed Fridman and Usmanov — Foreign Ministry",
+      "summary_sv": "Som svar på upphävandet av europeiska sanktioner mot ryska oligarker Mikhail Fridman och Alisher Usmanov kommer Ukraina att lägga till ytterligare 20 ryska oligarker till sina sanktionslistor.",
+      "summary_en": "In response to the lifting of European sanctions against Russian oligarchs Mikhail Fridman and Alisher Usmanov, Ukraine will add 20 more Russian oligarchs to its sanctions lists.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "usa",
+        "eu",
+        "ryssland",
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Konsolidera internationella allianser och försvarssamarbete.",
+        "beskrivning_en": "Strategic goal: Consolidate international alliances and security agreements."
+      },
+      "egenskaper_anfallsmal": "diplomatiskt_politiskt",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-polytics/4170205-ukraine-to-add-20-russian-oligarchs-to-sanctions-list-after-eu-council-removed-fridman-and-usmanov-foreign-ministry.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
     {
       "id": "evt-2026-10-01-d58770",
       "date": "2026-10-01",
@@ -705,8 +744,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "ryssland",
         "ukraina",
+        "ryssland",
         "usa"
       ],
       "syfte": {
@@ -937,9 +976,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
-        "ukraina",
         "eu",
+        "ukraina",
+        "uk",
         "usa"
       ],
       "syfte": {
@@ -1311,16 +1350,16 @@
       "timestamp": "2026-10-01T16:52:56+00:00",
       "title_sv": "CCTV fångar ögonblicket rysk drönare träffar Kyjiv-skolan – video",
       "title_en": "CCTV captures moment Russian drone hits Kyiv school – video",
-      "summary_sv": "En rysk drönareattack skadade en skola i Kyjiv på torsdagen, krossade fönster och förstörde delvis en vägg. Inga barn eller lärare skadades eftersom de hade tagit skydd efter en flyglarm, sa ukrainska tjänstemän och rektorn.",
+      "summary_sv": "En rysk drönarattack skadade en skola i Kyjiv på torsdagen, krossade fönster och förstörde delvis en vägg. Inga barn eller lärare skadades eftersom de hade tagit skydd efter en flyglarm, sa ukrainska tjänstemän och rektorn.",
       "summary_en": "A Russian drone strike damaged a school in Kyiv on Thursday, shattering windows and partly destroying a wall. No children or teachers were injured as they had taken shelter after an air raid alert, Ukrainian officials and the headteacher said.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "ryssland",
-        "uk",
         "ukraina",
-        "usa"
+        "ryssland",
+        "usa",
+        "uk"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -1340,8 +1379,8 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Drönare",
         "Civila mål",
+        "Drönare",
         "Kyjiv",
         "Ukraina"
       ]
@@ -1431,11 +1470,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "ryssland",
         "uk",
-        "ukraina",
         "usa",
-        "eu"
+        "ryssland",
+        "eu",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "operationellt_mal",
@@ -2126,8 +2165,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "ryssland",
         "ukraina",
+        "ryssland",
         "usa"
       ],
       "syfte": {
@@ -2148,8 +2187,8 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Infrastruktur",
         "Kyjiv",
+        "Infrastruktur",
         "Ukraina"
       ]
     },
@@ -2321,8 +2360,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "ryssland",
         "ukraina",
+        "ryssland",
         "usa"
       ],
       "syfte": {
@@ -2593,11 +2632,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
-        "ryssland",
         "uk",
-        "ukraina",
         "usa",
-        "eu"
+        "ryssland",
+        "eu",
+        "ukraina"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
