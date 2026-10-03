@@ -1,7 +1,127 @@
 {
-  "total_archived_events": 340,
-  "last_archived_rotation": "2026-10-03T05:47:01.075729+00:00",
+  "total_archived_events": 343,
+  "last_archived_rotation": "2026-10-03T06:29:55.131880+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-02-f36701",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T09:29:00+03:00",
+      "title_sv": "Massivt sken sett över Rysslands Volgograd mitt i drönareangrepp på lokalt raffinaderi, kemisk fabrik",
+      "title_en": "Massive glow seen over Russia’s Volgograd amid drone attack on local refinery, chemical plant",
+      "summary_sv": "En drönareattack över natten utlöste explosioner och en stor brand nära ett stort oljeraffinaderi och den kemiska fabriken Kaustik i den ryska staden Volgograd, rapporterade oberoende övervakningskanaler den 2 oktober.",
+      "summary_en": "An overnight drone attack triggered explosions and a large fire near a major oil refinery and the Kaustik chemical plant in the Russian city of Volgograd, independent monitoring channels reported on October 2.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/russian-war/drones-target-major-chemical-plant-oil-refinery-in-russia-s-volgograd-50646436.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Infrastruktur",
+        "Ukraina",
+        "Drönare"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-60bfe8",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T09:19:00+03:00",
+      "title_sv": "Ryska drönare skadade tre flerbostadshus i Sumy över natten",
+      "title_en": "Russian drones damage three apartment buildings in Sumy overnight",
+      "summary_sv": "Tre flervåningshus skadades i Sumy som ett resultat av en rysk drönareattack över natten den 2 oktober.",
+      "summary_en": "Three multi-story residential buildings were damaged in Sumy as a result of a Russian drone strike overnight on October 2.",
+      "location_name": "Sumy",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170261-russian-drones-damage-three-apartment-buildings-in-sumy-overnight.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Civila mål",
+        "Sumy",
+        "Ukraina",
+        "Drönare"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-1ef44c",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T08:55:00+03:00",
+      "title_sv": "ADF neutraliserar 88 av 108 ryska drönare som använts för att attackera Ukraina över natten",
+      "title_en": "ADF neutralizes 88 of 108 Russians drones used to attack Ukraine overnight",
+      "summary_sv": "Ukrainas luftförsvarsstyrkor neutraliserade 88 av de 108 drönare som användes av ryska styrkor för att attackera Ukraina från kvällen den 1 oktober.",
+      "summary_en": "Ukraine's air defense forces neutralized 88 of the 108 drones used by Russian forces to attack Ukraine from the evening of October 1.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "usa",
+        "ukraina",
+        "ryssland",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170249-adf-neutralizes-88-of-108-russians-drones-used-to-attack-ukraine-overnight.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Drönare",
+        "Luftförsvar"
+      ]
+    },
     {
       "id": "evt-2026-10-02-e1c32d",
       "date": "2026-10-02",
@@ -431,9 +551,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "usa",
         "uk",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -581,9 +701,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "usa",
         "uk",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -603,8 +723,8 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Robotanfall",
-        "Ukraina"
+        "Ukraina",
+        "Robotanfall"
       ]
     },
     {
@@ -853,9 +973,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "usa",
         "uk",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "operationellt_mal",
@@ -875,8 +995,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Robotanfall",
-        "Ukraina"
+        "Ukraina",
+        "Robotanfall"
       ]
     },
     {
@@ -1192,18 +1312,18 @@
       "id": "evt-2026-10-01-646f4d",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T21:30:45+00:00",
-      "title_sv": "Rysk-ukrainska kriget, dag 1681: Rysk drönare träffade Kyjiv skola och skyddade mer än 100 elever och cirka 60 anställda",
+      "title_sv": "Rysk-ukrainska kriget, dag 1681: Rysk drönare träffade Kyjiv-skolan och skyddade mer än 100 elever och cirka 60 anställda",
       "title_en": "Russo-Ukrainian war, day 1681: Russian drone hit Kyiv school sheltering more than 100 students and about 60 staff",
-      "summary_sv": "Nato-chefen Mark Rutte säger att det inte finns någon risk för att Ryssland använder kärnvapen mot Baltikum, även när Moskva varnar för att en isolering av Kaliningrad kan utlösa en kärnvapenrespons.",
+      "summary_sv": "Nato-chefen Mark Rutte säger att det inte finns någon risk för att Ryssland använder kärnvapen mot Baltikum, även om Moskva varnar för att en isolering av Kaliningrad kan utlösa en kärnvapensvar.",
       "summary_en": "NATO chief Mark Rutte says there is no risk of Russia using nuclear weapons against the Baltics, even as Moscow warns that isolating Kaliningrad could trigger a nuclear response.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "ryssland",
-        "usa",
         "uk",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -1223,10 +1343,10 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
+        "Drönare",
         "Ukraina",
-        "Civila mål",
         "Kyjiv",
-        "Drönare"
+        "Civila mål"
       ]
     },
     {
@@ -1584,8 +1704,8 @@
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "ryssland",
-        "usa",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
