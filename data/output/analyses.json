@@ -1,7 +1,40 @@
 {
-  "last_updated": "2026-10-03T06:29:59.011674+00:00",
+  "last_updated": "2026-10-03T10:41:07.842905+00:00",
   "total_count": 2,
   "analyses": [
+    {
+      "id": "ana-cornucopia-202610030805",
+      "author_id": "wilderang",
+      "author_name": "Lars Wilderäng",
+      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
+      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
+      "author_type": "svensk_expert",
+      "platform": "Cornucopia.se",
+      "date": "2026-10-03",
+      "timestamp": "2026-10-03T08:05:39+00:00",
+      "title_sv": "Ukraina: Norra bron i Kyjiv bombad – rysk attackdrönarbas i Orjol bombad – ny ukrainsk jaktdrönare skjuter ner jetattackdrönare",
+      "title_en": "Ukraine: North Bridge in Kyiv bombed - Russian attack drone base in Oryol bombed - new Ukrainian fighter drone shoots down jet attack drone",
+      "summary_sv": "Efter att bombat Södra bron har nu Norra bron i Kyjiv bombats i en rysk kampanj att stänga broarna över floden Dnipro i huvudstaden. Ukraina har bombat en stor attackdrönarbas i Orjol Oblast.",
+      "summary_en": "After bombing the South Bridge, the North Bridge in Kyiv has now been bombed in a Russian campaign to close the bridges over the Dnipro River in the capital. Ukraine has bombed a large attack drone base in Oryol Oblast.",
+      "key_takeaways_sv": [
+        "Efter att bombat Södra bron har nu Norra bron i Kyjiv bombats i en rysk kampanj att stänga broarna över floden Dnipro i huvudstaden.",
+        "Ukraina har bombat en stor attackdrönarbas i Orjol Oblast.",
+        "En ny modell av P1-Sun jaktdrönaren har för andra gången skjutit ner en rysk jetattackdrönare, som annars varit för snabba."
+      ],
+      "key_takeaways_en": [
+        "After bombing the South Bridge, the North Bridge in Kyiv has now been bombed in a Russian campaign to close the bridges over the Dnipro River in the capital.",
+        "Ukraine has bombed a large attack drone base in Oryol Oblast.",
+        "A new model of the P1-Sun fighter drone has for the second time shot down a Russian jet attack drone, which was otherwise too fast."
+      ],
+      "topics": [
+        "luftkrig",
+        "djupanfall",
+        "frontlinje",
+        "vapenindustri"
+      ],
+      "url": "https://cornucopia.se/2026/10/ukraina-norra-bron-i-kyjiv-bombad-rysk-attackdronarbas-i-orjol-bombad-ny-ukrainsk-jaktdronare-skjuter-ner-jetattackdronare/",
+      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
+    },
     {
       "id": "ana-cornucopia-202610021003",
       "author_id": "wilderang",
@@ -33,37 +66,6 @@
         "vapenindustri"
       ],
       "url": "https://cornucopia.se/2026/10/ukraina-ryskt-raffinaderi-och-oljedepa-bombade-kreml-pekar-ut-vasts-forsvarsindustri-som-maltavlor-putin-har-gett-order-att-skita-i-krigets-lagar/",
-      "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
-    },
-    {
-      "id": "ana-cornucopia-202610010855",
-      "author_id": "wilderang",
-      "author_name": "Lars Wilderäng",
-      "author_title_sv": "Författare och försvarsdebattör (Cornucopia.se)",
-      "author_title_en": "Military author and defense commentator (Cornucopia.se)",
-      "author_type": "svensk_expert",
-      "platform": "Cornucopia.se",
-      "date": "2026-10-01",
-      "timestamp": "2026-10-01T08:55:00+00:00",
-      "title_sv": "Ukraina: Största distanskriget sedan VK2 – Operation Vivaldi fortsätter, ryska anfall mot Dobropillija",
-      "title_en": "Ukraine: Biggest Remote War Since VK2 – Operation Vivaldi Continues, Russian Attacks on Dobropillija",
-      "summary_sv": "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
-      "summary_en": "The war in Ukraine is the largest remote war with contactless warfare since World War II, larger than the coalition air operations during the Gulf War and larger than the Iraq War and also bilateral between equals.",
-      "key_takeaways_sv": [
-        "Kriget i Ukraina är det största distanskriget med kontaktlös krigföring sedan andra världskriget, större än koalitionens flygoperationer under Gulfkriget och större än Irakkriget och dessutom tvåsidigt mellan likar.",
-        "Den mycket framgångsrika ukrainska motoffensiven Operation Vivaldi har befriat 176 km2 och fortsätter medan Ryssland försöker anfalla mot Dobropillija innan vädret sätter stopp."
-      ],
-      "key_takeaways_en": [
-        "The war in Ukraine is the largest remote war with contactless warfare since World War II, larger than the coalition air operations during the Gulf War and larger than the Iraq War and also bilateral between equals.",
-        "The highly successful Ukrainian counter-offensive, Operation Vivaldi, has liberated 176 km2 and continues as Russia tries to attack Dobropillija before the weather puts a stop to it."
-      ],
-      "topics": [
-        "luftkrig",
-        "djupanfall",
-        "frontlinje",
-        "vapenindustri"
-      ],
-      "url": "https://cornucopia.se/2026/10/ukraina-storsta-distanskriget-sedan-vk2-operation-vivaldi-fortsatter-ryska-anfall-mot-dobropillija/",
       "verified_credibility": "Hög (öppna källor, geolokalisering och daglig operativ bevakning)"
     }
   ]
