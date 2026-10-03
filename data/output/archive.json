@@ -1,7 +1,85 @@
 {
-  "total_archived_events": 422,
-  "last_archived_rotation": "2026-10-03T18:51:15.754432+00:00",
+  "total_archived_events": 424,
+  "last_archived_rotation": "2026-10-03T19:50:48.282904+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-02-c416a5",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T22:25:00+03:00",
+      "title_sv": "Utrikesministeriet ber Kazakstan att inte bevilja Rysslands utlämningsbegäran för den fängslade ukrainaren",
+      "title_en": "MFA asks Kazakhstan not to grant Russia's extradition request for detained Ukrainian",
+      "summary_sv": "Ukrainas ambassad i Kazakstan har bett den kazakiska sidan att inte bevilja Rysslands utlämningsbegäran för den ukrainske medborgaren Liubov Rozhanska, som fängslades i Astana.",
+      "summary_en": "The Embassy of Ukraine in Kazakhstan has asked the Kazakh side not to grant Russia's extradition request for Ukrainian citizen Liubov Rozhanska, who was detained in Astana.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-society/4170560-mfa-asks-kazakhstan-not-to-grant-russias-extradition-request-for-detained-ukrainian.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-8cd1b5",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T21:54:00+03:00",
+      "title_sv": "Kazakstan häktar ukrainsk kvinna på Rysslands begäran när hon reste för att hämta barnbarnet",
+      "title_en": "Kazakhstan detains Ukrainian woman at Russia's request as she traveled to pick up grandson",
+      "summary_sv": "Kazakiska myndigheter grep den ukrainska medborgaren Liubov Rozhanska på flygplatsen i Astana på Rysslands begäran när hon reste för att hämta sitt barnbarn och ta honom till sin far i Odesa.",
+      "summary_en": "Kazakh authorities detained Ukrainian national Liubov Rozhanska at Astana airport at Russia's request as she was traveling to pick up her grandson and take him to his father in Odesa.",
+      "location_name": "Odesa",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "uk",
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-society/4170320-kazakhstan-detains-ukrainian-woman-at-russias-request-as-she-traveled-to-pick-up-grandson.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Infrastruktur",
+        "Odesa"
+      ]
+    },
     {
       "id": "evt-2026-10-02-c2700f",
       "date": "2026-10-02",
@@ -553,10 +631,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
-        "ryssland",
         "uk",
+        "ukraina",
         "usa",
-        "ukraina"
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -742,10 +820,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "ryssland",
         "uk",
+        "ukraina",
         "usa",
-        "ukraina"
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -931,9 +1009,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "ryssland",
         "usa",
-        "ukraina"
+        "ukraina",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1198,14 +1276,14 @@
       "timestamp": "2026-10-02T16:11:12+00:00",
       "title_sv": "G7 kommer att frigöra 100 miljoner fat från reserver för att bekämpa stigande dieselpriser – som det hände",
       "title_en": "G7 to release 100m barrels from reserves to combat surging diesel prices – as it happened",
-      "summary_sv": "Den här bloggen är nu stängd, du kan läsa mer om den här historien här Tillbaka till Frankrike, middagssiffror citerade av Le Figaro visar att 564 skolor och utbildningsinrättningar har störts av de pågående oroligheterna, och cirka 600 personer har gripits hittills i dag när gymnasieprotesterna fortsätter. Europa miljökorrespondent",
+      "summary_sv": "Den här bloggen är nu stängd, du kan läsa mer om den här historien här. Tillbaka till Frankrike, middagssiffror citerade av Le Figaro visar att 564 skolor och utbildningsinrättningar har störts av de pågående oroligheterna, och cirka 600 personer har gripits hittills i dag när gymnasieprotesterna fortsätter. Europa miljökorrespondent",
       "summary_en": "This blog is now closed, you can read more on this story here Back to France, midday figures quoted by Le Figaro show that 564 schools and educational establishments have been disrupted by the ongoing unrest, and some 600 people have been arrested so far today as the high school protests continue.Europe environment correspondent",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "eu",
-        "ukraina"
+        "ukraina",
+        "eu"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -1225,8 +1303,8 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Civila mål",
-        "Ukraina"
+        "Ukraina",
+        "Civila mål"
       ]
     },
     {
@@ -1281,10 +1359,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
-        "ryssland",
         "uk",
+        "ukraina",
         "usa",
-        "ukraina"
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1304,8 +1382,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Infrastruktur",
-        "Ukraina"
+        "Ukraina",
+        "Infrastruktur"
       ]
     },
     {
@@ -1511,10 +1589,10 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "ryssland",
         "uk",
+        "ukraina",
         "usa",
-        "ukraina"
+        "ryssland"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1534,8 +1612,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Infrastruktur",
-        "Ukraina"
+        "Ukraina",
+        "Infrastruktur"
       ]
     },
     {
@@ -1863,9 +1941,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "ryssland",
         "usa",
-        "ukraina"
+        "ukraina",
+        "ryssland"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -1885,9 +1963,9 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
+        "Energi",
         "Kyjiv",
         "Drönare",
-        "Energi",
         "Ukraina"
       ]
     },
@@ -2019,9 +2097,9 @@
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
         "uk",
+        "ukraina",
         "eu",
-        "usa",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -2041,8 +2119,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Civila mål",
-        "Ukraina"
+        "Ukraina",
+        "Civila mål"
       ]
     },
     {
@@ -2752,11 +2830,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
+        "eu",
+        "uk",
         "usa",
         "ryssland",
-        "uk",
-        "ukraina",
-        "eu"
+        "ukraina"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
