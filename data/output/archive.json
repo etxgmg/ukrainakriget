@@ -1,6 +1,6 @@
 {
   "total_archived_events": 329,
-  "last_archived_rotation": "2026-10-03T00:28:10.773639+00:00",
+  "last_archived_rotation": "2026-10-03T00:45:30.493904+00:00",
   "events": [
     {
       "id": "evt-2026-10-02-912539",
@@ -433,8 +433,8 @@
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "uk",
-        "usa",
-        "ukraina"
+        "ukraina",
+        "usa"
       ],
       "syfte": {
         "kategori": "operationellt_mal",
@@ -454,8 +454,8 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Robotanfall",
-        "Ukraina"
+        "Ukraina",
+        "Robotanfall"
       ]
     },
     {
@@ -771,18 +771,18 @@
       "id": "evt-2026-10-01-646f4d",
       "date": "2026-10-01",
       "timestamp": "2026-10-01T21:30:45+00:00",
-      "title_sv": "Rysk-ukrainska kriget, dag 1681: Rysk drönare träffade Kyjiv skola och skyddade mer än 100 elever och cirka 60 anställda",
+      "title_sv": "Rysk-ukrainska kriget, dag 1681: Rysk drönare träffade Kyjiv-skolan och skyddade mer än 100 elever och cirka 60 anställda",
       "title_en": "Russo-Ukrainian war, day 1681: Russian drone hit Kyiv school sheltering more than 100 students and about 60 staff",
-      "summary_sv": "Nato-chefen Mark Rutte säger att det inte finns någon risk för att Ryssland använder kärnvapen mot Baltikum, även när Moskva varnar för att en isolering av Kaliningrad kan utlösa en kärnvapenrespons.",
+      "summary_sv": "Nato-chefen Mark Rutte säger att det inte finns någon risk för att Ryssland använder kärnvapen mot Baltikum, även om Moskva varnar för att en isolering av Kaliningrad kan utlösa en kärnvapensvar.",
       "summary_en": "NATO chief Mark Rutte says there is no risk of Russia using nuclear weapons against the Baltics, even as Moscow warns that isolating Kaliningrad could trigger a nuclear response.",
       "location_name": "Kyjiv",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "uk",
-        "usa",
+        "ukraina",
         "ryssland",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -802,10 +802,10 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Drönare",
-        "Civila mål",
         "Ukraina",
-        "Kyjiv"
+        "Drönare",
+        "Kyjiv",
+        "Civila mål"
       ]
     },
     {
@@ -1162,9 +1162,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "usa",
+        "ukraina",
         "ryssland",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -1775,9 +1775,9 @@
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
         "uk",
-        "usa",
+        "ukraina",
         "ryssland",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "akta_syfte",
@@ -1797,10 +1797,10 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Drönare",
-        "Civila mål",
         "Ukraina",
-        "Kyjiv"
+        "Drönare",
+        "Kyjiv",
+        "Civila mål"
       ]
     },
     {
@@ -1888,11 +1888,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
-        "uk",
-        "eu",
         "ukraina",
+        "eu",
         "usa",
-        "ryssland"
+        "ryssland",
+        "uk"
       ],
       "syfte": {
         "kategori": "operationellt_mal",
@@ -2583,9 +2583,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "usa",
+        "ukraina",
         "ryssland",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
@@ -2605,9 +2605,9 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Infrastruktur",
         "Ukraina",
-        "Kyjiv"
+        "Kyjiv",
+        "Infrastruktur"
       ]
     },
     {
@@ -2772,15 +2772,15 @@
       "timestamp": "2026-10-01T14:05:55+00:00",
       "title_sv": "Den ryske dissidenten Garry Kasparov säger att USA varnade honom för fara för hans liv",
       "title_en": "Russian dissident Garry Kasparov says US warned him of danger to his life",
-      "summary_sv": "\"Min familj och jag kommer inte riktigt att vara säkra så länge Putin är vid makten\", säger den tidigare schackvärldsmästaren.",
+      "summary_sv": "\"Min familj och jag kommer inte att vara säkra så länge Putin är vid makten\", säger den tidigare schackvärldsmästaren.",
       "summary_en": "\"My family and I will not truly be safe as long as Putin is in power,\" says the former chess world champion.",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "fria_ukraina",
       "parter_intressenter": [
-        "usa",
+        "ukraina",
         "ryssland",
-        "ukraina"
+        "usa"
       ],
       "syfte": {
         "kategori": "strategiskt_mal",
@@ -2800,8 +2800,8 @@
       "kallkategori": "Internationellt nyhetsmedium",
       "arkiverad": true,
       "tags": [
-        "Energi",
-        "Ukraina"
+        "Ukraina",
+        "Energi"
       ]
     },
     {
