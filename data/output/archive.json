@@ -1,7 +1,195 @@
 {
-  "total_archived_events": 414,
-  "last_archived_rotation": "2026-10-03T17:15:31.429596+00:00",
+  "total_archived_events": 422,
+  "last_archived_rotation": "2026-10-03T18:51:15.754432+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-02-c2700f",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T21:31:00+03:00",
+      "title_sv": "Oppositionsparlamentsledamot Goncharenko efterlyser samtal med Ryssland",
+      "title_en": "Opposition MP Goncharenko calls for talks with Russia",
+      "summary_sv": "Den ukrainske parlamentsledamoten Oleksiy Goncharenko från partiet European Solidarity publicerade en serie inlägg på Telegram 2 oktober och sa bland annat att Ukraina \"förlorar kriget\" och borde förhandla med Ryssland.",
+      "summary_en": "Ukrainian MP Oleksiy Goncharenko of the European Solidarity party published a series of posts on Telegram Oct. 2, saying, among other things, that Ukraine is “losing the war” and should negotiate with Russia.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "uk",
+        "eu",
+        "ryssland",
+        "ukraina",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/opposition-mp-calls-for-talks-with-russia-50646718.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-bddcad",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T21:28:00+03:00",
+      "title_sv": "Mer än 26 000 kroppar återvände till Ukraina, men många är fortfarande oidentifierade – Budanov",
+      "title_en": "More than 26,000 bodies returned to Ukraine, but many remain unidentified – Budanov",
+      "summary_sv": "Processen att identifiera fallna försvarare måste påskyndas. Regeringen kommer att anta alla nödvändiga regulatoriska och juridiska beslut inom en snar framtid.",
+      "summary_en": "The process of identifying fallen defenders must be accelerated. The government will adopt all necessary regulatory and legal decisions in the near future.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "uk",
+        "ukraina",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170559-more-than-26000-bodies-returned-to-ukraine-but-many-remain-unidentified-budanov.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-a21eaf",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T21:05:00+03:00",
+      "title_sv": "Två personer, inklusive barn, skadades i rysk attack i Kyjiv-regionen",
+      "title_en": "Two people, including child, injured in Russian attack in Kyiv region",
+      "summary_sv": "Ryska styrkor har skadat två personer, inklusive ett åttaårigt barn, i Hostomel, Kyjiv-regionen.",
+      "summary_en": "Russian forces have injured two people, including an eight-year-old child, in Hostomel, Kyiv region.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170553-two-people-including-child-injured-in-russian-attack-in-kyiv-region.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-919b10",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T20:39:00+03:00",
+      "title_sv": "Kyjiv-brotrafiken begränsades under flyglarm",
+      "title_en": "Kyiv bridge traffic restricted during air raid alerts",
+      "summary_sv": "Kyjiv myndigheter har tillkännagett tillfälliga trafikrestriktioner som gäller under flyglarm i staden med start den 2 oktober.",
+      "summary_en": "Kyiv authorities have announced temporary traffic restrictions that are in effect during air raid alerts in the city, starting Oct. 2.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/kyiv-bridge-traffic-restricted-during-air-raids-50646717.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Infrastruktur"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-4c080f",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T20:38:00+03:00",
+      "title_sv": "Ytterligare fyra barn återvände från den tillfälligt ockuperade delen av Kherson-regionen",
+      "title_en": "Four more children returned from temporarily occupied part of Kherson region",
+      "summary_sv": "Ytterligare fyra barn har återförts från det tillfälligt ockuperade territoriet i Kherson-regionen till territorium som kontrolleras av Ukraina.",
+      "summary_en": "Four more children have been returned from the temporarily occupied territory of the Kherson region to territory controlled by Ukraine.",
+      "location_name": "Cherson",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-society/4170548-four-more-children-returned-from-temporarily-occupied-part-of-kherson-region.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Cherson",
+        "Ukraina"
+      ]
+    },
     {
       "id": "evt-2026-10-02-b290a8",
       "date": "2026-10-02",
@@ -118,6 +306,44 @@
         "Drönare",
         "Charkiv",
         "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-272f8d",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T19:32:57+02:00",
+      "title_sv": "Vittnet från den svältande byn: ”Maratonlopp på minerad väg”",
+      "title_en": "The witness from the starving village: \"Marathon run on mined road\"",
+      "summary_sv": "Det rapporteras om massvält i den ockuperade staden Olesjky i södra Ukraina. Staden uppges vara helt isolerad från omvärlden – men SVT har nått fram till flera vittnen. – De hade tur häromdagen och hittade en mullbärsbuske med några bär på, skriver en kvinna vars familj är kvar i staden.",
+      "summary_en": "There are reports of mass starvation in the occupied city of Oleshky in southern Ukraine. The city is said to be completely isolated from the outside world - but SVT has reached several witnesses. - They were lucky the other day and found a mulberry bush with some berries on it, writes a woman whose family remains in the city.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ockuperade_ukraina",
+      "parter_intressenter": [
+        "uk",
+        "ukraina",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "SVT Nyheter",
+      "kallurl": "https://www.svt.se/nyheter/utrikes/vittnet-fran-den-svaltande-byn-maratonlopp-pa-minerad-vag",
+      "kallkategori": "Svensk Public Service",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Infrastruktur"
       ]
     },
     {
@@ -316,6 +542,44 @@
       ]
     },
     {
+      "id": "evt-2026-10-02-458cd8",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T18:31:33+00:00",
+      "title_sv": "41 ukrainare gjorde den långa resan från ockupation till ukrainskt kontrollerat territorium efter att ha uthärdat ryskt tryck, internering och kontroll",
+      "title_en": "41 Ukrainians made the long journey from occupation to Ukrainian-controlled territory after enduring Russian pressure, detention and control",
+      "summary_sv": "Fyra barn och fem tonåringar var bland dem som återvände till Ukraina i augusti och september via en rutt via Vitryssland.",
+      "summary_en": "Four children and five teenagers were among those who returned to Ukraine in August and September through a route via Belarus.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ukrainas_granser",
+      "parter_intressenter": [
+        "ryssland",
+        "uk",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/10/02/41-ukrainians-return-from-occupation/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
       "id": "evt-2026-10-02-26a62c",
       "date": "2026-10-02",
       "timestamp": "2026-10-02T18:20:00+03:00",
@@ -460,6 +724,44 @@
       "effekt_maluppfyllnad": "delvis",
       "kalla": "The New Voice of Ukraine",
       "kallurl": "https://english.nv.ua/nation/putin-will-escalate-war-ahead-of-u-s-midterms-zelenskyy-50646645.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-bb677d",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T17:44:30+00:00",
+      "title_sv": "Ryssland hämnas efter att Ungern utvisat tio diplomater, vilket fördjupar klyftan mellan Budapest och Moskva sedan Orbáns avsattes",
+      "title_en": "Russia retaliates after Hungary expels 10 diplomats, deepening Budapest-Moscow rift since Orbán’s ouster",
+      "summary_sv": "Den diplomatiska titan kommer när Ungerns nya regering har en markant annorlunda inställning till Ryssland och Ukraina än Viktor Orbáns 16-åriga mandatperiod.",
+      "summary_en": "The diplomatic tit-for-tat comes as Hungary’s new government takes a markedly different approach to Russia and Ukraine from Viktor Orbán’s 16-year tenure.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ryssland",
+        "uk",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/10/02/russia-expels-hungarian-diplomats/",
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
@@ -896,7 +1198,7 @@
       "timestamp": "2026-10-02T16:11:12+00:00",
       "title_sv": "G7 kommer att frigöra 100 miljoner fat från reserver för att bekämpa stigande dieselpriser – som det hände",
       "title_en": "G7 to release 100m barrels from reserves to combat surging diesel prices – as it happened",
-      "summary_sv": "Den här bloggen är nu stängd, du kan läsa mer om den här historien här. Tillbaka till Frankrike, middagssiffror citerade av Le Figaro visar att 564 skolor och utbildningsinrättningar har störts av de pågående oroligheterna, och cirka 600 personer har gripits hittills i dag när gymnasieprotesterna fortsätter. Europa miljökorrespondent",
+      "summary_sv": "Den här bloggen är nu stängd, du kan läsa mer om den här historien här Tillbaka till Frankrike, middagssiffror citerade av Le Figaro visar att 564 skolor och utbildningsinrättningar har störts av de pågående oroligheterna, och cirka 600 personer har gripits hittills i dag när gymnasieprotesterna fortsätter. Europa miljökorrespondent",
       "summary_en": "This blog is now closed, you can read more on this story here Back to France, midday figures quoted by Le Figaro show that 564 schools and educational establishments have been disrupted by the ongoing unrest, and some 600 people have been arrested so far today as the high school protests continue.Europe environment correspondent",
       "location_name": "Ukraina (nationellt)",
       "tidshorisont": "dagligen",
@@ -980,8 +1282,8 @@
       "geografiskt_omrade": "ukrainas_granser",
       "parter_intressenter": [
         "ryssland",
-        "usa",
         "uk",
+        "usa",
         "ukraina"
       ],
       "syfte": {
@@ -1210,8 +1512,8 @@
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
         "ryssland",
-        "usa",
         "uk",
+        "usa",
         "ukraina"
       ],
       "syfte": {
@@ -1585,8 +1887,8 @@
       "tags": [
         "Kyjiv",
         "Drönare",
-        "Ukraina",
-        "Energi"
+        "Energi",
+        "Ukraina"
       ]
     },
     {
@@ -1716,9 +2018,9 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "eu_ees",
       "parter_intressenter": [
+        "uk",
         "eu",
         "usa",
-        "uk",
         "ukraina"
       ],
       "syfte": {
@@ -2450,11 +2752,11 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "ryssland",
       "parter_intressenter": [
-        "eu",
         "usa",
-        "ukraina",
         "ryssland",
-        "uk"
+        "uk",
+        "ukraina",
+        "eu"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
