@@ -1,7 +1,395 @@
 {
-  "total_archived_events": 399,
-  "last_archived_rotation": "2026-10-03T14:56:35.861681+00:00",
+  "total_archived_events": 414,
+  "last_archived_rotation": "2026-10-03T17:15:31.429596+00:00",
   "events": [
+    {
+      "id": "evt-2026-10-02-b290a8",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T20:15:00+03:00",
+      "title_sv": "Ryssar attackerar Dnipro, bostadshus fattas i brand",
+      "title_en": "Russians attack Dnipro, apartment building catches fire",
+      "summary_sv": "Ryska styrkor har attackerat Dnipro och orsakat en brand i ett bostadshus.",
+      "summary_en": "Russian forces have attacked Dnipro, causing a fire in an apartment building.",
+      "location_name": "Dnipro",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170544-russians-attack-dnipro-apartment-building-catches-fire.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Dnipro",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-c7352f",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T19:53:00+03:00",
+      "title_sv": "Lager tar eld i Kyjiv-regionen efter rysk attack",
+      "title_en": "Warehouses catch fire in Kyiv region following Russian attack",
+      "summary_sv": "Lageranläggningar skadades och en brand bröt ut i Bucha-distriktet, Kyjiv-regionen, efter en fiendeattack.",
+      "summary_en": "Warehouse facilities were damaged and a fire broke out in the Bucha district, Kyiv region, following an enemy attack.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170543-warehouses-catch-fire-in-kyiv-region-following-russian-attack.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Kyjiv",
+        "Infrastruktur"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-638f51",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T19:37:00+03:00",
+      "title_sv": "Ryssar attackerar Shevchenkove i Charkiv-regionen med drönare: Tre skadade, hus fattas i brand",
+      "title_en": "Russians attack Shevchenkove in Kharkiv region with drones: Three injured, houses catch fire",
+      "summary_sv": "Fredagen den 2 oktober genomförde ryska styrkor intensiva drönsattacker mot bostadsområdet i bosättningen Shevchenkove i Kupiansk-distriktet, Charkiv-regionen. Tre boende skadades och bränder bröt ut.",
+      "summary_en": "On Friday, October 2, Russian forces carried out intensive drone attacks on the residential area of the settlement of Shevchenkove in Kupiansk district, Kharkiv region. Three residents were injured and fires broke out.",
+      "location_name": "Charkiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170514-russians-attack-shevchenkove-in-kharkiv-region-with-drones-three-injured-houses-catch-fire.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Drönare",
+        "Charkiv",
+        "Civila mål"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-1dfd7f",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T19:17:00+03:00",
+      "title_sv": "Rysk drönare attackerar Kyjivs södra bron igen",
+      "title_en": "Russian drone attacks Kyiv's South Bridge again",
+      "summary_sv": "I Kyjiv har en rysk drönare träffat Södra bron igen.",
+      "summary_en": "In Kyiv, a Russian drone has struck the South Bridge again.",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170513-russian-drone-attacks-kyivs-south-bridge-again.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Drönare",
+        "Kyjiv",
+        "Infrastruktur"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-975a87",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T19:05:00+03:00",
+      "title_sv": "Ryssland planerar att samla in över 12 miljarder dollar från skatt på bankinlåning när krigskostnaderna ökar",
+      "title_en": "Russia plans to raise over $12 billion from bank deposit tax as war costs mount",
+      "summary_sv": "Rysslands regering planerar att kraftigt öka intäkterna från skatter på ryssars bankinlåning eftersom den försöker minska ett budgetunderskott samtidigt som den riktar ungefär en tredjedel av de federala utgifterna till militären, rapporterade The Moscow Times den 2 oktober.",
+      "summary_en": "Russia’s government plans to sharply increase revenue from taxes on Russians’ bank deposits as it seeks to reduce a budget deficit while directing roughly one-third of federal spending to the military, The Moscow Times reported on Oct. 2.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ryssland",
+        "ukraina",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/tax-on-bank-deposits-in-russia-rising-revenue-and-new-rules-through-2027-50646663.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Infrastruktur"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-cd824b",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T18:58:00+03:00",
+      "title_sv": "Ryskt Su-35 stridsflygplan skjuter ned en egen Mi-8-helikopter i Voronezh oblast",
+      "title_en": "Russian Su-35 fighter jet shoots down own Mi-8 helicopter in Voronezh Oblast",
+      "summary_sv": "Ett ryskt stridsflygplan av typen Su-35 sköt ned en rysk Mi-8-helikopter i Voronezh Oblast efter att ha misstagit den för en drönare, rapporterade The Insider, med hänvisning till ryska krigsvänliga Telegram-kanaler den 2 oktober.",
+      "summary_en": "A Russian Su-35 fighter jet shot down a Russian Mi-8 helicopter in Voronezh Oblast after mistaking it for a drone, The Insider reported, citing Russian pro-war Telegram channels on Oct. 2.",
+      "location_name": "Ryskt gränsområde",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ryssland",
+        "ukraina",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "avvardad",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/russian-su-35-mistakenly-shoots-down-mi-8-helicopter-50646669.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Ukraina",
+        "Drönare",
+        "Infrastruktur",
+        "Ryskt"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-859306",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T18:53:00+03:00",
+      "title_sv": "Rysk drönare attackerar gasarbetares fordon i Charkiv-regionen",
+      "title_en": "Russian drone attacks gas workers' vehicle in Kharkiv region",
+      "summary_sv": "I Charkiv-regionen attackerade en rysk FPV-drönare medvetet ett fordon som tillhörde tjänsten Gas Networks, en del av Naftogaz Group.",
+      "summary_en": "In the Kharkiv region, a Russian FPV drone deliberately attacked a vehicle belonging to the Gas Networks service, part of the Naftogaz Group.",
+      "location_name": "Charkiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170511-russian-drone-attacks-gas-workers-vehicle-in-kharkiv-region.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Drönare",
+        "Charkiv",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-dd304c",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T18:37:00+03:00",
+      "title_sv": "Ryska styrkor attackerar Charkiv med guidade flygbomber: Två döda, antalet skadade stiger till 33",
+      "title_en": "Russian forces strike Kharkiv with guided aerial bombs: Two killed, injury toll rises to 33",
+      "summary_sv": "Ryska styrkor genomförde attacker med guidade flygbomber mot Charkivs Nemyshlianskyi- och Slobidskyi-distrikt.",
+      "summary_en": "Russian forces carried out strikes with guided aerial bombs on Kharkiv's Nemyshlianskyi and Slobidskyi districts.",
+      "location_name": "Charkiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "ryssland",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "fullbordad",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-ato/4170507-russian-forces-strike-kharkiv-with-guided-aerial-bombs-two-killed-injury-toll-rises-to-33.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Charkiv",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-26a62c",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T18:20:00+03:00",
+      "title_sv": "Rosatom föreslår en ny kärnkraftsenhet för Armenien mitt i stigande spänningar med Moskva",
+      "title_en": "Rosatom proposes new nuclear power unit for Armenia amid rising tensions with Moscow",
+      "summary_sv": "Rysslands statliga kärnkraftsföretag Rosatom har erbjudit Armenien ett förslag att bygga en ny VVER-1000 kraftenhet vid det armeniska kärnkraftverket, rapporterade den ryska nyhetsbyrån Interfax den 29 september.",
+      "summary_en": "Russia’s state nuclear corporation Rosatom has offered Armenia a proposal to build a new VVER-1000 power unit at the Armenian Nuclear Power Plant, Russia’s Interfax news agency reported on Sept. 29.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ryssland",
+        "ukraina",
+        "usa"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Slå ut civil energiförsörjning och vinterberedskap.",
+        "beskrivning_en": "Strategic goal: Incapacitate civilian heating and electrical resilience ahead of winter."
+      },
+      "egenskaper_anfallsmal": "energiproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The New Voice of Ukraine",
+      "kallurl": "https://english.nv.ua/nation/russia-wants-to-build-new-nuclear-reactor-in-cis-country-despite-hostile-actions-50646658.html",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Energi",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-1e2482",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T18:18:00+03:00",
+      "title_sv": "Ukrenergo förutspår inga strömbegränsningar på lördag",
+      "title_en": "Ukrenergo forecasts no power restrictions on Saturday",
+      "summary_sv": "Inga begränsningar av elförbrukningen är planerade i Ukraina lördagen den 3 oktober.",
+      "summary_en": "No electricity consumption restrictions are planned in Ukraine on Saturday, October 3.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "fria_ukraina",
+      "parter_intressenter": [
+        "ukraina",
+        "uk"
+      ],
+      "syfte": {
+        "kategori": "strategiskt_mal",
+        "beskrivning_sv": "Strategiskt mål: Slå ut civil energiförsörjning och vinterberedskap.",
+        "beskrivning_en": "Strategic goal: Incapacitate civilian heating and electrical resilience ahead of winter."
+      },
+      "egenskaper_anfallsmal": "energiproduktion",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Ukrinform",
+      "kallurl": "https://www.ukrinform.net/rubric-economy/4170504-ukrenergo-forecasts-no-power-restrictions-on-saturday.html",
+      "kallkategori": "Statlig nyhetsbyrå",
+      "arkiverad": true,
+      "tags": [
+        "Energi",
+        "Ukraina"
+      ]
+    },
     {
       "id": "evt-2026-10-02-4f692c",
       "date": "2026-10-02",
@@ -227,6 +615,44 @@
         "Poltava",
         "Ukraina",
         "Drönare"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-9e9e8e",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T17:03:33+00:00",
+      "title_sv": "Veckan runt om i världen i 20 bilder",
+      "title_en": "The week around the world in 20 pictures",
+      "summary_sv": "Ryska attacker mot Kyjiv, flydubai-planincidenten, studentprotester i Paris och vulkanen Etna bryter ut – de senaste sju dagarna som fångats av världens ledande fotojournalister Varning: det här galleriet innehåller bilder som vissa läsare kan tycka är oroande",
+      "summary_en": "Russian strikes on Kyiv, the flydubai plane incident, student protests in Paris and Mount Etna erupts – the past seven days as captured by the world’s leading photojournalists Warning: this gallery contains images some readers may find distressing",
+      "location_name": "Kyjiv",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "resten_av_varlden",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "militara_resurser",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/artanddesign/gallery/2026/oct/02/the-week-around-the-world-in-20-pictures",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Kyjiv",
+        "Ukraina"
       ]
     },
     {
@@ -465,6 +891,43 @@
       ]
     },
     {
+      "id": "evt-2026-10-02-35d612",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T16:11:12+00:00",
+      "title_sv": "G7 kommer att frigöra 100 miljoner fat från reserver för att bekämpa stigande dieselpriser – som det hände",
+      "title_en": "G7 to release 100m barrels from reserves to combat surging diesel prices – as it happened",
+      "summary_sv": "Den här bloggen är nu stängd, du kan läsa mer om den här historien här. Tillbaka till Frankrike, middagssiffror citerade av Le Figaro visar att 564 skolor och utbildningsinrättningar har störts av de pågående oroligheterna, och cirka 600 personer har gripits hittills i dag när gymnasieprotesterna fortsätter. Europa miljökorrespondent",
+      "summary_en": "This blog is now closed, you can read more on this story here Back to France, midday figures quoted by Le Figaro show that 564 schools and educational establishments have been disrupted by the ongoing unrest, and some 600 people have been arrested so far today as the high school protests continue.Europe environment correspondent",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/live/2026/oct/02/france-schools-protests-violence-ukraine-kallas-rome-pope-latest-news-updates",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Civila mål",
+        "Ukraina"
+      ]
+    },
+    {
       "id": "evt-2026-10-02-42bd5b",
       "date": "2026-10-02",
       "timestamp": "2026-10-02T16:05:00+03:00",
@@ -501,6 +964,45 @@
       "arkiverad": true,
       "tags": [
         "Kyjiv",
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-d3662c",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T16:03:31+00:00",
+      "title_sv": "Ukrainsk mormor frihetsberövad i Kazakstan på Rysslands begäran när hon försökte få tillbaka barnbarnet till Ukraina",
+      "title_en": "Ukrainian grandmother detained in Kazakhstan at Russia’s request while trying to bring grandson back to Ukraine",
+      "summary_sv": "Ryssland använde den Rysslandsledda CSTO för att förfölja den ukrainska medborgaren utanför dess gränser, vilket utlöste hennes internering i Kazakstan och potentiellt utsatt henne för utvisning till Ryssland.",
+      "summary_en": "Russia used the Russia-led CSTO to pursue the Ukrainian citizen beyond its borders, triggering her detention in Kazakhstan and potentially exposing her to deportation to Russia.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ukrainas_granser",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/10/02/ukrainian-grandmother-detained-in-kazakhstan-at-russias-request/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Infrastruktur",
         "Ukraina"
       ]
     },
@@ -581,6 +1083,43 @@
       ]
     },
     {
+      "id": "evt-2026-10-02-a01020",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T15:56:30+00:00",
+      "title_sv": "G7 ska frigöra 100 miljoner fat från reserverna för att bekämpa stigande dieselpriser – Europa live",
+      "title_en": "G7 to release 100m barrels from reserves to combat surging diesel prices – Europe live",
+      "summary_sv": "Macron säger att G7 kommer att \"arbeta på ett samordnat sätt för att hjälpa till att sänka priserna på petroleumprodukter.\" Tillbaka till Frankrike visar siffror på middagstid som citeras av Le Figaro att 564 skolor och utbildningsinrättningar har störts av de pågående oroligheterna, och cirka 600 personer har arresterats hittills i dag när...",
+      "summary_en": "Macron says G7 will ‘work in a coordinated manner to help bring down the prices of petroleum products’Back to France, midday figures quoted by Le Figaro show that 564 schools and educational establishments have been disrupted by the ongoing unrest, and some 600 people have been arrested so far today as the high school protests continue.Europe...",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "eu_ees",
+      "parter_intressenter": [
+        "eu",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "akta_syfte",
+        "beskrivning_sv": "Äkta syfte: Terrorisering och psykologisk utmattning av civilbefolkningen i urbana områden.",
+        "beskrivning_en": "Underlying purpose: Psychological attrition and terrorizing the civilian urban populace."
+      },
+      "egenskaper_anfallsmal": "helt_civila",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "The Guardian (Ukraine)",
+      "kallurl": "https://www.theguardian.com/world/live/2026/oct/02/france-schools-protests-violence-ukraine-kallas-rome-pope-latest-news-updates",
+      "kallkategori": "Internationellt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Civila mål",
+        "Ukraina"
+      ]
+    },
+    {
       "id": "evt-2026-10-02-845d32",
       "date": "2026-10-02",
       "timestamp": "2026-10-02T15:38:00+03:00",
@@ -655,6 +1194,45 @@
       "kallkategori": "Oberoende ukrainskt nyhetsmedium",
       "arkiverad": true,
       "tags": [
+        "Ukraina"
+      ]
+    },
+    {
+      "id": "evt-2026-10-02-c10af7",
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02T15:29:11+00:00",
+      "title_sv": "Sanktioner fortsätter att fånga Rysslands gastankfartyg, så Moskva bygger nya, säger Storbritannien",
+      "title_en": "Sanctions keep catching Russia’s gas tankers, so Moscow is building new ones, UK says",
+      "summary_sv": "Storbritannien avslöjade 31 nya sanktioner, som syftar till att pressa Moskvas finanser innan vintern sätter in.",
+      "summary_en": "Britain unveiled 31 new sanctions, aiming to squeeze Moscow's finances before winter sets in.",
+      "location_name": "Ukraina (nationellt)",
+      "tidshorisont": "dagligen",
+      "geografiskt_omrade": "ryssland",
+      "parter_intressenter": [
+        "ryssland",
+        "usa",
+        "uk",
+        "ukraina"
+      ],
+      "syfte": {
+        "kategori": "taktiskt_mal",
+        "beskrivning_sv": "Taktiskt mål: Neka fienden manöverutrymme och stabilisera frontavsnittet.",
+        "beskrivning_en": "Tactical goal: Interdict hostile maneuver and secure key tactical strongpoints."
+      },
+      "egenskaper_anfallsmal": "civil_infrastruktur",
+      "niva_vetskap_sannolikhet": {
+        "procent": 95,
+        "niva": "hog",
+        "motivering_sv": "Hög trovärdighet: Verifierad via officiella ukrainska myndigheter, räddningstjänsten DSNS och etablerade nyhetsbyråer.",
+        "motivering_en": "High confidence: Corroborated by official Ukrainian emergency services (DSNS) and international wire agencies."
+      },
+      "effekt_maluppfyllnad": "delvis",
+      "kalla": "Euromaidan Press",
+      "kallurl": "https://euromaidanpress.com/2026/10/02/sanctions-keep-catching-russias-gas-tankers-so-moscow-is-building-new-ones-uk-says/",
+      "kallkategori": "Oberoende ukrainskt nyhetsmedium",
+      "arkiverad": true,
+      "tags": [
+        "Infrastruktur",
         "Ukraina"
       ]
     },
@@ -983,8 +1561,8 @@
       "tidshorisont": "dagligen",
       "geografiskt_omrade": "resten_av_varlden",
       "parter_intressenter": [
-        "usa",
         "ryssland",
+        "usa",
         "ukraina"
       ],
       "syfte": {
@@ -1007,8 +1585,8 @@
       "tags": [
         "Kyjiv",
         "Drönare",
-        "Energi",
-        "Ukraina"
+        "Ukraina",
+        "Energi"
       ]
     },
     {
@@ -1199,8 +1777,8 @@
       "arkiverad": true,
       "tags": [
         "Kyjiv",
-        "Ukraina",
-        "Robotanfall"
+        "Robotanfall",
+        "Ukraina"
       ]
     },
     {
@@ -1875,8 +2453,8 @@
         "eu",
         "usa",
         "ukraina",
-        "uk",
-        "ryssland"
+        "ryssland",
+        "uk"
       ],
       "syfte": {
         "kategori": "taktiskt_mal",
